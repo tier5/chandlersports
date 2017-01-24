@@ -1,0 +1,3645 @@
+<?php
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier                                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @version  Release: @package_version@
+ */
+class Services_Capsule extends Services_Capsule_Common
+{
+    /**
+     * Sections available to the API
+     *
+     * @var array An array of sections available to the API
+     */
+    protected $sections = array();
+    
+    /**
+     * Constructor
+     *
+     * Initialize the class with the API token.
+     *
+     * @param string $token  The API Token you use for your API Calls
+     */
+    public function __construct($appName, $token)
+    {
+        $this->token   = $token;
+        $this->appName = $appName;
+    }
+
+    /**
+     * Magical Getter
+     *
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param string $sub Items, Meetings, Notes, Projects or User.
+     *
+     * @return mixed Services_Capsule_*
+     */
+    public function __get($section)
+    {
+        $section = ucwords(strtolower($section));
+        switch ($section) {
+            case 'Kase':
+            case 'Opportunity':
+				case 'Organization':
+            case 'Party':
+            case 'Person':
+            case 'Resource':
+				case 'Task':
+
+            if (!isset($this->sections[$section])) {
+                $classname = 'Services_Capsule_' .$section;
+
+                if (!class_exists($classname)) {
+                    $filename  = str_replace('_', '/', $classname) . '.php';
+                    
+                    if (!(include $filename)) {
+                        throw new Services_Capsule_RuntimeException(
+                            'File ' . $filename . ' does not exist.'
+                        );
+                    }
+                    
+                }
+
+                $this->sections[$section] = new $classname;
+                
+                $this->sections[$section]
+                    ->setToken($this->token)
+                    ->setAppName($this->appName)
+                    ->setModuleName(strtolower($section));
+            }
+            
+            return $this->sections[$section];
+            break;
+
+        default:
+            throw new Services_Capsule_RuntimeException(
+                'Section '. $section .' is not a valid API call. If you believe this ' . 
+                'is wrong please report a bug on http://pear.php.net/Services_Capsule'
+            );
+        }
+    }
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_party
+ * @version  Release: @package_version@
+ */
+class Services_Capsule_Organization extends Services_Capsule_Common
+{
+    /**
+     * Add a new Organization 
+     *
+     * If adding this organization will exceed the accounts contact limit 
+     * a 507 Insufficient Storage response will be returned.
+     * 
+     * @link http://capsulecrm.com/help/page/javelin_api_party
+     * @link /api/person
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  array        $fields        An assoc array of fields to add in the new
+     *                                     person
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function add(array $fields)
+    {        
+        $url         = '';
+        $org = array('organization' => $fields);
+
+        $response = $this->sendRequest(
+            $url, HTTP_Request2::METHOD_POST, json_encode($org)
+        );
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Update an organization
+     *
+     * Update an existing organisation record, only attributes that 
+     * are to be changed need to be supplied in the XML document. 
+     *
+     * Where a value is not supplied it will remain with its current value. 
+     *
+     * To null a field include a empty value for the field in the document.
+     * 
+     * Contact records (email, phone or address) can be updated where an id is 
+     * provided, where an id for a contact is not provided it is assumed to be 
+     * null and will be added to the person.
+     *
+     * @link http://capsulecrm.com/help/page/javelin_api_party
+     * @link /api/organization
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $organizationId The id of the person to update.
+     * @param  array        $fields         An assoc array of fields to add in the new
+     *                                      person
+     *
+     * @return mixed bool|stdClass          A stdClass object containing the information from
+     *                                      the json-decoded response from the server.
+     */
+    public function update($organizationId, array $fields)
+    {
+        $url          = '/' . (double)$organizationId;
+        $organization = array('organization' => $fields);
+
+        $response = $this->sendRequest(
+            $url, HTTP_Request2::METHOD_PUT, json_encode($person)
+        );
+        
+        return $this->parseResponse($response);
+    }
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_case
+ * @version  Release: @package_version@
+ */
+/**
+ * "Kase is not a typo. This is how the modules are invoked in the API /api/kase".
+ */
+class Services_Capsule_Kase extends Services_Capsule_Common
+{
+    /**
+     * Get an case
+     *
+     * This method is used to fetch a particular case by
+     * it's identification id.
+     *
+     * @link   /api/kase/{id}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $id The case ID to retrieve from the service.
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function get($id) 
+    {        
+        $response = $this->sendRequest('/' . (double)$id);
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * List all the opportunities
+     *
+     * List opportunities. Optionally the results can be 
+     * limited or paged using the parameters $limit and $start. 
+     *
+     * @link  /api/kase[?start={start}][&limit={limit}] 
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  int $start  The start page (Optional).
+     * @param  int $limit  The limit per page (Optional).
+     *
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function getList($start = null, $limit = null)
+    {
+        $request = array();
+        
+        if (!is_null($start)) {
+            $request['start'] = $start;
+        }
+        
+        if (!is_null($limit)) {
+            $request['limit'] = $limit;
+        }
+        
+        $request = http_build_query($request);
+        $response = $this->sendRequest('?' . $request);
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Get any cases
+     *
+     * This method fetches a list of cases for a company (appName)
+     * by tag, or lastmodified field with the usual
+     * start and limit tag.
+     *
+     * If you are fetching by lastmodified, you must make sure that the input
+     * is formatted as ISO dates (IE: Midnight June 31, 2009 GMT would be 20090631T000000)
+     * or more explicitly YYYYMMDDTHHMMSS
+     * 
+     * Example:
+     *      try {
+     *          $capsule = new Services_Capsule($appName, $token);
+     *          $results = $capsule->case->getAny(array(
+     *              'lastmodified' => '20090631T000000',
+     *              'start'        => '100',
+     *              'limit'        => '25'
+     *          ));
+     *      } catch (Services_Capsule_RuntimeException $re) {
+     *          print_r($re); die();
+     *      }
+     *
+     *      print_r($results); // An object
+     *
+     * @link   /api/kase?lastmodified={YYYYMMDDTHHMMSS}[&start={start}][&limit={limit}]
+     * @link   /api/kase?tag={tag}[&start={start}][&limit={limit}]
+     *
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  array        $params An array of parameters to search for.
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function getAny(array $params)
+    {        
+        $request  = http_build_query($params);
+        $response = $this->sendRequest('?' . $request);
+
+        return $this->parseResponse($response);
+    }
+
+    /**
+     * Delete a case
+     *
+     * Delete a case.
+     *
+     * @link   /api/kase/{kase-id}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $caseId        The case id to delete.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function delete($caseId)
+    {
+        $url      = '/' . (double)$caseId;
+        $response = $this->sendRequest($url, HTTP_Request2::METHOD_DELETE);
+        
+        return $this->parseResponse($response);
+    }
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier                                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+interface Services_Capsule_Exception {}
+
+class Services_Capsule_RuntimeException extends RuntimeException implements Services_Capsule_Exception {}
+
+class Services_Capsule_UnexpectedValueException extends UnexpectedValueException 
+    implements Services_Capsule_Exception {}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_case
+ * @link     http://capsulecrm.com/help/page/javelin_api_case_tags
+ * @version  Release: @package_version@
+ */
+class Services_Capsule_Kase_Tag extends Services_Capsule_Common
+{
+    /**
+     * Get case tags
+     *
+     * A list of tags for a case.
+     *
+     * @link    /api/kase/{id}/tagName
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $caseId The case to retrieve the tags from.
+     * @return stdClass     A stdClass object containing the information from.
+     *                      the json-decoded response from the server.
+     */
+    public function getAll($caseId)
+    {
+        $url      = '/' . (double)$caseId . '/tag';
+        $response = $this->sendRequest($url);
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Add a tag to a case
+     *
+     * The tag name will need to be URL encoded. If the tag is already present on 
+     * the case status in the response will be 200 OK, when the tag is added
+     * the response will be 201 Created. 
+     *
+     * @link /api/kase/{kase-id}/tag/{tag-name}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $caseId        The case to create the tags on.
+     * @param  string       $tagName       The name of the new tag to create.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function add($caseId, $tagName)
+    {
+        $url = '/' . (double)$caseId . '/tag/' . urlencode($tagName);
+        $response = $this->sendRequest($url, HTTP_Request2::METHOD_POST);
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Delete a tag from a case
+     *
+     * The tag name will need to be URL encoded.
+     *
+     * @link /api/kase/{kase-id}/tag/{tag-name}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $caseId The case to delete the tags from.
+     * @param  string       $tagName       The name of the new tag to delete.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function delete($caseId, $tagName)
+    {
+        $url = '/' . (double)$caseId . '/tag/' . urlencode($tagName);
+        $response = $this->sendRequest($url, HTTP_Request2::METHOD_DELETE);
+        
+        return $this->parseResponse($response);
+    }
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_opportunity
+ * @version  Release: @package_version@
+ */
+class Services_Capsule_Kase_Task extends Services_Capsule_Common
+{
+    /**
+     * Get case Tasks
+     *
+     * Retrieve a list of tasks for a case. 
+     *
+     * @link    /api/kase/{id}/tasks
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $kaseId The kase to retrieve the tasks from.
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function getAll($kaseId)
+    {
+        $url      = '/' . (double)$kaseId . '/tasks';
+        $response = $this->sendRequest($url);
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Add a task to a case
+     *
+     * Create a new task attached to a case
+     *
+     * Example of input:
+     *
+     *     $fields = array(
+     *         'description' => 'descrition of task',
+     *         'dueDateTime'    => '2010-04-21T15:00:00Z', 
+     *         ...
+     *     );
+     *
+     * @link   /api/kase/{kase-id}/task
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $kaseId       The case to add the task to.
+     * @param  array        $fields       An array of fields to create the task with.
+     *
+     * @return mixed bool|stdClass        A stdClass object containing the information from
+     *                                    the json-decoded response from the server.
+     */
+    public function add($kaseId, $fields)
+    {
+        $url         = '/' . (double)$kaseId . '/task';
+        $task = array('task' => $fields);
+        
+        $response = $this->sendRequest(
+            $url, HTTP_Request2::METHOD_POST, json_encode($task)
+        );
+        
+        return $this->parseResponse($response);
+    }
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_opportunity
+ * @version  Release: @package_version@
+ */
+class Services_Capsule_Opportunity extends Services_Capsule_Common
+{
+    /**
+     * Get an opportunity
+     *
+     * This method is used to fetch a particular opportunity by
+     * it's identification id.
+     *
+     * @link   /api/opportunity/{id}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $id The opportunity ID to retrieve from the service.
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function get($id) 
+    {        
+        $response = $this->sendRequest('/' . (double)$id);
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * List all the opportunities
+     *
+     * List opportunities. Optionally the results can be 
+     * limited or paged using the parameters $limit and $start. 
+     *
+     * @link  /api/opportunity[?start={start}][&limit={limit}] 
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  int $start  The start page (Optional).
+     * @param  int $limit  The limit per page (Optional).
+     *
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function getList($start = null, $limit = null)
+    {
+        $request = array();
+        
+        if (!is_null($start)) {
+            $request['start'] = $start;
+        }
+        
+        if (!is_null($limit)) {
+            $request['limit'] = $limit;
+        }
+        
+        $request = http_build_query($request);
+        $response = $this->sendRequest('?' . $request);
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Get any opportunities
+     *
+     * This method fetches a list of opportunities for a company (appName)
+     * by tag, milestone (name), or lastmodified field with the usual
+     * start and limit tag.
+     *
+     * If you are fetching by lastmodified, you must make sure that the input
+     * is formatted as ISO dates (IE: Midnight June 31, 2009 GMT would be 20090631T000000)
+     * or more explicitly YYYYMMDDTHHMMSS
+     * 
+     * Example:
+     *      try {
+     *          $capsule = new Services_Capsule($appName, $token);
+     *          $results = $capsule->opportunity->getAny(array(
+     *              'lastmodified' => '20090631T000000',
+     *              'start'        => '100',
+     *              'limit'        => '25'
+     *          ));
+     *      } catch (Services_Capsule_RuntimeException $re) {
+     *          print_r($re); die();
+     *      }
+     *
+     *      print_r($results); // An object
+     *
+     * @link   /api/opportunity?lastmodified={YYYYMMDDTHHMMSS}[&start={start}][&limit={limit}]
+     * @link   /api/opportunity?tag={tag}[&start={start}][&limit={limit}]
+     *
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  array        $params An array of parameters to search for.
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function getAny(array $params)
+    {        
+        $request  = http_build_query($params);
+        $response = $this->sendRequest('?' . $request);
+
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Delete an opportunity
+     *
+     * Delete the opportunity passed to the method.
+     *
+     * @link /api/opportunity/{opportunity-id}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $opportunityId The opportunity to delete.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+     public function delete($opportunityId)
+     {
+         $url = '/' . (double)$opportunityId;
+         $response = $this->sendRequest($url, HTTP_Request2::METHOD_DELETE);
+
+         return $this->parseResponse($response);
+     }
+
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_opportunity
+ * @version  Release: @package_version@
+ */
+class Services_Capsule_Opportunity_Customfield extends Services_Capsule_Common
+{
+    
+    /**
+     * Get a list of custom fields
+     *
+     * List custom fields for a case. Note that boolean custom fields 
+     * that have been set to false will not be returned. 
+     *
+     * @link    /api/opportunity/{id}/customfield
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $opportunityId The opportunity to retrieve 
+     *                                     the custom field from.
+     *
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */    
+    public function getAll($opportunityId)
+    {
+        $url      = '/' . (double)$opportunityId . '/customfields' ;
+        $response = $this->sendRequest($url);
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Get a list of available custom fields
+     *
+     * List of available custom field configurations for opportunities. 
+     *
+     * @link    /api/opportunity/customfield/definitions
+     * @throws Services_Capsule_RuntimeException
+     * 
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function getDefinitions()
+    {
+        $response = $this->sendRequest('/customfield/definitions');
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Add a new Custom field to an opportunity (BY CASE ID)
+     *
+     * This method is used to create a new custom field to a
+     * case that is associated in an opportunity.
+     *
+     * @link /api/opportunity/{kase-id}/customfield
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $caseId        The case id to create the new field on.
+     * @param  array        $fields        An assoc array of fields to add in the new
+     *                                     customField
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function add($caseId, array $fields)
+    {
+        if (!isset($fields['boolean'])) {
+            throw new Services_Capsule_RuntimeException(
+                '"boolean" parameter of second parameter required ' . 
+                'Ex: ("boolean" => "true")'
+            );
+        }
+        
+        $url         = '/' . (double)$caseId . '/customfield';
+        $customField = array('customField' => $fields);
+
+        $response = $this->sendRequest(
+            $url, HTTP_Request2::METHOD_POST, json_encode($customField)
+        );
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Update the custom field of an opportunity
+     *
+     * This method is used to update an history note to an
+     * opportunity.
+     *
+     * Updating an existing boolean field to a value of false
+     * will delete the custom field from the contact, it will 
+     * not be displayed on the next get. 
+     *
+     * @link   /api/opportunity/{kase-id}/customfield/{customfield-id} 
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $caseId        The case id to create the new field on.
+     * @param  double       $fieldId
+     * @param  array        $fields        An assoc array of fields to add in the new
+     *                                     customField
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function update($caseId, $fieldId, $fields)
+    {
+        $url         = '/' . (double)$caseId . '/customfield/ ' . (double)$fieldId;
+        $customField = array('customField' => $fields);
+
+        $response = $this->sendRequest(
+            $url, HTTP_Request2::METHOD_PUT, json_encode($customField)
+        );
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Delete the custom field of an opportunity
+     *
+     * This method is used to delete the custom field
+     * of an opportunity.
+     *
+     * Updating an existing boolean field to a value of false
+     * will delete the custom field from the contact, it will 
+     * not be displayed on the next get. 
+     *
+     * @link   /api/opportunity/{kase-id}/customfield/{customfield-id} 
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $caseId        The case id to create the new field on.
+     * @param  double       $fieldId
+     * @param  array        $fields        An assoc array of fields to add in the new
+     *                                     customField
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function delete($caseId, $fieldId)
+    {
+        $url      = '/' . (double)$caseId . '/customfield/ ' . (double)$fieldId;
+        $response = $this->sendRequest($url, HTTP_Request2::METHOD_DELETE);
+        
+        return $this->parseResponse($response);
+    }
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_opportunity
+ * @version  Release: @package_version@
+ */
+class Services_Capsule_Opportunity_History extends Services_Capsule_Common
+{
+    /**
+     * Get opportunity history
+     *
+     * History of notes and emails for opportunity records. 
+     *
+     * @link    /api/opportunity/{id}/history
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $opportunityId The opportunity to retrieve the history from.
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function getAll($opportunityId)
+    {
+        $url      = '/' . (double)$opportunityId . '/history';
+        $response = $this->sendRequest($url);
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Add an history note to an opportunity
+     *
+     * This method is used to add an history note to an
+     * opportunity.
+     *
+     * @link /api/opportunity/{opportunity-id}/history
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $opportunityId The opportunity to create the note on.
+     * @param  string       $note          The note to add to history.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function addNote($opportunityId, $note)
+    {
+        $url = '/' . (double)$opportunityId . '/history';
+
+        $note = array(
+            'historyItem' => array(
+                'note' => $note
+            ),
+        );
+
+        $response = $this->sendRequest(
+            $url, HTTP_Request2::METHOD_POST, json_encode($note)
+        );
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Add an history note of an opportunity
+     *
+     * This method is used to update an history note to an
+     * opportunity.
+     *
+     * @link /api/opportunity/{opportunity-id}/history/{history-id}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $opportunityId The opportunity to create the tags on.
+     * @param  double       $historyId     The note id to update.
+     * @param  string       $note          The note to add to history.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function updateNote($opportunityId, $historyId, $note)
+    {
+        $url = '/' . (double)$opportunityId . '/history/' . (double)$historyId;
+
+        $note = array(
+            'historyItem' => array(
+                'note' => $note
+            ),
+        );
+        
+        $response = $this->sendRequest($url, HTTP_Request2::METHOD_PUT, json_encode($note));
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Delete an history note from an opportunity
+     *
+     * This method is used to delete an history note from an
+     * opportunity.
+     *
+     * @link /api/opportunity/{opportunity-id}/history/{history-id}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $opportunityId The opportunity to delete the note from.
+     * @param  double       $historyId     The note id to delete.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function deleteNote($opportunityId, $historyId)
+    {
+        $url = '/' . (double)$opportunityId . '/history/' . (double)$historyId;
+        
+        $response = $this->sendRequest($url, HTTP_Request2::METHOD_DELETE);
+        return $this->parseResponse($response);
+    }
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_opportunity
+ * @version  Release: @package_version@
+ */
+class Services_Capsule_Opportunity_Tag extends Services_Capsule_Common
+{
+    /**
+     * Get opportunity tags
+     *
+     * A list of tags for an opportunity.
+     *
+     * @link    /api/opportunity/{id}/tag
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $opportunityId The opportunity to retrieve the tags from.
+     * @return stdClass     A stdClass object containing the information from.
+     *                      the json-decoded response from the server.
+     */
+    public function getAll($opportunityId)
+    {
+        $url      = '/' . (double)$opportunityId . '/tag';
+        $response = $this->sendRequest($url);
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Add a tag to an opportunity
+     *
+     * The tag name will need to be URL encoded. If the tag is already present on 
+     * the opportunity status in the response will be 200 OK, when the tag is added
+     * the response will be 201 Created. 
+     *
+     * @link /api/opportunity/{opportunity-id}/tag/{tag-name}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $opportunityId The opportunity to create the tags on.
+     * @param  string       $tagName       The name of the new tag to create.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function add($opportunityId, $tagName)
+    {
+        $url = '/' . (double)$opportunityId . '/tag/' . urlencode($tagName);
+        $response = $this->sendRequest($url, HTTP_Request2::METHOD_POST);
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Delete a tag from an opportunity
+     *
+     * The tag name will need to be URL encoded.
+     *
+     * @link /api/opportunity/{opportunity-id}/tag/{tag-name}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $opportunityId The opportunity to delete the tags from.
+     * @param  string       $tagName       The name of the new tag to delete.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function delete($opportunityId, $tagName)
+    {
+        $url = '/' . (double)$opportunityId . '/tag/' . urlencode($tagName);
+        $response = $this->sendRequest($url, HTTP_Request2::METHOD_DELETE);
+        
+        return $this->parseResponse($response);
+    }
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_opportunity
+ * @version  Release: @package_version@
+ */
+class Services_Capsule_Opportunity_Task extends Services_Capsule_Common
+{
+    /**
+     * Get opportunity Tasks
+     *
+     * Retrieve a list of tasks for an opportunity. 
+     *
+     * @link    /api/opportunity/{id}/tasks
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $opportunityId The opportunity to retrieve the tasks from.
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function getAll($opportunityId)
+    {
+        $url      = '/' . (double)$opportunityId . '/tasks';
+        $response = $this->sendRequest($url);
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Add a task to an opportunity
+     *
+     * Create a new task attached to an opportunity
+     *
+     * Example of input:
+     *
+     *     $fields = array(
+     *         'description' => 'descrition of task',
+     *         'dueDateTime'    => '2010-04-21T15:00:00Z', 
+     *         ...
+     *     );
+     *
+     * @link   /api/opportunity/{opportunity-id}/task
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $opportunityId       The oppID to add the task to.
+     * @param  array        $fields        		 An array of fields to create the task with.
+     *
+     * @return mixed bool|stdClass         		 A stdClass object containing the information from
+     *                                     		 the json-decoded response from the server.
+     */
+    public function add($opportunityId, $fields)
+    {
+        $url         = '/' . (double)$opportunityId . '/task';
+        $task = array('task' => $fields);
+        
+        $response = $this->sendRequest(
+            $url, HTTP_Request2::METHOD_POST, json_encode($task)
+        );
+        
+        return $this->parseResponse($response);
+    }
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_opportunity
+ * @version  Release: @package_version@
+ */
+class Services_Capsule_Opportunity_Party extends Services_Capsule_Common
+{
+    
+    /**
+     * Get a list of additional parties
+     *
+     * View additional people & organisations related to this opportunity. 
+     *
+     * @link    /api/opportunity/{id}/party
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $opportunityId The opportunity to retrieve the parties from.
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function getAll($opportunityId)
+    {
+        $url      = '/' . (double)$opportunityId . '/party';
+        $response = $this->sendRequest($url);
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Add a party to an opportunity
+     *
+     * This method is used to Add the Person or Organisation 
+     * to the opportunity supplied in the $partyId parameter 
+     *
+     * @link   /api/opportunity/{id}/party/{party-id}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $opportunityId The opportunity to add the party on.
+     * @param  string       $partyId       The party/org to add to the opportunity.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function add($opportunityId, $partyId)
+    {
+        $url = '/' . (double)$opportunityId . '/party/' . (double)$partyId;
+        $response = $this->sendRequest($url, HTTP_Request2::METHOD_POST);
+        
+        return $this->parseResponse($response);
+    }
+    /**
+     * Delete a party from an opportunity
+     *
+     * This method is used to delete a Person or Organisation 
+     * to the opportunity supplied in the $partyId parameter 
+     *
+     * @link   /api/opportunity/{id}/party/{party-id}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $opportunityId The opportunity to delete the party from.
+     * @param  string       $partyId       The party/org to delete from the opportunity.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function delete($opportunityId, $partyId)
+    {
+        $url = '/' . (double)$opportunityId . '/party/' . (double)$partyId;
+        $response = $this->sendRequest($url, HTTP_Request2::METHOD_DELETE);
+        
+        return $this->parseResponse($response);
+    }
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_opportunity
+ * @version  Release: @package_version@
+ */
+class Services_Capsule_Opportunity_Milestone extends Services_Capsule_Common
+{
+    
+    /**
+     * Get a list of opportunity milestones
+     *
+     * Each account in Capsule can have a unique opportunity milestone configuration. 
+     * Use the milestone names when creating or updating opportunities. 
+     *
+     * @link    /api/opportunity/milestones
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId  The party to retrieve the people from.
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function getAll($partyId)
+    {
+        $response = $this->sendRequest('/milestones');
+        return $this->parseResponse($response);
+    }
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_party
+ * @link     http://capsulecrm.com/help/page/javelin_api_party_custom_fields
+ * @version  Release: @package_version@
+ */
+class Services_Capsule_Party_Customfield extends Services_Capsule_Common
+{
+    
+    /**
+     * Get a list of custom fields
+     *
+     * List custom fields for a party. Note that boolean custom fields 
+     * that have been set to false will not be returned. 
+     *
+     * @link    /api/party/{id}/customField
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId       The party to retrieve 
+     *                                     the custom field from.
+     * @param  string       $fieldName     The custom field to retrieve.
+     *
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */    
+    public function get($partyId, $fieldName)
+    {
+        $url      = '/' . (double)$partyId . '/' . $fieldName;
+        $response = $this->sendRequest($url);
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Get a list of available custom fields
+     *
+     * List of available custom field configurations for parties. 
+     *
+     * @link    /api/party/customfield/definitions
+     * @throws Services_Capsule_RuntimeException
+     * 
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function getDefinitions()
+    {
+        $response = $this->sendRequest('/customfield/definitions');
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Add a new Custom field to a party
+     *
+     * This method is used to create a new custom field for a party.
+     *
+     * @link /api/party/{party-id}/customfield
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId       The party id to create the new field on.
+     * @param  array        $fields        An assoc array of fields to add in the new
+     *                                     customField
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function add($partyId, array $fields)
+    {
+        if (!isset($fields['boolean'])) {
+            throw new Services_Capsule_RuntimeException(
+                '"boolean" parameter of second parameter required ' . 
+                'Ex: ("boolean" => "true")'
+            );
+        }
+        
+        $url         = '/' . (double)$partyId . '/customfield';
+        $customField = array('customField' => $fields);
+
+        $response = $this->sendRequest(
+            $url, HTTP_Request2::METHOD_POST, json_encode($customField)
+        );
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Update a custom fieldof a party
+     *
+     * This method is used to update custom field of a party.
+     *
+     * Updating an existing boolean field to a value of false
+     * will delete the custom field from the party, it will 
+     * not be displayed on the next get. 
+     *
+     * @link   /api/party/{party-id}customfield/{customfield-id} 
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId       The party id to update.
+     * @param  double       $fieldId       The field id to update.
+     * @param  array        $fields        An assoc array of fields to update in the new
+     *                                     customField
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function update($partyId, $fieldId, $fields)
+    {
+        $url         = '/' . (double)$partyId . '/customfield/ ' . (double)$fieldId;
+        $customField = array('customField' => $fields);
+
+        $response = $this->sendRequest(
+            $url, HTTP_Request2::METHOD_PUT, json_encode($customField)
+        );
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Delete a custom field of a party
+     *
+     * This method is used to update an history note of a
+     * party.
+     *
+     * @link   /api/party/{party-id}/customfield/{customfield-id} 
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId       The party id to create the new field on.
+     * @param  double       $fieldId
+     * @param  array        $fields        An assoc array of fields to add in the new
+     *                                     customField
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function delete($partyId, $fieldId)
+    {
+        $url      = '/' . (double)$partyId . '/customfield/ ' . (double)$fieldId;
+        $response = $this->sendRequest($url, HTTP_Request2::METHOD_DELETE);
+        
+        return $this->parseResponse($response);
+    }
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_party
+ * @version  Release: @package_version@
+ */
+class Services_Capsule_Party_People extends Services_Capsule_Common
+{
+    /**
+     * Get a list of people in party
+     *
+     * This method returns a list of people that are associated to an 
+     * organization.
+     *
+     * @link    /api/party/{id}/people
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId  The party to retrieve the people from.
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function getAll($partyId)
+    {
+        $url      = '/' . (double)$partyId . '/people';
+        $response = $this->sendRequest($url);
+
+        return $this->parseResponse($response);
+    }
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_party
+ * @version  Release: @package_version@
+ */
+class Services_Capsule_Party_History extends Services_Capsule_Common
+{
+    /**
+     * Get party history
+     *
+     * History of notes and emails for party records. 
+     *
+     * @link    /api/party/{id}/history
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId The party to retrieve the history from.
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function getAll($partyId)
+    {
+        $url      = '/' . (double)$partyId . '/history';
+        $response = $this->sendRequest($url);
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Add an history note to a party
+     *
+     * This method is used to add an history note to a party.
+     *
+     * @link /api/party/{party-id}/history
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId       The party to create the note on.
+     * @param  string       $note          The note to add to history.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function addNote($partyId, $note)
+    {
+        $url = '/' . (double)$partyId . '/history';
+
+        $note = array(
+            'historyItem' => array(
+                'note' => $note
+            ),
+        );
+
+        $response = $this->sendRequest($url, HTTP_Request2::METHOD_POST, json_encode($note));
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Add an history note of a party
+     *
+     * This method is used to update an history note to a party.
+     *
+     * @link /api/party/{party-id}/history/{history-id}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId The party to create the tags on.
+     * @param  double       $historyId     The note id to update.
+     * @param  string       $note          The note to add to history.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function updateNote($partyId, $historyId, $note)
+    {
+        $url = '/' . (double)$partyId . '/history/' . (double)$historyId;
+
+        $note = array(
+            'historyItem' => array(
+                'note' => $note
+            ),
+        );
+        
+        $response = $this->sendRequest($url, HTTP_Request2::METHOD_PUT, json_encode($note));
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Delete an history note from a party
+     *
+     * This method is used to delete an history note from a party.
+     *
+     * @link /api/party/{party-id}/history/{history-id}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId       The party to delete the note from.
+     * @param  double       $historyId     The note id to delete.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function deleteNote($partyId, $historyId)
+    {
+        $url = '/' . (double)$partyId . '/history/' . (double)$historyId;
+        
+        $response = $this->sendRequest($url, HTTP_Request2::METHOD_DELETE);
+        return $this->parseResponse($response);
+    }
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_party
+ * @version  Release: @package_version@
+ */
+class Services_Capsule_Party_Opportunity extends Services_Capsule_Common
+{
+
+    /**
+     * Get a list of party opportunities
+     *
+     * This method returns a list of opportunities associated
+     * to a particular party.
+     *
+     * @link    /api/party/{id}/opportunity
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId  The party to retrieve the opportunities from.
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function getAll($partyId)
+    {
+        $url      = '/' . (double)$partyId . '/opportunity';
+        $response = $this->sendRequest($url);
+
+        return $this->parseResponse($response);
+    }
+
+    /**
+     * Add a opportunity to a party
+     *
+     * Create a new opportunity attached to this person or organisation, when 
+     * creating an opportunity for a person attached to an organisation the person 
+     * is added the additional contact list for this opportunity 
+     * GET /api/opportunity/{id}/party
+     *
+     * Example of input:
+     *
+     *     $fields = array(
+     *         'name' => 'Testing adding opportunity',
+     *         'description' => 'descrition of opptu',
+     *         'currency'    => 'GBP', // See resource $capsule->resource->getCurrencies()
+     *         ...
+     *     );
+     *
+     * @link   /api/party/{party-id}/opportunity
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId       The party/org to add to the opportunity.
+     * @param  array        $fields        An array of fields to create the opp with.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function add($partyId, $fields)
+    {
+        $url         = '/' . (double)$partyId . '/opportunity';
+        $opportunity = array('opportunity' => $fields);
+        
+        $response = $this->sendRequest(
+            $url, HTTP_Request2::METHOD_POST, json_encode($opportunity)
+        );
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Update an opportunity of a party
+     *
+     * Update said opportunity for a party.
+     *
+     * Example of input:
+     *     $fields = array(
+     *         'milestone' => 'Won',
+     *     );
+     *
+     * @link   /api/party/{party-id}/opportunity
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId       The party/org to update the opportunity.
+     * @param  array        $fields        An array of fields to update the opp with.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function update($partyId, $fields)
+    {
+        $url         = '/' . (double)$partyId . '/opportunity';
+        $opportunity = array('opportunity' => $fields);
+        
+        $response = $this->sendRequest(
+            $url, HTTP_Request2::METHOD_PUT, json_encode($opportunity)
+        );
+        
+        return $this->parseResponse($response);
+    }
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_party
+ * @version  Release: @package_version@
+ */
+class Services_Capsule_Party_Tag extends Services_Capsule_Common
+{
+    /**
+     * Get party tags
+     *
+     * A list of tags for a party.
+     *
+     * @link    /api/party/{id}/tag
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId The party to retrieve the tags from.
+     * @return stdClass     A stdClass object containing the information from.
+     *                      the json-decoded response from the server.
+     */
+    public function getAll($partyId)
+    {
+        $url      = '/' . (double)$partyId . '/tag';
+        $response = $this->sendRequest($url);
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Add a tag to a party
+     *
+     * The tag name will need to be URL encoded. If the tag is already present on 
+     * the party status in the response will be 200 OK, when the tag is added
+     * the response will be 201 Created. 
+     *
+     * @link /api/party/{party-id}/tag/{tag-name}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId The party to create the tags on.
+     * @param  string       $tagName       The name of the new tag to create.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function add($partyId, $tagName)
+    {
+        $url = '/' . (double)$partyId . '/tag/' . urlencode($tagName);
+        $response = $this->sendRequest($url, HTTP_Request2::METHOD_POST);
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Delete a tag from a party
+     *
+     * The tag name will need to be URL encoded.
+     *
+     * @link /api/party/{party-id}/tag/{tag-name}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId The party to delete the tags from.
+     * @param  string       $tagName       The name of the new tag to delete.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function delete($partyId, $tagName)
+    {
+        $url = '/' . (double)$partyId . '/tag/' . urlencode($tagName);
+        $response = $this->sendRequest($url, HTTP_Request2::METHOD_DELETE);
+        
+        return $this->parseResponse($response);
+    }
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_party
+ * @version  Release: @package_version@
+ */
+class Services_Capsule_Party_Cases extends Services_Capsule_Common
+{
+    /**
+     * Get a list of party cases
+     *
+     * This method returns a list of cases associated
+     * to a particular party.
+     *
+     * @link    /api/party/{id}/kase
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId  The party to retrieve the opportunities from.
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function getAll($partyId)
+    {
+        $url      = '/' . (double)$partyId . '/kase';
+        $response = $this->sendRequest($url);
+
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Add a new case to a party
+     *
+     * This method is used to create a new case for a party.
+     *
+     * @link /api/party/{party-id}/kase
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId       The party id to create the new case in.
+     * @param  array        $fields        An assoc array of fields to add in the new
+     *                                     case
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function add($partyId, array $fields)
+    {
+        
+        $url  = '/' . (double)$partyId . '/kase';
+        $case = array('kase' => $fields);
+
+        $response = $this->sendRequest(
+            $url, HTTP_Request2::METHOD_POST, json_encode($case)
+        );
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Update the case of a party
+     *
+     * Update the case, if moving the case to 
+     * another person or organisation use the alternative 
+     * party version of the URL. case. 
+     *
+     * @link   /api/party/{party-id}/kase/{id}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId       The party id to create the update the case.
+     * @param  double       $caseId        The case id to update.
+     * @param  array        $fields        An assoc array of fields to update in the new
+     *                                     case
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function update($partyId, $fieldId, $fields)
+    {
+        $url  = '/' . (double)$partyId . '/kase/ ' . (double)$caseId;
+        $case = array('kase' => $fields);
+
+        $response = $this->sendRequest(
+            $url, HTTP_Request2::METHOD_PUT, json_encode($case)
+        );
+        
+        return $this->parseResponse($response);
+    }
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_party
+ * @version  Release: @package_version@
+ */
+class Services_Capsule_Party_Task extends Services_Capsule_Common
+{
+
+    /**
+     * Get a list of party tasks
+     *
+     * This method returns a list of tasks associated
+     * to a particular party.
+     *
+     * @link    /api/party/{party-id}/tasks
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId  The party to retrieve the tasks from.
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function getAll($partyId)
+    {
+        $url      = '/' . (double)$partyId . '/tasks';
+        $response = $this->sendRequest($url);
+
+        return $this->parseResponse($response);
+    }
+
+    /**
+     * Add a task to a party
+     *
+     * Create a new task attached to this person or organisation
+     *
+     * Example of input:
+     *
+     *     $fields = array(
+     *         'description' => 'descrition of task',
+     *         'dueDateTime'    => '2010-04-21T15:00:00Z', 
+     *         ...
+     *     );
+     *
+     * @link   /api/party/{party-id}/task
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId       The party/org to add the task to.
+     * @param  array        $fields        An array of fields to create the opp with.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function add($partyId, $fields)
+    {
+        $url         = '/' . (double)$partyId . '/task';
+        $task = array('task' => $fields);
+        
+        $response = $this->sendRequest(
+            $url, HTTP_Request2::METHOD_POST, json_encode($task)
+        );
+        
+        return $this->parseResponse($response);
+    }
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_opportunity
+ * @link     http://capsulecrm.com/help/page/javelin_api_party
+ * @link     http://capsulecrm.com/help/page/javelin_api_case
+ * @version  Release: @package_version@
+ */
+class Services_Capsule_Resource extends Services_Capsule_Common
+{   
+    /**
+     * Get a list of resource countries
+     *
+     * List of country names that can be supplied in the <country /> 
+     * element of addresses. Alternatively ISO 3166-1 alpha-2 or 
+     * alpha-3 codes can be used. 
+     *
+     * @link   /api/resource/country
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function getCountries()
+    {
+        $response = $this->sendRequest('/country');
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Get a list of resource currencies
+     *
+     * List of ISO currencies currently supported by Capsule. 
+     * These are the options available when creating new opportunities.
+     *
+     * @link   /api/resource/currency
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function getCurrencies()
+    {
+        $response = $this->sendRequest('/currency');
+        return $this->parseResponse($response);
+    }
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_party
+ * @version  Release: @package_version@
+ */
+class Services_Capsule_Person extends Services_Capsule_Common
+{
+    /**
+     * Add a new Person to an organization
+     *
+     * Create a new person and optionally attach to an organisation. 
+     * You can specify an organisation id or organisation name. 
+     * If an organisation name is used an it is not already present on the 
+     * account a new organisation will be created.
+     * 
+     * When adding addresses make the country element if used should be 
+     * populated with a country returned from the resource GET /api/resource/country
+     * or $capsule->resource->getCountries() or a ISO 3166-1 alternative.
+     * 
+     * If adding this person will exceed the accounts contact limit 
+     * a 507 Insufficient Storage response will be returned.
+     * 
+     * @link http://capsulecrm.com/help/page/javelin_api_party
+     * @link /api/person
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  array        $fields        An assoc array of fields to add in the new
+     *                                     person
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function add(array $fields)
+    {        
+        $url         = '';
+        $person = array('person' => $fields);
+
+        $response = $this->sendRequest(
+            $url, HTTP_Request2::METHOD_POST, json_encode($person)
+        );
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Update a person
+     *
+     * Update an existing person record, only attributes that 
+     * are to be changed need to be supplied in the XML document. 
+     *
+     * Where a value is not supplied it will remain with its current value. 
+     *
+     * To null a field include a empty element for the field in the document.
+     *
+     * Contact records (email, phone or address) can be updated where an id is 
+     * provided, where an id for a contact is not provided it is assumed to be 
+     * null and will be added to the person.
+     *
+     * @link http://capsulecrm.com/help/page/javelin_api_party
+     * @link /api/organization
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $personId      The id of the person to update.
+     * @param  array        $fields        An assoc array of fields to add in the new
+     *                                     person
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function update($personId, array $fields)
+    {
+        $url         = '/' . (double)$personId;
+        $person      = array('person' => $fields);
+
+        $response = $this->sendRequest(
+            $url, HTTP_Request2::METHOD_PUT, json_encode($person)
+        );
+        
+        return $this->parseResponse($response);
+    }
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_party
+ * @version  Release: @package_version@
+ */
+class Services_Capsule_Task extends Services_Capsule_Common
+{
+     /**
+     * Get a Task
+     *
+     * This method is used to fetch a particular Task by
+     * it's identification id.
+     *
+     * @link   /api/task/{task-id}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $id The task ID to retrieve from the service.
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function get($id) 
+    {        
+        $response = $this->sendRequest('/' . (double)$id);
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * List all the task information
+     *
+     * Retrieve a list of Tasks. Optionally the results can be 
+     * limited or paged using the parameters $start and $limit
+	 * {user} - filter the tasks by assigned user name
+	 * {category} - filter tasks by assigned category
+     *
+     * @link  /api/tasks[?start={start}][&limit={limit}][&category={category}][&user={user}]
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  int $start  		The start page (Optional).
+     * @param  int $limit  		The limit per page (Optional).
+	 * @param  int $category 	The category to filter tasks by (Optional).
+	 * @param  int $user		The user to filter tasks by (Optional).
+     *
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function getList($start = null, $limit = null, $category = null, $user = null)
+    {
+        $request = array();
+        
+        if (!is_null($start)) {
+            $request['start'] = $start;
+        }
+        
+        if (!is_null($limit)) {
+            $request['limit'] = $limit;
+        }
+		
+		if (!is_null($category)) {
+			$request['category'] = $category;
+		}
+		
+		if (!is_null($user)) {
+			$request['user'] = $user;
+		}
+        
+        $request = http_build_query($request);
+        $response = $this->sendRequest('s?' . $request);
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Complete a Task
+     *
+     * Mark a task as complete
+     * POST /api/task/{task-id}/complete
+     *
+     * @link   /api/task/{task-id}/complete
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $taskId       The task to be marked complete
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function complete($taskId)
+    {
+        $url         = '/' . (double)$taskId . '/complete';
+        
+        $response = $this->sendRequest(
+            $url, HTTP_Request2::METHOD_POST
+        );
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Re-open a Task
+     *
+     * Re-open a previously completed task
+     * POST /api/task/{task-id}/reopen
+     *
+     * @link   /api/task/{task-id}/reopen
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $taskId       The task to be re-opened
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function reopen($taskId)
+    {
+        $url         = '/' . (double)$taskId . '/repoen';
+        
+        $response = $this->sendRequest(
+            $url, HTTP_Request2::METHOD_POST
+        );
+        
+        return $this->parseResponse($response);
+    }
+	
+    /**
+     * Add a task (unnattached)
+     *
+     * Create a new task not attached to a party, opp or case
+     *
+     * Example of input:
+     *
+     *     $fields = array(
+     *         'description' => 'descrition of task',
+     *         'dueDateTime'    => '2010-04-21T15:00:00Z', 
+     *         ...
+     *     );
+     *
+     * @link   /api/task
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  array        $fields        An array of fields to create the task with.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+    public function add($fields)
+    {
+        $url         = '';
+        $task = array('task' => $fields);
+        
+        $response = $this->sendRequest(
+            $url, HTTP_Request2::METHOD_POST, json_encode($task)
+        );
+        
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Update a task
+     *
+     * Update an existing task record, only attributes that 
+     * are to be changed need to be supplied in the XML document. 
+     *
+     * Where a value is not supplied it will remain with its current value. 
+     *
+     * To null a field include a empty value for the field in the document.
+     *
+     * @link http://capsulecrm.com/help/page/api_task
+     * @link /api/task/{task-id}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $taskId			 The id of the task to update.
+     * @param  array        $fields         An assoc array of fields to add in the task
+     *
+     * @return mixed bool|stdClass          A stdClass object containing the information from
+     *                                      the json-decoded response from the server.
+     */
+    public function update($taskId, array $fields)
+    {
+        $url          = '/' . (double)$taskId;
+        $task = array('task' => $fields);
+
+        $response = $this->sendRequest(
+            $url, HTTP_Request2::METHOD_PUT, json_encode($task)
+        );
+        
+        return $this->parseResponse($response);
+    }
+
+    /**
+     * Delete a task
+     *
+     * Delete the task according to its id.
+     *
+     * @link /api/task/{task-id}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $taskId        The task to delete.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+     public function delete($taskId)
+     {
+         $url = '/' . (double)$taskId;
+         $response = $this->sendRequest($url, HTTP_Request2::METHOD_DELETE);
+
+         return $this->parseResponse($response);
+     }
+
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @link     http://capsulecrm.com/help/page/javelin_api_party
+ * @version  Release: @package_version@
+ */
+class Services_Capsule_Party extends Services_Capsule_Common
+{
+    /**
+     * Get a party
+     *
+     * This method is used to fetch a particular party by
+     * it's identification id.
+     *
+     * @link   /api/party/{id}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $id The party ID to retrieve from the service.
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function get($id) 
+    {        
+        $response = $this->sendRequest('/' . (double)$id);
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * List all the party information
+     *
+     * Return all people & organisations visible to the 
+     * authenticated user. Optionally the results can be 
+     * limited or paged using the parameters $start and $limit
+     *
+     * @link  /api/party[?start={start}][&limit={limit}] 
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  int $start  The start page (Optional).
+     * @param  int $limit  The limit per page (Optional).
+     *
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function getList($start = null, $limit = null)
+    {
+        $request = array();
+        
+        if (!is_null($start)) {
+            $request['start'] = $start;
+        }
+        
+        if (!is_null($limit)) {
+            $request['limit'] = $limit;
+        }
+        
+        $request = http_build_query($request);
+        $response = $this->sendRequest('?' . $request);
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Search in all organization and parties
+     *
+     * Return all people & organisations which match the search term. 
+     * The search term will be matched against name, telephone number 
+     * and exact match on searchable custom fields. Optionally the results 
+     * can be limited or paged using the parameters limit and start. 
+     *
+     * @link  /api/party?q={term}[&start={start}][&limit={limit}] 
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  string $term  The term to search for in the parties/orgs.
+     * @param  int $start  The start page (Optional).
+     * @param  int $limit  The limit per page (Optional).
+     *
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function search($term, $start = null, $limit = null)
+    {
+        $request = array();
+        
+        $request['q'] = $term;
+        
+        if (!is_null($start)) {
+            $request['start'] = $start;
+        }
+        
+        if (!is_null($limit)) {
+            $request['limit'] = $limit;
+        }
+        
+        $request = http_build_query($request);
+        $response = $this->sendRequest('?' . $request);
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Get any organizations/parties
+     *
+     * This method is used to fetch by tag, email address, lastModified
+     * with the usual start and limit parameters to limit the output.
+     *
+     * If you are fetching by lastmodified, you must make sure that the input
+     * is formatted as ISO dates (IE: Midnight June 31, 2009 GMT would be 20090631T000000)
+     * or more explicitly YYYYMMDDTHHMMSS
+     * 
+     * Example:
+     *      try {
+     *          $capsule = new Services_Capsule($appName, $token);
+     *          $results = $capsule->party->getAny(array(
+     *              'lastmodified' => '20090631T000000',
+     *              'start'        => '100',
+     *              'limit'        => '25'
+     *          ));
+     *      } catch (Services_Capsule_RuntimeException $re) {
+     *          print_r($re); die();
+     *      }
+     *
+     *      print_r($results); // An object
+     *
+     * @link   /api/party?lastmodified={YYYYMMDDTHHMMSS}[&start={start}][&limit={limit}]
+     * @link   /api/party?email={email address}[&start={start}][&limit={limit}]
+     * @link   /api/party?tag={tag}[&start={start}][&limit={limit}]
+     *
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  array        $params An array of parameters to search for.
+     * @return stdClass     A stdClass object containing the information from
+     *                      the json-decoded response from the server.
+     */
+    public function getAny(array $params)
+    {        
+        $request  = http_build_query($params);
+        $response = $this->sendRequest('?' . $request);
+
+        return $this->parseResponse($response);
+    }
+    
+    /**
+     * Delete a party
+     *
+     * Delete the party passed to the method.
+     *
+     * @link /api/party/{party-id}
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  double       $partyId       The party to delete.
+     *
+     * @return mixed bool|stdClass         A stdClass object containing the information from
+     *                                     the json-decoded response from the server.
+     */
+     public function delete($partyId)
+     {
+         $url = '/' . (double)$partyId;
+         $response = $this->sendRequest($url, HTTP_Request2::METHOD_DELETE);
+
+         return $this->parseResponse($response);
+     }
+}
+/**
+ * +-----------------------------------------------------------------------+
+ * | Copyright (c) 2010, David Coallier & echolibre ltd                    |
+ * | All rights reserved.                                                  |
+ * |                                                                       |
+ * | Redistribution and use in source and binary forms, with or without    |
+ * | modification, are permitted provided that the following conditions    |
+ * | are met:                                                              |
+ * |                                                                       |
+ * | o Redistributions of source code must retain the above copyright      |
+ * |   notice, this list of conditions and the following disclaimer.       |
+ * | o Redistributions in binary form must reproduce the above copyright   |
+ * |   notice, this list of conditions and the following disclaimer in the |
+ * |   documentation and/or other materials provided with the distribution.|
+ * | o The names of the authors may not be used to endorse or promote      |
+ * |   products derived from this software without specific prior written  |
+ * |   permission.                                                         |
+ * |                                                                       |
+ * | THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS   |
+ * | "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     |
+ * | LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR |
+ * | A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT  |
+ * | OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, |
+ * | SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT      |
+ * | LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, |
+ * | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY |
+ * | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   |
+ * | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE |
+ * | OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  |
+ * |                                                                       |
+ * +-----------------------------------------------------------------------+
+ * | Author: David Coallier <david@echolibre.com>                          |
+ * +-----------------------------------------------------------------------+
+ *
+ * PHP version 5
+ *
+ * @category  Services
+ * @package   Services_Capsule
+ * @author    David Coallier <david@echolibre.com>
+ * @copyright echolibre ltd. 2009-2010
+ * @license   http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link      http://github.com/davidcoallier/Services_Capsule
+ * @version   GIT: $Id$
+ */
+
+/**
+ * Services_Capsule
+ *
+ * @category Services
+ * @package  Services_Capsule
+ * @author   David Coallier <david@echolibre.com>
+ * @license  http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @link     http://github.com/davidcoallier/Services_Capsule
+ * @version  Release: @package_version@
+ */
+abstract class Services_Capsule_Common
+{
+    /**
+     * Sub section. History of an Opportunity for example
+     * is Services_Capsule_Opportunity_History
+     *
+     * @var string The sub section mame
+     */
+    protected $subSections = array();
+    
+    /**
+     * The name of the module to call
+     *
+     * @var string The module name to call
+     */
+    protected $moduleName;
+    
+    /**
+     * The identification token
+     * 
+     * @link https://sample.capsulecrm.com/user/api
+     * @var string The web service identification token
+     */
+    protected $token;
+    
+    /**
+     * The application name
+     *
+     * @var string The actual app name of your company
+     */
+    protected $appName;
+    
+    /**
+     * An object of the HTTP_Request2 Client
+     *
+     * @var HTTP_Request2 An HTTP_Request2 instance.
+     */
+    protected $client;
+    
+    /**
+     * The capsule webservice endpoint in a sprintf configurable url. 
+     *
+     * @see $this->appName 
+     * @var string The web service endpoint.
+     */
+    protected $endpoint = 'https://%s.capsulecrm.com/api/%s';
+    
+    /**
+     * Magical Getter
+     *
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param string $sub Items, Meetings, Notes, Projects or User.
+     *
+     * @return mixed Services_Capsule_*
+     */
+    public function __get($section)
+    {
+        $section = ucwords(strtolower($section));
+        
+        switch ($section) {
+            case 'Customfield':
+            case 'History':
+            case 'Milestone':
+            case 'Opportunity':
+            case 'Tag':
+				case 'Task':
+            case 'Party':
+            
+            $currentModule = ucfirst(strtolower($this->moduleName));
+
+            if (!isset($this->subSections[$section])) {
+                $classname = 'Services_Capsule_'. $currentModule . '_' .$section;
+
+                if (!class_exists($classname)) {
+                    $filename  = str_replace('_', '/', $classname) . '.php';
+                    
+                    if (!(include $filename)) {
+                        throw new Services_Capsule_RuntimeException(
+                            'File ' . $filename . ' does not exist.'
+                        );
+                    }
+                    
+                }
+
+                $this->subSections[$section] = new $classname;
+            }
+            
+            $this->subSections[$section]
+                ->setToken($this->token)
+                ->setAppName($this->appName)
+                ->setModuleName(strtolower($currentModule));
+
+            return $this->subSections[$section];
+            break;
+
+        default:
+            throw new Services_Capsule_RuntimeException(
+                'Section '. $section .' is not a valid API call. If you believe this ' . 
+                'is wrong please report a bug on http://pear.php.net/Services_Capsule'
+            );
+        }
+    }
+    
+    /**
+     * Set the identification token
+     * 
+     * This method is used to set the identification token
+     * that you can gather from the capsule website.
+     *
+     * @link http://capsulecrm.com/help/page/api_gettingstarted
+     *
+     * @param  string $token The web service token.
+     * @return object $this
+     */
+    public function setToken($token)
+    {
+        $this->token = $token;
+        return $this;
+    }
+    
+    /**
+     * Set the application name
+     *
+     * This method is used to set the first part of the
+     * $this->endpoint variable (%s). 
+     *
+     * @param  string $appName  The name of your application (company name).
+     * @return object $this
+     */
+    public function setAppName($appName)
+    {
+        $this->appName = $appName;
+        return $this;
+    }
+    
+    /**
+     * Set the module naem
+     * 
+     * This method is used to set the module name that the
+     * child will be invoking.
+     *
+     * @param  string $moduleName The module name to use.
+     * @return object $this
+     */
+    public function setModuleName($moduleName)
+    {
+        $this->moduleName = $moduleName;
+        return $this;
+    }
+    
+    /**
+     * Send the request to the capsule web service
+     *
+     * This method is used to send all the requests to the capsule web service.
+     *
+     * @throws Services_Capsule_UnexpectedValueException
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @uses   HTTP_Request2
+     * 
+     * @param  string $url     The URL to request.
+     * @param  string $method  The HTTP Method (Use HTTP_Request2::METHOD_*)
+     *                         Default is HTTP_Request2::METHOD_GET (GET).
+     * @param  string $data    The data to pass to the body. Null by default.
+     */
+    protected function sendRequest($url, $method = HTTP_Request2::METHOD_GET, $data = null)
+    {
+        if (!isset($this->appName)) {
+            throw new Services_Capsule_UnexpectedValueException(
+                'Please set an app name.'
+            );
+        }
+        
+        if (!isset($this->client) || !($this->client instanceof HTTP_Request2)) {
+            $this->client = new HTTP_Request2();
+            $this->client->setAdapter('curl');
+            // Modify the security parameters for this connection because for some odd reason
+            // it did not function in the previous case.
+            $z = $this->client->getConfig();
+            $z['ssl_verify_peer'] = false;
+            $z['ssl_verify_host'] = false;
+            $this->client->setConfig($z);
+        }
+        
+        $finalUrl = sprintf($this->endpoint, $this->appName, $this->moduleName);
+        $finalUrl = $finalUrl . $url;
+
+  		  capsule_log_debug(" $finalUrl, $method $data", "capsule_service_requests");
+
+		  $this->client
+             ->setHeader('Content-Type: application/json')
+             ->setHeader('Accept: application/json')
+             ->setAuth($this->token, 'x')
+             ->setMethod($method)
+             ->setUrl($finalUrl);
+             
+        if (!is_null($data)) {
+            $this->client->setBody($data);
+        }
+		  
+  		  //capsule_log_debug(array("url"=>$this->client->getUrl(), "HTTP_Request2_Client"=>array("body"=>$this->client->getBody(), "Header"=>$this->client->getHeaders())), "capsule_service");
+  		  //capsule_log_debug("url".$this->client->getUrl()." body".$this->client->getBody(), "capsule_service");
+  		  capsule_log_debug($this->client, "capsule_service");
+        
+        try {
+            $response = $this->client->send();
+        } catch (HTTP_Request2_Exception $e) {
+            throw new Services_Capsule_RuntimeException($e);
+        }
+        
+        return $response;
+    }
+    
+    /**
+     * Parse the response
+     *
+     * This method is used to parse the response that is returned from
+     * the request that was made in $this->sendRequest().
+     *
+     * @throws Services_Capsule_RuntimeException
+     *
+     * @param  HTTP_Request2_Response $response  The response from the webservice.
+     * @return mixed               stdClass|bool A stdClass object of the 
+     *                                           json-decode'ed body or true if
+     *                                           the code is 201 (created)
+     */
+    protected function parseResponse(HTTP_Request2_Response $response)
+    {
+        $body = $response->getBody();
+        $return = json_decode($body);
+		  capsule_log_debug($response, "capsule_service");
+  		  capsule_log_debug(" response body".$response->getBody(), "capsule_service_requests");
+        
+        if (!($return instanceof stdClass)) {
+            if ($response->getStatus() == 201 || $response->getStatus() == 200) {
+				$header = $response->getHeader();
+				if(isset($header['location']))
+					foreach(array_reverse(preg_split("/\//", $header['location'])) as $part){
+						if($part!="" && is_numeric($part))
+							return $part;						
+					}
+                return true;
+            }
+            
+            throw new Services_Capsule_RuntimeException(
+                'Invalid response with no valid json body'
+            );
+        }
+        
+        return $return;
+    }
+}

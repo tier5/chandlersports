@@ -1,0 +1,205 @@
+/**************************************************/
+/** CUSTOM STYLING FOR THE WORDPRESS CUSTOMIZER ***/
+/**************************************************/
+
+   
+/* DESCRIPTION */
+#customize-controls .customize-control-description {
+    background-color: #fafafa;
+    border: 1px solid #efefef;
+    color: #7a7a7a;
+}
+
+#customize-controls .description {
+    border-radius: 5px;
+    padding: 10px;
+    color: #555;
+     font-size: 13px;
+    font-style: italic;
+}
+
+
+
+.customize-section-description-container .description {
+	 background-color: #fafafa;
+    border: 1px solid #efefef;
+    color: red !important;
+	
+}
+
+
+
+
+    
+/* Radio  */ 
+
+#customize-control-layout_columns {
+	margin-bottom: 50px;
+}
+#customize-control-layout_columns label,
+#customize-control-header_single_page label
+
+ {
+    width: 50%;
+    float: left;
+    height: 115px;
+    position: relative;
+    padding: 0px;
+    margin: 20px 0px;
+}
+
+#customize-control-layout_columns label:before,
+#customize-control-header_single_page label:before
+
+ {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 150px;
+    position: absolute;
+    margin-bottom: 10px;
+}
+ 
+
+#customize-control-layout_columns label input[type="radio"],
+#customize-control-header_single_page label input[type="radio"]
+
+ {
+   margin-top: 115px;
+    margin-left: 45px;
+} 
+  
+ 
+  
+/* Images */
+
+#customize-control-layout_columns label:nth-of-type(2):before
+
+{
+  background: url(img/home2.jpg) 0 0 no-repeat;
+}
+
+#customize-control-layout_columns label:nth-of-type(3):before
+{
+  background: url(img/singlepostlogo.jpg) 0 0 no-repeat;
+}
+
+
+
+#customize-control-layout_columns label:nth-of-type(1),
+#customize-control-header_single_page label:nth-of-type(1)
+
+{
+  background: url(img/home1.jpg) 0 0 no-repeat;
+}
+
+#customize-control-header_single_page label:nth-of-type(2):before
+{
+  background: url(img/singlepostlogo.jpg) 0 0 no-repeat;
+}
+
+/* Favivon */
+
+
+#customize-control-favicon img {
+	width: 30px;
+}
+
+
+
+  
+
+/* WooCommerce */
+
+
+#customize-control-woo_shop_layout,
+#customize-control-woo_related_prod_layout {
+	margin-bottom: 0px;
+}
+#customize-control-woo_shop_layout label {
+    width: 130px;
+    float: left;
+    height: 143px;
+    position: relative;
+    padding: 0px;
+    margin: 15px 0px 0px 0px;
+}
+
+#customize-control-woo_shop_layout label:before,
+#customize-control-woo_related_prod_layout label:before
+ {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    margin-bottom: 10px;
+}
+
+
+#customize-control-woo_shop_layout label input[type="radio"]
+{
+    margin-top: 118px;
+    margin-left: 49px;
+} 
+
+
+
+
+/* Shop Layout */
+
+#customize-control-woo_shop_layout label:nth-of-type(1):before
+{
+  background: url(img/3-columns-shop.jpg) 0 0 no-repeat;
+}
+
+#customize-control-woo_shop_layout label:nth-of-type(2):before
+{
+  background: url(img/4-columns-shop.jpg) 0 0 no-repeat;
+}
+
+
+
+/* Related Product Layout */
+#customize-control-woo_related_prod_layout {
+	margin-bottom: 20px;
+}
+#customize-control-woo_related_prod_layout label {
+    width: 130px;
+    float: left;
+    height: 100px;
+    position: relative;
+    padding: 0px;
+    margin: 15px 0px;
+}
+ 
+#customize-control-woo_related_prod_layout label input[type="radio"] {
+	margin-top: 92px;
+	margin-left: 49px;
+}
+
+#customize-control-woo_related_prod_layout label:nth-of-type(1):before
+{
+  background: url(img/3-columns-related-post.jpg) 0 0 no-repeat;
+}
+
+#customize-control-woo_related_prod_layout label:nth-of-type(2):before
+{
+  background: url(img/4-columns-related-post.jpg) 0 0 no-repeat;
+}
+
+
+
+
+
+#customize-control-sidebar_link_hover {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #dadada;
+	padding-bottom: 15px;
+}
+
+
+  #customize-control-wid_about_border {
+	border-top: 1px solid #dadada;
+	padding-top: 10px;
+  }

@@ -1,0 +1,2 @@
+<h6><?php __("Enable CapsuleCRM Integration", "gravity-forms-capsulecrm")?></h6>
+<?php __("Check this box to integrate this form with CapsuleCRM. When an user submits the form, the data will be added to CapsuleCRM.", "gravity-forms-capsulecrm");?>

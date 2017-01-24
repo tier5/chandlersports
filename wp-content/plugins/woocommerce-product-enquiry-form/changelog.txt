@@ -1,0 +1,17 @@
+*** Product Enquiry Form Changelog ***
+
+2012.07.12 - version 1.0.4
+ * Global class
+
+2012.01.26 - version 1.0.3
+ * Fix for https admin url
+ * Updated updater
+
+2012.01.26 - version 1.0.2
+ * Added Woo Updater
+
+2011.11.15 - version 1.0.1
+ * Changed textdomain
+ 
+2011.10.06 - version 1.0
+ * First Release

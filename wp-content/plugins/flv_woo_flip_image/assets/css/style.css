@@ -1,0 +1,25 @@
+
+.flv-has-gallery {
+    position: relative;
+}
+.flv-has-gallery .onsale {
+    z-index: 999999;
+}
+
+.flv-has-gallery .flv_second_img {
+   position: absolute;
+    top:0;
+    left:0;
+    opacity:0;
+}
+
+.flv_show{
+	position:absolute !important;
+	opacity:1 !important;
+}
+.flv_hide{
+	opacity:0 !important;
+}
+.pr_tit span.price{display:none;}
+.saleup .flv_second_img,.finally-change-btn .flv_second_img{display:none;}
+.flv_second_img{height:180px;}

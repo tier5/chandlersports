@@ -1,0 +1,434 @@
+ - HTTP_Request2 Object
+(
+    [observers:protected] => Array
+        (
+        )
+
+    [url:protected] => Net_URL2 Object
+        (
+            [_options:Net_URL2:private] => Array
+                (
+                    [strict] => 1
+                    [use_brackets] => 1
+                    [encode_keys] => 1
+                    [input_separator] => &
+                    [output_separator] => &
+                )
+
+            [_scheme:Net_URL2:private] => https
+            [_userinfo:Net_URL2:private] => 
+            [_host:Net_URL2:private] => chandlersports.capsulecrm.com
+            [_port:Net_URL2:private] => 
+            [_path:Net_URL2:private] => /api/party
+            [_query:Net_URL2:private] => limit=1
+            [_fragment:Net_URL2:private] => 
+        )
+
+    [method:protected] => GET
+    [auth:protected] => Array
+        (
+            [user] => 6a15e7d4-8416-402d-87bb-c86ee73171ab
+            [password] => x
+            [scheme] => basic
+        )
+
+    [headers:protected] => Array
+        (
+            [user-agent] => HTTP_Request2/2.0.0 (http://pear.php.net/package/http_request2) PHP/5.3.27
+            [content-type] => application/json
+            [accept] => application/json
+        )
+
+    [config:protected] => Array
+        (
+            [adapter] => HTTP_Request2_Adapter_Socket
+            [connect_timeout] => 10
+            [timeout] => 0
+            [use_brackets] => 1
+            [protocol_version] => 1.1
+            [buffer_size] => 16384
+            [store_body] => 1
+            [proxy_host] => 
+            [proxy_port] => 
+            [proxy_user] => 
+            [proxy_password] => 
+            [proxy_auth_scheme] => basic
+            [ssl_verify_peer] => 
+            [ssl_verify_host] => 
+            [ssl_cafile] => 
+            [ssl_capath] => 
+            [ssl_local_cert] => 
+            [ssl_passphrase] => 
+            [digest_compat_ie] => 
+            [follow_redirects] => 
+            [max_redirects] => 5
+            [strict_redirects] => 
+        )
+
+    [lastEvent:protected] => Array
+        (
+            [name] => start
+            [data] => 
+        )
+
+    [body:protected] => 
+    [postParams:protected] => Array
+        (
+        )
+
+    [uploads:protected] => Array
+        (
+        )
+
+    [adapter:protected] => HTTP_Request2_Adapter_Curl Object
+        (
+            [response:protected] => 
+            [eventSentHeaders:protected] => 
+            [eventReceivedHeaders:protected] => 
+            [position:protected] => 0
+            [lastInfo:protected] => 
+            [request:protected] => 
+            [requestBody:protected] => 
+            [contentLength:protected] => 
+        )
+
+    [cookieJar:protected] => 
+)
+
+ - HTTP_Request2_Response Object
+(
+    [version:protected] => 1.1
+    [code:protected] => 401
+    [reasonPhrase:protected] => Unauthorized
+    [effectiveUrl:protected] => https://chandlersports.capsulecrm.com/api/party?limit=1
+    [headers:protected] => Array
+        (
+            [date] => Tue, 11 Mar 2014 09:27:18 GMT
+            [server] => Apache
+            [www-authenticate] => Basic realm="seamApp"
+            [vary] => Accept-Encoding
+            [content-encoding] => gzip
+            [content-length] => 450
+            [content-type] => text/html;charset=ISO-8859-1
+        )
+
+    [cookies:protected] => Array
+        (
+            [0] => Array
+                (
+                    [expires] => Thu, 01-Jan-1970 00:00:10 GMT
+                    [domain] => 
+                    [path] => /
+                    [secure] => 
+                    [name] => JSESSIONID
+                    [value] => 
+                )
+
+        )
+
+    [lastHeader:protected] => content-type
+    [body:protected] => <!DOCTYPE html>
+<html>
+<head>
+    <title>You must be logged in to access this page (401)</title>
+    <style type="text/css">
+        body { background-color: #333; color: #666; text-align: center; font-family: "Helvetica Neue", arial, sans-serif; }
+        div.dialog { width: 450px; padding: 2em 4em; margin: 6em auto 0 auto; background-color: #FFF; border-radius: 6px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);}
+        h1 { font-size: 100%; color: #000; line-height: 1.5em; }
+    </style>
+</head>
+
+<body>
+<div class="dialog">
+    <h1>You must be logged in to access this page.</h1>
+    <p>The page you have requested requires authentication.</p>
+    <p><a href="/">Return to home page</a></p>
+</div>
+</body>
+</html>
+
+    [bodyEncoded:protected] => 
+)
+
+ - HTTP_Request2 Object
+(
+    [observers:protected] => Array
+        (
+        )
+
+    [url:protected] => Net_URL2 Object
+        (
+            [_options:Net_URL2:private] => Array
+                (
+                    [strict] => 1
+                    [use_brackets] => 1
+                    [encode_keys] => 1
+                    [input_separator] => &
+                    [output_separator] => &
+                )
+
+            [_scheme:Net_URL2:private] => https
+            [_userinfo:Net_URL2:private] => 
+            [_host:Net_URL2:private] => chandlersports.capsulecrm.com
+            [_port:Net_URL2:private] => 
+            [_path:Net_URL2:private] => /api/party
+            [_query:Net_URL2:private] => limit=1
+            [_fragment:Net_URL2:private] => 
+        )
+
+    [method:protected] => GET
+    [auth:protected] => Array
+        (
+            [user] => 6a15e7d4-8416-402d-87bb-c86ee73171ab
+            [password] => x
+            [scheme] => basic
+        )
+
+    [headers:protected] => Array
+        (
+            [user-agent] => HTTP_Request2/2.0.0 (http://pear.php.net/package/http_request2) PHP/5.3.27
+            [content-type] => application/json
+            [accept] => application/json
+        )
+
+    [config:protected] => Array
+        (
+            [adapter] => HTTP_Request2_Adapter_Socket
+            [connect_timeout] => 10
+            [timeout] => 0
+            [use_brackets] => 1
+            [protocol_version] => 1.1
+            [buffer_size] => 16384
+            [store_body] => 1
+            [proxy_host] => 
+            [proxy_port] => 
+            [proxy_user] => 
+            [proxy_password] => 
+            [proxy_auth_scheme] => basic
+            [ssl_verify_peer] => 
+            [ssl_verify_host] => 
+            [ssl_cafile] => 
+            [ssl_capath] => 
+            [ssl_local_cert] => 
+            [ssl_passphrase] => 
+            [digest_compat_ie] => 
+            [follow_redirects] => 
+            [max_redirects] => 5
+            [strict_redirects] => 
+        )
+
+    [lastEvent:protected] => Array
+        (
+            [name] => start
+            [data] => 
+        )
+
+    [body:protected] => 
+    [postParams:protected] => Array
+        (
+        )
+
+    [uploads:protected] => Array
+        (
+        )
+
+    [adapter:protected] => HTTP_Request2_Adapter_Curl Object
+        (
+            [response:protected] => 
+            [eventSentHeaders:protected] => 
+            [eventReceivedHeaders:protected] => 
+            [position:protected] => 0
+            [lastInfo:protected] => 
+            [request:protected] => 
+            [requestBody:protected] => 
+            [contentLength:protected] => 
+        )
+
+    [cookieJar:protected] => 
+)
+
+ - HTTP_Request2_Response Object
+(
+    [version:protected] => 1.1
+    [code:protected] => 401
+    [reasonPhrase:protected] => Unauthorized
+    [effectiveUrl:protected] => https://chandlersports.capsulecrm.com/api/party?limit=1
+    [headers:protected] => Array
+        (
+            [date] => Tue, 11 Mar 2014 09:27:31 GMT
+            [server] => Apache
+            [www-authenticate] => Basic realm="seamApp"
+            [vary] => Accept-Encoding
+            [content-encoding] => gzip
+            [content-length] => 450
+            [content-type] => text/html;charset=ISO-8859-1
+        )
+
+    [cookies:protected] => Array
+        (
+            [0] => Array
+                (
+                    [expires] => Thu, 01-Jan-1970 00:00:10 GMT
+                    [domain] => 
+                    [path] => /
+                    [secure] => 
+                    [name] => JSESSIONID
+                    [value] => 
+                )
+
+        )
+
+    [lastHeader:protected] => content-type
+    [body:protected] => <!DOCTYPE html>
+<html>
+<head>
+    <title>You must be logged in to access this page (401)</title>
+    <style type="text/css">
+        body { background-color: #333; color: #666; text-align: center; font-family: "Helvetica Neue", arial, sans-serif; }
+        div.dialog { width: 450px; padding: 2em 4em; margin: 6em auto 0 auto; background-color: #FFF; border-radius: 6px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);}
+        h1 { font-size: 100%; color: #000; line-height: 1.5em; }
+    </style>
+</head>
+
+<body>
+<div class="dialog">
+    <h1>You must be logged in to access this page.</h1>
+    <p>The page you have requested requires authentication.</p>
+    <p><a href="/">Return to home page</a></p>
+</div>
+</body>
+</html>
+
+    [bodyEncoded:protected] => 
+)
+
+ - HTTP_Request2 Object
+(
+    [observers:protected] => Array
+        (
+        )
+
+    [url:protected] => Net_URL2 Object
+        (
+            [_options:Net_URL2:private] => Array
+                (
+                    [strict] => 1
+                    [use_brackets] => 1
+                    [encode_keys] => 1
+                    [input_separator] => &
+                    [output_separator] => &
+                )
+
+            [_scheme:Net_URL2:private] => https
+            [_userinfo:Net_URL2:private] => 
+            [_host:Net_URL2:private] => chandlersports.capsulecrm.com
+            [_port:Net_URL2:private] => 
+            [_path:Net_URL2:private] => /api/party
+            [_query:Net_URL2:private] => limit=1
+            [_fragment:Net_URL2:private] => 
+        )
+
+    [method:protected] => GET
+    [auth:protected] => Array
+        (
+            [user] => 8d30308b6ad05cb65fc86c744a6a8d8c
+            [password] => x
+            [scheme] => basic
+        )
+
+    [headers:protected] => Array
+        (
+            [user-agent] => HTTP_Request2/2.0.0 (http://pear.php.net/package/http_request2) PHP/5.3.27
+            [content-type] => application/json
+            [accept] => application/json
+        )
+
+    [config:protected] => Array
+        (
+            [adapter] => HTTP_Request2_Adapter_Socket
+            [connect_timeout] => 10
+            [timeout] => 0
+            [use_brackets] => 1
+            [protocol_version] => 1.1
+            [buffer_size] => 16384
+            [store_body] => 1
+            [proxy_host] => 
+            [proxy_port] => 
+            [proxy_user] => 
+            [proxy_password] => 
+            [proxy_auth_scheme] => basic
+            [ssl_verify_peer] => 
+            [ssl_verify_host] => 
+            [ssl_cafile] => 
+            [ssl_capath] => 
+            [ssl_local_cert] => 
+            [ssl_passphrase] => 
+            [digest_compat_ie] => 
+            [follow_redirects] => 
+            [max_redirects] => 5
+            [strict_redirects] => 
+        )
+
+    [lastEvent:protected] => Array
+        (
+            [name] => start
+            [data] => 
+        )
+
+    [body:protected] => 
+    [postParams:protected] => Array
+        (
+        )
+
+    [uploads:protected] => Array
+        (
+        )
+
+    [adapter:protected] => HTTP_Request2_Adapter_Curl Object
+        (
+            [response:protected] => 
+            [eventSentHeaders:protected] => 
+            [eventReceivedHeaders:protected] => 
+            [position:protected] => 0
+            [lastInfo:protected] => 
+            [request:protected] => 
+            [requestBody:protected] => 
+            [contentLength:protected] => 
+        )
+
+    [cookieJar:protected] => 
+)
+
+ - HTTP_Request2_Response Object
+(
+    [version:protected] => 1.1
+    [code:protected] => 200
+    [reasonPhrase:protected] => OK
+    [effectiveUrl:protected] => https://chandlersports.capsulecrm.com/api/party?limit=1
+    [headers:protected] => Array
+        (
+            [date] => Tue, 11 Mar 2014 09:28:33 GMT
+            [server] => Apache
+            [transfer-encoding] => chunked
+            [content-type] => application/json
+        )
+
+    [cookies:protected] => Array
+        (
+            [0] => Array
+                (
+                    [expires] => Thu, 01-Jan-1970 00:00:10 GMT
+                    [domain] => 
+                    [path] => /
+                    [secure] => 
+                    [name] => JSESSIONID
+                    [value] => 
+                )
+
+        )
+
+    [lastHeader:protected] => content-type
+    [body:protected] => {"parties":{"@size":"1","organisation":{"id":"41493304","contacts":"","pictureURL":"https:\/\/d365sd3k9yw37.cloudfront.net\/a\/1391523488\/theme\/default\/images\/org_avatar_70.png","createdOn":"2013-05-24T12:01:53Z","updatedOn":"2013-05-24T12:01:53Z","name":"bricks are us"}}}
+    [bodyEncoded:protected] => 
+)
+

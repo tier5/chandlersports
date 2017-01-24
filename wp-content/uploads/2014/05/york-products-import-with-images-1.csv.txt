@@ -1,0 +1,2061 @@
+post_title,post_name,description,sku,images,post_parent,comment_status,downloadable,virtual,post_status,visibility,stock_status,backorders,manage_stock,meta:brand,meta:ean_number,regular_price,sale_price,weight,tax_status,gpf:brand,gpf:mpn
+York Black Vinyl Aerobic Set-No Bar,york-black-vinyl-aerobic-set-no-bar,"Durable Vinyl Disk Casing
+Easy Screw On End Collars
+35lb Set comprises of 2 x 2.5lb,2 x 5lb, and 2 x 10lb weight discs.
+Suited to match with 1” Diameter, 54’’ length Chrome plated steel Aerobic Bar (York code 1174)
+not included.",1170,1170-1174-vinyl-aerobic-set-bar.jpg | 1170-black-vinyl-aerobic-set.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961011708,31,,18,taxable,York Fitness,14961011708
+"York 54"" Chrome Aerobic Bar",york-54-inch-chrome-aerobic-bar,"The York Aerobic bar is 54” (137.2cm) long and features fixed inner collars, as well as a knurled texture for better hand positioning. This hollow, chrome plated steel bar weighs 1.5kg (3.3lbs) and has a diameter of 1” (2.5cm). The maximum loading capacity of the bar is 55kg (121.2lbs). Chrome plated steel bar
+Hollow
+Knurled texture
+Fixed inner collars
+Length: 54” (137.2cm)
+Diameter: 1” (2.5cm)
+Maximum Loading Capacity: 55kg (121.2lbs)
+Weight: 1.5kg (3.3lbs)",1174,1174-54-chrome-aerobic-bar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961011746,16.99,,1.5,taxable,York Fitness,14961011746
+York 10kg Vinyl Fitbell Set - in a case,york-10kg-vinyl-fitbell-set-in-a-case,"Contains 2 x 1kg purple fitbells, 2 x 1.5kg green fitbells, 2 x 2.5kg blue fitbells and a full colour exercise wallchart.",1678,1678-02-fitbell-set-in-a-case.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961016789,40,,11.5,taxable,York Fitness,14961016789
+"York 4 x 5kg Black Cast Iron 1"" Plates",york-4-x-5kg black-cast-iron-1-inch-plates,"Four weight plates
+Hole diameter: 1” (2.5cm)
+Weight symbol engraved on the side
+Weight: 5kg (11lbs)",2413,2413-4-of-5kg-black-cast-iron-1-plates.jpg | 2413-4-of-5kg-cast-iron-plates.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961024135,44.99,,20.5,taxable,York Fitness,14961024135
+"York 4 x 7.5kg Black Cast Iron 1"" Plates",york-4-x-75kg black-cast-iron-1-inch-plates,"Four weight plates
+Hole diameter: 1” (2.5cm)
+Weight symbol engraved on the side
+Weight: 7.5kg (16.5lbs)
+Bar not included",2414,2414-4-of-7pt5kg-black-cast-iron-1-plates.jpg | 2414-4-of-7pt5kg-black-cast-iron-1-plates-2.jpg | 2414-4-of-7pt5kg-black-cast-iron-1-plates-3.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961024142,67.99,,31,taxable,York Fitness,14961024142
+"York 2 x 10kg Black Cast Iron 1"" Plates",york-pair-10kg black-cast-iron-1-inch-plates,"Pair of weight plates
+Hole diameter: 1” (2.5cm)
+Weight: 10kg (22lbs)",2415,2415-2-of-10kg-black-cast-iron-1-plates.jpg | 2415-2-of-10kg-cast-iron-plates.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961024159,44.99,,20.5,taxable,York Fitness,14961024159
+"York 1 x 15kg Black Cast Iron 1"" Plates",york-15kg black-cast-iron-1-inch-plates,"Single weight plate
+Hole diameter: 1” (2.5cm)
+Weight: 15kg (33lbs)
+Bar not included",2416,2416-1-of-15kg-black-cast-iron-1-plate.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961024166,34,,15.5,taxable,York Fitness,14961024166
+"York 1 x 20kg Black Cast Iron 1"" Plates",york-20kg black-cast-iron-1-inch-plates,"Single weight plate
+Hole diameter: 1” (2.5cm)
+Weight: 20kg (44lbs)
+Bar not included",2417,2417-1-of-20kg-black-cast-iron-1-plate.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961024173,44.99,,20.5,taxable,York Fitness,14961024173
+"York 1 x 25kg Black Cast Iron 1"" Plates",york-25kg black-cast-iron-1-inch-plates,"Traditional design
+1 x 25 kg plate
+Curved edge
+Solid build
+Machine bored 1 inch diameter central bar hole
+Matt black finish
+Embossed York logo and weight mark
+Bar not included
+York Fitness 1 X 25 Kg Black Cast Iron 1 Inch Plate",2418,2418-1-of-25kg-black-cast-iron-1-plate.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961024180,55,,25.5,taxable,York Fitness,14961024180
+"York 8 x 1.25kg Black Cast Iron 1"" Plates",york-8-x-125kg black-cast-iron-1-inch-plates,"Eight weight plates
+Hole diameter: 1” (2.5cm)
+Weight symbol engraved on the side
+Weight: 1.25kg (2.7lbs)
+Bar not included",2419,2419-8-of-1pt25kg-black-cast-iron-1-plates.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961024197,22.99,,10.5,taxable,York Fitness,14961024197
+"York 4 x 2.5kg Black Cast Iron 1"" Plates",york-4-x-25kg black-cast-iron-1-inch-plates,"Four weight plates
+Hole diameter: 1” (2.5cm)
+Weight symbol engraved on the side
+Weight: 2.5kg (5.5lbs)",2420,2420-4-of-2pt5kg-black-cast-iron-1-plates.jpg | 2420-4x2-5kgcldiscs-shot1.jpg | 2420-4x2-5kgcldiscs-shot2.jpg | 2420-4x2-5kgcldiscs-shot3.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961024203,22.99,,10.5,taxable,York Fitness,14961024203
+York 20kg Black Cast Iron DB Set in a case,york-20kg-black-cast-irondumbbellset-in-a-case,"Types of materials used:Metal and plastic
+4 x 0.5kg discs
+4 x 1.25kg discs
+4 x 2.5kg discs
+4 x spinlock collars
+2 x 14 chrome spinlock bars
+Contains full colour exercise wallchart",2429,2429-20kg-ci-set-in-case-dumbells.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961024296,59.99,,22,taxable,York Fitness,14961024296
+York 50kg Black Cast Iron BB/DB Set,york-50kg-black-cast-iron-bbdumbbellset,"6 x 0.5kg Discs
+6 x 1.25kg
+4 x 2.5kg
+4 x 5kg
+6 x Spinlock Collars
+2 x 14"" (35.5cm) Chrome Plated Spinlock Bars
+1 x 60"" (150cm) One Piece Spinlock Bar",2433,2433-48kg-cast-iron-bbdb-set.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961024333,124.99,,51.8,taxable,York Fitness,14961024333
+York 20kg Black Cast Iron DB Set,york-20kg-black-cast-irondumbbellset,"The York 50kg Black Cast Iron BB/DB Set includes the following cast iron plates: 6 x 0.5kg Discs 6 x 1.25kg 4 x 2.5kg 4 x 5kg 67 x Spinlock Collars 2 x 14"" Chrome Plated Spinlock Bars 1 x 60"" One Piece Spinlock Bar. 6 x 0.5kg Discs
+6 x 1.25kg
+4 x 2.5kg
+4 x 5kg
+6 x Spinlock Collars
+2 x 14"" (35.5cm) Chrome Plated Spinlock Bars
+1 x 60"" (150cm) One Piece Spinlock Bar",2434,2434-20kg-db-set.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961024340,55,,21,taxable,York Fitness,14961024340
+York 50kg Black Cast Iron BB/DB Set in a case with wheels,york-50kg-black-cast-iron-bbdumbbellset-in-a-case-with-wheels,"6 x 0.5kg Discs. 6 x 1.25kg
+4 x 2.5kg. 4 x 5kg
+6 x Spinlock Collars
+2 x 14"" (35.5cm) Chrome Plated Spinlock Bars
+1 x 60"" (150cm) One Piece Spinlock Bar",2435,2435-50kg-black-cast-iron-bbdb-set-in-case.jpg | ,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961024357,139.99,,54.5,taxable,York Fitness,14961024357
+York 7ft Chrome Olympic Bar,york-7-foot-chrome-olympic-bar,"7ft olympic bar, chrome plated solid steel construction.  320kg maximum weight limit.",2979,2979-7ft-chrome-olympic-bar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961029796,79.99,,20,taxable,York Fitness,14961029796
+York Olympic Bulldog Collars,york-olympic-bulldog-collars,"Weight (Kg) is 1.1kg (2 collars)
+Fast, easy and secure
+Precision machined
+Made from heavy duty aluminum
+Usage for studio
+Sleeve Diameter is 2"" - Olympic",2988,2988-bulldog-collars.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961029888,40,,1.21,taxable,York Fitness,14961029888
+York 15kg Chrome DB Set in a case,york-15kg-chromedumbbellset-in-a-case,Key Features Set Comprises of: 4 x 0.5kg Discs. 8 x 1.25kg Discs. 4 x Spinlock Collars. 2 x 14in Chrome Spinlock Bars With Plastic Sleeve Covers. Embossed York Logo And The Weight In KG. Packs Away In Sturdy Plastic Case. Contains Full Colour Exercise Wall Chart. Item Weight 17kg.,3241,3241-15kg-chrome-db-set-in-case-case.jpg | 3241-15kg-chrome-db-set-in-case-dbs.jpg | 3241-15kg-chrome-db-set-in-case-open-case.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961032413,56.99,,17,taxable,York Fitness,14961032413
+York Squat Stands,york-squat-stands,"Heavy duty 2 steel construction
+Adjustable height from 110cm to 171cm
+Disc storage post
+150kg Max load (for the pair)
+2 years parts and labour warranty",4025,4025-squat-stands-front.jpg | 4025-squat-stands-front2.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961040258,149.99,,21.8,taxable,York Fitness,14961040258
+York Treadmill Lube and Walk,york-treadmill-lube-and-walk,"Essential maintenance for all treadmills
+Helps keep your treadmill running smoothly
+Easy to use
+Removes dirt
+Prolongs motor life
+Prolongs belt life
+No messy hands
+Includes 22"" (55.9cm) applicator wand, instruction guide and a 6-month supply of lubricant",5520,5520-lube-n-walk.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961055207,16.99,,1,taxable,York Fitness,14961055207
+"York 1"" Spinlock E-Z Curl Bar w/ collars",york-1-inch-spinlock-e-z-curl-bar-with-collars,"Chrome plated bar, solid steel construction. Includes spinlock collars for quick plate changes. 125kg maximum load.",6004,6004-ez-curl-bar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961060041,19.99,,5.1,taxable,York Fitness,14961060041
+"York 1"" Spinlock Close Grip Combi Bar w/collars",york-1-inch-spinlock-close-grip-combi-bar-with-collars,"Ideal for both curl and tricep work, this close grip bar is chrome plated, and of solid steel construction.  Includes spinlock collars for quick plate changes.  125kg maximum load.",6007,6007-close-grip-combi-bar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961060072,22.99,,6,taxable,York Fitness,14961060072
+"York 5' (1,52m) Standard 1"" Spinlock Barbell Bar w/collars",york-5-1-52m-standard-1-inch-spinlock-barbell-bar-with-collars,"Textured bar
+5 ft long
+Solid 1 inch steel construction
+Heavy duty threaded bar ends
+Chrome plated
+Includes 2 spinlock collars
+Maximum loading: 125 kg
+Item weight: 6.3 kg
+York Fitness 5ft Standard 1 Inch Spinlock Bar",6025,6025.jpg | 6025-6038-6053-bars.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961060256,25,,6.3,taxable,York Fitness,14961060256
+"York 5' (152cm) Standard 1"" Barbell Bar",york-5-152cm-standard-1-inch-barbell-bar,"The York 5ft Chrome Knurled Bar Inner Collars is a solid knurled chromium plated bar with fixed inner collars. Chromium plated, solid steel construction
+Fixed inner collar
+Weight: cc-a 7.3kg (16lbs)
+Maximum weight limit: 125kg (275.5lbs)
+Diameter: 1"" (2.5cm)",6026,6026.jpg | 6026-6035-6054-bars.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961060263,22.99,,6.3,taxable,York Fitness,14961060263
+"York 6' (182cm) Standard 1"" Barbell Bar",york-6-182cm-standard-1-inch-barbell-bar,"6ft (180cm) chrome plated bar, of solid steel construction. Includes spinlock collars for quick plate changes and added safety. 125kg maximum load.",6035,6035.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961060355,25,,7.3,taxable,York Fitness,14961060355
+"York 6' (182cm) Standard 1"" Spinlock Barbell Bar w/collars",york-6-182cm-standard-1-inch-spinlock-barbell-bar-with-collars,"Textured bar
+6 ft long
+Solid 1 inch steel construction
+Heavy duty threaded bar ends
+Chrome plated
+Includes 2 spinlock collars
+Maximum loading: 125 kg
+York Fitness 6ft Standard 1 Inch Spinlock Bar",6038,6038.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961060386,26.99,,7.2,taxable,York Fitness,14961060386
+"York 80"" (2m) Standard 1"" Spinlock Barbell Bar w/collars",york-80-inch-2m-standard-1-inch-spinlock-barbell-bar-with-collars,"80inch (2m) chrome plated bar, of solid steel construction.  Includes spinlock collars for quick plate changes and added safety.  150kg maximum load.",6053,6053.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961060539,34.99,,9.3,taxable,York Fitness,14961060539
+"York 80""(2m) Standard 1"" Barbell Bar",york-80-inch-2m-standard-1-inch-barbell-bar,"The York 80"" spinlock beefy bar has a chromium plated, solid steel construction and is supplied with spinlock collars for quick plate changes and added security. It has the diameter of 1"" on the ends and as such is compatible with standard weight plates. Chromium plated, solid steel construction
+Includes spinlock collars
+Compatible with standard weight plates
+Length: 80"" (2m)
+Weight Limit:150kg (331lbs)
+Weight: 10.5kg (23lbs)",6054,6054.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961060546,32.99,,9.1,taxable,York Fitness,14961060546
+"York Standard 1"" Spinlock Collars (Pair)",york-standard-1-inch-spinlock-collars-pair,York Spinlock Collars are sold as pairs and designed to fit standard spin lock weight bars. Priced as pairs,6089,6089-spinlock-collars.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961060898,2.99,,0.4,taxable,York Fitness,14961060898
+"York 18"" Standard 1"" Dumbbell Bar (Single)",york-18-inch-standard-1-inch-dumbbell-bar-single,"The York 18 inch plain dumbbell bar is a solid steel construction dumbbell bar with fixed inner collar. It is suitable for weights with standard holes – 1” (25mm) in diameter. Steel construction
+Chrome-plated
+Fixed inner collars
+Diameter: 1” (25mm) – standard
+Length: 18” (45.7cm)",6111,6111-18-inch-plain-bar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961061116,8.99,,2.2,taxable,York Fitness,14961061116
+"York Standard 1"" Spring Collars (Pair)",york-standard-1-inch-spring-collars-pair,"The York 1” spring collars fit 1” bars and handles. They secure weight plates to increase the safety while weight lifting. The collars feature quick release mechanics for convenience of use. The collars are made of steel with plastic handles. Sold as pairs. Fit 1"" bars and handles
+Secure weight plates on barbell and machines for increased safety while lifting
+Steel with plastic handle
+2 collars per pack",6135,6135-spring-collars.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961061352,2.5,,0.1,taxable,York Fitness,14961061352
+"York Standard 1"" Vinyl Locking Collar (Pair)",york-standard-1-inch-vinyl-locking-collar-pair,Replacement vinyl collars for use with York vinyl dumbell sets,6150,6150-vinyl-locking-db-collar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,2.5,,,taxable,York Fitness,
+York Weightlifting Straps,york-weightlifting-straps,Weightlifting straps improve your grip and protect your hands. Made from 100% cotton.,6316,6316-weightlifting-straps.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961063165,4.99,,0.07,taxable,York Fitness,14961063165
+"York 16"" Standard 1"" Spinlock Dumbbell Bar (Single w/collars)",york-16-inch-standard-1-inch-spinlock-dumboxing-barbell-bar-single-with-collars,"The York 16"" Spinlock Dumbbell Bar - 1"" is a chrome plated bar with a solid steel construction. It includes spinlock collars for quick plate changes and added security.. Length 16""
+Weight 2kg
+",6391,6391-16-inch-spinlock-bar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961063912,7.99,,2,taxable,York Fitness,14961063912
+"York 14"" Standard 1"" Spinlock Dumbbell Bar (Single w/collars)",york-14-inch-standard-1-inch-spinlock-dumboxing-barbell-bar-single-with-collars,"The York 14"" Spinlock Dumbbell Bar - 1"" is a chrome plated bar with a solid steel construction. It includes spinlock collars for quick plate changes and added security..
+Length: 14""
+Sold as single",6393,6393-14-inch-spinlock-bar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961063936,8.99,,1.8,taxable,York Fitness,14961063936
+"York Standard 1"" Solid Tricep Bar",york-standard-1-inch-solid-tricep-bar,"York Fitness 1"" Solid Tricep Bar. Chrome plated, with 1"" solid steel construction. Knurled grip handles for correct hand positioning. 125kg weight limit. Approx. Weight 7kg.",6410,6410-tricep-bar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961064100,32.99,,7,taxable,York Fitness,14961064100
+York Barbell Pad - Heavy Duty,york-barbell-pad-heavy-duty,"The York Heavy Duty Barbell Pad provides perfect protection for the shoulders whilst performing squats. Protection for the shoulders whilst performing squats
+Foam padded
+Wipe clean surface
+Suitable to use with Olympic bars",6498,6498-barbell-pad-heavy-duty.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961064988,13.99,,0.46,taxable,York Fitness,14961064988
+York Barbell Pad,york-barbell-pad,"The York barbell pad provides perfect protection for the shoulders and improved comfort whilst performing squats. It is foam padded and fits 1"" (25.4mm) bars. Cushions neck when performing squats
+Washable PVC surface
+Foam padded
+Fits 1"" (25.4mm) bars
+Weight: 0.1kg (3.5oz)
+Colour: red",6499,6499-barbell-pad.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961064995,10,,0.2,taxable,York Fitness,14961064995
+York Exercise mat,york-exercise-mat,"Padded exercise mat with illustrated exercises printed on it.
+
+Mats size 170cm Length x 60cm Width x 25mm Thick",6523,6523-mat-blue-side.jpg | 6523-mat-close-up-red.jpg | 6523-mat-exerciseguide.jpg | 6523-mat-red-side.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961065237,14.99,,0.8,taxable,York Fitness,14961065237
+York Large Equipment Mat,york-large-equipment-mat,"Durable rubber mat for use under equipment such as treadmills, cycles or multigyms.
+
+Size: 182 x 76cm.",6526,6526-large-equipment-mat.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961065268,29.99,,2.5,taxable,York Fitness,14961065268
+York Ultimate Folding Exercise Mat,york-ultimate-folding-exercise-mat,"The York Ultimate Folding Exercise Mat is a high quality mat that is perfect for floor based workouts such as yoga, pilates, stretching and meditation. It features 2"" thick foam padding for supreme comfort and a tri-fold system for efficient storage. The mat is easy to wipe clean and has two handles for portability making it perfect for exercise classes at the gym. 2"" thick foam padding for a comfortable workout
+Easy wipe clean surface
+Tri-fold system for efficient storage
+Two handles for easy portability
+183 x 61 x 5cm",6539,6539-ultimate-folding-exercise-mat.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961065398,26.99,,3.2,taxable,York Fitness,14961065398
+York Adjustable Lumbar Support & Pad,york-adjustable-lumbar-support-pad,"3mm Thermocel insulating Neoprene material
+Provides warmth, support and compression
+Built in additional support Pad with 20cm wide double wrap lumbar belt for additional adjustment
+Retains body heat
+Stimulates blood flow
+Lightweight comfort fit
+Breathable
+Quick drying
+Easy adjustable one size fits all
+Machine washable
+Waist Size suitable 66cm to 106cm (26"" - 43"")",6635,6635-adjustable-lumbar-support-and-pad.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961066357,16.99,,0.38,taxable,York Fitness,14961066357
+York Adjustable Wrist Support,york-adjustable-wrist-support,"3mm Thermocel insulating Neoprene material
+Provides warmth, support and compression
+Retains body heat
+Stimulates blood flow
+Lightweight comfort fit
+Breathable
+Quick drying
+Easy adjustable one size fits all
+Machine washable
+Wrist size suitable 13cm to 21.5cm
+Item weight 0.06kg",6636,6636-adj-wrist-support-blk-silver.bmp,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961066364,4.99,,0.06,taxable,York Fitness,14961066364
+York Adjustable Ankle Support,york-adjustable-ankle-support,"The York adjustable ankle support provides enhanced lateral support, stability and warmth to ensure safety while exercising. It utilises a 3mm Thermocel insulating Neoprene fabric which is quick-drying, breathable and comfortable. The product is machine-washable.",6637,6637-adj-ankle-support-blk-silver.bmp,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961066371,7.99,,0.07,taxable,York Fitness,14961066371
+York Adjustable Lumbar Support,york-adjustable-lumbar-support,"3mm Thermocel insulating Neoprene material
+Provides warmth, support and compression
+Built in additional support Pad with 20cm wide double wrap lumbar belt for additional adjustment
+Retains body heat
+Stimulates blood flow
+Lightweight comfort fit
+Breathable
+Quick drying
+Easy adjustable one size fits all
+Machine washable
+Waist Size suitable 66cm to 106cm (26"" - 43"")",6638,6638-adjustable-lumbar-support.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961066388,14.99,,0.18,taxable,York Fitness,14961066388
+York Adjustable Knee Support,york-adjustable-knee-support,"This adjustable knee support is ideal for protecting you while you exercise. Designed to fit most sizes and machine washable for easy care, a must have accessory for all serious athletes. Provides compression, support, warmth and protection.
+Full wrap style fits most sizes.
+Easy fit velcro fastening.
+Machine washable.",6639,6639-adj-knee-support.bmp,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961066395,12.99,,0.18,taxable,York Fitness,14961066395
+York Adjustable Stabilised Knee Support,york-adjustable-stabilised-knee-support,"The York adjustable stabilised knee support ensures excellent protection during workouts. Its metal stabilisers provide extra lateral knee support and compression warmth allowing for performing exercises with decreased risk of knee injury. The knee support features 3mm Neoprene with easy to use Velcro fastening and is offered in one size fitting all. 3mm Thermocel insulating Neoprene material
+Provides warmth, support and compression
+Retains body heat
+Stimulates blood flow
+Lightweight
+Comfort fit
+Breathable
+Quick-drying
+Easily adjustable
+One size fits all
+Machine washable
+Weight: 0.27kg (0.6lbs)",6640,6640-adj-stab-knee-support.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961066401,16.99,,0.26,taxable,York Fitness,14961066401
+York Floor Guard w/edge - 4 tiles,york-floor-guard-with-edge-4-tiles,"4 interlocking pieces, which provide exellent protection for floors when used underneath equipment such as treadmills cycles or multigyms. Covers 1.48sq.m / 16 sq.ft",6700,6700-floorguard.jpg | 6700-floor-guards-1.jpg | 6700-floor-guards-2.jpg | 6700-floor-guard-wedge.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961067002,17.99,,2,taxable,York Fitness,14961067002
+York 140kg Cast Iron Olympic Set,york-140kg-cast-iron-olympic-set,"The York 140kg Olympic weight set is a perfect choice for any home gym. This complete Olympic set in stylish Hammertone finish includes a 7ft. Olympic width bar with machine bored 2” holes, 16 assorted premium quality cast iron weight plates for a completely customisable workout and two cast iron spring collars. The weights with spring collars are easy and safe to change allowing you to adjust the set to your current training requirements. This classic weightlifting set with its durable finish is built to look great for years and includes everything you need to have a secure and versatile training.",7377,7377-140kg-olympic-kit-1.jpg | 7377-140kg-olympic-kit-2.jpg | 7377-140kg-olympic-kit-3.jpg | 7377-140kg-olympic-kit-4.jpg | 7377-140kg-olympic-kit-5.jpg | 7377-140kg-olympic-kit-6.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961073775,370,,142,taxable,York Fitness,14961073775
+York 1 x 1.25kg Cast Iron Olympic Plates (Hammertone),york-125kg-cast-iron-olympic-plates-hammertone,"The York 1.25kg Hammertone cast iron Olympic plate is a combination of superb quality and durability thanks to the dark grey Hammertone finish. With its machine bored 2” hole, the plate will fit any York Olympic bar. This plate is sold single. Dark grey Hammertone finish
+2” hole suitable for any York Olympic bar
+Weight: 1.25kg (2.75lbs)
+Sold as single",7378,7378-hammertone-cast-iron-olympic-plate-1pt25kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961073782,4,,1.25,taxable,York Fitness,14961073782
+York 1 x 2.5kg Cast Iron Olympic Plates (Hammertone),york-25kg-cast-iron-olympic-plates-hammertone,"The York 2.5kg Hammertone cast iron Olympic plate offers premium quality in conjunction with added durability. The plate features dark grey Hammertone finish and a machine bored 2"" hole that is compatible with any York Olympic bar. Discs are sold as singles. Premium quality cast iron plates with a machine bored 2"" hole
+Dark grey Hammertone finish for enhanced durability
+Weight: 2.5kg
+Compatible with any York Olympic bar
+Discs are sold as singles",7379,7379-hammertone-cast-iron-olympic-plate-2pt5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961073799,7,,2.5,taxable,York Fitness,14961073799
+York 1 x 5kg Cast Iron Olympic Plates (Hammertone),york-5kg-cast-iron-olympic-plates-hammertone,"The York 5kg Hammertone cast iron Olympic plate offers premium quality in conjunction with added durability. The plate features dark grey Hammertone finish and a machine bored 2"" hole that is compatible with any York Olympic bar. Discs are sold as singles. Premium quality cast iron plates with a machine bored 2"" hole
+Dark grey Hammertone finish for enhanced durability
+Weight: 5kg
+Compatible with any York Olympic bar
+Discs are sold as singles",7380,7380-hammertone-cast-iron-olympic-plate-5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961073805,13,,5,taxable,York Fitness,14961073805
+York 1 x 10kg Cast Iron Olympic Plates (Hammertone),york-10kg-cast-iron-olympic-plates-hammertone,"The York 10kg Hammertone cast iron Olympic plate offers premium quality in conjunction with added durability. The plate features dark grey Hammertone finish and a machine bored 2"" hole that is compatible with any York Olympic bar. Discs are sold as singles. Premium quality cast iron plates with a machine bored 2"" hole
+Dark grey Hammertone finish for enhanced durability
+Weight: 10kg
+Compatible with any York Olympic bar
+Discs are sold as singles",7381,7381-hammertone-cast-iron-olympic-plate-10kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961073812,25,,10,taxable,York Fitness,14961073812
+York 1 x 15kg Cast Iron Olympic Plates (Hammertone),york-15kg-cast-iron-olympic-plates-hammertone,"The York 15kg Hammertone cast iron Olympic plate offers premium quality in conjunction with added durability. The plate features dark grey Hammertone finish and a machine bored 2"" hole that is compatible with any York Olympic bar. Discs are sold as singles. Premium quality cast iron plates with a machine bored 2"" hole
+Dark grey Hammertone finish for enhanced durability
+Weight: 15kg
+Compatible with any York Olympic bar
+Discs are sold as singles",7382,7382-hammertone-cast-iron-olympic-plate-15kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961073829,37,,15,taxable,York Fitness,14961073829
+York 1 x 20kg Cast Iron Olympic Plates (Hammertone),york-20kg-cast-iron-olympic-plates-hammertone,"The York 20kg Hammertone cast iron Olympic plate offers premium quality in conjunction with added durability. The plate features dark grey Hammertone finish and a machine bored 2"" hole that is compatible with any York Olympic bar. Discs are sold as singles. Premium quality cast iron plates with a machine bored 2"" hole
+Dark grey Hammertone finish for enhanced durability
+Weight: 20kg
+Compatible with any York Olympic bar
+Discs are sold as singles",7383,7383-hammertone-cast-iron-olympic-plate-20kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961073836,49.99,,20.5,taxable,York Fitness,14961073836
+York 1 x 25kg Cast Iron Olympic Plates (Hammertone),york-25kg-cast-iron-olympic-plates-hammertone,"The York 25kg Hammertone cast iron Olympic plate offers premium quality in conjunction with added durability. The plate features dark grey Hammertone finish and a machine bored 2"" hole that is compatible with any York Olympic bar. Discs are sold as singles. Premium quality cast iron plates with a machine bored 2"" hole
+Dark grey Hammertone finish for enhanced durability
+Weight: 25kg
+Compatible with any York Olympic bar
+Discs are sold as singles",7384,7384-hammertone-cast-iron-olympic-plate-25kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961073843,62.99,,26,taxable,York Fitness,14961073843
+York Chest Transmitter / Strap - Poly Bag,york-chest-transmitter-strap-poly-bag,"The York Chest Strap and Transmitter is designed for use with York Fitness equipment containing a built-in wireless heart rate receiver. The heart rate is accurately measured, transmitted to the equipment and displayed on the screen.",8414,8414-hr-monitor.jpg | 8414-transmitter-002-01.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961084146,30.62,,0.08,taxable,York Fitness,14961084146
+York 2kg Vinyl Kettlebell,york-2kg-vinyl-kettlebell,"The 2kg York Kettlebell helps develop functional strength, power, endurance, muscle tone, core stability & balance whilst increasing calorie burn. The total workout tool!
+
+*Ergo designed comfort handle
+* Innovative vinyl technology design with anti slip base
+* Fully detailed workout chart included
+* Colour coded for ease of use & safety in clubs
+* Strong moulded design",10000,10000-kettlebell-2kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961100006,4.99,,2.22,taxable,York Fitness,14961100006
+York 3kg Vinyl Kettlebell,york-3kg-vinyl-kettlebell,"The York 3kg Kettlebell helps develop functional strength, power, endurance, muscle tone, core stability & balance whilst increasing calorie burn. The total workout tool!
+
+*Ergo designed comfort handle
+* Innovative vinyl technology design with anti slip base
+* Fully detailed workout chart included
+* Colour coded for ease of use & safety in clubs
+* Strong moulded design",10001,10001-kettlebell-3kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961100013,7.49,,3.25,taxable,York Fitness,14961100013
+York 4kg Vinyl Kettlebell,york-4kg-vinyl-kettlebell,"The 4kg York Kettlebell helps develop functional strength, power, endurance, muscle tone, core stability & balance whilst increasing calorie burn. The total workout tool!
+
+*Ergo designed comfort handle
+* Innovative vinyl technology design with anti slip base
+* Fully detailed workout chart included
+* Colour coded for ease of use & safety in clubs
+* Strong moulded design",10002,10002-kettlebell-4kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961100020,10,,4.27,taxable,York Fitness,14961100020
+York 6kg Vinyl Kettlebell,york-6kg-vinyl-kettlebell,"The 6kg York Kettlebell helps develop functional strength, power, endurance, muscle tone, core stability & balance whilst increasing calorie burn. The total workout tool!
+
+*Ergo designed comfort handle
+* Innovative vinyl technology design with anti slip base
+* Fully detailed workout chart included
+* Colour coded for ease of use & safety in clubs
+* Strong moulded design",10003,10003-kettlebell-6kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961100037,14.99,,6.27,taxable,York Fitness,14961100037
+York 8kg Vinyl Kettlebell,york-8kg-vinyl-kettlebell,"The York 8kg Kettlebell helps develop functional strength, power, endurance, muscle tone, core stability & balance whilst increasing calorie burn. The total workout tool!
+
+*Ergo designed comfort handle
+* Innovative vinyl technology design with anti slip base
+* Fully detailed workout chart included
+* Colour coded for ease of use & safety in clubs
+* Strong moulded design",10004,10004-kettlebell-8kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961100044,19.99,,8.35,taxable,York Fitness,14961100044
+York 10kg Vinyl Kettlebell,york-10kg-vinyl-kettlebell,"The 10kg York Kettlebell helps develop functional strength, power, endurance, muscle tone, core stability & balance whilst increasing calorie burn. The total workout tool!
+
+*Ergo designed comfort handle
+* Innovative vinyl technology design with anti slip base
+* Fully detailed workout chart included
+* Colour coded for ease of use & safety in clubs
+* Strong moulded design",10005,10005-kettlebell-10kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961100051,25,,10.35,taxable,York Fitness,14961100051
+York 12kg Vinyl Kettlebell,york-12kg-vinyl-kettlebell,"The 12kg York Kettlebell helps develop functional strength, power, endurance, muscle tone, core stability & balance whilst increasing calorie burn. The total workout tool!
+
+*Ergo designed comfort handle
+* Innovative vinyl technology design with anti slip base
+* Fully detailed workout chart included
+* Colour coded for ease of use & safety in clubs
+* Strong moulded design",10006,10006-kettlebell-12kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961100068,29.99,,12.36,taxable,York Fitness,14961100068
+York 14kg Vinyl Kettlebell,york-14kg-vinyl-kettlebell,"The 14kg York Kettlebell helps develop functional strength, power, endurance, muscle tone, core stability & balance whilst increasing calorie burn. The total workout tool!
+
+*Ergo designed comfort handle
+* Innovative vinyl technology design with anti slip base
+* Fully detailed workout chart included
+* Colour coded for ease of use & safety in clubs
+* Strong moulded design",10007,10007-kettlebell-14kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961100075,34.99,,14.38,taxable,York Fitness,14961100075
+York 16kg Vinyl Kettlebell,york-16kg-vinyl-kettlebell,"The 16kg York Kettlebell helps develop functional strength, power, endurance, muscle tone, core stability & balance whilst increasing calorie burn. The total workout tool!
+
+*Ergo designed comfort handle
+* Innovative vinyl technology design with anti slip base
+* Fully detailed workout chart included
+* Colour coded for ease of use & safety in clubs
+* Strong moulded design",10008,10008-kettlebell-16kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961100082,40,,16.38,taxable,York Fitness,14961100082
+York 18kg Vinyl Kettlebell,york-18kg-vinyl-kettlebell,"The 18kg York Kettlebell helps develop functional strength, power, endurance, muscle tone, core stability & balance whilst increasing calorie burn. The total workout tool!
+
+*Ergo designed comfort handle
+* Innovative vinyl technology design with anti slip base
+* Fully detailed workout chart included
+* Colour coded for ease of use & safety in clubs
+* Strong moulded design",10009,10009-kettlebell-18kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961100099,44.99,,18.39,taxable,York Fitness,14961100099
+York 20kg Vinyl Kettlebell,york-20kg-vinyl-kettlebell,"The 20kg York Kettlebell helps develop functional strength, power, endurance, muscle tone, core stability & balance whilst increasing calorie burn. The total workout tool!
+
+*Ergo designed comfort handle
+* Innovative vinyl technology design with anti slip base
+* Fully detailed workout chart included
+* Colour coded for ease of use & safety in clubs
+* Strong moulded design",10010,10010-kettlebell-20kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961100105,49.99,,20.39,taxable,York Fitness,14961100105
+"York 2,3,4kg Vinyl Kettlebell Set",york-2-3-4kg-vinyl-kettlebell-set,"This set of 3 kettlebells ranges from 2 kg up to 4 kg, each with an attractive coloured design to mark their weight. You can use them to lunge, squat and lift your way to a perfectly toned body.
+
+The rubber anti slip base and easy grip handle means you can concentrate on your moves, while the tough vinyl outer casing is designed for a high intensity workout.
+
+A wall chart is also included to give you simple exercise instructions to get you in shape in the comfort of your own home.
+
+These kettlebells are also nice and compact, making them easy to store away.
+
+Useful info:
+
+easy grip handle
+Vinyl outer casing
+Rubber anti slip base
+Colour coded
+Wall chart included
+Total item weight: 9 kg
+2, 3 and 4 kg Vinyl Kettlebell set",10022,10022-vinyl-kettlebell-set.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961100228,19.99,,9.5,taxable,York Fitness,14961100228
+York Kettlebell Rack (for cast kb's),york-kettlebell-rack-for-cast-kbs,"3 Tier tray design.
+Rubber inlayed into trays.
+Raised tray sides, reducing kettlebells falling off.
+Silver paint.
+Rubber non-slip feet.
+Simple bolt –together design.
+Item weight 35kg.",15100,15100-3-tier-kettlebell-rack.jpg | 15100-commkettlebellstand.jpg | 15100-commkett-s-002.jpg | 15100-inc-vinyl.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961151008,199.99,,37.3,taxable,York Fitness,14961151008
+York 1 x 0.5kg Neo Hex DB,york-0-5kg-neo-hex-dumbbell,"Durable neoprene coating. 
+Ergonomic handle design. 
+Anti-roll flat sided heads. 
+Easy to clean.
+Sold as single.",15630,15630-15637-neo-hex-db-range1.jpg | 15630-15637-neo-hex-db-range2.jpg | 15630-15637-neo-hex-db-range3.jpg | 15630-1-of-0pt5kg-neo-hex-db.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961156300,1.6,,0.5,taxable,York Fitness,14961156300
+York 1 x 1kg Neo Hex DB,york-1kg-neo-hex-dumbbell,"Durable neoprene coating. 
+Ergonomic handle design. 
+Anti-roll flat sided heads. 
+Easy to clean.
+Sold as single.",15631,15631-1-of-1kg-neo-hex-db.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961156317,3.19,,1,taxable,York Fitness,14961156317
+York 1 x 1.5kg Neo Hex DB,york-1-5kg-neo-hex-dumbbell,"Durable neoprene coating. 
+Ergonomic handle design. 
+Anti-roll flat sided heads. 
+Easy to clean.
+Sold as single.",15632,15632-1-of-1pt5kg-neo-hex-db.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961156324,4.99,,1.5,taxable,York Fitness,14961156324
+York 1 x 2kg Neo Hex DB,york-2kg-neo-hex-dumbbell,"Durable neoprene coating. 
+Ergonomic handle design. 
+Anti-roll flat sided heads. 
+Easy to clean.
+Sold as single.",15633,15633-1-of-2kg-neo-hex-db.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961156331,6.49,,2,taxable,York Fitness,14961156331
+York 1 x 2.5kg Neo Hex DB,york-2-5kg-neo-hex-dumbbell,"Durable neoprene coating. 
+Ergonomic handle design. 
+Anti-roll flat sided heads. 
+Easy to clean.
+Sold as single.",15634,15634-1-of-2pt5kg-neo-hex-db.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961156348,7.99,,2.5,taxable,York Fitness,14961156348
+York 1 x 3kg Neo Hex DB,york-3kg-neo-hex-dumbbell,"Durable neoprene coating. 
+Ergonomic handle design. 
+Anti-roll flat sided heads. 
+Easy to clean.
+Sold as single.",15635,15635-1-of-3kg-neo-hex-db.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961156355,9.49,,3,taxable,York Fitness,14961156355
+York 1 x 4kg Neo Hex DB,york-4kg-neo-hex-dumbbell,"Durable neoprene coating. 
+Ergonomic handle design. 
+Anti-roll flat sided heads. 
+Easy to clean.
+Sold as single.",15636,15636-1-of-4kg-neo-hex-db.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961156362,13,,4,taxable,York Fitness,14961156362
+York 1 x 5kg Neo Hex DB,york-5kg-neo-hex-dumbbell,"Durable neoprene coating. 
+Ergonomic handle design. 
+Anti-roll flat sided heads. 
+Easy to clean.
+Sold as single.",15637,15637-1-of-5kg-neo-hex-db.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961156379,16,,5,taxable,York Fitness,14961156379
+York Neo Hex DB Club Pack - (44 pairs),york-neo-hex-dumbbell-club-pack-44-pairs,"Durable neoprene coating. 
+Ergonomic handle design. 
+Anti-roll flat sided heads.
+Easy to clean.
+Club Pack comprises of 44 pairs of Dumbells: 12 x 1kg, 10 x 1.5kg, 8 x 2kg, 7 x 3kg, 7 x 4kg
+Item weight 184kg.",15638,15638-69031-neo-hex-club-pack-and-rack.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961156386,629.99,,209,taxable,York Fitness,14961156386
+York 1 x 0.5kg Fitbell (pink),york-0-5kg-fitbell-pink,"Single 0.5kg Vinyl Fitbell weight in pink, with easy to clean vinyl coating. Strengthens and tones your arms.",15710,15710-0pt5kg-fitbell-pink.jpg | 15710-15717-vinyl-fitbells-range1.jpg | 15710-15717-vinyl-fitbells-range2.jpg | 15710-15717-vinyl-fitbells-range3.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961157109,1.49,,0.5,taxable,York Fitness,14961157109
+York 1 x 1kg Fitbell (purple),york-1kg-fitbell-purple,"Single 1kg Vinyl Fitbell weight in purple, with easy to clean vinyl coating. Strengthens and tones your arms.",15711,15711-1kg-fitbell-purple.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961157116,2.99,,1,taxable,York Fitness,14961157116
+York 1 x 1.5kg Fitbell (green),york-15kg-fitbell-green,"Single 1.5kg Vinyl Fitbell weight in green, with easy to clean vinyl coating. Strengthens and tones your arms.",15712,15712-1pt5kg-fitbell-green.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961157123,4.49,,1.5,taxable,York Fitness,14961157123
+York 1 x 2kg Fitbell (yellow),york-2kg-fitbell-yellow,"Single 1.5kg Vinyl Fitbell weight in green, with easy to clean vinyl coating. Strengthens and tones your arms.",15713,15713-2kg-fitbell-yellow.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961157130,5.99,,2,taxable,York Fitness,14961157130
+York 1 x 2.5kg Fitbell (red),york-25kg-fitbell-red,"Single 2.5kg Vinyl Fitbell weight in red, with easy to clean vinyl coating. Strengthens and tones your arms.",15714,15714-2pt5kg-fitbell-red.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961157147,7.49,,2.5,taxable,York Fitness,14961157147
+York 1 x 3kg Fitbell (blue),york-3kg-fitbell-blue,"Single 3kg Vinyl Fitbell weight in blue, with easy to clean vinyl coating. Strengthens and tones your arms.",15715,15715-3kg-fitbell-blue.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961157154,8.99,,3,taxable,York Fitness,14961157154
+York 1 x 4kg Fitbell (grey),york-4kg-fitbell-grey,"Single 4kg Vinyl Fitbell weight in grey, with easy to clean vinyl coating. Strengthens and tones your arms.",15716,15716-4kg-fitbell-grey.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961157161,11.99,,4,taxable,York Fitness,14961157161
+York 1 x 5kg Fitbell (black),york-5kg-fitbell-black,"Single 5kg Vinyl Fitbell weight in black, with easy to clean vinyl coating. Strengthens and tones your arms.",15717,15717-5kg-fitbell-black.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961157178,14.99,,5,taxable,York Fitness,14961157178
+York 10kg Pro-Style Barbell,york-10kg-pro-style-barbell,"Solid Steel bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable Urethane/rubber weighted fixed ends. 
+Will suit the ETS Barbell Storage Rack 69150.
+Sold in singles.
+Also available in Club Packs",26600,26600-26609-10kg-45kg-pro-style-barbells.jpg | 26600-pro-style-barbell-10kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,43,,10,taxable,York Fitness,
+York 12.5kg Pro-Style Barbell,york-12-5kg-pro-style-barbell,"Solid Steel bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable Urethane/rubber weighted fixed ends. 
+Will suit the ETS Barbell Storage Rack 69150.
+Sold in singles.
+Also available in Club Packs",26601,26601-pro-style-barbell-12pt5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,52.99,,12.5,taxable,York Fitness,
+York 15kg Pro-Style Barbell,york-15kg-pro-style-barbell,"Solid Steel bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable Urethane/rubber weighted fixed ends. 
+Will suit the ETS Barbell Storage Rack 69150.
+Sold in singles.
+Also available in Club Packs",26602,26602-york-pro-style-barbell-15kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,62.99,,15,taxable,York Fitness,
+York 17.5kg Pro-Style Barbell,york-17-5kg-pro-style-barbell,"Solid Steel bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable Urethane/rubber weighted fixed ends. 
+Will suit the ETS Barbell Storage Rack 69150.
+Sold in singles.
+Also available in Club Packs",26603,26603-pro-style-barbell-17pt5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,73,,17.5,taxable,York Fitness,
+York 20kg Pro-Style Barbell,york-20kg-pro-style-barbell,"Solid Steel bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable Urethane/rubber weighted fixed ends. 
+Will suit the ETS Barbell Storage Rack 69150.
+Sold in singles.
+Also available in Club Packs",26604,26604-pro-style-barbell-20kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,82.99,,20,taxable,York Fitness,
+York 25kg Pro-Style Barbell,york-25kg-pro-style-barbell,"Solid Steel bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable Urethane/rubber weighted fixed ends. 
+Will suit the ETS Barbell Storage Rack 69150.
+Sold in singles.
+Also available in Club Packs",26605,26605-25kg-pro-style-barbell.jpg | 26605-25kg-pro-style-barbell2.jpg | 26605-pro-style-barbell-25kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,103,,25,taxable,York Fitness,
+York 30kg Pro-Style Barbell,york-30kg-pro-style-barbell,"Solid Steel bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable Urethane/rubber weighted fixed ends. 
+Will suit the ETS Barbell Storage Rack 69150.
+Sold in singles.
+Also available in Club Packs",26606,26606-pro-style-barbell-30kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,122.99,,30,taxable,York Fitness,
+York 35kg Pro-Style Barbell,york-35kg-pro-style-barbell,"Solid Steel bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable Urethane/rubber weighted fixed ends. 
+Will suit the ETS Barbell Storage Rack 69150.
+Sold in singles.
+Also available in Club Packs",26607,26607-pro-style-barbell-35kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,142.99,,35,taxable,York Fitness,
+York 1 x 2.5kg Pro-Style DB,york-2-5kg-pro-style-dumbbell,"Solid steel handle bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable urethane/rubber weighted fixed ends. 
+Will suit the ETS Du Saddle Rack 69045
+Set comprises of 2.5 -65kg in 2.5 kg increase up to 40kg and then 5 increments following.
+Sold in singles.",26700,26700-pro-style-dumbell-2pt5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,8.99,,2.5,taxable,York Fitness,
+York 1 x 5kg Pro-Style DB,york-5kg-pro-style-dumbbell,"Solid steel handle bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable urethane/rubber weighted fixed ends. 
+Will suit the ETS Du Saddle Rack 69045
+Set comprises of 2.5 -65kg in 2.5 kg increase up to 40kg and then 5 increments following.
+Sold in singles.",26701,26701-pro-style-dumbell-5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,17.99,,5,taxable,York Fitness,
+York 1 x 7.5kg Pro-Style DB,york-7-5kg-pro-style-dumbbell,"Solid steel handle bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable urethane/rubber weighted fixed ends. 
+Will suit the ETS Du Saddle Rack 69045
+Set comprises of 2.5 -65kg in 2.5 kg increase up to 40kg and then 5 increments following.
+Sold in singles.",26702,26702-pro-style-dumbell-7pt5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,26.99,,7.5,taxable,York Fitness,
+York 1 x 10kg Pro-Style DB,york-10kg-pro-style-dumbbell,"Solid steel handle bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable urethane/rubber weighted fixed ends. 
+Will suit the ETS Du Saddle Rack 69045
+Set comprises of 2.5 -65kg in 2.5 kg increase up to 40kg and then 5 increments following.
+Sold in singles.",26703,26703-pro-style-dumbell-10kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,37,,10,taxable,York Fitness,
+York 1 x 12.5kg Pro-Style DB,york-12-5kg-pro-style-dumbbell,"Solid steel handle bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable urethane/rubber weighted fixed ends. 
+Will suit the ETS Du Saddle Rack 69045
+Set comprises of 2.5 -65kg in 2.5 kg increase up to 40kg and then 5 increments following.
+Sold in singles.",26704,26704-pro-style-dumbell-12pt5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,46,,12.5,taxable,York Fitness,
+York 1 x 15kg Pro-Style DB,york-15kg-pro-style-dumbbell,"Solid steel handle bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable urethane/rubber weighted fixed ends. 
+Will suit the ETS Du Saddle Rack 69045
+Set comprises of 2.5 -65kg in 2.5 kg increase up to 40kg and then 5 increments following.
+Sold in singles.",26705,26705-26709-15-25kg-pro-style-dumbells.jpg | 26705-pro-style-dumbell-15kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,55.99,,15,taxable,York Fitness,
+York 1 x 17.5kg Pro-Style DB,york-17-5kg-pro-style-dumbbell,"Solid steel handle bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable urethane/rubber weighted fixed ends. 
+Will suit the ETS Du Saddle Rack 69045
+Set comprises of 2.5 -65kg in 2.5 kg increase up to 40kg and then 5 increments following.
+Sold in singles.",26706,26706-pro-style-dumbell-17pt5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,65.99,,17.5,taxable,York Fitness,
+York 1 x 20kg Pro-Style DB,york-20kg-pro-style-dumbbell,"Solid steel handle bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable urethane/rubber weighted fixed ends. 
+Will suit the ETS Du Saddle Rack 69045
+Set comprises of 2.5 -65kg in 2.5 kg increase up to 40kg and then 5 increments following.
+Sold in singles.",26707,26707-20kg-medial-grip-pro-style-dumbells.jpg | 26707-pro-style-dumbell-20kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,76,,20,taxable,York Fitness,
+York 1 x 22.5kg Pro-Style DB,york-22-5kg-pro-style-dumbbell,"Solid steel handle bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable urethane/rubber weighted fixed ends. 
+Will suit the ETS Du Saddle Rack 69045
+Set comprises of 2.5 -65kg in 2.5 kg increase up to 40kg and then 5 increments following.
+Sold in singles.",26708,26708-pro-style-dumbell-22pt5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,85,,22.5,taxable,York Fitness,
+York 1 x 25kg Pro-Style DB,york-25kg-pro-style-dumbbell,"Solid steel handle bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable urethane/rubber weighted fixed ends. 
+Will suit the ETS Du Saddle Rack 69045
+Set comprises of 2.5 -65kg in 2.5 kg increase up to 40kg and then 5 increments following.
+Sold in singles.",26709,26709-york-pro-style-dumbell-25kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,94,,25,taxable,York Fitness,
+York 1 x 27.5kg Pro-Style DB,york-27-5kg-pro-style-dumbbell,"Solid steel handle bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable urethane/rubber weighted fixed ends. 
+Will suit the ETS Du Saddle Rack 69045
+Set comprises of 2.5 -65kg in 2.5 kg increase up to 40kg and then 5 increments following.
+Sold in singles.",26710,26710-pro-style-dumbell-27pt5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,103,,27.5,taxable,York Fitness,
+York 1 x 30kg Pro-Style DB,york-30kg-pro-style-dumbbell,"Solid steel handle bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable urethane/rubber weighted fixed ends. 
+Will suit the ETS Du Saddle Rack 69045
+Set comprises of 2.5 -65kg in 2.5 kg increase up to 40kg and then 5 increments following.
+Sold in singles.",26711,26711-pro-style-dumbell-30kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,115,,30,taxable,York Fitness,
+York 1 x 32.5kg Pro-Style DB,york-32-5kg-pro-style-dumbbell,"Solid steel handle bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable urethane/rubber weighted fixed ends. 
+Will suit the ETS Du Saddle Rack 69045
+Set comprises of 2.5 -65kg in 2.5 kg increase up to 40kg and then 5 increments following.
+Sold in singles.",26712,26712-pro-style-dumbell-32pt5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,124.99,,32.5,taxable,York Fitness,
+York 1 x 35kg Pro-Style DB,york-35kg-pro-style-dumbbell,"Solid steel handle bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable urethane/rubber weighted fixed ends. 
+Will suit the ETS Du Saddle Rack 69045
+Set comprises of 2.5 -65kg in 2.5 kg increase up to 40kg and then 5 increments following.
+Sold in singles.",26713,26713-pro-style-dumbell-35kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,136.99,,35,taxable,York Fitness,
+York 1 x 37.5kg Pro-Style DB,york-37-5kg-pro-style-dumbbell,"Solid steel handle bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable urethane/rubber weighted fixed ends. 
+Will suit the ETS Du Saddle Rack 69045
+Set comprises of 2.5 -65kg in 2.5 kg increase up to 40kg and then 5 increments following.
+Sold in singles.",26714,26714-pro-style-dumbell-37pt5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,142.8,,37.5,taxable,York Fitness,
+York 1 x 40kg Pro-Style DB,york-40kg-pro-style-dumbbell,"Solid steel handle bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable urethane/rubber weighted fixed ends. 
+Will suit the ETS Du Saddle Rack 69045
+Set comprises of 2.5 -65kg in 2.5 kg increase up to 40kg and then 5 increments following.
+Sold in singles.",26715,26715-pro-style-dumbell-40kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,148.99,,40,taxable,York Fitness,
+York 1 x 45kg Pro-Style DB,york-45kg-pro-style-dumbbell,"Solid steel handle bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable urethane/rubber weighted fixed ends. 
+Will suit the ETS Du Saddle Rack 69045
+Set comprises of 2.5 -65kg in 2.5 kg increase up to 40kg and then 5 increments following.
+Sold in singles.",26717,26717-pro-style-dumbell-45kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,158.99,,45,taxable,York Fitness,
+York 1 x 50kg Pro-Style DB,york-50kg-pro-style-dumbbell,"Solid steel handle bar.
+Knurled textured hand positioning.
+Chrome plated finish.
+Durable urethane/rubber weighted fixed ends. 
+Will suit the ETS Du Saddle Rack 69045
+Set comprises of 2.5 -65kg in 2.5 kg increase up to 40kg and then 5 increments following.
+Sold in singles.",26719,26719-pro-style-dumbell-50kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,172,,50,taxable,York Fitness,
+York 1.25kg Olympic Rubber 'ISO-Grip' Plates,york-1-25kg-olympic-rubber-iso-grip-plates,"Durable inner steel composite casting encased in rubber.
+The patented radical benefit of a thicker hub and a streamlined rim allows for the anti-pinch nature of using the plates.
+Multi-hole safe grip plate. 
+360-degree comfortable easy- pick-up plate.
+Patented design allows for the plates to be used in conjunction with core and functional training programmes safely. 
+The plates are the same diameter as a Standard Olympic cast iron plate.
+High quality rubber casing improves durability and protects floors and equipment.
+Sold as singles.",28000,28000-28007-olympic-rubber-iso-grip-plates.jpg | 28000-28007-rubber-iso-grip-plates.jpg | 28000-olympic-rubber-iso-grip-plate-1pt25kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961280005,4.49,,1.25,taxable,York Fitness,14961280005
+York 2.5kg Olympic Rubber 'ISO-Grip' Plates,york-2-5kg-olympic-rubber-iso-grip-plates,"Durable inner steel composite casting encased in rubber.
+The patented radical benefit of a thicker hub and a streamlined rim allows for the anti-pinch nature of using the plates.
+Multi-hole safe grip plate. 
+360-degree comfortable easy- pick-up plate.
+Patented design allows for the plates to be used in conjunction with core and functional training programmes safely. 
+The plates are the same diameter as a Standard Olympic cast iron plate.
+High quality rubber casing improves durability and protects floors and equipment.
+Sold as singles.",28001,28001-olympic-rubber-iso-grip-plate-2pt5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961280012,8.8,,2.5,taxable,York Fitness,14961280012
+York 5kg Olympic Rubber 'ISO-Grip' Plates,york-5kg-olympic-rubber-iso-grip-plates,"Durable inner steel composite casting encased in rubber.
+The patented radical benefit of a thicker hub and a streamlined rim allows for the anti-pinch nature of using the plates.
+Multi-hole safe grip plate. 
+360-degree comfortable easy- pick-up plate.
+Patented design allows for the plates to be used in conjunction with core and functional training programmes safely. 
+The plates are the same diameter as a Standard Olympic cast iron plate.
+High quality rubber casing improves durability and protects floors and equipment.
+Sold as singles.",28002,28002-olympic-rubber-iso-grip-plate-5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961280029,17.5,,5,taxable,York Fitness,14961280029
+York 10kg Olympic Rubber 'ISO-Grip' Plates,york-10kg-olympic-rubber-iso-grip-plates,"Durable inner steel composite casting encased in rubber.
+The patented radical benefit of a thicker hub and a streamlined rim allows for the anti-pinch nature of using the plates.
+Multi-hole safe grip plate. 
+360-degree comfortable easy- pick-up plate.
+Patented design allows for the plates to be used in conjunction with core and functional training programmes safely. 
+The plates are the same diameter as a Standard Olympic cast iron plate.
+High quality rubber casing improves durability and protects floors and equipment.
+Sold as singles.",28004,28004-olympic-rubber-iso-grip-10kg.jpg | 28004-olympic-rubber-iso-grip-plate-10kg1.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961280043,34.99,,10,taxable,York Fitness,14961280043
+York 15kg Olympic Rubber 'ISO-Grip' Plates,york-15kg-olympic-rubber-iso-grip-plates,"Durable inner steel composite casting encased in rubber.
+The patented radical benefit of a thicker hub and a streamlined rim allows for the anti-pinch nature of using the plates.
+Multi-hole safe grip plate. 
+360-degree comfortable easy- pick-up plate.
+Patented design allows for the plates to be used in conjunction with core and functional training programmes safely. 
+The plates are the same diameter as a Standard Olympic cast iron plate.
+High quality rubber casing improves durability and protects floors and equipment.
+Sold as singles.",28005,28005-olympic-rubber-iso-grip-plate-15kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961280050,52,,15.6,taxable,York Fitness,14961280050
+York 20kg Olympic Rubber 'ISO-Grip' Plates,york-20kg-olympic-rubber-iso-grip-plates,"Durable inner steel composite casting encased in rubber.
+The patented radical benefit of a thicker hub and a streamlined rim allows for the anti-pinch nature of using the plates.
+Multi-hole safe grip plate. 
+360-degree comfortable easy- pick-up plate.
+Patented design allows for the plates to be used in conjunction with core and functional training programmes safely. 
+The plates are the same diameter as a Standard Olympic cast iron plate.
+High quality rubber casing improves durability and protects floors and equipment.
+Sold as singles.",28006,28006-olympic-rubber-iso-grip-plate-20kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961280067,70,,20.7,taxable,York Fitness,14961280067
+York 25kg Olympic Rubber 'ISO-Grip' Plates,york-25kg-olympic-rubber-iso-grip-plates,"Durable inner steel composite casting encased in rubber.
+The patented radical benefit of a thicker hub and a streamlined rim allows for the anti-pinch nature of using the plates.
+Multi-hole safe grip plate. 
+360-degree comfortable easy- pick-up plate.
+Patented design allows for the plates to be used in conjunction with core and functional training programmes safely. 
+The plates are the same diameter as a Standard Olympic cast iron plate.
+High quality rubber casing improves durability and protects floors and equipment.
+Sold as singles.",28007,28007-olympic-rubber-iso-grip-plate-25kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961280074,85.99,,25.7,taxable,York Fitness,14961280074
+York 5kg Olympic Rubber Bumper Plate,york-5kg-olympic-rubber-bumper-plate,"Solid rubber.
+Limits damage to floors
+All plates come as standard with a 2” steel centre sleeve.
+Olympic diameter of 45cm so ideal for coaching and technique training.
+Sold as singles.
+Recommended for York lifting platforms to reduce risk of flooring damage.",28082,28082-olympic-rubber-training-plate-5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961280821,19.99,,5.1,taxable,York Fitness,14961280821
+York 10kg Olympic Rubber Bumper Plate,york-10kg-olympic-rubber-bumper-plate,"Solid rubber.
+Limits damage to floors
+All plates come as standard with a 2” steel centre sleeve.
+Olympic diameter of 45cm so ideal for coaching and technique training.
+Sold as singles.
+Recommended for York lifting platforms to reduce risk of flooring damage.",28083,28083-olympic-rubber-training-plate-10kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961280838,34,,10.1,taxable,York Fitness,14961280838
+York 15kg Olympic Rubber Bumper Plate,york-15kg-olympic-rubber-bumper-plate,"Solid rubber.
+Limits damage to floors
+All plates come as standard with a 2” steel centre sleeve.
+Olympic diameter of 45cm so ideal for coaching and technique training.
+Sold as singles.
+Recommended for York lifting platforms to reduce risk of flooring damage.",28084,28084-olympic-rubber-training-plate-15kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961280845,46,,15.1,taxable,York Fitness,14961280845
+York 20kg Olympic Rubber Bumper Plate,york-20kg-olympic-rubber-bumper-plate,"Solid rubber.
+Limits damage to floors
+All plates come as standard with a 2” steel centre sleeve.
+Olympic diameter of 45cm so ideal for coaching and technique training.
+Sold as singles.
+Recommended for York lifting platforms to reduce risk of flooring damage.",28085,28085-olympic-rubber-training-plate-20kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961280852,58,,20.1,taxable,York Fitness,14961280852
+York 25kg Olympic Rubber Bumper Plate,york-25kg-olympic-rubber-bumper-plate,"Solid rubber.
+Limits damage to floors
+All plates come as standard with a 2” steel centre sleeve.
+Olympic diameter of 45cm so ideal for coaching and technique training.
+Sold as singles.
+Recommended for York lifting platforms to reduce risk of flooring damage.",28086,28086-olympic-rubber-training-plate-25kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961280869,70,,25.1,taxable,York Fitness,14961280869
+York 7ft Olympic  Elite Training Bar,york-7-foot-olympic-elite-training-bar,"York Olympic bars are made from elevated temperature drawn high tensile steel for maximum strength and flexibility.
+Self Lubricating Precision made Sintered self lubricating bronze bushes allowing the sleeves to facilitate free allowing constant rotation of the bar, without counter-rotation of the weight plates.
+Sleeves are machine finished to a precise 1.975- inch Diameter.
+This bar is designed for Olympic-style movements i.e. Snatch and Clean and Jerk.
+28mm, Fully knurled bar with position indicators.
+Maximum loading 650kg.
+Item weight 20kg.",32002,32002-olympic-training-bar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961320022,379.99,,20,taxable,York Fitness,14961320022
+York Olympic Split Sleeve Curl Bar with Rubber Grips,york-olympic-split-sleeve-curl-bar-with-rubber-grips,"Solid steel 30mm bar.
+Rubber/urethane textured grips.
+Ergonomic grips for an improved grip.
+Grip angles are positioned for a more natural flexion movement of the arm.
+Reduce stress placed on the wrist and elbow when lifting heavier weight.
+2” Olympic Split end sleeve design to each bar end incorporating a precision internal dual roll pin sleeve assembly allowing for a smoother rotation.
+157cm in length.
+Item weight 11kg.",32030,32030-international-curl-bar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961320305,104.99,,11,taxable,York Fitness,14961320305
+York Olympic Split Sleeve Tri-Trap Bar with Rubber Grips,york-olympic-split-sleeve-tri-trap-bar-with-rubber-grips,"Rubber/urethane textured grips.
+Ergonomic grips for an improved grip.
+Grip angles are positioned for a more natural flexion movement of the arm.
+Reduce stress placed on the wrist and elbow when lifting heavier weight.
+Split end sleeve design to each bar end incorporating a precision internal dual roll pin sleeve assembly allowing for a smoother rotation.
+The “Trap/Upright row” grip is specifically designed to target the trapezius from an angle.
+93cm in length.
+Item weight 13.6kg.",32031,32031-international-tri-trap-bar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961320312,133,,11,taxable,York Fitness,14961320312
+York 6ft Olympic Aluminium Technique Bar,york-6-foot-olympic-aluminium-technique-bar,"Aluminium Training Bar ideal for technique training and also youth fitness training.
+It allows students to learn a specific lift, along with the correct lifting height and technique with the knowledge that the weight they have is safe.
+28mm diameter bar weighs only 6.8kg.
+The bar is ideally used with the York 5kg Solid,Rubber Training plates.
+Maximum loading 65kg.
+Item weight 6.8kg.",32032,32032-international-aluminium-bar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961320329,94.99,,8,taxable,York Fitness,14961320329
+"York Olympic ""Rock & Roll"" Dead Lift Shrug Bar",york-olympic-rock-and-roll-dead-lift-shrug-bar,"2 x 28mm fixed knurled handle height settings.
+Improved internal “Hex” shape area ideal for the bigger trainer.
+A weight built into the frame to counter balance the jacking system; this ensures the bar stays square throughout the range of movement.
+The “rock & roll”, kickstand feature allows the bar to be jacked up, allowing for easy plate loading and unloading by the user. Especially useful when lifting heavy weight.
+Maximum loading 600kg.
+Item weight 36kg.",32033,32033-olympic-rock-and-roll-dead-lift-shrug-bar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961320336,229.99,,39,taxable,York Fitness,14961320336
+York 7ft Olympic North American Split Sleeve with Needle Training Bar,york-7-foot-olympic-north-american-split-sleeve-with-needle-training-bar,"Solid steel machined bar.
+Needle Bearing sleeve ends for smoother rotation.
+Split sleeve rotational design.
+28mm knurled bar grip for correct hand positioning.
+Hardened chrome finish. 
+Maximum loading 400kg. 
+Item weight 20kg. ",32110,32110-32111-international-bearing-olympic-bars.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961321104,254.99,,20,taxable,York Fitness,14961321104
+York 6.5ft Olympic North American Split Sleeve with Needle Training Bar,york-6-5-foot-olympic-north-american-split-sleeve-with-needle-training-bar,"Solid steel machined bar.
+Needle Bearing sleeve ends for smoother rotation.
+Split sleeve rotational design.
+25mm knurled bar grip for correct hand positioning.
+Hardened chrome finish. 
+Maximum loading 350kg. 
+Item weight 15.9kg. The York 6.5ft Olympic North American Split Sleeve Crossfit Training Bars have a 25mm grip and are an excellent choice for Olympic movements.
+
+The York International menâ€™s and womenâ€™s Needle Bearing Olympic Training Bars are excellent choice for Olympic movements i.e. Snatch, Clean and Jerk in light usage environments, such as schools and PT Studios
+The needle bearings ensure a smooth and consistent rotation of the sleeves
+These bars are great for a club environment where quality equipment is needed
+These bars are NOT Full Commercial Graded and therefore are not warranted for such environments
+Mens (32110) are 28mm Grip and the Womens (32111) are 25mm Grip",32111,32110-32111-international-bearing-olympic-bars.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961321111,229.99,,15.91,taxable,York Fitness,14961321111
+York 7ft Olympic Split Sleeve Hard Chorme Bar,york-7-foot-olympic-split-sleeve-hard-chorme-bar,"This steel 7ft International Club bar has superior cross hatch knurling with a 32mm diameter grip.
+
+The International Club bar has superior cross hatch knurling, 32mm diameter grip, this allows exercises such as dead-lifts, bench press and squats to be performed with a greater weight and improved grip, compared to the other bars within this club range
+Each bar has been manufactured from North American steel
+This bar is NOT Full Commercial Graded and therefore is not warranted for such environments",32112,32112-7ft-international-hard-chrome-bar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961321128,209.99,,22.73,taxable,York Fitness,14961321128
+York 6ft Olympic North American Black Oxide Bar,york-6-foot-olympic-north-american-black-oxide-bar,"York 6ft Olympic steel bar with a tough resistant black oxide coating on the knurled section.
+
+York has applied its vast knowledge to make a high standard Olympic bar for general use
+Each bar has been manufactured from North American steel
+These bars are NOT Full Commercial Graded and therefore is not warranted for such environments
+New for 2011 is the Black Oxide finish on the inner knurled section of the bar. This new finish is available on all the 5ft & 6ft International bars.
+The dual colour of the bar gives a distinct look and feels as good to use a the tradional bare-steel finish bars.",32122,32122-32123-5ft-6ft-international-barblack.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,132.76,,18.18,taxable,York Fitness,
+York 5ft Olympic North American Black Oxide Bar,york-5-foot-olympic-north-american-black-oxide-bar,"York 5ft Olympic steel bar with a tough resistant black oxide coating on the knurled section.
+
+York has applied its vast knowledge to make a high standard Olympic bar for general use
+Each bar has been manufactured from North American steel
+These bars are NOT Full Commercial Graded and therefore is not warranted for such environments
+New for 2011 is the Black Oxide finish on the inner knurled section of the bar. This new finish is available on all the 5ft & 6ft International bars.
+The dual colour of the bar gives a distinct look and feels as good to use a the tradional bare-steel finish bars.",32123,32122-32123-5ft-6ft-international-barblack.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,112.33,,16.36,taxable,York Fitness,
+York Chrome DB Clubpack - 1 to 10kg (10 pairs),york-chromedumbbellclubpack-1-to-10kg-10-pairs,"Steel chrome plated dumbells.
+Ergonomic knurled handle design for improved grip.
+Dumbell heads are pressed onto the ends of the bars for a more secure fit.
+Hardened chrome finish.
+Club pack contains 10 pairs 
+1kg-10kg and will stylishly fit onto the York 2 sided 10 pair dumbell rack. (69044) not included.
+Dumbells will also fit the York A-Frame dumbell rack (69002) not included.
+Item weight 110kg.",33063,33063-69044-club-001-01.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961330632,349.99,,150,taxable,York Fitness,14961330632
+York 1.25kg Rubber Hex DumBbell,york-1-25kg-rubber-hex-dumbbell,"Tough and durable rubber compound material.
+Rubber coating protects equipment and flooring.
+Anti-roll safety design. 
+Handle designed for ergonomic secure grip.
+Chrome plated knurled steel handle.
+Easy to clean. 
+Torque threaded rubber heads to provide permanent fixing to the handles.
+Sold as singles.",35001,35001-york-rubber-hex-dumbell1pt25kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961350012,7,,1.5,taxable,York Fitness,14961350012
+York 2.5kg Rubber Hex Dumbbell,york-2-5kg-rubber-hex-dumbbell,"Tough and durable rubber compound material.
+Rubber coating protects equipment and flooring.
+Anti-roll safety design. 
+Handle designed for ergonomic secure grip.
+Chrome plated knurled steel handle.
+Easy to clean. 
+Torque threaded rubber heads to provide permanent fixing to the handles.
+Sold as singles.",35002,35002-york-rubber-hex-dumbell2pt5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961350029,11.99,,2.8,taxable,York Fitness,14961350029
+York 5kg Rubber Hex Dumbbell,york-5kg-rubber-hex-dumbbell,"Tough and durable rubber compound material.
+Rubber coating protects equipment and flooring.
+Anti-roll safety design. 
+Handle designed for ergonomic secure grip.
+Chrome plated knurled steel handle.
+Easy to clean. 
+Torque threaded rubber heads to provide permanent fixing to the handles.
+Sold as singles.",35003,35003-rubber-hex-dumbell-5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961350036,19,,5,taxable,York Fitness,14961350036
+York 7.5kg Rubber Hex Dumbbell,york-7-5kg-rubber-hex-dumbbell,"Tough and durable rubber compound material.
+Rubber coating protects equipment and flooring.
+Anti-roll safety design. 
+Handle designed for ergonomic secure grip.
+Chrome plated knurled steel handle.
+Easy to clean. 
+Torque threaded rubber heads to provide permanent fixing to the handles.
+Sold as singles.",35004,35004-york-rubber-hex-dumbell7pt5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961350043,26.99,,7.8,taxable,York Fitness,14961350043
+York 10kg Rubber Hex Dumbbell,york-10kg-rubber-hex-dumbbell,"Tough and durable rubber compound material.
+Rubber coating protects equipment and flooring.
+Anti-roll safety design. 
+Handle designed for ergonomic secure grip.
+Chrome plated knurled steel handle.
+Easy to clean. 
+Torque threaded rubber heads to provide permanent fixing to the handles.
+Sold as singles.",35005,35005-rubber-hex-dumbell-10kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961350050,32.99,,10,taxable,York Fitness,14961350050
+York 12.5kg Rubber Hex Dumbbell,york-12-5kg-rubber-hex-dumbbell,"Tough and durable rubber compound material.
+Rubber coating protects equipment and flooring.
+Anti-roll safety design. 
+Handle designed for ergonomic secure grip.
+Chrome plated knurled steel handle.
+Easy to clean. 
+Torque threaded rubber heads to provide permanent fixing to the handles.
+Sold as singles.",35006,35006-rubber-hex-dumbell-12pt5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961350067,40.99,,13,taxable,York Fitness,14961350067
+York 15kg Rubber Hex Dumbbell,york-15kg-rubber-hex-dumbbell,"Tough and durable rubber compound material.
+Rubber coating protects equipment and flooring.
+Anti-roll safety design. 
+Handle designed for ergonomic secure grip.
+Chrome plated knurled steel handle.
+Easy to clean. 
+Torque threaded rubber heads to provide permanent fixing to the handles.
+Sold as singles.",35007,35007-rubber-hex-dumbell-15kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961350074,49,,15.5,taxable,York Fitness,14961350074
+York 17.5kg Rubber Hex Dumbbell,york-17-5kg-rubber-hex-dumbbell,"Tough and durable rubber compound material.
+Rubber coating protects equipment and flooring.
+Anti-roll safety design. 
+Handle designed for ergonomic secure grip.
+Chrome plated knurled steel handle.
+Easy to clean. 
+Torque threaded rubber heads to provide permanent fixing to the handles.
+Sold as singles.",35008,35008-rubber-hex-dumbell-17pt5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961350081,58,,18,taxable,York Fitness,14961350081
+York 20kg Rubber Hex Dumbbell,york-20kg-rubber-hex-dumbbell,"Tough and durable rubber compound material.
+Rubber coating protects equipment and flooring.
+Anti-roll safety design. 
+Handle designed for ergonomic secure grip.
+Chrome plated knurled steel handle.
+Easy to clean. 
+Torque threaded rubber heads to provide permanent fixing to the handles.
+Sold as singles.",35009,35009-rubber-hex-dumbell-20kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961350098,65.99,,21,taxable,York Fitness,14961350098
+York 22.5kg Rubber Hex Dumbbell,york-22-5kg-rubber-hex-dumbbell,"Tough and durable rubber compound material.
+Rubber coating protects equipment and flooring.
+Anti-roll safety design. 
+Handle designed for ergonomic secure grip.
+Chrome plated knurled steel handle.
+Easy to clean. 
+Torque threaded rubber heads to provide permanent fixing to the handles.
+Sold as singles.",35010,35010-rubber-hex-dumbell-22pt5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961350104,73.99,,23.5,taxable,York Fitness,14961350104
+York 25kg Rubber Hex Dumbbell,york-25kg-rubber-hex-dumbbell,"Tough and durable rubber compound material.
+Rubber coating protects equipment and flooring.
+Anti-roll safety design. 
+Handle designed for ergonomic secure grip.
+Chrome plated knurled steel handle.
+Easy to clean. 
+Torque threaded rubber heads to provide permanent fixing to the handles.
+Sold as singles.",35011,35011-rubber-hex-dumbell-25kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961350111,82.99,,26,taxable,York Fitness,14961350111
+York 27.5kg Rubber Hex Dumbbell,york-27-5kg-rubber-hex-dumbbell,"Tough and durable rubber compound material.
+Rubber coating protects equipment and flooring.
+Anti-roll safety design. 
+Handle designed for ergonomic secure grip.
+Chrome plated knurled steel handle.
+Easy to clean. 
+Torque threaded rubber heads to provide permanent fixing to the handles.
+Sold as singles.",35012,35012-rubber-hex-dumbell-27pt5kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961350128,91,,28,taxable,York Fitness,14961350128
+York 30kg Rubber Hex Dumbbell,york-30kg-rubber-hex-dumbbell,"Tough and durable rubber compound material.
+Rubber coating protects equipment and flooring.
+Anti-roll safety design. 
+Handle designed for ergonomic secure grip.
+Chrome plated knurled steel handle.
+Easy to clean. 
+Torque threaded rubber heads to provide permanent fixing to the handles.
+Sold as singles.",35013,35013-rubber-hex-dumbell-30kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961350135,98.99,,30.5,taxable,York Fitness,14961350135
+York Olympic Spring Collars,york-olympic-spring-collars,"The York Olympic Spring Collars are suitable for use with all bars including Olympic bars and curl bar. 2"" Olympic collars
+Plastic coated handles
+Branded York
+Weight : 0.5kg
+Sold as a pair",36040,36040-olympic-spring-collars.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961360400,6.49,,0.5,taxable,York Fitness,14961360400
+"York 50cm (20"") Chome Straight Cable Bar with Rubber Ergo Grips",york-50cm-20-inch-chome-straight-cable-bar-with-rubber-ergo-grips,"Hard chrome coating.
+35mm urethane grip designed for extreme comfort and control.
+Bar end stops for safety and anti-slip.
+Rotational centre grip to aid smoother movement.
+Item weight 2.3kg",36155,36155-50cm-chrome-straight-cable-bar.jpg | 36155-68-attachment-001-01.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961361551,26.99,,2.3,taxable,York Fitness,14961361551
+"York 28""Chrome Curl Bar with Rubber Ergo Grips",york-28-inchchrome-curl-bar-with-rubber-ergo-grips,"Hard chrome coating.
+35mm urethane grip designed for extreme comfort and control.
+Bar end stops for safety and anti-slip.
+Rotational centre grip to aid smoother movement.
+Item weight 3.7kg.",36156,36156-71cm-chrome-curl-bar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961361568,37,,3.7,taxable,York Fitness,14961361568
+"York 34"" Chrome Pro Style Lat Bar with Rubber Ergo Grips",york-34-inch-chrome-pro-style-lat-bar-with-rubber-ergo-grips,"Hard chrome coating.
+35mm urethane grip designed for extreme comfort and control.
+Anti-slip textured handles.
+Rotational centre grip to aid smoother movement
+Item weight 5kg.",36158,36158-86cm-chrome-pro-style-lat-bar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961361582,58,,6,taxable,York Fitness,14961361582
+"York 48"" Chrome Lat Bar with Rubber Ergo Grips",york-48-inch-chrome-lat-bar-with-rubber-ergo-grips,"Hard chrome coating.
+35mm urethane grip designed for extreme comfort and control.
+Anti-slip textured handles.
+Rotational centre grip to aid smoother movement
+Item weight 5.5kg.",36160,36160-120cm-chrome-lat-bar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961361605,49,,5.5,taxable,York Fitness,14961361605
+York Multi Exercise Chrome Bar with Rubber Ergo Grips,york-multi-exercise-chrome-bar-with-rubber-ergo-grips,"Hard chrome coating.
+35mm urethane grip designed for extreme comfort and control.
+Bar end stops for safety and anti-slip.
+Rotational centre grip to aid smoother movement.
+Item weight 3.7kg",36161,36161-multi-exercise-bar-01.jpg | 36161-multi-exercise-bar-02.jpg | 36161-multi-exercise-chrome-bar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961361612,41.99,,3.7,taxable,York Fitness,14961361612
+York Seated Rowing/Chinning Chrome Bar with Rubber Ergo Grips,york-seated-rowing-chinning-chrome-bar-with-rubber-ergo-grips,"Hard chrome coating.
+Ergonomic handle design for improved grip.
+35mm textured urethane anti slip grip designed for extreme comfort and safety.
+Allows multi use, multi angle approach to any given training routine to achieve maximum results.
+Sold as singles.
+Item weight 2kg.",36163,36163-seated-rowing-chinning-chrome-bar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961361636,20.99,,2,taxable,York Fitness,14961361636
+York Tricep Pressdown Chrome Bar with Rubber Ergo Grips,york-tricep-pressdown-chrome-bar-with-rubber-ergo-grips,"Hard chrome coating.
+35mm urethane grip designed for extreme comfort and control.
+Bar end stops for safety and anti-slip.
+Item weight 2.3kg",36165,36165-tricep-pressdown-chrome-bar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961361650,28.16,,2.3,taxable,York Fitness,14961361650
+York Deluxe Stirrup Chrome Handle with Rubber Ergo Grips (Single),york-deluxe-stirrup-chrome-handle-with-rubber-ergo-grips-single,"Hard chrome coating.
+Rotational handle not fixed.
+35mm urethane anti slip grip designed for extreme comfort and safety.
+Allows multi use, multi angle approach to any given training routine to achieve maximum results.
+Sold as singles.
+Item weight 0.6kg.",36166,36166-deluxe-stirrup-chrome-handle-supplied-as-single.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961361667,17.99,,0.6,taxable,York Fitness,14961361667
+York MTR Double Tricep Pressdown Rope,york-mtr-double-tricep-pressdown-rope,"Double grip rope.
+Durable nylon rope with rubber sealed end caps for improved functional grip.
+The flexible rope in either single or double format enables a multitude of exercises, which can specifically target the individual tricep muscle groups.
+Item weight 0.5kg",36168,36168-tricep-pressdown-ropedouble.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961361681,16,,0.5,taxable,York Fitness,14961361681
+York FTS Adjustable Sit Up Board,york-fts-adjustable-sit-up-board,"Settings range from 20-degree decline up to 45-degree decline.
+Adjustable on the front vertical support by utilising the “twist n pull” pin system that has been mastered by York.
+Generously padded back rest.
+The lower leg is held in place by 2 sets of foam rollers positioned at the bottom of the shin area and then behind the knee, ensuring the user is comfortable.
+Full-length pad can accommodate a wide range of different body sizes.
+Item weight 26kg.",48001,48001-adjustable-sit-up-board.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961480016,179.99,,26.1,taxable,York Fitness,14961480016
+York FTS Flat to Incline Bench,york-fts-flat-to-incline-bench,"Compact dumbell bench.
+Back support pad has 6 position settings from 0-90 degree incline using the same “cupping” system as used on the Flex Bench.
+Seat support pad has a 3 position, “pull-pin” seat/base pad adjustment for improved spine and pelvic alignment.
+Large non-slip rubber feet to limit movement.
+Back Pad has radiused edges to facilitate a broader shoulder movement.
+Durable powder coat paint finish.
+Item weight 31.5kg.",48003,48003-flat-to-incline-bench.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961480030,220,,31.5,taxable,York Fitness,14961480030
+York FTS Flex Bench with Leg Hold Down,york-fts-flex-bench-with-leg-hold-down,"Back support has 6 position settings from 0-90 degree incline using the back supporting bar which just drops into the selected cup for a no-hassle incline adjustment.
+Back Pad has radiused edges to facilitate a broader shoulder movement.
+30 degree decline, with the support of an adjustable leg hold-down bar.
+The extra wide seat pad has a fully contoured edge behind the knee joint, offering maximal support when in decline or when using the leg developer attachment (see attachments).
+Seat pad has a simple adjuster block system underneath should the seat need to be raised for a specific exercise.
+Large non-slip rubber feet to limit movement.
+Built in impact resistant wheels to the front and rear.
+Durable powder coat paint finish.
+Item weight 38kg.
+Accepts Leg Developer attachment (48009) and Preacher Curl attachment (48008).",48004,48004-flex-bench-with-leg-hold-down.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961480047,299.99,,38.25,taxable,York Fitness,14961480047
+York FTS Olympic Fixed Flat Bench,york-fts-olympic-fixed-flat-bench,"Made from 2” x 3” formed steel tubing maximising its rigidity.
+Telescopic uprights extend 82cm up to 115cm at 6.2cm increments, utilising the “twist n pull” pin system, thus allowing for different size users.
+Wide triangle footprint ensures the ultimate level in stability.
+Large 1 piece radiused pad is set at a height of 46cm allowing for a firm foot planting when lifting.
+Designed to be used with a 7ft Olympic bar or over-sized standard 1” bar. Internal bar length (between the sleeves) must be 48” (120cm).
+Item weight 49.5kg.",48006,48006-olympic-fixed-flat-bench.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961480061,265,,49.5,taxable,York Fitness,14961480061
+York FTS Preacher Curl Attachment (for Flex Bench),york-fts-preacher-curl-attachment-for-flex-bench,"2.5” (6.2cm) thick upper pad with a contoured upper section for more fixation of the arm.
+Available to use with Flex bench 48004 and Combo bench 48005. 
+Front mounted bar support.
+Easy clean.
+Item weight 9kg.",48008,48008-preacher-curl-attachment.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961480085,82,,9,taxable,York Fitness,14961480085
+York FTS Leg Developer Attachment (for Flex Bench),york-fts-leg-developer-attachment-for-flex-bench,"Will convert the leg hold down to a fully working leg extension and leg curl apparatus.
+Available to use with 48004 Flex.
+Comes with a locking pin so it can be used as a leg hold down when not in use. 
+9” long weight loading peg for 1” standard plates.
+Can be modified to fit Olympic plates using the Olympic adapter sleeve 48010.
+Durable powder coat finish.
+Item weight 10kg.",48009,48009-leg-developer-attachment.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,65.99,,10.35,taxable,York Fitness,
+"York 2"" Olympic Adapter Sleeve",york-2-inch-olympic-adapter-sleeve,"Designed to convert all 1” bars or weight loading pegs to accommodate the larger 2” diameter Olympic plates.
+Quick turn Allen key grub screw release.
+Ideal for the FTS LatPull-Down M/C 48051 and as an addition to the FTS Leg Developer attachment 48009.
+Item weight 1.3kg.",48010,48010-2-inch-olympic-adaptor-sleeve.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,16,,9.9,taxable,York Fitness,
+York FTS Seated Preacher Curl,york-fts-seated-preacher-curl,"Fully height adjustable 3” (75mm).
+Upper pad is contoured for ultimate comfort.
+Wide front spotter supports for quick release.
+Broad base ensures complete stability during the exercise.
+Low positioned seat pad places greater emphasis on the bicep region.
+Recommended bar to be used York International Curl bar 32030.
+Item weight 34.5kg",48050,48050-seated-preacher-curl.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961480504,229.99,,34.2,taxable,York Fitness,14961480504
+York FTS Lat Pull Down,york-fts-lat-pull-down,"Lat Pulldown and Low Row combination achieved by using floating pulley wheels, which re-directs a secondary cable down to a low pulley, allowing for no cable changes
+A selection of the York Machine Attachment Bars available
+Weight carriage accepts 1” standard plates but can be converted to using Olympic plates by choosing to purchase the Olympic Adapter Sleeve (48010).
+Height adjustable, foam padded leg hold down bar
+Comes standard with Lat Pull-Down bar and straight bar attachments.
+Optional 200lb (113kg) weight stack conversion kit is available (48056).
+Item weight 85kg.",48051,48051-lat-machine.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961480511,490,,85.05,taxable,York Fitness,14961480511
+York FTS Power Cage,york-fts-power-cage,"The Power Cage offers all the same usability as a standard lifting cage or rack, but has been down sized so it can be used in a smaller environment.
+23 position adjustable bar holders in 5cm increments, the same adjustments are on the Safety Spot Bars for when squatting or bench pressing and can be added as an accessory.
+Double Bar Holders on the front uprights allows a secondary athlete to train in front of the cage whil the inside of the cage is being used.
+Multiple adjustments in bar holders and safety bars allows for a multi use comprehensive piece of equipment for the studios and minor sports clubs.
+A front mounted chin-up bar really makes this Power Cage a one stop training station.
+Item weight 124kg.",48053,48053-power-cage.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961480535,700,,129.6,taxable,York Fitness,14961480535
+York FTS Press Squat Stand,york-fts-press-squat-stand,"The freestanding Press-Squat stands are ideal for maximising floor space.
+The telescopic uprights are height adjustable from 102cm up to 154cm in 5cm increments utilising the “twist n pull” pin system that has been mastered by York.
+Second stage bar holders/drop hooks are set in front of the main uprights for use with squatting or as an additional bar rest when doing shoulder press.
+2 x12” (30cm) in length made from 1” steel tubing, weight storage peg to the rear of the uprights. Can be converted to hold Olympic plates using the Olympic adapter sleeves (48010).
+Designed to be used with a full-length Olympic 7ft bar or an oversized standard 1”bar Internal bar length (between sleeves) must be 48” (120cm).
+Bar and Weight plates not included.
+Item weight 50kg.",48057,48057-7377-press-squat-stand-and-140kg-kit.jpg | 48057-7377-press-squat-stand-and-140kg-kit-2.jpg | 48057-press-squat-stand.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961480573,319.99,,50,taxable,York Fitness,14961480573
+York Active 110 Treadmill,york-active-110-treadmill,"1.0hp motor. 
+1.0 – 13km/h speed range.
+120 x 41cm running area. 
+100kg max user weight.
+CONVENIENCE
+Foldable for easy storage.
+Hydraulic assisted lift & drop.
+6 Piece elastic cushioned deck.
+4 Wheels for ease of movement.
+ACCESSORIES
+Storage compartments.
+PROGRAMS
+13 (12 pre-set, 1 manual) plus body fat analyser.
+INTERFACE
+Hand pulse sensors.
+Handlebar +/- Speed control.
+Direct touch speed controls on console.
+5’’ LCD display:- Pulse, calories, distance, time, speed.",51106,51106-active-110-treadmill-console.jpg | 51106-active-110-treadmill-folded.jpg | 51106-active-110-treadmill-front34.jpg | 51106-active-110-treadmill-rear34.jpg | 51106-active-110-treadmill-side-on.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961511062,499.99,,62,taxable,York Fitness,14961511062
+York Perform 220 Treadmill,york-perform-220-treadmill,"1.75hp motor. 
+1.0 – 18km/h Speed range.
+0 – 15% powered incline.
+135 x 46.5cm running deck.
+120kg max user weight.
+CONVENIENCE
+Foldable for easy storage.
+Hydraulic assisted lift & drop.
+6 Piece elastic cushioned deck.
+4 Wheels for ease of movement.
+ACCESSORIES
+Built-in cooling fan.
+MP3 Input & speakers.
+Storage recess.
+PROGRAMS
+13 (12 pre-set, 1 HRC,) plus body fat analyser.
+INTERFACE
+Hand pulse sensor + wireless & chest belt.
+Handlebar +/- Speed & incline control.
+6 Speed & incline hot keys.
+7’’ LCD window with blue backlight + 6 LED.",51109,51109-perform-220-treadmill-console.jpg | 51109-perform-220-treadmill-folded.jpg | 51109-perform-220-treadmill-front34.jpg | 51109-perform-220-treadmill-rear34.jpg | 51109-perform-220-treadmill-side-on.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961511093,"1,000.00",,102,taxable,York Fitness,14961511093
+York Active 110 Cross Trainer,york-active-110-cross-trainer,"8 levels of magnetic resistance.
+3 piece crank system.
+110kg max user weight.
+6kg flywheel
+CONVENIENCE
+Wheels for easy transportation.
+Ergonomic designed arms. 
+Fixed & moving handlebars.
+PROGRAMS
+4 (1 manual, 3 target) – fitness test function.
+INTERFACE
+Hand pulse sensors.
+5.75’’ LCD display.
+Battery powered.
+STRIDE
+12” stride length",52047,52047-active-110-cross-trainer-console.jpg | 52047-active-110-cross-trainer-front34.jpg | 52047-active-110-cross-trainer-rear34.jpg | 52047-active-110-cross-trainer-side-on.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961520477,299.99,,32,taxable,York Fitness,14961520477
+York Active 120 Cross Trainer,york-active-120-cross-trainer,"16 levels of magnetic resistance.
+3 piece crank system.
+110kg max user weight.
+7kg flywheel.
+CONVENIENCE
+Wheels for easy transportation.
+Ergonomic designed arms.
+Fixed & moving handlebars.
+PROGRAMS
+18 (12 pre-set, 4 HRC, 1 user, 1 manual).
+INTERFACE
+Hand pulse sensors.
+5.75’’ LCD display.
+Mains powered.
+STRIDE
+12” Stride length.",52048,52048-active-120-cross-trainer-console.jpg | 52048-active-120-cross-trainer-front34.jpg | 52048-active-120-cross-trainer-rear34.jpg | 52048-active-120-cross-trainer-side-on.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961520484,400,,46,taxable,York Fitness,14961520484
+York Perform 210 Cross Trainer,york-perform-210-cross-trainer,"Flywheel: 7kg (15lbs)
+Resistance: 32 levels of computer controlled magnetic resistance
+Stride length: 14”
+Console: 5.5"" 3-colour LCD
+Programmes: 22 (1 manual, 12 pre-set, 4 user-defined, 1 watt, 4 HRC)
+User Profiles: 4
+Feedback: time, speed, RPM, distance, calories, pulse, watts
+Heart Rate Measurement: Hand grip pulse sensors
+Pedals: non-slip, adjustable
+Accessories: bottle holder
+Dimensions: Length= 146cm (57.5”), Width= 59cm (23.2”), Height= 166cm (65.4”)
+Maximum user-weight: 150kg (330lbs)
+Transport Wheels: Yes
+Warranty: 2 years (must be registered with York Fitness within 14 days to get the 2nd year)",52049,52049-perform-210-cross-trainer-console.jpg | 52049-perform-210-cross-trainer-front34.jpg | 52049-perform-210-cross-trainer-rear34.jpg | 52049-perform-210-cross-trainer-side-on.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961520491,499.99,,48.7,taxable,York Fitness,14961520491
+York Perform 220 Cross Trainer,york-perform-220-cross-trainer,"32 levels of magnetic resistance.
+3 piece crank system.
+150kg max user weight.
+7kg flywheel.
+Class A rated Ergometer.
+CONVENIENCE
+Self generating power – no plugs.
+Wheels for easy transportation.
+Ergonomic designed arms. 
+Fixed & moving arms with over hand. ERGO grips.
+PROGRAMS
+19 (12 pre-set programs, 4 HRC, 1 watt, 1 user, 1 manual).
+INTERFACE
+Hand pulse sensors. 
+5.5’’ – 3 colour LCD and black mask.
+STRIDE
+15” Stride Length.",52050,52050-perform-220-cross-trainer-console.jpg | 52050-perform-220-cross-trainer-front-34.jpg | 52050-perform-220-cross-trainer-rear-34.jpg | 52050-perfrom-220-cross-trainer-side-on.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961520507,599.99,,52.9,taxable,York Fitness,14961520507
+York Perform 230 Cross Trainer,york-perform-230-cross-trainer,"Resistance: 32 levels of magnetic resistance
+Crank Piece: 3 piece crank system
+Rail: Single Tubular rail design
+Maximum User Weight: 150kg
+Flywheel: 7kg
+Ergometer: Class A rated
+CONVENIENCE:
+Self Generating Power: No Plugs
+Wheels: For easy transportation
+Design: Ergonomic design
+Handlebars: Fixed and moving arms with over hand. ERGO grips
+PROGRAMS: 19 (12 pre-set programs, 4 HRC, 1 watt, 1 user, 1 manual)
+INTERFACE:
+Sensors: Hand pulse
+Display: 5.75’’ - 3 colour LCD and black mask
+Stride: 19"" Stride Length
+Home Use Warranty: 12 months parts and labour - increasing to 24 months when the customer registers their warranty online with York, as per user manual",52051,52051-perform-230-cross-trainer-console.jpg | 52051-perform-230-cross-trainer-front-34.jpg | 52051-perform-230-cross-trainer-rear-34.jpg | 52051-perform-230-cross-trainer-side-on.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961520514,799.99,,70.7,taxable,York Fitness,14961520514
+York Excel 310 Cross Trainer,york-excel-310-cross-trainer,"Self-generating power
+Flywheel: 13.5kg (29.7lbs)
+Resistance: 32 levels of electro-magnetic resistance
+Stride length: 16”
+Console: 5.75” 2-colour LCD
+Programmes: 18 (1 manual, 12 pre-set, 1 watt, 4 HRC)
+Feedback: time, speed, RPM, distance, calories, pulse
+Heart Rate Measurement: Hand grip pulse sensors
+Arms: fixed and moving
+Dimensions: Length=130cm (51.2”), Width=63cm (24.8”), Height=158cm (62.2”)
+Maximum user-weight: 130kg (286lbs)
+Transport Wheels: Yes
+Warranty: 2 years (must be registered with York Fitness within 14 days to get the 2nd year)",52052,52052-excel-310-cross-trainer-console.jpg | 52052-excel-310-cross-trainer-front34.jpg | 52052-excel-310-cross-trainer-rear34.jpg | 52052-excel-310-cross-trainer-side-on.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961520521,899.99,,62,taxable,York Fitness,14961520521
+York Excel 320 Cross Trainer,york-excel-320-cross-trainer,"Drive System: Self-generating
+Flywheel: 13.5kg (29.7lbs)
+Resistance: 32 levels of electro-magnetic resistance
+Stride length: 18”
+Console: large 3-colour LCD touch display
+Programmes: 18 (1 manual, 12 pre-set, 1 user-defined, 4 HRC)
+Feedback: time, speed, RPM, distance, calories, heart rate
+Heart Rate Measurement: Hand grip pulse sensors + wireless receiver (chest strap included)
+Arms: fixed and moving arms
+Accessories: bottle holder
+Dimensions: Length= 160cm (63”), Width= 64cm (25”), Height= 178cm (70”)
+Maximum user-weight: 130kg (286lbs)
+Transport Wheels: Yes
+Warranty: 2 years (must be registered with York Fitness within 14 days to get the 2nd year)",52053,52053-excel-320-cross-trainer-console.jpg | 52053-excel-320-cross-trainer-front34.jpg | 52053-excel-320-cross-trainer-rear34.jpg | 52053-excel-320-cross-trainer-side-on1.jpg | 52053-excel-320-cross-trainer-side-on2.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961520538,"1,000.00",,69,taxable,York Fitness,14961520538
+York Active 110 Exercise Cycle,york-active-110-exercise-cycle,"Flywheel: 4kg (8.8lbs)
+Resistance: 8 levels of magnetic resistance
+Console: 3.5” LCD display
+Console Feedback: Time, speed, distance, calories
+Seat: Large, padded seat with adjustable height
+Handlebars: Angle adjustment
+Pedals: Standard pedals with straps
+Transport Wheels: Yes
+Dimensions: Length=85cm (33.5""), Width=48.5cm (19.1""), Height=122.5cm (48.2"")
+Maximum User Weight: 120kg (265lbs)
+Product Weight: 21kg (46lbs)
+Power Supply: Battery powered
+Warranty: 1 year parts and labour",53061,53061-active-110-cycle-front34.jpg | 53061-active-110-cycle-rear34.jpg | 53061-active-110-cycle-side-on.jpg | 53061-actove-110-cycle-console.jpg,1,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,,,,,York Fitness,
+York Active 120 Exercise Cycle,york-active-120-exercise-cycle,"Flywheel: 7kg (15.4lbs)
+Resistance: 16 levels of magnetic resistance
+3-piece crank system
+Console: 5.75’’ LCD display
+Feedback: speed/rpm, time elapsed, distance covered, theoretical calorie burn, watts/energy expended and heart rate
+Programmes: 18 (12 pre-set, 4 HRC, 1 user, 1 manual)
+Heart Rate Measurement: Hand pulse sensors
+Handlebars: Adjustable
+Seat: Adjustable padded seat (height and reach)
+Pedals: Standard self-levelling pedals with straps
+Bottle holder: Yes
+Transport Wheels: Yes
+Power Supply: Mains powered
+Dimensions: Length=91cm (35.8”), Width=50cm (19.7”), Height=130cm (51.2”)
+Max user weight: 110kg (242lbs)
+Product weight: 30kg (66lbs)
+Warranty: 1 year parts and labour",53062,53062-active-120-cycle-console.jpg | 53062-active-120-cycle-front34.jpg | 53062-active-120-cycle-front34-low.jpg,2,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,,,,,York Fitness,
+York Perform 210 Exercise Cycle,york-perform-210-exercise-cycle,"Resistance: 32 levels of magnetic resistance
+Crank System: 3 piece crank system
+Maximum User Weight: 150kg
+Flywheel: 7kg
+Ergometer: Class A rated ergometer
+CONVENIENCE:
+Wheels: For ease of movement
+Seat: Adjustable padded seat – height and reach
+Pedals: Standard self levelling pedals with pedal straps for foot stability
+Handlebars: Adjustable
+Holder: Drink bottle holder
+PROGRAMS: 19 (12 pre-set programs, 4 HRC, 1 watt, 1 user, 1 manual)
+INTERFACE:
+Sensors: Hand pulse sensors
+Display: 5.75’’ - 3 colour LCD display with blue backlight
+Power: Mains powered
+Home Use Warranty: 12 months parts and labour - increasing to 24 months when the customer registers their warranty online with York, as per user manual",53063,53063-6700-perform-210-cycle-and-floor-guard.jpg | 53063-perform-210-cycle-console.jpg | 53063-perform-210-cycle-front-34.jpg | 53063-perform-210-cycle-rear34.jpg | 53063-perform-210-cycle-side-on.jpg,3,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,,,,,York Fitness,
+York Perform 220 Exercise Cycle,york-perform-220-exercise-cycle,"Flywheel: 7kg (15lbs)
+Self generating power - no plugs
+Resistance: 32 levels of computer controlled magnetic resistance
+Console: 5.5"" 3-colour LCD
+Programmes: 19 (1 manual, 12 pre-set, 4 HRC, 1 watt, 1 user-defined)
+User Profiles: 4
+Heart Rate Measurement: handgrip sensors
+Seat: Fore and aft adjustable; large, padded seat
+Handlebars: adjustable
+Dimensions: Length= 107cm (42”), Width= 52cm (20.5”), Height= 147cm (58”)
+Maximum user weight: 150kg (330lbs)
+Product Weight: 35.5kg (78lbs)
+Transportation: transportation wheels
+Warranty: 2 years (must be registered with York Fitness within 14 days to get the 2nd year)",53064,53064-perform-220-cycle-console.jpg | 53064-perform-220-cycle-front-34.jpg | 53064-perform-220-cycle-rear-34.jpg | 53064-perform-220-cycle-side-on.jpg,4,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,,,,,York Fitness,
+York Excel 310 Exercise Cycle,york-excel-310-exercise-cycle,"32 levels of electro-magnetic resistance..
+Watt range from 0 to 350.
+3 piece crank system.
+130kg max user weight.
+13.5kg flywheel.
+Class A rated ergometer.
+CONVENIENCE
+Self generating power – no plugs.
+Wheels for easy transportation.
+Large gel padded height & reach adjustable seat. 
+Adjustable handlebars forward and back.
+Standard self levelling pedals.
+Pedal straps for foot stability.
+Drink bottle holder.
+PROGRAMS
+18 (12 pre-set programs, 4 HRC, 1 user, 1 manual).
+INTERFACE
+Hand pulse sensors.
+5.75’’ – 2 colour LCD and blue backlight.",53065,53065-excel-310-cycle-console.jpg | 53065-excel-310-cycle-front34.jpg | 53065-excel-310-cycle-rear34.jpg | 53065-excel-310-cycle-side-on.jpg,5,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,,,,,York Fitness,
+York STS Double Bar Holders for Power Rack & Multifunction Rack (Pair),york-sts-double-bar-holders-for-power-rack-multi-function-rack-pair,"A fully welded bar holder with replaceable wear guards.
+Made from 12mm thick steel and finished in black powder coat finish.
+Easy mount and move feature allows a strong stable hooking system.
+Item weight 11kg per pair.",54001,54001-double-bar-holders-pair.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,149.99,,11.25,taxable,York Fitness,
+York STS Technique Scoops for College and Half Rack (Pair),york-sts-technique-scoops-for-college-and-half-rack-pair,"To fit 55009 York Half Rack and 55051 Collegiate Rack.
+Made from 5mm thick steel and finished black powder coat paint finish.
+Sold in pairs.
+Item weight 88kg",54010,54010-54002-technique-scoops.jpg | 54010-half-rack-technique-scoops.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961540109,419.99,,86.4,taxable,York Fitness,14961540109
+York STS Safety Spot Bars College and Half Rack (pair),york-sts-safety-spot-bars-college-and-half-rack-pair,"To fit Half rack 55009.
+A fully welded safety spot arm with replaceable wear guards
+Made from 52mm steel and 12mm steel, finished in crinkle black powder coat paint
+Item weight 19kg.",54011,54011-54003-safety-spot-arm.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,169.99,,18.9,taxable,York Fitness,
+York STS Dip Attachment for College and Half Rack,york-sts-dip-attachment-for-college-and-half-rack,"To fit Half rack 55009.
+The fully welded 12mm steel plate and 40mm rounded steel create’s an attachment that can be used by any size athlete.
+The Dipping arms are angled from narrow to wider hand spacing
+Item weight 25kg.",54013,54013-54005-dip-attachment.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,142,,25,taxable,York Fitness,
+"York Solid Oak 8"" X 6"" Free Standing Platform",york-solid-oak-8-inch-x-6-inch-free-standing-platform,"A 12-gauge steel formed 4-piece framework surrounds the platforms via bolt fixings.
+Can be either free-standing or added to a lifting rack by way of a 105cm wide, transition insert.
+All platforms can be customised by way of vinyl graphics being applied to the oak prior to varnishing.
+Optional Ramp available for easy transport of the Multi-Function Bench on and off the platform.
+Item weight 151kg.",54230,54230-54235-solid-oak-platform.jpg | ,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,899.99,,100,taxable,York Fitness,
+York Solid Oak Insert for Power Rack and Multi-Function Rack,york-solid-oak-insert-for-power-rack-and-multi-function-rack,"Item weight 58kg.
+Solid Oak Insert used on the middle section of our Lifting platforms, and crafted for a bespoke fit to the York STS Racks.
+Custom logo can be requested before Varnish finish. 
+The Insert can use used on its own to create a true lifting surface for your STS Rack or used in conjunction with one of the 8ft x 6ft Modular Platform to enhance the look & function of your lifting area.",54250,54250-54252-insert.jpg | 54250-insert-for-multifunction-rack.jpg | 54250-insert-mf-and-pr.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961542509,319.99,,100,taxable,York Fitness,14961542509
+York Solid Oak Insert for Half Rack (college?),york-solid-oak-insert-for-half-rack-college,"Item weight 33kg.
+Solid Oak Insert used on the middle section of our Lifting platforms, and crafted for a bespoke fit to the York STS Racks.
+Custom logo can be requested before Varnish finish. 
+The Insert can use used on its own to create a true lifting surface for your STS Rack or used in conjunction with one of the 8ft x 6ft Modular Platform to enhance the look & function of your lifting area.",54252,54252-insert-half-rack.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961542523,299.99,,33,taxable,York Fitness,14961542523
+"York 3"" Stackable Set-Up Plyo Box",york-3-inch-stackable-set-up-plyo-box,"Fixed size of 60cm x 60cm square.
+Size 3” (76mm)
+Item weight 10kg.",54256,54256-3-plyo-box.jpg | 54256-54259-plyo-boxes.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961542561,149.99,,11.4,taxable,York Fitness,14961542561
+"York 6"" Stackable Set-Up Plyo Box",york-6-inch-stackable-set-up-plyo-box,"Fixed size of 60cm x 60cm square.
+Size 6” (152mm).
+Item weight 15kg.",54257,54257-6-plyo-box.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961542578,164.99,,18.6,taxable,York Fitness,14961542578
+"York 12"" Stackable Set-Up Plyo Box",york-12-inch-stackable-set-up-plyo-box,"Fixed size of 60cm x 60cm square.
+Size 12” (304mm).
+Item weight 21kg.",54258,54258-12-plyo-box.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961542585,190,,27.7,taxable,York Fitness,14961542585
+York Stackable Scooped Technique Box,york-stackable-scooped-technique-box,"The technique box has a moulded bevelled scoop to cradle an Olympic sized plate such as the York Solid Rubber Training Plate. 
+This will centre the bar and weight every time.
+Fixed size of 60cm x 60cm square.
+Size 6” (152mm).
+Item weight 17kg.",54259,54259-sp-technique-box.jpg | 54259-technique-plyo-box.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961542592,179.99,,20.5,taxable,York Fitness,14961542592
+York STS Multi-Functional Bench (for Rack Stringers),york-sts-multi-functional-bench-for-rack-stringers,"Multi adjustable bench.
+The back/seat adjusts from 0, 30, 40, 65 to 85 degrees of incline.
+York’s unique passive lock system for maximum stability.
+6 position depth adjuster.
+The tapered 260mm-215mm x 420mm Seat Pad has a 3 position incline setting.
+2 large built in spotting platforms, 2 x impact resistant wheels with self-lubricating bearings for mobility, 2 x rubber grip, lift handles further enhance the benches mobility
+The Boltaflex upholstery is 52mm thick, high density foam, mounted on to 19mm plywood back.
+Item weight 57kg",55004,55004-multifunction-bench-adjust1.jpg | 55004-multifunction-bench-adjust3.jpg | 55004-multifunction-bench-flat2.jpg | 55004-multifunction-bench-rear2.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,359.99,,57.15,taxable,York Fitness,
+York STS Power Rack,york-sts-power-rack,"The York STS power rack offers simple design, self-spotting capability and optional attachments making it a favourite among athletes and coaches. Users can develop the entire core primary and secondary strength while exercising from both inside of the rack and from its outer front side using optional accessories such as reverse technique scoops and double bar holders. Both the front and rear uprights have stainless steel hook-plates that feature safety slot design to prevent unintentional disengagement of the bar holder. Additionally, the rear upright and front uprights are adjustable to 19 positions in 7.6cm (3”) increments to accommodate a wide range of users. The rack is finished in highly durable, scratch resistant, electrostatic powder coat paint to maximize its sturdiness. 1x combo grip pull-up bar – 28mm (1.1”) knurled solid cold rolled steel bar with 135-degree V-shape in the centre for additional grip options, set at a height of 243.8cm (8ft)
+2x double bar holders – fully welded with replaceable plastic wear guards (with holders on both sides so that bars can be used on the interior and exterior of the front upright or just one bar off the rear upright)
+2x welded vertical bar holders to the rear of the rack
+12x weight storage pegs
+2x interior safety spot bars – connected by hook-plate from front to rear upright
+Inside dimension: Depth=71cm (27.9”), Width=107cm (42.1”)
+Warranty: lifetime on the frame",55006,55006-54008-power-rack-stringer.jpg | 55006-54008-power-rack-stringer2.jpg | 55006-power-rack.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961550061,"1,319.99",,200.25,taxable,York Fitness,14961550061
+York STS Half Rack,york-sts-half-rack,"The Half Rack accommodates for every option available, making it a coaches favourite in the weight room.
+Space saving footprint is a contradiction to its multi-function
+Enables athletes to perform all of the strength exercises requir by a coach/trainer safely and efficiently.
+Stainless steel hook-plates - one pair, utilize a safety slot des to prevent unintentional disengagement of the bar holder.
+Adjustable upright settings to 19 positions on 7.6cm (3”) cent increments accommodating a wide range of heights.
+Finished in highly durable powder coat paint.
+1 x Combo Grip Pull-up Bar, 28 mm knurled and solid cold ro steel bar with 135 degree v-shapein the center for additional grip options.
+Set at a height of 243.8cm (8ft)
+2 x Single Bar holders, which are fully welded with replaceable plastic wear guards.
+Two welded vertical bar holders to the rear of the rack and 12 x weight storage pegs.
+1x Bench stringer for use with the multi-function bench (see benches).
+Item weight 175kg.",55009,55009-self-standing-half-rack.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961550092,"1,019.99",,175,taxable,York Fitness,14961550092
+York STS Flat Bench,york-sts-flat-bench,"The Multi-use bench is suitable for the heavy dumbell workouts, due to its unrivalled build quality and comfort.
+The 1 piece 270mm x 1030mm seat pad is fixed in place and reinforced by 2 extra steel supports for added strength.
+The Boltaflex upholstery is 52mm thick high density foam, mounted on to 19mm plywood back.
+Finished in highly durable, scratch resistant, electrostatic powder coat paint.
+Item weight 25kg.",55026,55026-flat-bench2.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961550269,133,,24.75,taxable,York Fitness,14961550269
+York STS Flat to Incline Bench,york-sts-flat-to-incline-bench,"The 320mm x 910mm back/seat adjusts from 0, 30, 40, 65, 80 to 90 degrees of incline. The pivot points of this support are lined by bronze bushes.
+The tapered 260mm-215mm x 420mm Seat Pad has a 3 position incline to ensure comfort.
+Wear guards on the top of the front base plate ensures it’s not damaged by dumbells or footwear.
+Front mounted grab handle and rear mounted impact resistant wheels with self-lubricating bearings, allow this bench to be easily move around the gym.
+The Boltaflex upholstery is 52mm thick, high density foam, mounted on to 19mm plywood back.
+Item weight 47.7kg.",55027,55027-flat-incline-bench.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,274.99,,47.25,taxable,York Fitness,
+York STS Seated Preacher Curl,york-sts-seated-preacher-curl,"Seat has 6 position adjustment.
+The contoured foam padding places greater emphasis on the bicep by offering increased support under the arm and reducing body movement.
+10mm thick polished chrome bar holders offer a large area to “rest” the bar on, but are close enough to the bench to allow full range of motion.
+Durable powder coat finish.
+Rubber anti-slip feet.
+Item weight 59kg.",55031,55031-seated-preacher-curl.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,329.99,,58.5,taxable,York Fitness,
+York STS Olympic Flat Bench Press with Gun Racks,york-sts-olympic-flat-bench-press-with-gun-racks,"The seat pad/upholstery is set at 430mm from the floor, this makes it ideal for all users and allows a firm planting of the feet, without over extending the lower back.
+Seat pad is 1230mm x 265mm for added support. 
+Large 610mm x 420mm non-slip spotting platform.
+Non-slip rubber feet.
+Dimensions with weight storage 153cm x 166xm x 150cm.
+Item weight 72kg.",55041,55041-olympic-flat-bench-press1.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961550412,469.99,,94,taxable,York Fitness,14961550412
+York STS College Rack,york-sts-college-rack,"Review: York STS College Rack is a classed as a full commercial product by York Fitness, it's designed to perfectly match up with the full range of STS rack accessories including safety arms, scoop blocks, multi-functional bench etc. While not being a direct equivalent of either our Gym-Equip our GymRatZ range it is far more suited to the commercial training environment than many other brands which are only suited to domestic / light commercial gyms such as hotels etc as used by non-paying clients. 
+
+So what is it about this College rack that we like? For a start it's good looking. The uprights and, built-in bar holder taking 2 x Olympic bars (upright) Optional safety rails for squats, bench/shoulder press etc.
+
+The large array of add-on accesories that fit all the York STS Racks so plenty of versatillity and multi-station performance but the STS College Rack incorporates the bench stringer that allows the York Multi-Functional Bench to be locked perfectly into the rack for bench work.
+
+So what do York say about their Multi-Function Rack?
+
+""This is a UK designed product, based upon our customer's needs.  We have taken note from our customers that space is a premium and ceiling height in modern and older buildings can restrict the introduction of a squat rack or technical development of Olympic Lifting.
+
+On the STS College Rack we have utilised the stainless steel front mounted hook plate system as used on our STS Half Rack. This allows the usage of the STS Attachments such as the Spot Arms, Dip and Technique Scoops to increase the functionality of this compact rack.
+
+
+The College Rack has smaller foot print that the Half Rack, which will make it a firm favorite with Schools, Colleges, Universities and the general Health & Fitness market.
+
+The Collegiate Rack, when used with the Multi-Function Bench, can be used for Flat/Incline Bench Press, Shoulder Press and with the spot arms in situe, squats can be performed safely.""
+
+More specifics of the York STS College Rack as follows:
+
+2 x Single Barbell storage to the rear
+Bench stringer for use with the Multifunction Bench
+Frames carry a lifetime guarantee
+Finished in highly durable, scratch resistant, electrostatic powder coat paint. This is baked in a temperature controlled oven to completely cure and maximise the durability of the platinum sparkle finish.",55051,55051-york-sts-collegiate-rack.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,550,,100,taxable,York Fitness,
+York STS Glute Hamstring Machine,york-sts-glute-hamstring-machine,"Easy horizontal glide foot holder adjustment.
+Vertical pelvic adjustment to accommodate length of torso.
+Giant Glute and Pelvic rollers for body weight support.
+Additional arm supports for assisted flexions and rotations.
+Wide base for added stability.
+Rubber feet to minimise machine movement.
+Durable powder coat finish.
+Item weight 104.5kg",55053,55053-commercial-glute-hamstring-machine-1.jpg | 55053-commercial-glute-hamstring-machine-2.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961550535,629.99,,104.5,taxable,York Fitness,14961550535
+York Perform 210 Rower,york-perform-210-rower,"Maximum user weight: 120kg (264.5lbs)
+Flywheel Weight: 6kg (13lbs)
+Resistance: 8 levels of Manual magnetic resistance
+Console feedback: workout time, stroke count, calories, cumulative stroke for all workouts
+Product weight: 40.5kg (89lbs)
+Trail length: 113cm - steel
+Power: Battery
+Dimensions (in use): length: 69, 3 in.(176cm), width: 20,8” (53cm), height: 31,8” (81 cm)
+Warranty: 2 years (must be registered with York Fitness within 14 days to get the 2nd year)",56016,56016-perform-210-rower-console1.jpg | 56016-perform-210-rower-console2.jpg | 56016-perform-210-rower-front34.jpg | 56016-perform-210-rower-rear34.jpg | 56016-perform-210-rower-side-on.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961560169,349.99,,40.5,taxable,York Fitness,14961560169
+York Excel 310 Rower,york-excel-310-rower,"Flywheel: 6kg (13 lbs)
+Resistance: 16 levels of computer controlled magnetic resistance
+Trail Length: 113cm (44.5”)
+Console: 5.75” LCD display
+Console Feedback: Time, SPM, Distance, Calories, Strokes, Recovery Calendar, Temperature and Clock.
+Programmes: 24 (including 4 HRC, 1 user and 1 race)
+Heart Rate Measurement: Built-in wireless receiver (chest strap transmitter optional)
+Foldable: yes
+Dimensions (in use): Length= 176cm (69.3”), Width=53cm (20.8”), Height=81cm (32”)
+Dimensions (folded): Length=72cm (28.3”), Width=53cm (20.8”), Height=148cm (58.2”)
+Max. User Weight: 120kg (264.5 lbs)
+Foot Rest: Large padded foot plates
+Seat: Padded seat
+Power Supply: Mains
+Warranty: 2 years (must be registered with York Fitness within 14 days to get the 2nd year)",56017,56017-excel-310-rower-console.jpg | 56017-excel-310-rower-folded.jpg | 56017-excel-310-rower-front-34.jpg | 56017-excel-310-rower-rear-34.jpg | 56017-excel-310-rower-side-on.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961560176,449.99,,39.6,taxable,York Fitness,14961560176
+York 8' Skip rope,york-8-skip-rope,"The York skip rope incorporates sealed bearings ensuring a smooth spin and is 8ft (244cm) long. This lightweight rope is supplied with ergonomically designed soft foam handles to guarantee a firm and comfortable grip. It is perfect for improving co-ordination, rhythm and stamina. Length: 8ft (244cm)
+Ergonomically designed soft foam handles
+Comfortable grip
+Sealed bearings for a smooth rope spin",60002,60002-8ft-skip-rope.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600025,5.99,,0.19,taxable,York Fitness,14961600025
+York Leather skip rope,york-leather-skip-rope,"The York leather skip rope is perfect for improving muscle tone, co-ordination and stamina. It is manufactured from leather and comes with ergonomically designed soft foam handles for a comfortable grip. This lightweight, 8.5’ (259cm) skipping rope features precision sealed bearings for a smooth and fast spin. Genuine leather skipping rope
+Lightweight
+Length: 8.5’ (259cm)
+Ergonomically designed soft foam handles
+Precision sealed bearings for a smooth, fast spin",60004,60004-leather-skip-rope.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600049,13.99,,0.22,taxable,York Fitness,14961600049
+York Sit Up Bar,york-sit-up-bar,"The York sit up bar is an excellent training tool that is designed for home usage. The bar is very durable and can be easily attached to any door base. It has an adjustable bar position for the maximum comfort of using and is ideal for working the abdominal muscles. The bar is very easy to use and suitable for exercises such as sit ups and crunches. Can be easily attached to any door base
+3-position foot height adjustment
+Padded bar for enhanced comfort
+Perfect for working the abs
+Suitable for home usage
+Weight: 1kg (2.2lbs)",60009,60009-sit-up-bar-2.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600094,16.99,,0.98,taxable,York Fitness,14961600094
+York Exercise wheel,york-exercise-wheel,"The York exercise wheel weighs only 0.5kg (1.1lbs) and is a great exercise tool suitable for home usage. It is very easy to use and helps to strengthen the core muscles in order to decrease the risk of injury. It also tones the abs, thighs and arms. The wheel effectively works the muscles of the lower back and improves breathing by strengthening the abdominal muscles.Anti-slip rubber tread diameter roller
+Smooth rotation
+Padded handles for enhanced comfort
+Firms and tones the abs, arms and thighs
+Easy to use
+Perfect for home usage
+Weight: 0.5kg (1.1lbs)",60010,60010-exercise-wheel.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600100,10,,0.52,taxable,York Fitness,14961600100
+York Soft ankle/wrist weights - 2 x 0.5kg,york-soft-ankle-wrist-weights-pair-0-5kg,"The York soft ankle and wrist weights add extra resistance to each workout and are an effective way to strengthen the arms and legs. They weigh 0.5kg (1.1lbs) and can be easily adjusted thanks to the Velcro strap. These soft and comfortable weights are supplied as a pair. Soft and comfortable
+Weight: 2x 0.5kg (1.1lbs)
+Adjustable Velcro strap
+An effective way to strengthen the arms and legs
+Supplied as a pair",60024,60024-ankle-weight-purple.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600247,13,,1.06,taxable,York Fitness,14961600247
+York Soft ankle/wrist weights - 2 x 1kg,york-soft-ankle-wrist-weights-pair-1kg,"The York soft ankle and wrist weights 2 x 1kg (2.2lbs) are excellent training tools as they add extra intensity to the workout, which leads to better performance. These soft and comfortable weights are perfect for burning calories, enhancing cardiovascular strength and making the heart and lungs work harder. They can also be used during everyday activities. The weights are suitable for home usage and are great for strengthening arms and legs. In addition, they can be easily adjusted to ensure a secure and comfortable fit. Soft and comfortable
+Perfect fit
+Buckle and Velcro adjustment
+Ideal for strengthening arms and legs
+Usage: home
+Weight: 2 x 1kg (2.2lbs)
+Sold as pairs",60025,60025-ankle-weight-black.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600254,17.99,,2.07,taxable,York Fitness,14961600254
+York Soft ankle/wrist weights - 2 x 1.5kg,york-soft-ankle-wrist-weights-pair-1-5kg,"The York soft ankle and wrist weights 2 x 1.5kg (3.3lbs) can be used during everyday activities and are easily adjustable to ensure a perfect fit. These soft and comfortable weights are designed for home usage and not only help to burn more calories and enhance cardiovascular strength, but also make the heart and lungs work harder. They add extra resistance to each workout leading to enhanced performance and can be used either alone or with different types of fitness equipment. Ideal for strengthening arms and legs
+Soft and comfortable
+Perfect fit
+Buckle and Velcro adjustment
+Usage: Home
+Weight: 2 x 1.5kg (3.3lbs)
+Sold as pairs",60026,60026-ankle-weight-blue.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600261,22.99,,3.1,taxable,York Fitness,14961600261
+York Soft ankle/wrist weights - 2 x 2kg,york-soft-ankle-wrist-weights-pair-2kg,"The York soft ankle and wrist weights 2 x 2kg (4.4lbs) are ideal for the athletes who want to add more resistance to their workout and achieve more strength and agility. The weights can be easily adjusted to ensure a secure fit and are designed for home usage. They are great for burning calories, enhancing cardiovascular strength and making the heart and lungs work harder, as well as for strengthening arms and legs. Ideal for strengthening arms and legs
+Soft and comfortable
+Perfect fit
+Buckle and Velcro adjustment
+Usage: Home
+Weight: 2 x 2kg (4.4lbs)
+Sold as pairs",60027,60027-ankle-weight-turq.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600278,26.99,,4.1,taxable,York Fitness,14961600278
+York Soft handgrips - Strong,york-soft-handgrips-strong,Strengthen your grip and tone your forearms. With spring coil resistance and soft foam handles for a comfortable grip.,60029,60029-hand-grips-strong.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600292,7.99,,0.27,taxable,York Fitness,14961600292
+York Soft handgrips - Extra strong,york-soft-handgrips-extra-strong,"The York soft hand grips - extra strong offer spring coil resistance and feature easy grip handles optimising your hold for a better feel. The hand grips are ideal for toning forearms, as well as for improving hands and wrists strength. In addition, they are suitable for home usage and utilise soft foam handles to ensure maximum comfort while exercising. Extra strong hand grips
+Perfect to strengthen the grip and tone the forearms
+High Tensile Spring Steel
+Soft foam handles for comfortable grip
+Anti-slip Ergo design
+Usage: Home
+Sold in pairs",60030,60030-hand-grips-ex-strong.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600308,10,,0.36,taxable,York Fitness,14961600308
+York Doorway chinning bar,york-doorway-chinning-bar,The York Doorway Chinning Bar turns a standard door frame into a workout station.,60033,60033-chinning-bar-v1.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600339,17.35,,1.66,taxable,York Fitness,14961600339
+York Push up stands,york-push-up-stands,"York Push up stands are strong yet lightweight stands with soft foam grips specially designed to allow a deeper push up for increased muscle development. Strong but lightweight push up stands with soft foam grips.
+Specially designed to allow a deeper push up for increased muscle development.
+Stable, non-slip design.
+Price includes both stands.
+
+",60034,60034-push-up-bars.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600346,16.99,,0.63,taxable,York Fitness,14961600346
+York Weight Training Gloves - S,york-weight-training-gloves-s,These weight training gloves are easy fit Neoprene gloves with secure velcro closure. Heavy duty construction with reinforced palms. Machine washable.,60036,60036-9-gloves.jpg | 60036-9-weight-training-gloves-pack.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600360,8.99,,0.08,taxable,York Fitness,14961600360
+York Leather Gloves - S,york-leather-gloves-s,"Made from top quality leather, these gloves feature extra padded palms and elasticated wrists with velcro closure.",60044,60044-47-leather-gloves-new.jpg | 60044-7-leather-gloves-pack-new.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600445,10,,0.1,taxable,York Fitness,14961600445
+York Leather Gloves - M,york-leather-gloves-m,"Made from top quality leather, these gloves feature extra padded palms and elasticated wrists with velcro closure.",60045,60045-leather-gloves-m-pack.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600452,10,,0.1,taxable,York Fitness,14961600452
+York Leather Belt - S,york-leather-belt-s,"Made from top quality leather, this belt provides extra padded back support",60053,60053-5-leather-belt.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600537,14.99,,1,taxable,York Fitness,14961600537
+York Dipping Belt With Chain,york-dipping-belt-with-chain,"Great for upping the load when dipping or chinning, this product is made from sturdy leather and chain.",60056,60056-dipping-belt-with-chain.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600568,19.99,,0.88,taxable,York Fitness,14961600568
+York Free Standing Body Shape Punchman,york-free-standing-body-shape-punchman,"The York free standing body shape punchman offers three height adjustable settings, namely 6', 5'6"" and 5'1"". The punchman set includes high density foam torso target area and a base that can be filled either with water or with sand for improved stability – empty punchman weighs 20kg (44lbs). Designed for home-use training, the punchman is ideal for improving the user’s aerobic and anaerobic fitness. To increase the sparring experience the device offers excellent rebound effect. EVA Foam bonded body shape
+3 height adjustable settings: 6', 5'6"", 5'1"" (1.83m, 1.68m, 1.55m)
+Water or sand filled base
+Rebound effect
+Ideal for home-use training
+Empty Product Weight: 20kg (44lbs)
+Water Filled product Weight (104litres): 110kg (242lbs)",60087,60087-07.jpg | 60087-14.jpg | 60087-freestanding-punchman.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600872,299.99,,20,taxable,York Fitness,14961600872
+York Folding & Height Adjustable Punch Bag Stand,york-folding-height-adjustable-punch-bag-stand," Exclusive Patented Design.
+
+• Easy release fold flat mechanism .
+
+• Space saving fold away feature.
+
+• Multi adjustable height settings allowing for
+
+both adult and junior users.
+
+• Black powder coat finish
+
+• Maximum Eyebolt height setting 2173mm.
+
+• Includes 3 fixed weight plate stabilising pins.-
+
+(weight plates not included).
+
+• Tethered Anchor Points on base legs.
+
+• Maximum suspended weight 30kg.
+
+• Item weight 16.8kg
+
+Recommended:
+
+York punchbags 60124, 60125, 60126 not inc..
+
+York Tethered straps optional 60135.
+
+Floor Weight plates minimum requirement 60kg
+
+= 6 x 10kg plates.",60091,60091-60124-punchbag-stand.jpg | 60091-60125-03.jpg | 60091-60125-07.jpg | 60091-60125-12.jpg | 60091-60125-16.jpg | 60091-60125-19.jpg | 60091-folding-punchbag-stand-carton.jpg | 60091-folding-punchbag-stand-folded.jpg | 60091-folding-punchbag-stand-junior.jpg | 60091-folding-punchbag-stand-main.jpg | 60091-folding-punchbag-stand-semi-folded.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600919,183.83,,16.8,taxable,York Fitness,14961600919
+York Folding & Height Adjustable Speed Ball Frame,york-folding-height-adjustable-speed-ball-frame,"The York Folding and Height Adjustable Speed Ball Frame is essential boxing training equipment. The set includes swivel, fixtures/fittings and instructions for easy assembly. The frame features baked-powder-coated finish and offers maximum hanging weight of 5kg (11lbs). Swivel, fixtures/fittings and assembly instructions included
+Baked-powder-coated finish
+Maximum hanging weight: 5kg (11lbs)",60092,60092-folding-speedball.jpg | 60092-folding-speedball-1.jpg | 60092-york-folding-height-adjustable-speedball-frame-carton.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600926,81.7,,9.1,taxable,York Fitness,14961600926
+York 2ft Folding Punch Bag Wall Bracket,york-2-foot-folding-punch-bag-wall-bracket,"The York 2ft folding punch bag wall bracket is a heavy duty bracket that features tripod stabilizing arms for minimal sideways movement and metal fatigue. The bracket is fitted with four fixing plates and the set includes eight Hex Head bolts/raw bolts and assembly instructions. It comes with a durable baked powder coat finish and can hold the maximum hanging weight of 35kg (77lbs). The bracket can be fixed to a breeze block or brick wall only. Heavy duty bracket
+Stabilizing arms
+Fitted via four fixing plates
+8 Hex Head bolts/rawbolts
+Assembly instructions
+Durable baked powder coat finish
+Maximum hanging weight: 35kg (77lbs)
+Wall construction should be breeze block or brick only",60094,60094-foldingbracket.jpg | 60094-york-2ft-folding-punchbag-wall-bracket-carton.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600940,55,,3.5,taxable,York Fitness,14961600940
+York Punch Bag Wall Bracket,york-punch-bag-wall-bracket,"3 point wall fixing bracket including hanging snap lock, fixtures/fittings and assembly instructions. Baked powder coat finish. Max weight 20kg.",60095,60095-wallpunchbag-bracket.jpg | 60095-york-punchbag-wall-bracket-carton.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600957,25,,2.8,taxable,York Fitness,14961600957
+York Punch Bag Swivel with Snaplock,york-punch-bag-swivel-with-snaplock,"The York punch bag swivel with snap lock is designed to prolong the life of the York punch bag hanging straps. It allows the punch bag rotation while the punch bag is being hit which prevents the hanging straps from twisting. This comfortable snap lock ensures easy and quick fixing. One punch bag requires one swivel. Prolongs the life of punch bag’s hanging straps
+Allows the punch bag to rotate
+Convenient snap lock
+One swivel required per punch bag",60096,60096-punchbag-swivel-inc-carabina.jpg | 60096-punchbag-swivel-incpt-snaplock-carton.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600964,7,,0.19,taxable,York Fitness,14961600964
+York Rotating Ceiling Bracket,york-rotating-ceiling-bracket,"The York Rotating ceiling bracket is ideal for suspending any types of punch bags and floor to ceiling balls. This durable steel ceiling bracket is perfect for continuous, heavy usage.",60097,60097-rotating-ceiling-hook.jpg | 60097-rotating-ceiling-mount-bracket-carton.jpg | 60097-rotating-mounting-bracket.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600971,11.99,,0.6,taxable,York Fitness,14961600971
+York Heavy Duty Chrome Bearing Swivel,york-heavy-duty-chrome-bearing-swivel,The York Heavy Duty Chrome Bearing Swivel is chrome-plated swivel that features quick-release pin clip for easy removal and installation of the speedball. For additional user comfort the swivel features low-friction characteristics.,60099,60099-heavy-duty-swivel.jpg | 60099-york-heavy-duty-chrome-bearing-speedball-swivel-carton.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961600995,13,,0.67,taxable,York Fitness,14961600995
+"York 9"" Speed Ball",york-9-inch-speed-ball,"The York 9 inch speed ball incorporates re-enforced riveted hanging loop and a latex bladder for rebound and speed quality. This durable machine-stitched speed ball is perfect for training timing, punch speed and agility. It is lightweight and manufactured from a synthetic hide material. 9"" speed ball
+Lightweight
+Double stitched re-enforced seams
+Re-enforced riveted hanging loop
+Latex bladder for rebound and speed quality
+Perfect for training timing, punch speed, agility
+Machine-stitched
+Synthetic hide material",60121,60121-speedball.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601213,16.99,,0.4,taxable,York Fitness,14961601213
+"York 9"" Floor to Ceiling Ball Set",york-9-inch-floor-to-ceiling-ball-set,"The York 9 Inch Floor to Ceiling ball set is essential boxing equipment helping to enhance speed, footwork and hand to eye coordination. This high quality set includes light-weight 9-inch Reaction ball with sewn-in D-Ring top and bottom, as well as two adjustable rubber straps along with floor and ceiling brackets. The set is also comes with needle inflator. 9-inch Reaction ball with sewn-in D-Ring top and bottom
+2 adjustable rubber straps
+Floor and ceiling brackets
+Needle inflator",60122,60122-reaction-ball-inc-straps-bracket.jpg | 60122-reaction-ball-inc-straps-brackets2.jpg | 60122-reaction-ball-inc-straps-brackets-assembled.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601220,25.99,,1.4,taxable,York Fitness,14961601220
+York 9ft Nylon Speed Rope,york-9-foot-nylon-speed-rope,"The York 9ft nylon speed rope offers lightweight construction and is ideal for fitness training and warm-ups. The 9ft (2.74m) long speed rope is made from rubber/nylon and features easy-to-grip handles, each with contrasting York Fitness logo on it. Rubber/Nylon construction
+Lightweight
+York Fitness logo on handles
+Length: 9ft (2.74m)",60123,60123-nylon-speed-rope.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601237,4.99,,0.16,taxable,York Fitness,14961601237
+York 4ft Tethered Punch Bag,york-4-foot-tethered-punch-bag,"The York 4ft Tethered punch bag is manufactured from N90 CDB synthetic hide which incorporates the cross diagonal bonded (CDB) fibres with heat pressed laminated finish to ensure excellent tear resistance. In addition, the punch bag incorporates four durable hanging straps with stitched-in chrome d-rings, so there is no requirement for hanging chains. The bag is textile filled to ensure more natural feel and even balance when being struck, and is supplied with a heavy duty zip-fastened top closure to ensure maximum fill potential. The tethered loop facility at the base of the bag provides the best swing reduction when used with additional BBE accessories available in the range. Excellent tear resistance.
+No requirement for hanging chains.
+Textile filled.
+Heavy duty zip-fastened top closure for the best fill potential.
+Tethered loop facility for maximum swing reduction.
+Approx weight 23kg (50.7lbs).",60125,60125-4ft-punchbag-tethered-front.jpg | 60125-4ft-punchbag-tethered-rear.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601251,58,,23.2,taxable,York Fitness,14961601251
+York 4ft Tethered Uppercut Punch Bag,york-4-foot-tethered-uppercut-punch-bag,"The York 4ft tethered uppercut punch bag offers excellent tear resistance ensured by cross diagonal bonded (cdb) fibres with a heat pressed laminated finish. Additionally, a heavy duty zip-fastened top closure ensures maximum fill potential, while textile filling delivers more natural feel and even balance when being struck. Four durable hanging straps, with stitched-in chrome d-rings, make it possible to use the 28kg (62lbs) punch bag without hanging chains. The tethered loop facility at the base of the punch bag ensures maximum swing reduction when used with tethered straps (not included) or other hanging accessories. Material: N90 cdb synthetic hide material
+Excellent tear resistance
+Heavy duty zip-fastened top
+Textile filling
+Durable hanging straps with stitched-in chrome d-rings
+No requirement for hanging chains
+Tethered loop facility at the base
+Approximate Weight: 28kg (62lbs)
+Height: 4ft (122cm)",60126,60126-4ft-uppercut-punchbag-tethered-front.jpg | 60126-4ft-uppercut-punchbag-tethered-rear.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601268,67.99,,28.2,taxable,York Fitness,14961601268
+York 10oz Curved Hook And Jab Pads,york-10oz-curved-hook-and-jab-pads,"10oz Curved coaching pads.
+
+• Ultra Light weight design.
+
+• Latest synthetic hide material.
+
+• 40mm compression closed cell foam
+
+with exterior EVA lining.
+
+• Comfort Anti slip lining.
+
+• Ball grip palm for added grip.",60127,60127-hook-and-jab-pads.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601275,23.99,,0.6,taxable,York Fitness,14961601275
+York 8oz Sparring Gloves - Junior,york-8oz-sparring-gloves-junior,"The York Punch Bag mitts (6oz) offer eye-catching design with York Fitness logo and two green diagonal stripes. Their generously padded pre-shaped foam inserts provide ergonomic support and enhance the user comfort. The mitts have additional wrist support to make the training safer, and ventilated palm for better breathability. One size fits all
+Generously padded pre-shaped foam insert
+Ventilated palm design
+Additional elasticated wrist support
+Weight: 6oz",60128,60128-sparring-glove-8oz-junior.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601282,13.99,,0.56,taxable,York Fitness,14961601282
+York 6oz Punch Bag Mitts,york-6oz-punch-bag-mitts,"The York Punch Bag mitts (6oz) offer eye-catching design with York Fitness logo and two green diagonal stripes. Their generously padded pre-shaped foam inserts provide ergonomic support and enhance the user comfort. The mitts have additional wrist support to make the training safer, and ventilated palm for better breathability.
+One size fits all
+Generously padded pre-shaped foam insert
+Ventilated palm design
+Additional elasticated wrist support
+Weight: 6oz",60129,60129-punch-bag-mitt.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601299,13,,0.42,taxable,York Fitness,14961601299
+York 14oz Sparring Gloves - Adult,york-14oz-sparring-gloves-adult,"14oz Adult Sparring glove.
+
+• Latest synthetic hide material.
+
+• Ergonomically designed for comfort fit.
+
+• Generously padded glove incorporating
+
+shock absorbent closed cell foam.
+
+• Thumb attached safety feature.
+
+• Ventilated mesh panelled palm.
+
+• Anti Slip sweat absorbent lining.
+
+• Adjustable wrist closure support.",60130,60130-sparring-gloves-packaging.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601305,22.99,,0.96,taxable,York Fitness,14961601305
+York 16oz Multifit Headguard,york-16oz-multifit-headguard," 16oz Lightweight Anti slip Head guard.
+
+• Latest synthetic hide material.
+
+• Well padded light weight design.
+
+• Comfort fit.",60131,60131-headguard-adjustable-back.jpg | 60131-headguard-adjustable-front.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601312,22.99,,0.57,taxable,York Fitness,14961601312
+York Tethered Straps x 2 with 2 Snaplocks,york-tethered-straps-pair-with-2-snaplocks," 2 x Multi purpose Rubber bungee cords.
+
+• Adjustable length settings incorporating
+
+adjustment blocks both ends with grub
+
+screw fixings.
+
+• 2 x snap lock fixings included.
+
+Recommendations –
+
+• Do not over tighten the grub screws in
+
+the height adjustment blocks.
+
+• Used with Floor to Ceiling Reaction
+
+balls.
+
+• Used to tether punchbags to a floor
+
+mounted fixing point.
+
+• Used to tether punchbags to a free
+
+standing boxing station.",60135,60135-tethered-straps-x2.jpg | 60135-tether-straps-carton.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601350,13,,0.43,taxable,York Fitness,14961601350
+York 1kg Medicine Ball,york-1kg-medicine-ball,"Durable rubber compound material.
+Reduced bounce element. 
+Textured surface for anti-slip grip allowing for a safe and effective workout.
+Easy clean.",60151,60151-60153-60161-60162-bbe311-med-balls-stand.jpg |  60151-60155-bbe311-med-balls-stand.jpg | 60151-60155-bbe311-med-balls-stand-2.jpg | 60151-60155-york-medicine-balls-1-5kg.jpg | 60151-60160-york-medicine-balls.jpg | 60151-york-1kg-medicine-ball.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601510,19.99,,1.2,taxable,York Fitness,14961601510
+York 2kg Medicine Ball,york-2kg-medicine-ball,"Durable rubber compound material.
+Reduced bounce element. 
+Textured surface for anti-slip grip allowing for a safe and effective workout.
+Easy clean.",60152,60152-york-2kg-medicine-ball.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601527,22.99,,2.2,taxable,York Fitness,14961601527
+York 3kg Medicine Ball,york-3kg-medicine-ball,"Durable rubber compound material.
+Reduced bounce element. 
+Textured surface for anti-slip grip allowing for a safe and effective workout.
+Easy clean.",60153,60153-york-3kg-medicine-ball.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601534,28,,3.2,taxable,York Fitness,14961601534
+York 4kg Medicine Ball,york-4kg-medicine-ball,"Durable rubber compound material.
+Reduced bounce element. 
+Textured surface for anti-slip grip allowing for a safe and effective workout.
+Easy clean.",60154,60154-york-4kg-medicine-ball.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601541,34,,4.2,taxable,York Fitness,14961601541
+York 5kg Medicine Ball,york-5kg-medicine-ball,"Durable rubber compound material.
+Reduced bounce element. 
+Textured surface for anti-slip grip allowing for a safe and effective workout.
+Easy clean.",60155,60155-york-5kg-medicine-ball.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601558,40,,5.2,taxable,York Fitness,14961601558
+York 6kg Medicine Ball,york-6kg-medicine-ball,"Durable rubber compound material.
+Reduced bounce element. 
+Textured surface for anti-slip grip allowing for a safe and effective workout.
+Easy clean.",60156,60156-60160-bbe311-med-balls-stand.jpg | 60156-60160-med-balls-stand-2.jpg | 60156-60160-med-balls-stand-3.jpg | 60156-60160-york-medicine-balls-6-10kg.jpg | 60156-york-6kg-medicine-ball.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601565,46.99,,6.2,taxable,York Fitness,14961601565
+York 7kg Medicine Ball,york-7kg-medicine-ball,"Durable rubber compound material.
+Reduced bounce element. 
+Textured surface for anti-slip grip allowing for a safe and effective workout.
+Easy clean.",60157,60157-york-7kg-medicine-ball.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601572,53.99,,7.2,taxable,York Fitness,14961601572
+York 8kg Medicine Ball,york-8kg-medicine-ball,"Durable rubber compound material.
+Reduced bounce element. 
+Textured surface for anti-slip grip allowing for a safe and effective workout.
+Easy clean.",60158,60158-york-8kg-medicine-ball.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601589,61,,8.2,taxable,York Fitness,14961601589
+York 9kg Medicine Ball,york-9kg-medicine-ball,"Durable rubber compound material.
+Reduced bounce element. 
+Textured surface for anti-slip grip allowing for a safe and effective workout.
+Easy clean.",60159,60159-york-9kg-medicine-ball.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601596,67.99,,9.2,taxable,York Fitness,14961601596
+York 10kg Medicine Ball,york-10kg-medicine-ball,"Durable rubber compound material.
+Reduced bounce element. 
+Textured surface for anti-slip grip allowing for a safe and effective workout.
+Easy clean.",60160,60160-york-10kg-medicine-ball.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601602,74.99,,10.2,taxable,York Fitness,14961601602
+York 4kg Medicine Ball with Handles,york-4kg-medicine-ball-with-handles,"Durable rubber compound material.
+Reduced bounce element.
+Ergonomic dual handle grip. 
+Textured surface for anti-slip grip, allowing for a safe and effective workout.
+Easy clean.",60161,60161-york-double-handle-4kg-medicine-ball.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601619,53.99,,4.2,taxable,York Fitness,14961601619
+York 5kg Medicine Ball with Handles,york-5kg-medicine-ball-with-handles,"Durable rubber compound material.
+Reduced bounce element.
+Ergonomic dual handle grip. 
+Textured surface for anti-slip grip, allowing for a safe and effective workout.
+Easy clean.",60162,60162-york-double-handle-5kg-medicine-ball.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601626,59.99,,5.2,taxable,York Fitness,14961601626
+York 6kg Medicine Ball with Handles,york-6kg-medicine-ball-with-handles,"Durable rubber compound material.
+Reduced bounce element.
+Ergonomic dual handle grip. 
+Textured surface for anti-slip grip, allowing for a safe and effective workout.
+Easy clean.",60163,60163-york-double-handle-6kg-medicine-ball.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601633,64.99,,6.2,taxable,York Fitness,14961601633
+York 7kg Medicine Ball with Handles,york-7kg-medicine-ball-with-handles,"Durable rubber compound material.
+Reduced bounce element.
+Ergonomic dual handle grip. 
+Textured surface for anti-slip grip, allowing for a safe and effective workout.
+Easy clean.",60164,60164-york-double-handle-7kg-medicine-ball.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601640,70,,7.2,taxable,York Fitness,14961601640
+York 8kg Medicine Ball with Handles,york-8kg-medicine-ball-with-handles,"Durable rubber compound material.
+Reduced bounce element.
+Ergonomic dual handle grip. 
+Textured surface for anti-slip grip, allowing for a safe and effective workout.
+Easy clean.",60165,60165-york-double-handle-8kg-medicine-ball.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601657,76,,8.2,taxable,York Fitness,14961601657
+York 9kg Medicine Ball with Handles,york-9kg-medicine-ball-with-handles,"Durable rubber compound material.
+Reduced bounce element.
+Ergonomic dual handle grip. 
+Textured surface for anti-slip grip, allowing for a safe and effective workout.
+Easy clean.",60166,60166-york-double-handle-9kg-medicine-ball.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601664,82.99,,9.2,taxable,York Fitness,14961601664
+York 10kg Medicine Ball with Handles,york-10kg-medicine-ball-with-handles,"Durable rubber compound material.
+Reduced bounce element.
+Ergonomic dual handle grip. 
+Textured surface for anti-slip grip, allowing for a safe and effective workout.
+Easy clean.",60167,60167-york-double-handle-10kg-medicine-ball.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601671,89.99,,10.2,taxable,York Fitness,14961601671
+York 3kg Medicine Ball with Rope,york-3kg-medicine-ball-with-rope,"Durable rubber compound material.
+Reduced bounce element.
+Looped nylon rope for assisted power swings.
+Easy clean.",60168,60168-30170-round-medicine-balls-with-rope.jpg | 60168-60170-bbe311-med-balls-stand.jpg | 60168-york-3kg-medicine-ball-with-rope.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601688,40,,3.2,taxable,York Fitness,14961601688
+York 4kg Medicine Ball with Rope,york-4kg-medicine-ball-with-rope,"Durable rubber compound material.
+Reduced bounce element.
+Looped nylon rope for assisted power swings.
+Easy clean.",60169,60169-york-4kg-medicine-ball-with-rope.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601695,44.99,,4.2,taxable,York Fitness,14961601695
+York 5kg Medicine Ball with Rope,york-5kg-medicine-ball-with-rope,"Durable rubber compound material.
+Reduced bounce element.
+Looped nylon rope for assisted power swings.
+Easy clean.",60170,60170-york-5kg-medicine-ball-with-rope.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601701,49.99,,5.2,taxable,York Fitness,14961601701
+York 4kg Kettlebell,york-4kg-kettlebell,"Steel handle for additional durability.
+Cast iron moulded body.
+Traditional shape
+Smooth handle finish for performing rotational lifts and swings.
+Domed outer surface for ease of rotation and comfort.
+Integrally stamped size decal for limited wear.
+Flat milled base.
+Baked paint finish with additional lacquer coating.",60171,60171-60178-commercial-kettlebells.jpg | 60171-commercial-kettlebell-4kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601718,14.99,,4.5,taxable,York Fitness,14961601718
+York 8kg Kettlebell,york-8kg-kettlebell,"Steel handle for additional durability.
+Cast iron moulded body.
+Traditional shape
+Smooth handle finish for performing rotational lifts and swings.
+Domed outer surface for ease of rotation and comfort.
+Integrally stamped size decal for limited wear.
+Flat milled base.
+Baked paint finish with additional lacquer coating.",60172,60172-commercial-kettlebell-8kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601725,25,,8.5,taxable,York Fitness,14961601725
+York 12kg Kettlebell,york-12kg-kettlebell,"Steel handle for additional durability.
+Cast iron moulded body.
+Traditional shape
+Smooth handle finish for performing rotational lifts and swings.
+Domed outer surface for ease of rotation and comfort.
+Integrally stamped size decal for limited wear.
+Flat milled base.
+Baked paint finish with additional lacquer coating.",60173,60173-commercial-kettlebell-12kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601732,34.99,,12.5,taxable,York Fitness,14961601732
+York 16kg Kettlebell,york-16kg-kettlebell,"Steel handle for additional durability.
+Cast iron moulded body.
+Traditional shape
+Smooth handle finish for performing rotational lifts and swings.
+Domed outer surface for ease of rotation and comfort.
+Integrally stamped size decal for limited wear.
+Flat milled base.
+Baked paint finish with additional lacquer coating.",60174,60174-commercial-kettlebell-16kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601749,44.99,,16.5,taxable,York Fitness,14961601749
+York 20kg Kettlebell,york-20kg-kettlebell,"Steel handle for additional durability.
+Cast iron moulded body.
+Traditional shape
+Smooth handle finish for performing rotational lifts and swings.
+Domed outer surface for ease of rotation and comfort.
+Integrally stamped size decal for limited wear.
+Flat milled base.
+Baked paint finish with additional lacquer coating.",60175,60175-commercial-kettlebell-20kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601756,55,,20.5,taxable,York Fitness,14961601756
+York 24kg Kettlebell,york-24kg-kettlebell,"Steel handle for additional durability.
+Cast iron moulded body.
+Traditional shape
+Smooth handle finish for performing rotational lifts and swings.
+Domed outer surface for ease of rotation and comfort.
+Integrally stamped size decal for limited wear.
+Flat milled base.
+Baked paint finish with additional lacquer coating.",60176,60176-commercial-kettlebell-24kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601763,64.99,,24.5,taxable,York Fitness,14961601763
+York 28kg Kettlebell,york-28kg-kettlebell,"Steel handle for additional durability.
+Cast iron moulded body.
+Traditional shape
+Smooth handle finish for performing rotational lifts and swings.
+Domed outer surface for ease of rotation and comfort.
+Integrally stamped size decal for limited wear.
+Flat milled base.
+Baked paint finish with additional lacquer coating.",60177,60177-commercial-kettlebell-28kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601770,74.99,,28.5,taxable,York Fitness,14961601770
+York 32kg Kettlebell,york-32kg-kettlebell,"Steel handle for additional durability.
+Cast iron moulded body.
+Traditional shape
+Smooth handle finish for performing rotational lifts and swings.
+Domed outer surface for ease of rotation and comfort.
+Integrally stamped size decal for limited wear.
+Flat milled base.
+Baked paint finish with additional lacquer coating.",60178,60178-commercial-kettlebell-32kg.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961601787,85,,32.5,taxable,York Fitness,14961601787
+York 2 Sided A-Frame Rack (for Rubber Hex 1.25kg to 12.5kg),york-2-sided-a-frame-rack-for-rubber-hex-125kg-to-125kg,"Holds a combination of up to six pairs of York Rubber Hex or Chrome dumbells.
+All-steelconstruction.
+Durable black powder coat finish.
+Dumbells not included.
+Item weight 18kg.",69002,69002-2-sided-a-frame-rack.jpg | 69002-2-sided-a-frame-rack-hex.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961690026,89.99,,18,taxable,York Fitness,14961690026
+York Mobile Aerobic Rack,york-mobile-aerobic-rack,"Easy to access weight sets.
+Can be easily moved due to the large 360 degree caster wheels.
+Can safely and easily store 20 x of the York Aerobic sets.
+Made from 1 ½” and 2” squared tubular steel. 
+Durable black powder coat finish.
+Item weight 26kg.
+Available but not included are:
+Aerobic disc and collar set (York code: 1170)
+Chrome aerobic bars (York code: 1174)",69034,69034-mobile-aerobic-rack-empty.jpg | 69034-mobile-aerobic-rack-full.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961690347,349.99,,25,taxable,York Fitness,14961690347
+York Horizontal Plate Rack (Toaster Rack),york-horizontal-plate-rack-toaster-rack,"This rack is custom made for the York Solid Rubber Training plates, Bumper Grip plates and a quantity of Olympic cast iron plates.
+Takes 2 of each weight for Solid Rubber Training plate, Bumper Grip and the Olympic cast.
+It also has storage for 2 of each the smaller Olympic cast increments such as 1.25, 2.5 and 5kg. 
+These are the ideal rack to serve a full set of plates to 1 of our platforms, due to their low to the ground in design and minimalist look.
+1 x grab handle and 2 x wheels for easy transportation between stations.
+Made from 8mm steel finished in crinkle black (plates not included).
+The floor based design allows plates to be easily rolled on and off as required.
+Item weight 28kg.",69041,69041-new-horizontal-plate-tree-rack.jpg | 69041-new-horizontal-plate-tree-rack-with-weights.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,139.99,,27.9,taxable,York Fitness,
+York 2 Sided Vertical Rack (for Chrome Club Pack),york-2-sided-vertical-rack-for-chrome-club-pack,"Holds a combination of up to 10 pairs of York Rubber Hex or Chrome dumbells.
+Easy lift on and off access to the dumbells due to the vertical positioning design.
+All-steelconstruction. 
+Durable black powder coat finish.
+Simple yet sturdy bolt together design.
+Durable nylon based plastic wear guards to prevent damage to the handles of dumbells.
+Item weight 23kg.",69044,69044-2-sided-vertical-rack-chrome.jpg | 69044-2-sided-vertical-rack-empty.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961690446,191.99,,23,taxable,York Fitness,14961690446
+York 2-Tier Dumbbell Saddle Rack (Holds Pro-Styles 6 Pairs),york-2-tier-dumbbell-saddle-rack-holds-pro-styles-6-pairs,"ETS Saddle Dumbell Rack for the “Medial Grip” Pro Style Dumbells.
+2-tier rack that hold 6 pairs of Pro Style Dumbells.
+Made from 10cm x 5cm elliptical tubing for superior strength and exceptional looks.
+Large 20cm x 16cm steel foot plates to spread the weight of a fully loaded rack, these also come with pre-drilled hole for a permanent fix if needed.
+The tray of the rack is 25cm in width and has a large dumbell cup, measuring 12cm in length.
+L = 157cm x D = 65cm x H = 88cm
+Item weight 60kg.",69045,69045-york-ets-2-tier-dumbell-rack-6-pair-empty.jpg | 69045-york-ets-2-tier-dumbell-rack-6-pair-full.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961690453,283,,60,taxable,York Fitness,14961690453
+York 2-Tier Dumbbell Saddle Rack (Holds Pro Styles 10 Pairs),york-2-tier-dumbbell-saddle-rack-holds-pro-styles-10-pairs,"Smooth Saddle dumbell rack holders for the “Medial Grip” Pro style dumbells.
+2-tier Racks that hold 10 pairs of Pro style dumbells.
+Made from 10cm x 5cm elliptical tubing for superior strength and exceptional looks.
+Large 20cm x 16cm steel foot plates to spread the weight of a fully loaded rack, these also come with pre-drilled hole for a permanent fix if needed.
+The tray of the rack is 25cm in width and has a large dumbell cup, measuring 12cm in length.
+L = 265cm x D = 65cm x H = 88cm
+Item weight 95kg.",69046,69046-ets-2-tier-dumbell-saddle-rack.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961690460,389.99,,95,taxable,York Fitness,14961690460
+York 3 Tier Tray Rack (Holds 14 pairs Legacy or Rubber Hex DB's),york-3-tier-tray-rack-holds-14-pairs-legacy-or-rubber-hex-dumbbells,"Universal Dumbell Rack Holder.
+3 Tier tray design.
+Trays angled for easy access.
+Durable black paint finish.
+Simple bolt together design.
+L -175cm x D -61cm x H -101cm.
+Item weight 53kg.",69127,69127-3-tier-dumbell-rack.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,349.99,,,taxable,York Fitness,
+York Olympic Plate Tree Rack with 2 Olympic Bar Holders,york-olympic-plate-tree-rack-with-2-olympic-bar-holders,"Includes 2 x International bar holders.
+Space Efficient Olympic bar and weight plate storage system.
+Incorporates 6 x weight pegs covered in a hard wearing rubber coating.
+Stores Olympic weight plates ranging from 1.25kg-25kg (standard cast or ISO-Grip).
+Weight pegs are 4.5cm in diameter and 19cm in length. 
+The base and upright are made from 8cm x 5cm squared steel, which is 3mm in thickness.
+Powder coated in a durable black finish.
+4 x Rubber anti-slip feet.
+Item weight 35kg.",69139,69139-olympic-plate-tree-rack.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,,179.99,,35,taxable,York Fitness,
+York Olympic Single Sided Plate Tree Rack with 2 Olympic Bar Holders,york-olympic-single-sided-plate-tree-rack-with-2-olympic-bar-holders,"4 x 2” weight storage pegs to accommodate Solid Rubber training plates, bumper plates and any 20,25 and 50kg cast iron plate.
+Six additional 2” plate storage pegs are located behind the front side of the tree; (the lower two pegs are for Olympic 20, 25 and 50kg plates, and the four other pegs are for smaller increment of cast or ISO-Grip plates. 
+The front weight pegs are 4.5cm x 33cm, the rear pegs are 4cm x 21cm.
+Vertical bar storage for two Olympic Bars and two vertical pegs for collar storage.
+Large Steel foot plates with pre-drilled holes, should a permanent fixture be required.
+Item weight 65kg.",69142,69142-single-sided-plate-tree.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961691429,299.99,,98,taxable,York Fitness,14961691429
+York Pro Style Barbell Rack (For 4 Barbells),york-pro-style-barbell-rack-for-4-barbells,"Holds 4 Bars.
+Made from 10cm x 5cm elliptical tubing for superior strength and exceptional looks.
+Non slip rubber feet and large rear foot plates with pre-drilled holes for permanent fix if needed.
+Space efficient footprint.
+Can be used free standing or against a wall.
+Item weight 44kg.",69150,69150-york-ets-barbellcurl-rack-closeup.jpg | 69150-york-ets-barbellcurl-rack-empty.jpg | 69150-york-ets-barbellcurl-rack-full.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961691504,166.99,,33.5,taxable,York Fitness,14961691504
+BBE Club 7oz Leather Bag Mitts,boxing-bbe-club-7oz-leather-bag-mitts,"BBE 7oz Leather Bag Mitts are designed for bag work, the lightweight design ensures no excess is in the way whilst working on the bag itself. The Mitts have added protect for working the bag ensure the user is not injured by the gloves taking the impact instead of the users hands directly.
+
+*12 month warranty  ",bbe022,bbe022-club-leather-mitt.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961200225,19.99,,0.42,taxable,York Fitness,14961200225
+BBE Club 12oz Sparring Gloves,boxing-bbe-club-12oz-sparring-gloves,"The BBE Ring Trainer Boxing Glove - 12oz is well proven boxing sparring glove in black leather with PU palm and elasticated cuff for great wrist support. It has been designed for the serious boxer or club usage. Ring trainer all leather sparring glove
+Designed for the serious boxer and or club usage
+Elasticated wrist strap with hook and loop fixing wrist support
+Shaped glove for additional comfort and support
+Weight: 12 oz",BBE050,bbe050-bbe051-bbe052-sparring-glove-pu-nopt-1.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961200508,26.99,,0.82,taxable,York Fitness,14961200508
+BBE Club 10oz Leather Ring Trainer Gloves,boxing-bbe-club-10oz-leather-ring-trainer-gloves,"The BBE Club ring trainer gloves are supplied with a vented palm for hand cooling and feature an inner palm finger grip bar. The gloves are produced from top quality leather and offer an anti- bacterial and anti-slip sweat absorbent lining, as well as an elasticated full wrap around wrist support. They have an ergonomic design and utilise a thumb attached safety feature. Leather gloves
+Ergonomic design and comfort fit
+Latex shock absorbent foam padding
+Thumb attached safety feature
+Inner palm finger grip bar
+Vented palm for hand cooling
+Anti-bacterial and anti-slip sweat absorbent lining
+Elasticated full wrap around wrist support
+Weight: 0.6kg (1.32lbs)",BBE053,bbe053-club-ring-trainer.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961200539,37,,0.59,taxable,York Fitness,14961200539
+BBE Club 12oz Leather Ring Trainer Gloves,boxing-bbe-club-12oz-leather-ring-trainer-gloves,"The BBE Ring Trainer Boxing Glove - 12oz is well proven boxing sparring glove in black leather with PU palm and elasticated cuff for great wrist support. It has been designed for the serious boxer or club usage. Ring trainer all leather sparring glove
+Designed for the serious boxer and or club usage
+Elasticated wrist strap with hook and loop fixing wrist support
+Shaped glove for additional comfort and support
+Weight: 12 oz",bbe054,bbe054-bbe055-bbe056-ring-trainer-leather2.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961200546,38.99,,0.76,taxable,York Fitness,14961200546
+BBE Club 4ft Leather Super Impact Punch Bag,boxing-bbe-club-4-foot-leather-super-impact-punch-bag,"The BBE Club Super Impact is manufactured from leather for superior durability and feel. It weighs approximately 30kg (66lbs) and is fitted with 6 chrome plated D-rings. The Super Impact has a diameter of 14” (35cm) and is designed for heavy hitters. This 4ft (120cm), extra durable punch bag has a heavy duty zip top closure with seam protection and is textile filled with a balance of light, medium and heavy fill to provide an even weighted balanced bag. The bag is great for club or home use and perfect for use with a 6 strand chain set (optional). Length: 4ft (120cm)
+Diameter: 14” (35cm)
+All leather punch bag
+Double stitched bag seams using quality thread
+6 x sewn in bag patches re-enforced with chrome plated D-rings
+Heavy duty zip top closure with seam protection
+Textile filled with a balance of light, medium and heavy fill
+For use with a 6 strand chain set (optional)
+Weight: Approx. 30kg (66lbs)",bbe092,bbe092-super-impact-leather-bag-4ft.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961200928,190,,30.2,taxable,York Fitness,14961200928
+BBE Club 4 Strand Punch Bag Chain,boxing-bbe-club-4-strand-punch-bag-chain,"The BBE Punchbag chain set offers 4 strands and a swivel attached at the top of the chain, which allows the punch bag to rotate and reduce undue stress on the links of the chain. This 4 strand chrome plated hanging chain features welded metal links. The length of the chain is 51cm. The set is durable and can be easily clipped onto punchbag and ceiling fixture. It can support the maximum weight of 30kg (66lbs). 4 strand chain
+Chrome plated
+Swivel included
+Welded links
+Easily clipped
+Ideal for suspending leather punchbags
+Chain length: 51cm
+Max weight supported: 30kg (66lbs)",BBE099,bbe099-punchbag-chain-set-4-strand.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961200997,10.99,,0.82,taxable,York Fitness,14961200997
+BBE Club 6 Strand Punch Bag Chain,boxing-bbe-club-6-strand-punch-bag-chain,"The BBE Club 6 strand punch bag chain weighs approximately 1kg (2.2lbs) and is attached to a rotating swivel which allows the punch bag to rotate in order to reduce undue stress on the chain links and the bag fixings. This chrome plated punch bag hanging chain is supplied with welded metal links. 6 strand chrome plated punch bag hanging chain with welded metal links
+Rotating swivel
+Weight: Approx. 1kg (2.2lbs)",bbe100,bbe100-punchbag-chain-set-6-strand.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961201000,13,,1.1,taxable,York Fitness,14961201000
+"BBE Club 8"" Leather Lightweight Speed Ball",boxing-bbe-club-8-inch-leather-lightweight-speed-ball,"The BBE Club medium speed ball is lightweight (0.28kg) and fitted with a re-enforced hanging loop with a heavy duty webbed lining. This 9” (22.9cm) speed ball is produced from leather ensuring high quality and enhanced durability. It has sewn in latex rubber bladder and is suitable for club use. In addition, the speed ball features machine stitched seams for extra durability. Leather 9” (22.9cm) speed ball
+Size: Medium
+Lightweight sewn in latex rubber bladder
+Machine stitched seams for durability
+Re-enforced hanging loop with a heavy duty webbed lining
+Suitable for club use
+Weight: 0.28kg (0.61lbs)",BBE134,bbe134-club-lightweight-speedball.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961201345,19.99,,0.37,taxable,York Fitness,14961201345
+BBE Club Leather Hook And Jab Pads,boxing-bbe-club-leather-hook-and-jab-pads,"The BBE Club hook and jab pads utilise sewn in disc mounted targets and weigh approximately 0.5kg (1.1lbs). These traditional style coaching pads are manufactured from leather for superior durability and feel and offer lightweight shock absorbent 30mm closed cell air foam incorporating an additional layer of impact resistant EVA foam. They feature an elasticated individual finger pocket glove ensuring a good grip. The pads are great for improving agility, balance and hand-eye co-ordination. Traditional style coaching pads
+Material: Leather
+Lightweight shock absorbent 30mm closed cell air foam incorporating an additional layer of impact resistant EVA foam
+Elasticated individual finger pocket glove (to ensure a good grip)
+Sewn in disc mounted targets included
+Weight: Approx. 0.5kg (1.1lbs)",bbe136,bbe136-club-leather-hook-jab-pad.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961201369,31.99,,0.38,taxable,York Fitness,14961201369
+BBE Club Canvas Hook and Jab Pads,boxing-bbe-club-canvas-hook-and-jab-pads,"The BBE Club curved hook and jab pads feature lightweight shock absorbent 40mm closed cell air foam incorporating an additional layer of impact resistant EVA foam. The pads have a curved design and offer sewn in disc mounted targets for hand-eye co-ordination. These high quality pads are made from durable canvas material and utilise an elasticated individual finger pocket glove providing a good grip. Curved design
+Material: Canvas
+Lightweight shock absorbent 40mm closed cell air foam incorporating an additional layer of impact resistant EVA foam
+Elasticated individual finger pocket glove
+Sewn in disc mounted targets included
+Weight: 0.5kg (1.1lbs)",bbe141,bbe141-trad-canvas-hook-jab-pads.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961201413,22,,0.5,taxable,York Fitness,14961201413
+BBE Club Double Gumshield,boxing-bbe-club-double-gumshield,"A specially formulated clear plastic gum shield that protects the top and bottom rows of teeth. The gum shields are sold separately in a small plastic case and supplied with instructions on how to personally mould them to the teeth. Commonly known as 'boil and bite', this gum shield will allow a good but limited amount of protection.",bbe160,bbe160-bbe163-gumsheild-adult-clear.jpg | bbe160-gumshield-adult-double-clear.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961201604,4,,0.1,taxable,York Fitness,14961201604
+BBE Club Single Gumshield,boxing-bbe-club-single-gumshield,"The BBE Single Gumshield is a Single bite-down gumshield that protects the mouth against the impacts of boxing, the gumshield features a classic design for easy useage. The Gumshield is an easy to fit and simple to clean. This item is a sealed item for hygienic reasons.",bbe163,bbe163-gumshield-adult-single-clear.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961201635,2.99,,0.1,taxable,York Fitness,14961201635
+BBE Club 4ft Leather Punch Bag with Chain,boxing-bbe-club-4-foot-leather-punch-bag-with-chain,"The BBE club leather punchbag with chains is 3.5ft (102cm) long and has a diameter of 13” (33cm). It is made from 100% leather and textile filled to weigh ca. 24kg (53lbs). The bag has 4 sewn in chrome pleated D-rings and is supplied with a set of 4 strand chains with a built in swivel.
+100% quality leather
+4 sewn in chrome pleated D-rings
+Weight: ca. 24kg (53lbs)
+Length: 102cm (3.5ft)
+Diameter: 33cm (13”)
+Suppliedwith a set of 4 strand chains with abuilt in swivel",bbe166,bbe166-club-leather-punchbag-chain.jpg | bbe166-club-leather-punchbag-chain2.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961201666,115,,21.2,taxable,York Fitness,14961201666
+BBE Club Abdominal Protector - Small to Medium,boxing-bbe-club-abdominal-protector-small-to-medium,"The BBE Club Abdominal Protector is designed to take the impact contact around the abdominal area, the product straps around the waist to provide extra comfort whilst proforming the exercise. The product is lightweight to create ease of use and comfort to the user. Available in sizes Small to Medium",BBE180,bbe180-bbe181-club-abdo-protector1.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961201819,20.99,,0.34,taxable,York Fitness,14961201819
+"BBE Club 9"" Leather Heavy Duty Speed Ball",boxing-bbe-club-9-inch-leather-heavy-duty-speed-ball,"The BBE Club heavy duty speed ball weighs 0.32kg (0.7lbs) and is great for improving boxers overall hand-eye co-ordination and learning to shift weight effectively between two feet. This 9” (22.9cm) speed ball is made from leather for extra durability and incorporates a re-enforced hanging loop with a heavy duty webbed lining. It offers machine stitched seams and a sewn in latex rubber bladder.
+9” (22.9cm) leather speed ball
+Size: Medium
+Sewn in latex rubber bladder
+Machine stitched seams
+Re-enforced hanging loop with a heavy duty webbed lining
+Weight: 0.32kg (0.7lbs)",BBE186,bbe186-bbe187-international-speedball-butile.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961201864,23.99,,0.28,taxable,York Fitness,14961201864
+BBE Maxgrip Medicine Ball Storage Rack,boxing-bbe-maxgrip-medicine-ball-storage-rack,"Lightweight design.
+Sturdy construction.
+Holds minimum of 12 max grip balls (not included).
+Durable black powder coat finish.
+Horizontal ball rack, incorporating 4 shelves to allow multi-use combination of storing medicine balls.
+Easy to assemble.
+Perfect for use in gym, fitness centre etc.
+Item weight 14.5kg",bbe310,bbe310-med-ball-horizontal-rack.jpg | bbe310-rack-with-various-med-balls-1.jpg | bbe310-rack-with-various-med-balls-2.jpg | bbe310-rack-with-various-med-balls-3.jpg | bbe310-rack-with-various-med-balls-4.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961203103,94.99,,14.5,taxable,York Fitness,14961203103
+BBE Maxgrip Medicine Ball Display Rack,boxing-bbe-maxgrip-medicine-ball-display-rack,"Space saving vertical ball rack.
+Lightweight design.
+Sturdy construction.
+Holds 5 Max grip balls in any combination of 1kg-10kg (not included).
+Durable black powder coat finish.
+Easy to assemble.
+Perfect for use in a gym, fitness centre etc.
+Item weight 7kg.",BBE311,bbe311-med-ball-vertical-stand.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961203114,62.99,,7,taxable,York Fitness,14961203114
+BBE Club 2.5 meter Handwraps,boxing-bbe-club-25-meter-handwraps,"The BBE Club hand wraps are equipped with a thumb loop fixing and weigh 0.1kg (0.2lbs). They are produced from a machine washable stretch cotton fabric and available in 2.5m for competition or sparring use. The handwraps utilise a 1” (2.5cm) Velcro cuff strap fixing providing a perfect fit. Length: 2.5m
+Width: 2” (5cm)
+Machine washable stretch cotton fabric
+Thumb loop fixing
+1” (2.5cm) Velcro cuff strap fixing
+Weight: 0.1kg (0.2lbs)
+",bbe320,bbe320-handwraps-black.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961203202,4.99,,0.06,taxable,York Fitness,14961203202
+BBE 14oz Sparring Gloves - Adult,boxing-bbe-14oz-sparring-gloves-adult,"The BBE 14oz sparring gloves – adult have a ventilated palm construction to ensure top comfort and breathability during sparring sessions. The gloves are padded with high density shock absorbing foam and made from a durable vinyl material that is easy to clean. They feature a safety thumb design attachment as well as an adjustable wrist support for added safety. Durable vinyl material
+Easy to clean
+Shock absorbent foam
+Comfortable fit
+Safety feature thumb attached
+Adjustable wrist support
+BBE logo
+Weight: 14oz (0.4kg)
+Colour: black/green",BBE567,bbe567-571-06.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961205671,22.99,,0.85,taxable,York Fitness,14961205671
+BBE Pro Floor to Ceiling Ball Straps x 2,boxing-bbe-pro-floor-to-ceiling-ball-straps-pair,"The BBE Pro floor to ceiling ball set includes 2 x plated snap lock fixings and a pair of height adjustable straps. The ball is manufactured from high quality leather and has re-enforced stitched seams for added durability. This 7” (17.8cm) reaction ball will help you develop great head movement, timing, speed and combinations. It comes with a sewn in latex bladder. 7” (17.8cm) diameter reaction ball
+Quality leather material
+Re-enforced stitched seams
+Latex sewn in bladder
+Butile rubber non leak valve
+Includes a pair of height adjustable straps
+2 x plated snap lock fixings
+Weight: Approx.0.72kg",BBE643,bbe643-floor-to-ceiling-straps.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206432,10,,0.24,taxable,York Fitness,14961206432
+BBE Pro 3kg Leather Medicine Ball,boxing-bbe-pro-3kg-leather-medicine-ball,"The BBE Leather medicine ball 3kg is a useful 8-panel hand stitched ball, which helps its users to train and tone muscles, especially the core ones like abs or lower back.
+Weight: 3kg
+8-panel hand stitched
+Made from leather",BBE645,bbe645-bbe646-bbe647-medicine-ball-leather.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206456,26.99,,3,taxable,York Fitness,14961206456
+"BBE Pro 8"" Rubber/Nylon Speed Rope",boxing-bbe-pro-8-inch-rubber-nylon-speed-rope,"The BBE 8"" Rubber/Nylon Speed Rope is a flexible design that is versitile to keep up with every fitness session, This product has extra grip handles complete with a sleek rope that glides through the air with minimum resistance.",BBE648,bbe648-speed-rope-pro.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206487,5.99,,0.14,taxable,York Fitness,14961206487
+BBE Pro 6 Strand Punch Bag Chain,boxing-bbe-pro-6-strand-punch-bag-chain,"The BBE Club 6 strand punch bag chain weighs approximately 1kg (2.2lbs) and is attached to a rotating swivel which allows the punch bag to rotate in order to reduce undue stress on the chain links and the bag fixings. This chrome plated punch bag hanging chain is supplied with welded metal links. 6 strand chrome plated punch bag hanging chain with welded metal links
+Rotating swivel
+Weight: Approx. 1kg (2.2lbs)",BBE649,bbe649-chain-6-strand-nickel.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206494,22,,1.06,taxable,York Fitness,14961206494
+BBE Pro Heavy Duty Punch Bag Spring,boxing-bbe-pro-heavy-duty-punch-bag-spring,"The BBE Pro heavy duty punch bag spring is designed to reduce stress and tension of the punch bag hangers and chains. It weighs 0.34kg (0.74lbs) and can be used in conjunction with Snaplock carabina’s x 2 (not included). This shock absorbent, heavy duty spring hanger dissipates impact force and reduces swing. Heavy duty punch bag spring hanger
+Shock absorbent
+Used in conjunction with Snaplock carabina’s x 2 (not included)
+Reduces the stress and tension of the punch bag hangers and chains
+Dissipates impact force and reduces swing
+Maximum load: 50kg
+Weight: 0.34kg (0.74lbs)",BBE650,bbe650-bbe-pro-heavy-duty-punchbag-spring.jpg | bbe650-punchbag-spring-heavy-duty.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206500,10,,0.34,taxable,York Fitness,14961206500
+BBE Pro Snaplock Bag Hook,boxing-bbe-pro-snaplock-bag-hook,"The BBE Pro Heavy Duty Snaplock Bag Hook is designed to secure a punchbag in place, the hook holds a punch bag but allows it to be flexible around the bag, the hook is ideal for attaching the spring's to a bracket/ceiling hook and also for  attaching the base of spring's to bag chains.",BBE651,bbe651-bbe-pro-snaplock-hook.jpg | bbe651-snaplock-nickel.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206517,3.49,,0.12,taxable,York Fitness,14961206517
+"BBE Pro 7"" Leather Floor to Ceiling Ball Set",boxing-bbe-pro-7-inch-leather-floor-to-ceiling-ball-set,"The BBE Pro floor to ceiling ball set includes 2 x plated snap lock fixings and a pair of height adjustable straps. The ball is manufactured from high quality leather and has re-enforced stitched seams for added durability. This 7” (17.8cm) reaction ball will help you develop great head movement, timing, speed and combinations. It comes with a sewn in latex bladder. 7” (17.8cm) diameter reaction ball
+Quality leather material
+Re-enforced stitched seams
+Latex sewn in bladder
+Butile rubber non leak valve
+Includes a pair of height adjustable straps
+2 x plated snap lock fixings
+Weight: Approx.0.72kg
+",BBE653,bbe653-floor-to-ceiling-ball-7-inch-inc-straps.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206531,40,,0.72,taxable,York Fitness,14961206531
+BBE Pro 12oz Leather Sparring Gloves,boxing-bbe-pro-12oz-leather-sparring-gloves,"12oz quality leather gloves incorporating an elasticated wrist strap for multi-fit comfort. Machine injection moulded foam inserts shaped ergonomically for weight and balance distribution. The anti bacterial and sweat repellent lining adds to the overall comfort and fit of the glove.
+",bbe663,bbe663-bbe664-bbe665-glove-spar-fight-velcro.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206630,64.99,,0.69,taxable,York Fitness,14961206630
+BBE Pro 4 meter Stretch Handwraps,boxing-bbe-pro-4-meter-stretch-handwraps,"4 metre stretch cotton handwraps, durable and washable, includes thumb loop and velcro closure.",BBE667,bbe667-handwraps-stretch-cotton.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206678,5.99,,0.18,taxable,York Fitness,14961206678
+BBE Pro Oxide Strapping Tape,boxing-bbe-pro-oxide-strapping-tape,"The BBE Pro Oxide strapping tape is self adhesive and weighs 0.3kg per roll (0.66lbs). This professional hand bandage tape is oxide free and comes in a 50m roll. In addition, it is 1"" (2.5cm) wide. Quality 1” (2.5cm) professional hand bandage tape
+Oxide free specification
+Self adhesive
+Length: 50m
+Weight: 0.3kg per roll (0.66lbs)",bbe668,bbe668-bbe-oxide-strapping-tape.jpg | bbe668-oxide-strapping-tape.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206685,7.99,,0.3,taxable,York Fitness,14961206685
+BBE Pro 14oz to 22oz Leather Weight Adjustable Sparring Gloves,boxing-bbe-pro-14oz-to-22oz-leather-weight-adjustable-sparring-gloves,"The BBE Pro sparring gloves are manufactured from leather for superior durability and a great feel. These weighted gloves are fitted with zipped pocket inserts in cuff to add 4 x 2oz weights per glove and come with 8 x 2oz (56.7g) weights. The injection moulded shock absorbent foam padding inserts provide consistent size and density, whereas the elasticated wrap around wrist support guarantees additional comfort and safety. The gloves feature double stitched seams for extra durability, an inner palm finger grip bar, as well as an anti-bacterial and anti-slip sweat absorbing lining. All leather gloves
+Double stitched seams
+Injection moulded shock absorbent foam padding inserts
+Inner palm finger grip bar
+Ventilated palm
+Thumb attached safety feature
+Anti-bacterial and anti-slip sweat absorbing lining
+Elasticated wrap around wrist support
+Zipped pocket inserts in cuff to add 4 x 2oz weights per glove
+8 x 2oz (56.7g) weights included
+Weight: Approx. 1.25kg (2.75lbs)",bbe670,bbe670-glove-weighted-inc-weights.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206708,70,,1.25,taxable,York Fitness,14961206708
+BBE Club Ring Timer,boxing-bbe-club-ring-timer,"The BBE Boxing Ring Timer offers time, rounds and interval settings. It's therefore perfect for boxing, training and studio classes. The Ring Timer features a traditional style metal casing design, offering clear visual and audio feedback. Digitally adjustable parameters
+Clear LCD screen
+Action time range from 1 to 5 minutes (1 min. step)
+Rest time range from 15 to 75 seconds (15 sec. step)
+Pause facility at any moment
+Unique ""Pace"" interval where buzzer will sound at set intervals during each round to aid motivation
+230/240v Mains Electricity powered with permanently attached plug and power cord.
+Clear visual and audio sounds
+Sturdy metal casing",BBE671,bbe671-ring-timer-black-front.jpg | bbe671-ring-timer-black-left.jpg | bbe671-ring-timer-black-right.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206715,149.99,,3.5,taxable,York Fitness,14961206715
+BBE Pro Leather Warrior Adjustable Headguard,boxing-bbe-pro-leather-warrior-adjustable-headguard,"The BBE Pro warrior adjustable headguard ensures excellent ear, chin and cheek protection. This professional headguard incorporates a new anti-slip suede inner lining, as well as foam layered padding providing great shock absorption. It has a multi fit 3 way adjustment to the top, rear and chin area, and comes in an universal size. The headguard is made from leather delivering supreme durability and top quality. Leather headguard
+Multi fit 3 way size adjustment to the top, rear and chin area
+Shock absorbent foam layered padding
+Padded cheek protection
+Additional chin protection
+Anti-slip suede inner lining
+Ear protection
+Multi fit universal size
+Weight: 0.6kg (1.32lbs)",BBE672,bbe672-pro-headguard-warrior.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206722,55,,0.6,taxable,York Fitness,14961206722
+BBE Pro Leather Adjustable Headguard - Small to Medium,boxing-bbe-pro-leather-adjustable-headguard-small-to-medium,"The BBE Leather Warrior Adjustable Headgear is a fully durable design, the headguard is made to protect the head against the impact of another boxer. The headguard made of leather to be comfortable with a wipe clean surface that is easy clean. This product is available in Small to Medium. 12 Month Warranty",BBE673,bbe673-bbe674-pro-headguard-spar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206739,55,,0.46,taxable,York Fitness,14961206739
+BBE Pro 4ft Leather Heavy Duty Punch Bag,boxing-bbe-pro-4-foot-leather-heavy-duty-punch-bag,"Top quality professional heavy duty 4ft leather punchbag, semi aniline dye washed for that classic colour finish. Double stitched seams and welded nickel plate D-rings for a durable finish. Approx weight 45kg-50kg. Chain sets and brackets for hanging sold separately
+",BBE675,bbe675-heavy-duty-punchbag-4ft.jpg | bbe675-pro-heavy-duty-punchbag4ft.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206753,319.99,,45,taxable,York Fitness,14961206753
+BBE Pro Leather Abdominal Protector - Small to Medium,boxing-bbe-pro-leather-abdominal-protector-small-to-medium,"The BBE Pro Leather Abdominal Protector is designed to take the impact contact around the abdominal area, the product straps around the waist to provide extra comfort whilst proforming the exercise. The product is lightweight to create ease of use and comfort to the user. The Pro Leather upgraded variant has added padding and a real leather surface. Available in sizes Small to Medium
+
+*12 month warranty",BBE676,bbe676-677-pro-abdo-guard.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206760,58,,0.52,taxable,York Fitness,14961206760
+"BBE Pro 6"" Leather Peanut Speed Ball",boxing-bbe-pro-6-inch-leather-peanut-speed-ball,"The BBE Pro 6 inch leather peanut speed ball is manufactured from leather for superior durability and feel. This 6” (15.2cm) speed ball is great for improving boxers’ overall hand-eye co-ordination and for learning to shift weight effectively between two feet. The speed ball is lightweight (0.20kg) and features machine stitched seams for enhanced durability. In addition, it offers re-enforced handing loop with a heavy duty webbed lining and is equipped with a Latex rubber bladder. All leather
+6” (15.2cm) speedball
+Sewn in Latex rubber bladder
+Machine stitched seams for durability
+Re-enforced handing loop with a heavy duty webbed lining
+Weight: Approx. 0.20kg (0.44lbs)",BBE678,bbe678-pro-speedball.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961203189,25.99,,0.2,taxable,York Fitness,14961203189
+BBE Pro Leather Heavy Duty Hook and Jab Pads,boxing-bbe-pro-leather-heavy-duty-hook-and-jab-pads,"The BBE Pro heavy duty hook and jab pads have double stitched seams for extra durability and are perfect for trainings with big punchers. These heavy duty pads are manufactured from quality artificial leather ensuring top quality and a great feel. They have a traditionally curved ergonomic design and an anti-slip ball grip palm for added comfort. The hook and jab pads ensure excellent fingertip protection and offer 50mm shock absorbent layers of closed cell and EVA foam combination. In addition, they weigh 0.9kg (1.98lbs) and utilise a padded wrist for a comfortable fit. Heavy duty pads
+Traditionally curved ergonomic design
+Anti-slip ball grip palm
+Fingertip protection
+Double stitched seams
+50mm shock absorbent layers of closed cell and EVA foam combination
+Wrist padded for comfort fit
+Additional adjustable wrist strap
+Material: Quality Aniline Leather (which is not genuine leather)
+Weight: 0.9kg (1.98lbs)",BBE682,bbe682-pro-hook-jab-pad-heavy-duty.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206821,65.99,,0.9,taxable,York Fitness,14961206821
+BBE Pro Leather Curved Hook and Jab Pads,boxing-bbe-pro-leather-curved-hook-and-jab-pads,"The BBE Pro curved hook and jab pads incorporate a re-enforced wrist padding support, double stitched seams for extra durability, as well as a curved ergonomic design for maximum comfort of using. These professional pads are produced from good quality artificial leather that provides superior feel. They feature an anti-slip ball grip palm, fingertip protection and 40mm shock absorbent layers of closed cell and EVA foam combination. In addition, they weigh 0.8kg (1.76lbs) and utilise a comfort fit anti-slip glove pocket. Material: Quality Aniline Leather (which is not genuine leather)
+Curved ergonomic design
+Anti-slip ball grip palm
+Fingertip protection
+Double stitched seams
+40mm shock absorbent layers of closed cell and EVA foam combination
+Comfort fit anti-slip glove pocket
+Re-enforced wrist padding support
+Weight: 0.8kg (1.76lbs)",BBE683,bbe683-pro-hook-jab-pad-curved.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206838,59.99,,0.82,taxable,York Fitness,14961206838
+BBE Pro Leather Speed Hook and Jab Pads,boxing-bbe-pro-leather-speed-hook-and-jab-pads,"BBE Pro Leather Speed Hook and Jab Pads are specifically designed to absorb quick sucessions of quick sharp impacts over a long period of time, the design of the pads are designed to handle this kind of punishment.",BBE684,bbe684-pro-hook-jab-pad-speed.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206845,47.99,,0.4,taxable,York Fitness,14961206845
+BBE Pro 18oz Leather Coach Sparring Gloves,boxing-bbe-pro-18oz-leather-coach-sparring-gloves,"The BBE Pro 18oz leather coach sparring gloves feature a generously padded hit area for added comfort and are made from top quality leather. These safe coaching gloves have a toughened Velcro wrist for extra support and weigh 18oz (0.5kg). The hit area offers a focus target for hand eye co-ordination training at speed, whereas the padded top and curved edges on the gloves ensure additional comfort and safety. Safe coaching gloves
+High quality leather
+Toughened Velcro wrist
+Generously padded palm hit area
+Focus target for hand eye co-ordination training at speed
+Padded top and curved edges of the gloves
+Weight: 18oz (0.5kg)",BBE685,bbe685-pro-coach-spar.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206852,58,,1.25,taxable,York Fitness,14961206852
+BBE Pro 4ft Leather Uppercut Punch Bag,boxing-bbe-pro-4-foot-leather-uppercut-punch-bag,"Top Quality Professional Heavy Duty 4ft leather Punchbag, semi aniline dye washed for that classic colour finish. Double stitched seams and welded Nickel plate D-Rings for a durable finish. Approx weight 45kg-50kg. 6 strand chain required for hanging. ",BBE687,bbe687-bbe-pro-uppercut-punchbag4ft.jpg | bbe687-uppercut-punchbag-ft.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206876,280,,45,taxable,York Fitness,14961206876
+BBE Club Curved Canvas Hook and Jab Pads,boxing-bbe-club-curved-canvas-hook-and-jab-pads,"The BBE Club curved hook and jab pads feature lightweight shock absorbent 40mm closed cell air foam incorporating an additional layer of impact resistant EVA foam. The pads have a curved design and offer sewn in disc mounted targets for hand-eye co-ordination. These high quality pads are made from durable canvas material and utilise an elasticated individual finger pocket glove providing a good grip. Curved design
+Material: Canvas
+Lightweight shock absorbent 40mm closed cell air foam incorporating an additional layer of impact resistant EVA foam
+Elasticated individual finger pocket glove
+Sewn in disc mounted targets included
+Weight: 0.5kg (1.1lbs)",BBE699,bbe699-canvas-hook-jab-curved.jpg | bbe699-canvas-hook-jab-curved-2.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961206999,26.99,,0.42,taxable,York Fitness,14961206999
+BBE Club Coach Body Protector,boxing-bbe-club-coach-body-protector,"A generously well padded lightweight body protector with an adjustable neck/shoulder strap and an adjustable clip together buckle strap at the rear. The foam padded layers allow for maximum absorbs ion and at the same time the weight and shaped design of the pad allows for maximum manoeuvrability for the user.
+",BBE702,bbe702-coach-body-protector-front.jpg | bbe702-coach-body-protector-rear.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961207026,62.99,,2.1,taxable,York Fitness,14961207026
+BBE Club 9ft Leather Skipping Rope,boxing-bbe-club-9-foot-leather-skipping-rope,"The BBE Club leather skipping rope is 9ft (274cm) long and helps boxers to stay in an amazing shape. It weighs 0.4kg (0.8lbs) and features easy grip ergonomic handles for added comfort. This weighted skipping rope ensures a smooth ball bearing movement. Length: 9ft (274cm)
+Leather rope 6mm
+Easy grip ergonomic handles
+Smooth ball bearing movement
+Weighted 100g (3.5oz) per handle
+Weight: 0.4kg (0.8lbs)
+",bbe703,bbe703-skip-rope-leather.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961207033,8.99,,0.18,taxable,York Fitness,14961207033
+BBE Club 9ft Weigthed Leather Skip Rope,boxing-bbe-club-9-foot-weigthed-leather-skip-rope,"The BBE Club leather skipping rope is 9ft (274cm) long and helps boxers to stay in an amazing shape. It weighs 0.4kg (0.8lbs) and features easy grip ergonomic handles for added comfort. This weighted skipping rope ensures a smooth ball bearing movement. Length: 9ft (274cm)
+Leather rope 6mm
+Easy grip ergonomic handles
+Smooth ball bearing movement
+Weighted 100g (3.5oz) per handle
+Weight: 0.4kg (0.8lbs)
+",BBE704,bbe704-skip-rope-leatherweighted.jpg,0,closed,no,no,draft,hidden, instock ,no,no,York Fitness,14961207040,10.99,,0.44,taxable,York Fitness,14961207040
+

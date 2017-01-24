@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
+<title><?php echo art_get_page_title() ?></title>
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>" type="text/css" media="screen" />
+<!--[if IE 6]><link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.ie6.css" type="text/css" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.ie7.css" type="text/css" media="screen" /><![endif]-->
+<?php if(WP_VERSION < 3.0): ?>
+<link rel="alternate" type="application/rss+xml" title="<?php printf(__('%s RSS Feed', 'kubrick'), get_bloginfo('name')); ?>" href="<?php bloginfo('rss2_url'); ?>" />
+<link rel="alternate" type="application/atom+xml" title="<?php printf(__('%s Atom Feed', 'kubrick'), get_bloginfo('name')); ?>" href="<?php bloginfo('atom_url'); ?>" />
+<?php endif; ?>
+<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+<?php if (is_file(TEMPLATEPATH .'/favicon.ico')):?>
+<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
+<?php endif; ?>
+<?php wp_head(); ?>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/script.js"></script>
+</head>
+<body>
+<?php 
+ob_start();
+
+
+

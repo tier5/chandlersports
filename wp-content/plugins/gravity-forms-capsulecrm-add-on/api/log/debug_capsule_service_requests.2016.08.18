@@ -1,0 +1,4 @@
+ -  https://chandlersports.capsulecrm.com/api/party?limit=1, GET 
+ -  response body{"parties":{"@size":"1","organisation":{"id":"41493304","contacts":"","pictureURL":"https:\/\/d365sd3k9yw37.cloudfront.net\/a\/1471363664\/theme\/default\/images\/org_avatar_70.png","createdOn":"2013-05-24T12:01:53Z","updatedOn":"2013-05-24T12:01:53Z","name":"bricks are us"}}}
+ -  https://chandlersports.capsulecrm.com/api/party?limit=1, GET 
+ -  response body{"parties":{"@size":"1","organisation":{"id":"41493304","contacts":"","pictureURL":"https:\/\/d365sd3k9yw37.cloudfront.net\/a\/1471363664\/theme\/default\/images\/org_avatar_70.png","createdOn":"2013-05-24T12:01:53Z","updatedOn":"2013-05-24T12:01:53Z","name":"bricks are us"}}}

@@ -1,0 +1,156 @@
+# a field begin with _ is considerate as a property
+
+person:
+   - id
+   - about
+   - pictureURL
+   - createdOn
+   - updatedOn
+   - title
+   - firstName
+   - lastName
+   - jobTitle
+   - organisationId
+   - organisationName
+   - contacts:
+      address: [ _multiple, _linked ]
+      email: [ _multiple, _linked ]
+      phone: [ _multiple, _linked ]
+      website: [ _multiple, _linked ]
+   - tags:
+      tag: [ _multiple, _linked ]
+   - customFields:
+      customField: _linked
+   - kazes:
+      kaze: [ _multiple, _linked ]
+   - history:
+      historyItem: [ _multiple, _linked ]
+   - tasks:
+      - task: [ _multiple, _linked ]
+   - opportunities:
+      opportunity: [ _multiple, _linked ] 
+
+organisation:
+   - id
+   - name
+   - about
+   - contacts:
+      - address: [ _multiple, _linked ]
+      - email: [ _multiple, _linked ]
+      - phone: [ _multiple, _linked ]
+      - website: [ _multiple, _linked ]
+   - tags:
+      - tag: [ _multiple, _linked ]
+   - customFields:
+      - customField: [ _multiple, _linked ]
+   - kazes:
+      - kaze: [ _multiple, _linked ]
+   - history:
+      - historyItem: [ _multiple, _linked ]
+   - tasks:
+      - task: [ _multiple, _linked ]
+   - opportunities:
+      opportunitity: [ _multiple, _linked ] 
+
+opportunity:
+   - id
+   - name
+   - description
+   - currency
+   - value
+   - durationBasis
+   - duration
+   - expectedCloseDate
+   - milestone
+   - owner
+   - tags:
+      - tag: [ _multiple, _linked ]
+   - customFields:
+      - customField: [ _multiple, _linked ]
+   - kazes:
+      - kaze: [ _multiple, _linked ]
+   - history:
+      - historyItem: [ _multiple, _linked ] 
+   - tasks:
+      - task: [ _multiple, _linked ]
+
+kase:
+   - id
+   - status
+   - name
+   - description
+   - closeDate
+   - owner
+   - party_id
+   - tags:
+      - tag: [ _multiple, _linked ]
+   - customFields:
+      - customField: [ _multiple, _linked ]
+   - history:
+      - historyItem: [ _multiple, _linked ]
+   - parties:
+      - person: [ _multiple, _linked ]
+      - organisation: [ _multiple, _linked ]      
+   - tasks:
+      - task: [ _multiple, _linked ]
+
+task:
+   - id
+   - description
+   - category
+   - dueDate
+   - dueDateTime
+   - owner
+   - partyId
+   - partyName
+   - opportunityId
+   - opportunityName
+   - caseId
+   - caseName
+
+address:
+   - id
+   - type
+   - street
+   - city
+   - state
+   - zip
+   - country
+
+email :
+   - _is_valuable
+   - id
+   - type
+   - emailAddress: _valuable
+
+phone:
+   - _is_valuable
+   - id
+   - type
+   - phoneNumber: _valuable
+
+website:
+   - _is_valuable
+   - id
+   - type
+   - webAddress: _valuable
+   - webService
+   - url
+
+history:
+   - id
+   - type
+   - entryDate      
+   - creator
+   - subject
+   - note
+
+tag:
+   - name
+
+customField:
+   - tag
+   - label
+   - date
+   - boolean
+   - text

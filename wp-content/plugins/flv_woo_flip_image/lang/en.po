@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Flip Product Image\n"
+"POT-Creation-Date: 2014-07-10 12:40+0200\n"
+"PO-Revision-Date: 2014-07-10 12:40+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../flv_flip_admin.php:35
+msgid "Woo Flip Product"
+msgstr ""
+
+#: ../flv_flip_admin.php:108
+msgid "Flip Image"
+msgstr ""
+
+#: ../flv_woo_flip_image.php:108
+msgid "Settings"
+msgstr ""
+
+#: ../flv_woo_flip_image.php:109
+msgid "Woo Flip"
+msgstr ""
+
+#: ../flv_woo_flip_image.php:122
+msgid "WooCommerce Flip Product Image Settings"
+msgstr ""
+
+#: ../flv_woo_flip_image.php:127
+msgid "Option name"
+msgstr ""
+
+#: ../flv_woo_flip_image.php:128
+msgid "Value"
+msgstr ""
+
+#: ../flv_woo_flip_image.php:135
+msgid "Save Changes"
+msgstr ""
+
+#: ../flv_woo_flip_image.php:163
+msgid "Hover IN animation"
+msgstr ""
+
+#: ../flv_woo_flip_image.php:272
+msgid "Hover OUT animation"
+msgstr ""

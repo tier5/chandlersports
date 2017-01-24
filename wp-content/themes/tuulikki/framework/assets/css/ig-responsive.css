@@ -1,0 +1,186 @@
+/* =======================================
+	Theme: Tuulikki
+	
+	 RESPONSIVE
+========================================== */
+
+
+.ig_wrapper {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 50px;
+    margin-bottom: 120px;
+}
+@media (max-width: 600px) {
+	.ig_wrapper {
+		margin-bottom: 40px;
+		padding-top: 30px;
+		}
+	}
+
+
+@media only screen and (min-width: 1171px) {
+.ig_wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+    }
+}
+
+@media only screen and (max-width: 1170px) and (min-width: 600px) {
+.ig_wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 1170px) and (min-width: 600px), only screen and (min-width: 1171px) {
+.ig_wrapper {
+    padding-top: 35px;
+    }
+}
+
+
+
+
+
+/* Fluid Container */
+
+@media only screen and (max-width: 1170px) and (min-width: 961px), only screen and (min-width: 1171px) {
+.main_content {
+    width: 100%;
+    float: left;
+    margin-right: -340px;
+    }
+}
+
+
+.main_content__full {
+	width: 860px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+@media (max-width: 1000px) {
+.main_content__full {
+	width: 100%;
+	
+	}
+}
+
+
+.main_content__r {
+	margin-right: 400px; /* The size of the fixed block. */
+	}
+	
+@media (max-width: 960px) {
+
+.main_content__r {
+	margin-right: 0px; /* The size of the fixed block. */
+	}
+}
+
+
+
+
+/* SIDEBAR  */
+
+@media only screen and (max-width: 1170px) and (min-width: 961px), only screen and (min-width: 1171px) {
+.cont_sidebar {
+    overflow: hidden;
+    width: 340px;
+    margin-top: 0;
+    display: block;
+    float: right;
+    }
+
+}
+
+
+@media only screen and (max-width: 599px), only screen and (max-width: 960px) and (min-width: 600px) {
+.cont_sidebar {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+}
+
+
+/****************************************/
+/* Grid woocommerce
+/****************************************/
+
+.ig-container {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px; 
+}
+	@media (min-width: 1000px) {
+		.ig-container {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+	}
+
+
+#content {
+	margin-bottom:50px;
+	/*overflow:hidden;*/
+	margin-top:60px;
+}
+#main.fullwidth {
+	width: 682px;
+	margin: 0 auto;
+	float: none;
+}
+#main.fullwidth_big {
+	width: 100%;
+}
+#sidebar {
+	float:right;
+	width: 340px;
+}
+#main {
+	width: 65%;
+	float:left;
+}
+
+	@media (max-width: 1170px) {
+		#main {
+			width: 63%;
+		}
+	}
+	@media (max-width: 1080px) {
+		#sidebar {
+			width: 300px;
+		}
+	}
+
+@media only screen and (min-width: 768px) and (max-width: 970px) {
+	.ig-container { width:726px; }
+	#main { width:100%; }
+	#sidebar {
+		width:480px;
+		margin:0 auto;
+		float:none;
+		overflow:hidden;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.ig-container { width:300px; padding: 0px;}
+	#content { width:300px;	margin: 60px auto 50px;}
+	#main { width:100%; }
+	#sidebar {width:100%;}
+	#main.fullwidth {width: 100%;}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	.ig-container, #content { width:480px; padding: 0px; }
+}
+
