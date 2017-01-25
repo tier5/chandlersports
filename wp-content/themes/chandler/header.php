@@ -173,12 +173,30 @@ fjs.parentNode.insertBefore(js, fjs);
 				<?php endif; ?>
 				</div><!-- logo cf -->
 			</div>
+
+      <?php $terms = get_terms( 'product_cat', $args );?>
 			<div class="col-sm-3 col-md-4">
 				<div class="head_search">
 					<form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
 						<input type="hidden" name="post_type" value="product" />
+            <div class="search-all">
+                
+            <?php if(is_array($terms) && count($terms)>0){?>
+            <select name="category" class="my-custom-select">
+            <option value="">All</option>
+            <?php foreach($terms as $term):?>
+              <option <?php echo($_GET['category'] == $term->slug)?'selected=selected':'';?>value="<?php echo $term->slug;?>"><?php echo $term->name;?></option>
+            <?php endforeach;?>
+            </select>
+            <?php }?>
+                
+            </div>
+            <div class="search-txt">
 						<input name="s" type="text" placeholder="Search the site"  onblur="this.value = this.value || this.defaultValue;" onfocus="this.value = '';" />
+            </div>
+            <div class="search-btn">
 						<button type="submit"><i class="fa fa-search"></i></button>
+            </div>
 					</form>
 				</div><!-- head_search -->
 			</div><!-- col -->
@@ -217,6 +235,8 @@ fjs.parentNode.insertBefore(js, fjs);
 		</div><!-- row -->
 	</div><!-- container -->
 </div><!-- top_logo_headr -->
+
+
 
 <div class="header_nav_bar">
 	<div class="container">

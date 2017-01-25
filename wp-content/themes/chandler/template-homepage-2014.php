@@ -123,6 +123,80 @@ get_header(); ?>
 
 </div>
 
+<div class="onsale-wrapper">
+  <div class="container">
+  <div class="col-sm-12">
+  <div class="was_box">  
+  <h1>On <span>sale</span></h1>
+  </div>
+  <?php 
+  $args = array(
+    'post_type'      => 'product',
+    'posts_per_page' => -1,
+    'orderby' => 'title',
+    'order' => 'asc',
+    'meta_query'     => array(
+        'relation' => 'OR',
+        array( // Simple products type
+            'key'           => '_sale_price',
+            'value'         => 0,
+            'compare'       => '>',
+            'type'          => 'numeric'
+        ),
+        array( // Variable products type
+            'key'           => '_min_variation_sale_price',
+            'value'         => 0,
+            'compare'       => '>',
+            'type'          => 'numeric'
+        )
+    )
+);
+
+$loop = new WP_Query( $args );
+
+?>
+<?php 
+if($loop->have_posts()){
+  ?>
+
+   <div id="sale-owl" class="owl-carousel">
+  <?php
+  while($loop->have_posts()):$loop->the_post();
+  $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ));
+  ?>
+ 
+    <div class="item">
+    <?php woocommerce_get_template_part( 'content', 'product' );?>
+   <!--  <img src="<?php //echo($image[0]!='')?$image[0]:''; ?>" />
+    <h4><?php //echo get_the_title();?></h4> -->
+
+    </div>
+  
+  <?php
+  endwhile;
+  ?>
+  </div>
+  <?php
+}
+  ?>
+  </div>
+  </div>
+</div>
+
+<script>
+  jQuery(document).ready(function(){
+$('#sale-owl').owlCarousel({
+    loop:true,
+    margin:10,
+    items:5,
+    navigation:true,
+    navigationText: ["<img src='<?php echo get_template_directory_uri();?>/images/prev.png'>","<img src='<?php echo get_template_directory_uri();?>/images/next.png'>"]
+
+});
+  });
+</script>
+
+
 
 
 <div class="srive_box">
