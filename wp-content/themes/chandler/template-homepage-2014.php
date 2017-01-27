@@ -43,6 +43,36 @@ get_header(); ?>
 </div>
 
 
+<div class="header-cta-bar hidden-xs">
+  <div class="container">
+    <div class="col-sm-4 col-xs-12">
+      <div class="col-xs-2 col-sm-12 col-md-2">
+        <img src="<?= get_template_directory_uri() ?>/images/pound_icon.jpg" alt="Best price guarantee" />
+      </div>
+      <div class="col-xs-10 col-sm-12 col-md-10">
+        <span>Best price guarantee</span>
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12">
+      <div class="col-xs-2 col-sm-12 col-md-2">
+        <img src="<?= get_template_directory_uri() ?>/images/van_icon.jpg" alt="Free delivery over &pound;100" />
+      </div>
+      <div class="col-xs-10 col-sm-12 col-md-10">
+        <span>Free delivery over &pound;100</span>
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12">
+      <div class="col-xs-2 col-sm-12 col-md-2">
+        <img src="<?= get_template_directory_uri() ?>/images/uk_icon.jpg" alt="Nationwide Installatio" />
+      </div>
+      <div class="col-xs-10 col-sm-12 col-md-10">
+        <span>Nationwide Installation</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="catg_main">
 	<div class="container">
 	<div class="sriv_tit">

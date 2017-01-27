@@ -26,6 +26,11 @@ get_header(); ?>
     <?php twentyten_posted_in(); ?>
   </p>
   <div class="fb-comments" data-href="<?php the_permalink(); ?>" data-width="560" data-num-posts="100"></div>
+  <?php
+  if ( comments_open() || get_comments_number() ) :
+            comments_template();
+          endif;
+  ?>
   <?php endwhile; ?>
 </div>
 </div>

@@ -39,16 +39,18 @@ label {
   background: #fff;
   /*color: #eee;*/
   text-align: left;
-  padding: 0.5rem 0; }
+  padding: 0.5rem 0 0; }
   .top_hed span {
-    font-size: 13px;
-    display: block; }
+    /*font-size: 13px;*/
+    display: block; 
+    padding: 0 4px;
+  }
     .top_hed span a {
       font-size: 13px;
       /*color: #fff;*/ }
 
 .top_logo_headr {
-  padding: 1rem 0; }
+  /*padding: 1rem 0;*/ }
 .top_logo_headr a{color: #409330}
 
 .head_search {
@@ -64,7 +66,7 @@ label {
   background: transparent none repeat scroll 0 0;
   border: 1px solid #409330;
   border-radius: 0 2px 2px 0;
-  color: #ccc;
+  color: #000;
   margin: 0;
  /* width: 315px;*/
 }
@@ -87,12 +89,12 @@ label {
   color: #1b1b1b;
   text-align: left; }
   .header-icon-area h3 {
-    font-size: 1.5rem;
+    font-size: 13px;
     font-weight: bold; 
     color: #409330;
   }
   .header-icon-area p {
-    font-size: 13px; }
+    font-size: 12px; }
   @media (min-width: 768px) {
     .header-icon-area i {
       font-size: 26px; } }
@@ -103,12 +105,12 @@ label {
 
 .header_nav_bar .menu-container .menu ul li.menu-item a img {
   display: none; }
-.header_nav_bar .menu-container .menu ul li.menu-item:first-child {
+/*.header_nav_bar .menu-container .menu ul li.menu-item:first-child {
   
   float: left; background: rgba(0, 0, 0, 0) url("../images/bar.png") no-repeat scroll left 0 top 9px;
   text-transform: uppercase; 
   }
-
+*/
 .header_nav_bar .menu-container .menu ul li ul li.menu-item:first-child {background: none;
 text-transform: none; 
 }

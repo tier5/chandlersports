@@ -139,49 +139,69 @@ fjs.parentNode.insertBefore(js, fjs);
 */?>
 
 <div class="top_hed">
-	<div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-4 hidden-xs">
-        Open Mon - Fri, 8:30am - 5pm
+      <div class="col-sm-2 open-time">
+        <!-- Open Mon - Fri, 8:30am - 5pm -->
+
+
+        <div class="logo cf">
+        <a class="" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="" src="http://159.203.95.124/chandlersports/wp-content/uploads/2017/01/logo-test-final-1.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+          <?php if ( get_theme_mod( 'Client_logo' ) ) : ?>
+          <!--<a class="" href="<?php //echo esc_url( home_url( '/' ) ); ?>" title="<?php //echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="" src="<?php //echo get_theme_mod( 'Client_logo' ); ?>" alt="<?php //echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>-->
+
+        <?php else : ?>
+
+          <!--<div class="site-introduction">
+            <h1 class="site-title"><a href="<?php //echo home_url( '/' ); ?>" title="<?php //echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php //bloginfo( 'name' ); ?></a></h1>
+            <p class="site-description"><?php bloginfo( 'description' ); ?></p>
+          </div>-->
+        <?php endif; ?>
+        </div><!-- logo cf -->
+
+
+
+
       </div>
-      <div class="col-xs-12 col-sm-8">
-	      <div class="row">
-		      <div class="col-xs-6 col-sm-6 col-md-3">
-			      <span>Support: <a href="tel:01968 672 0202">01968 672 0202</a></span>
-		      </div>
-		      <div class="col-xs-6 col-sm-6 col-md-3">
-			      <span>Sales: <a href="tel:01968 670 610">01968 670 610</a></span>
-		      </div>
-	      </div>
+      <div class="col-md-6 col-sm-6">
+          <div class="menu-container">
+          <div class="menu">
+         <?php wp_nav_menu( array( 'container' => false, 'menu_class' => 'false','theme_location' => 'primary' ) );  ?>
+          </div>
+        </div>
+
+      </div>  
+      <div class="col-xs-12 col-sm-4 align-right">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 ">
+          <span class="top-right-info">
+            Support: <a href="tel:01968 672 0202">01968 672 0202</a> &nbsp; I &nbsp;  Sales: <a href="tel:01968 670 610">01968 670 610</a>
+          </span>
+          <span class="top-right-info">
+          Open Mon - Fri, 8:30am - 5pm
+          </span>  
+          </div>
+          <!-- <div class="col-xs-12 col-sm-12 ">
+            <span>Sales: <a href="tel:01968 670 610">01968 670 610</a></span>
+          </div> -->
+        </div>
       </div>
     </div>
-	</div>
+  </div>
 </div><!-- top_hed -->
 
 <div class="top_logo_headr">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-4 col-md-4">
-				<div class="logo cf">
-					<?php if ( get_theme_mod( 'Client_logo' ) ) : ?>
-					<a class="" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="" src="<?php echo get_theme_mod( 'Client_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
-				<?php else : ?>
-					<div class="site-introduction">
-						<h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-					</div>
-				<?php endif; ?>
-				</div><!-- logo cf -->
-			</div>
-
-      <?php $terms = get_terms( 'product_cat', $args );?>
-			<div class="col-sm-3 col-md-4">
-				<div class="head_search">
-					<form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
-						<input type="hidden" name="post_type" value="product" />
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4 col-md-4">
+       
+      </div>
+       <?php $terms = get_terms( 'product_cat', $args );?>
+      <!--<div class="col-sm-3 col-md-4">
+        <div class="head_search">
+          <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
             <div class="search-all">
-                
-            <?php if(is_array($terms) && count($terms)>0){?>
+                <?php if(is_array($terms) && count($terms)>0){?>
             <select name="category" class="my-custom-select">
             <option value="">All</option>
             <?php foreach($terms as $term):?>
@@ -189,65 +209,258 @@ fjs.parentNode.insertBefore(js, fjs);
             <?php endforeach;?>
             </select>
             <?php }?>
-                
             </div>
             <div class="search-txt">
-						<input name="s" type="text" placeholder="Search the site"  onblur="this.value = this.value || this.defaultValue;" onfocus="this.value = '';" />
+            <input type="hidden" name="post_type" value="product" />
+            <input name="s" type="text" placeholder="Search the site"  onblur="this.value = this.value || this.defaultValue;" onfocus="this.value = '';" />
             </div>
             <div class="search-btn">
-						<button type="submit"><i class="fa fa-search"></i></button>
+            <button type="submit"><i class="fa fa-search"></i></button>
             </div>
-					</form>
-				</div><!-- head_search -->
-			</div><!-- col -->
+          </form>
+        </div> 
+      </div> --><!-- col -->
+      <div class="col-md-3 col-sm-3 col-sm-offset-5">
+      <div class="col-xs-6 col-sm-6 col-md-6  header-icon-area">
+        <div class="row">
 
-			<div class="col-xs-6 col-sm-3 col-md-2  header-icon-area">
-				<div class="row">
-					<div class="col-xs-3">
-						<i class="fa fa-user" aria-hidden="true"></i>
-					</div>
-					<div class="col-xs-9">
-						<?php
-						if (is_user_logged_in()) :
-						?>
-							<h3><a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','woothemes'); ?>"><?php _e('My Account','woothemes'); ?></a></h3>
-							<p><a href="<?php echo wp_logout_url( home_url() ); ?>">Logout</a></p>
-						<?php else: ?>
-							<h3>My account</h3>
-							<p><a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login / Register','woothemes'); ?>"><?php _e('Login / Register','woothemes'); ?></a></p>
-						<?php endif; ?>
-					</div>
-				</div><!-- row -->
-			</div><!-- header-icon-area -->
+          <!-- <div class="col-xs-3">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div> -->
+          <div class="col-xs-12">
+          <div class="pull-left top-icon">  
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+            <?php
+            if (is_user_logged_in()) :
+            ?>
+              <h3><a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','woothemes'); ?>"><?php _e('My Account','woothemes'); ?></a></h3>
+              <p><a href="<?php echo wp_logout_url( home_url() ); ?>">Logout</a></p>
+            <?php else: ?>
+              <h3>My account</h3>
+              <p><a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login / Register','woothemes'); ?>"><?php _e('Login / Register','woothemes'); ?></a></p>
+            <?php endif; ?>
+          </div>
+        </div><!-- row -->
+      </div><!-- header-icon-area -->
 
-			<div class="col-xs-6 col-sm-2 col-md-2 header-icon-area">
-				<div class="row">
-					<div class="col-xs-3 col-sm-4">
-						<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-					</div>
-					<div class="col-xs-9 col-sm-8">
-						<h3><a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>"><?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?></a></h3>
-						<p><a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>"><?php echo $woocommerce->cart->get_cart_total(); ?></p></a>
-					</div>
-				</div><!-- row -->
-			</div><!-- header-icon-area -->
-
-		</div><!-- row -->
-	</div><!-- container -->
+      <div class="col-xs-6 col-sm-6 col-md-6 header-icon-area">
+        <div class="row">
+          <!-- <div class="col-xs-3 col-sm-4">
+            
+          </div> -->
+          <div class="col-xs-12 col-sm-12">
+            <div class="pull-left top-icon">  
+             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </div>
+            <h3><a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>"><?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?></a></h3>
+            <p><a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>"><?php echo $woocommerce->cart->get_cart_total(); ?></p></a>
+          </div>
+        </div><!-- row -->
+      </div><!-- header-icon-area -->
+      </div>
+    </div><!-- row -->
+  </div><!-- container -->
 </div><!-- top_logo_headr -->
 
-
-
 <div class="header_nav_bar">
-	<div class="container">
-    	<div class="menu-container">
+  <div class="container-fluid">
+      <div class="row">
+      <div class="col-md-2">
+          
+<div class="dropdown">
+  <button class="dropbtn">Fitness Product</button>
+  <div class="dropdown-content">
+  <?php
+     $taxonomy     = 'product_cat';
+      $orderby      = 'name';  
+      $show_count   = 0;      // 1 for yes, 0 for no
+      $pad_counts   = 0;      // 1 for yes, 0 for no
+      $hierarchical = 1;      // 1 for yes, 0 for no  
+      $title        = '';  
+      $empty        = 0;
+
+      $args = array(
+             'taxonomy'     => $taxonomy,
+             'orderby'      => $orderby,
+             'show_count'   => $show_count,
+             'pad_counts'   => $pad_counts,
+             'hierarchical' => $hierarchical,
+             'title_li'     => $title,
+             'hide_empty'   => $empty
+      );
+     $all_categories = get_categories( $args );
+     ?>
+     <ul>
+     <?php
+     foreach ($all_categories as $cat) {
+      if($cat->category_parent == 0) {
+      $category_id = $cat->term_id; 
+      $termchildren = get_term_children( $cat->term_id, $taxonomy ); 
+
+      if(is_array($termchildren) && count($termchildren)>0){
+        $addClass1 = "child";
+        $addClass2 = "has-child-arrow";
+      }else{
+        $addClass1 = "";
+        $addClass2 = "";
+      }
+        ?>  
+      
+          <li ><a class="has-child <?php echo $addClass2;?>" href="<?php echo get_term_link($cat->slug, 'product_cat'); ?>"><?php echo $cat->name; ?></a>
+              <div class="<?php echo $addClass1;?>">
+                  <div class="col-md-12">
+                    <div class="row">
+                  <?php
+
+                    $args2 = array(
+                            'taxonomy'     => $taxonomy,
+                            'child_of'     => 0,
+                            'parent'       => $category_id,
+                            'orderby'      => $orderby,
+                            'show_count'   => $show_count,
+                            'pad_counts'   => $pad_counts,
+                            'hierarchical' => $hierarchical,
+                            'title_li'     => $title,
+                            'hide_empty'   => $empty
+                    );
+                    $sub_cats = get_categories( $args2 );
+                    if($sub_cats) {
+                    ?>
+                   
+                    
+                     <?php
+                      foreach($sub_cats as $sub_category) {
+                        $sub_category_id = $sub_category->term_id;
+                      ?>
+                      <div class="col-sm-6 custom-height">
+                      <a class="sub_cat_head" href="<?php echo get_term_link($sub_category->slug, 'product_cat');?>"><?php echo $sub_category->name;?></a>
+
+                       <?php
+
+                        $args3 = array(
+                                'taxonomy'     => $taxonomy,
+                                'child_of'     => 0,
+                                'parent'       => $sub_category_id,
+                                'orderby'      => $orderby,
+                                'show_count'   => $show_count,
+                                'pad_counts'   => $pad_counts,
+                                'hierarchical' => $hierarchical,
+                                'title_li'     => $title,
+                                'hide_empty'   => $empty
+                        );
+                        $sub_sub_cats = get_categories( $args3 );
+                        if($sub_sub_cats) {
+                      ?>
+                      <ul>
+                      <?php foreach($sub_sub_cats as $sub_sub_category) {?>
+                         <li>
+                      <a href="<?php echo get_term_link($sub_sub_category->slug, 'product_cat');?>"><?php echo $sub_sub_category->name;?></a></li>
+
+                      <?php }?>
+                      </ul>
+                      <?php }?>
+
+
+
+
+
+                      </div>
+                      <?php }?>
+
+                    
+                    <?php }?>
+                  </div>
+                  </div>
+              </div>  
+          </li>
+          <?php 
+          }
+        }
+          ?>
+      </ul>  
+    <!-- <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a> -->
+  </div>
+</div>
+
+</div>  
+
+
+
+
+      <div class="col-md-7 col-sm-7">  
+           <?php
+          $args = array(
+              'orderby'           => 'name', 
+              'order'             => 'ASC',
+              'hide_empty'        => true, 
+              'parent'            => '0',
+              
+          );  
+          $terms = get_terms( 'product_cat', $args );
+          ?>
+            <div class="head_search">
+          <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
+            <div class="search-all">
+                <?php if(is_array($terms) && count($terms)>0){?>
+            <select name="category" class="my-custom-select">
+            <option value="">All</option>
+            <?php foreach($terms as $term):?>
+              <option <?php echo($_GET['category'] == $term->slug)?'selected=selected':'';?>value="<?php echo $term->slug;?>"><?php echo $term->name;?></option>
+            <?php endforeach;?>
+            </select>
+            <?php }?>
+            </div>
+            <div class="search-txt">
+            <input type="hidden" name="post_type" value="product" />
+            <input name="s" type="text" placeholder="Search the site"  onblur="this.value = this.value || this.defaultValue;" onfocus="this.value = '';" />
+            </div>
+            <div class="search-btn">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </form>
+        </div><!-- head_search -->  
+
+
+
+
+      <!-- <div class="menu-container">
           <div class="menu">
-	 <?php wp_nav_menu( array( 'container' => false, 'menu_class' => 'false','theme_location' => 'primary' ) );  ?>
+         <?php //wp_nav_menu( array( 'container' => false, 'menu_class' => 'false','theme_location' => 'primary' ) );  ?>
           </div>
-        </div>
+        </div> -->
+      </div> 
+      <div class="col-md-3 col-sm-3 header-icon-area">
+      <div class="row">
+          <div class="col-md-6 col-sm-6">
+          <div class="pull-left top-icon">  
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+            <?php
+            if (is_user_logged_in()) :
+            ?>
+              <h3><a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','woothemes'); ?>"><?php _e('My Account','woothemes'); ?></a></h3>
+              <p><a href="<?php echo wp_logout_url( home_url() ); ?>">Logout</a></p>
+            <?php else: ?>
+              <h3>My account</h3>
+              <p class="font-size11"><a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login / Register','woothemes'); ?>"><?php _e('Login / Register','woothemes'); ?></a></p>
+            <?php endif; ?>
+          </div>  
+          <div class="col-md-6 col-sm-6">
+            <div class="pull-left top-icon">  
+             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </div>
+            <h3><a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>"><?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?></a></h3>
+            <p class="font-size11"><a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>"><?php echo $woocommerce->cart->get_cart_total(); ?></p></a>
+          </div>  
+
+      </div>      
+      </div>  
     </div>
 </div>
-<div class="header-cta-bar hidden-xs">
+<!-- <div class="header-cta-bar hidden-xs">
   <div class="container">
     <div class="col-sm-4 col-xs-12">
       <div class="col-xs-2 col-sm-12 col-md-2">
@@ -274,4 +487,4 @@ fjs.parentNode.insertBefore(js, fjs);
       </div>
     </div>
   </div>
-</div>
+</div> -->

@@ -101,9 +101,13 @@
             <div class="col-sm-6">
 
             	<div class="rig_pam">
-
+            	
+            	<div class="pull-right">
                 	<img src="<?php bloginfo('template_directory'); ?>/images/pmant_icon.png" alt="" />
-
+                </div>	
+                <div class="pull-right">
+            	<img style="width: 38px; padding-right: 3px;" src="<?php bloginfo('template_directory'); ?>/images/zero.png" alt="" />
+            	</div>
                 </div>
 
             </div>

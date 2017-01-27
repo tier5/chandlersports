@@ -1615,7 +1615,7 @@ line-height: 435px !important;
 
 
 #sale-owl .owl-item{ margin: 0; padding: 5px; text-align: center; height: 370px; position: relative;}
-#sale-owl .owl-item h3{font-size: 17px; height: 46px;}
+#sale-owl .owl-item h3{font-size: 15px; height: 46px;}
 #sale-owl .owl-item a:hover{text-decoration: none; color: #000;}
 #sale-owl .price{padding-bottom: 10px; display: block;}
 #sale-owl .add_to_cart_button.button.product_type_simple{display: block; width: 115px; margin: 0 auto;}
