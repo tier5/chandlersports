@@ -141,12 +141,12 @@ fjs.parentNode.insertBefore(js, fjs);
 <div class="top_hed">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-2 open-time">
+      <div class="col-sm-3 open-time1">
         <!-- Open Mon - Fri, 8:30am - 5pm -->
 
 
         <div class="logo cf">
-        <a class="" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="" src="http://159.203.95.124/chandlersports/wp-content/uploads/2017/01/logo-test-final-1.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+        <a class="" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="" src="<?php echo site_url();?>/wp-content/uploads/2017/01/logo-test-final-1-1.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
           <?php if ( get_theme_mod( 'Client_logo' ) ) : ?>
           <!--<a class="" href="<?php //echo esc_url( home_url( '/' ) ); ?>" title="<?php //echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="" src="<?php //echo get_theme_mod( 'Client_logo' ); ?>" alt="<?php //echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>-->
 
@@ -163,7 +163,7 @@ fjs.parentNode.insertBefore(js, fjs);
 
 
       </div>
-      <div class="col-md-6 col-sm-6">
+      <div class="col-md-6 col-sm-6 open-time">
           <div class="menu-container">
           <div class="menu">
          <?php wp_nav_menu( array( 'container' => false, 'menu_class' => 'false','theme_location' => 'primary' ) );  ?>
@@ -171,11 +171,11 @@ fjs.parentNode.insertBefore(js, fjs);
         </div>
 
       </div>  
-      <div class="col-xs-12 col-sm-4 align-right">
+      <div class="col-xs-12 col-sm-3 align-right open-time">
         <div class="row">
           <div class="col-xs-12 col-sm-12 ">
           <span class="top-right-info">
-            Support: <a href="tel:01968 672 0202">01968 672 0202</a> &nbsp; I &nbsp;  Sales: <a href="tel:01968 670 610">01968 670 610</a>
+            General Inquires: <a href="tel:01968 672 0202">01968 672 0202</a> <br>  Commercial Support: <a href="tel:01968 670 610">01968 670 610</a>
           </span>
           <span class="top-right-info">
           Open Mon - Fri, 8:30am - 5pm
@@ -269,11 +269,11 @@ fjs.parentNode.insertBefore(js, fjs);
       <div class="col-md-2">
           
 <div class="dropdown">
-  <button class="dropbtn">Fitness Product</button>
+  <button class="dropbtn">Fitness Products</button>
   <div class="dropdown-content">
   <?php
      $taxonomy     = 'product_cat';
-      $orderby      = 'name';  
+      $orderby      = 'slug';  
       $show_count   = 0;      // 1 for yes, 0 for no
       $pad_counts   = 0;      // 1 for yes, 0 for no
       $hierarchical = 1;      // 1 for yes, 0 for no  
@@ -283,11 +283,13 @@ fjs.parentNode.insertBefore(js, fjs);
       $args = array(
              'taxonomy'     => $taxonomy,
              'orderby'      => $orderby,
+             'order'        => 'ASC',
              'show_count'   => $show_count,
              'pad_counts'   => $pad_counts,
              'hierarchical' => $hierarchical,
              'title_li'     => $title,
-             'hide_empty'   => $empty
+             'hide_empty'   => $empty,
+             'exclude'      => array(353,354,355,180,204),
       );
      $all_categories = get_categories( $args );
      ?>
@@ -333,7 +335,8 @@ fjs.parentNode.insertBefore(js, fjs);
                       foreach($sub_cats as $sub_category) {
                         $sub_category_id = $sub_category->term_id;
                       ?>
-                      <div class="col-sm-6 custom-height">
+                      <div class="col-sm-3">
+                      <div class="custom-height"> 
                       <a class="sub_cat_head" href="<?php echo get_term_link($sub_category->slug, 'product_cat');?>"><?php echo $sub_category->name;?></a>
 
                        <?php
@@ -352,19 +355,20 @@ fjs.parentNode.insertBefore(js, fjs);
                         $sub_sub_cats = get_categories( $args3 );
                         if($sub_sub_cats) {
                       ?>
+                      <div class="new_sub">
                       <ul>
-                      <?php foreach($sub_sub_cats as $sub_sub_category) {?>
+                      <?php 
+                      $i=0;
+                      foreach($sub_sub_cats as $sub_sub_category) if ($i++ < 3){?>
                          <li>
-                      <a href="<?php echo get_term_link($sub_sub_category->slug, 'product_cat');?>"><?php echo $sub_sub_category->name;?></a></li>
-
+                            <a href="<?php echo get_term_link($sub_sub_category->slug, 'product_cat');?>"><?php echo $sub_sub_category->name;?></a>
+                          </li>
+                          
                       <?php }?>
                       </ul>
-                      <?php }?>
-
-
-
-
-
+                      </div>
+                      <?php }?>                      
+      </div>
                       </div>
                       <?php }?>
 
@@ -393,11 +397,11 @@ fjs.parentNode.insertBefore(js, fjs);
       <div class="col-md-7 col-sm-7">  
            <?php
           $args = array(
-              'orderby'           => 'name', 
+              'orderby'           => 'slug', 
               'order'             => 'ASC',
               'hide_empty'        => true, 
               'parent'            => '0',
-              
+              'exclude'           => array(353,354,355,180,204),
           );  
           $terms = get_terms( 'product_cat', $args );
           ?>
@@ -405,13 +409,22 @@ fjs.parentNode.insertBefore(js, fjs);
           <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
             <div class="search-all">
                 <?php if(is_array($terms) && count($terms)>0){?>
+            
             <select name="category" class="my-custom-select">
             <option value="">All</option>
             <?php foreach($terms as $term):?>
-              <option <?php echo($_GET['category'] == $term->slug)?'selected=selected':'';?>value="<?php echo $term->slug;?>"><?php echo $term->name;?></option>
+              <?php
+              $metafieldArray = get_option('taxonomy_'. $term->term_id);
+              $metafieldoutput = $metafieldArray['custom_term_meta'];
+
+              echo $metafieldoutput;
+              ?>
+              <option <?php echo($_GET['category'] == $term->slug)?'selected=selected':'';?>value="<?php echo $term->slug;?>" data-text="<?php echo $term->name;?>"><?php echo $term->name;?></option>
+              
             <?php endforeach;?>
             </select>
-            <?php }?>
+
+           <?php }?>
             </div>
             <div class="search-txt">
             <input type="hidden" name="post_type" value="product" />
@@ -432,6 +445,34 @@ fjs.parentNode.insertBefore(js, fjs);
           </div>
         </div> -->
       </div> 
+
+      <script type="text/javascript">
+
+      jQuery(document).ready(function($) {
+      var maxLength = 10;
+      $('.my-custom-select').change(function(i, text) {
+        $(this).find('option').each(function(e){
+          $(this).text($(this).attr('data-text'));
+        })
+        if ($(this).find('option:selected').text().length > maxLength) {
+
+            var old_text = $(this).find('option:selected').text();
+            var new_val = $(this).find('option:selected').text().substring(0, maxLength) + '...';
+            $('.my-custom-select option:selected').text(new_val);
+              }
+             //$('.my-custom-select option:contains('+new_val+')').text(old_text);
+          });
+
+      //   $('.my-custom-select>option').hover(function() {
+      //     $('.my-custom-select').find('option').each(function(e){
+      //       $(this).text($(this).attr('data-text'));
+      //     })
+      // });
+
+      });
+      
+        
+      </script>
       <div class="col-md-3 col-sm-3 header-icon-area">
       <div class="row">
           <div class="col-md-6 col-sm-6">

@@ -18,7 +18,7 @@
 <div class="footer_up_line">
 	<div class="container">
 		<div class="col-sm-12">
-			<h2>More awesome reasons to shop at Chandler Sports</h2>
+			<h2>More reasons to shop at Chandler Sports</h2>
 		</div>
 		<div class="col-md-4 col-sm-12">
 			<div class="icon-wrapper">
@@ -31,7 +31,7 @@
 			<div class="icon-wrapper">
 			  <i class="fa fa-4x fa-sitemap"></i>
 			</div>
-			<h3>Over 600 products</h3>
+			<h3>1000's of products</h3>
 			<p>with more added every week</p>
 		</div>
 		<div class="col-md-4 col-sm-12">

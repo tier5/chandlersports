@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6{ margin:0px; padding:0px; font-weight:normal;}
 	border:none;
 	background:none;
 	position:absolute;
-	right:0px;
+	right:1px;
 	top: -12px;
 	width:36px;
 	font-size:18px;
@@ -952,7 +952,7 @@ blockquote p:last-child {
 .sriv_box_1{
 	text-align:center;
 	background: #fff; padding: 10px; margin: 4px 0;
-	border:1px solid #e1e1e1; 
+	/*border:1px solid #e1e1e1; */
 	}
 .sriv_box_1 img{
 	margin:0 auto;
@@ -2025,7 +2025,7 @@ margin-bottom:15px;
 
 
 .sriv_tit_final h1 {
-    font-size: 21px;
+    font-size: 18px;
     font-family: 'open_sansregular';
     color: rgb(255,127,0);
     text-align: center;
@@ -2035,7 +2035,7 @@ margin-bottom:15px;
 
 .set-all-footer-topall ul li{
 
-    font-size: 17px;
+    font-size: 14px;
    list-style-image: url("../images/reasons-to-shop-tick.png");
    font-family: 'open_sansregular';
 }
@@ -2080,13 +2080,13 @@ min-height: 250px;
 background: #fff;
 }
 .set-all-footer-topall{
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+  /*box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);*/
 margin-bottom: 10px !important;
-padding: 30px 15px;
-transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+padding: 7px 5px;
+/*transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;*/
 border-radius: 5px;
 background: rgb(245, 245, 245) none repeat scroll 0% 0%;
-min-height: 250px;
+min-height: 280px;
 background: #fff;
 }
 
@@ -2197,7 +2197,8 @@ ul li#menu-a-main-navigation ul.sub-menu li span.menu-image-title
   vertical-align: top;
 }
 .search-all select option{padding: 4px 15px; background: #fff; color: #000; font-weight: 300;}
-.search-all{background: #ccc; border: 1px solid #409330; border-right: none;}
+.search-all{background: #ccc; border: 1px solid #409330; border-right: none;border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;}
 
 .search-all select {
   border: 0 none;
@@ -2218,18 +2219,18 @@ ul li#menu-a-main-navigation ul.sub-menu li span.menu-image-title
   background: #fff;
 }
 select.my-custom-select {
-    
+    font-family: 'Roboto', sans-serif;
     float: left;
     display: inherit;
     width: 100%;
     /*background-color: #409330;*/
     height: 45px;
     color: #000;
-    font-weight: bold;	
+    font-weight: 400;	
     -webkit-appearance: none;
    -moz-appearance:    none;
    appearance:         none;
-   background: url(../images/arrow-down-b-16.png) no-repeat right 3px top 14px;
+   background: url(../images/arrow-down-b-16.png) no-repeat right 3px top 14px #fff;
    padding: 0 4px;
 
 
@@ -2247,7 +2248,7 @@ select.my-custom-select {
 /*    background-color: #4CAF50;*/
     color: #333;
     padding: 3px 20px 0 0;
-    font-size: 14px;
+    font-size: 16px;
     border: none;
     cursor: pointer;
     position: relative;
@@ -2287,15 +2288,26 @@ width: 20px; height: 24px; left: -25px; top: -1px;
     padding: 8px 16px;
     text-decoration: none;
     display: block;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 
 .child a{padding: 8px 0;}
-a.sub_cat_head{color: #409330; font-size: 15px; font-weight: bold;}
+a.sub_cat_head{color: #409330; font-size: 15px; font-weight: 500;}
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #fff; }
+.dropdown-content a.has-child:hover 
+{background: #fff;
+
+/*box-shadow: -2px 1px 5px #e7e7e7;*/
+box-shadow: -1px 0px 2px 0px #666;
+
+
+ }
+/*.dropdown-content a:hover a:hover{box-shadow: none !important;}*/
+
+
+
 .dropdown-content:hover {border-left: none; }
 
 /* Show the dropdown menu on hover */
@@ -2304,7 +2316,7 @@ a.sub_cat_head{color: #409330; font-size: 15px; font-weight: bold;}
    /* border:1px solid #ccc;*/
 
 }
-.custom-height{padding-bottom: 20px;}
+/*.custom-height{padding-bottom: 20px;}*/
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 /*.dropdown:hover .dropbtn {
@@ -2313,16 +2325,18 @@ a.sub_cat_head{color: #409330; font-size: 15px; font-weight: bold;}
 
 .dropdown-content ul{position: relative;}
 /*.dropdown-content li{position: relative;}*/
-.has-child{position: relative; }
-.child{display: block; position: absolute; left: 250px; border:1px solid #ccc;
-display: none; background: #fff; min-width: 700px; max-width: 800px; padding: 30px 0; top: -2px;
-border-left: 0; box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); min-height: 573px;
+.has-child{position: relative; z-index: 9999;}
+.child{display: block; position: absolute; left: 248px; border:1px solid #ccc;
+display: none; background: #fff; min-width: 700px; max-width: 800px; padding: 10px 0; top: -1px;
+border-left: 0; /*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);*/ min-height: 386px;
+border:1px solid #ccc;
+
 }
-.has-child-arrow{background: url(../images/side-arrow.png) no-repeat right 4px; background-size: 11px;}
+.has-child-arrow{background: rgba(0, 0, 0, 0) url("../images/side-arrow.png") no-repeat scroll right 5px top 14px / 11px auto; /*background-size: 11px;*/}
 
 
 .dropdown-content li:hover .child{display: block;}
-.child ul li a{padding: 4px 3px; color: #333;}
+.child ul li a{padding: 3px 3px; color: #333; font-size: 13px;}
 .child ul li a:hover{color: #409330}
 .first-level-cat a{color: #409330 !important; padding-bottom: 5px; 
  vertical-align: middle; font-size: 15px;
@@ -2369,4 +2383,66 @@ background-size: 12px;
 .tb:hover {
   background: rgba(0, 0, 0, 0) url("../images/footer_soi_icon.png") no-repeat scroll -104px -26px;
 }
+
+
+.blog-wrapper{padding-top: 50px;}
+.blog-wrapper h2{font-size: 16px; min-height: 52px; padding-top: 15px;}
+
+.blog-wrapper .blog-img{border: 1px solid #ccc; padding: 2px; margin-top: 5px; 
+margin-bottom: 5px; text-align: center; position: relative;}
+.blog-wrapper .blog-img a{display: block; text-align: center;}
+.blog-wrapper .blog-img img{max-width: 100%; min-width: 150px; margin: 0 auto; height: 176px;}
+
+
+
+.blog-wrapper .blog-img .blog-date{position: absolute; background: rgb(72, 166, 54); 
+	color: #fff; top: 3px; left: 5px; padding: 3px;}
+
+.blog-wrapper .blog-short-content{padding: 10px 0;}
+.blog-wrapper .pagination{text-align: center; display: block;}
+.blog-wrapper .pagination a{padding: 3px 5px; color: #000; margin: 0 3px; text-decoration: none;
+font-size: 18px;	
+}
+.blog-wrapper .pagination a:hover{background:rgb(72, 166, 54) none repeat scroll 0 0; color: #fff;}
+
+.blog-wrapper span.current{padding: 3px 5px; margin: 0 3px; text-decoration: none; background:rgb(72, 166, 54) none repeat scroll 0 0;
+color: #fff;}
+.blog-wrapper a{color: #409330;}
+
+
+.es_textbox_button{background: #FF7F00; color: #fff; border:none;
+border-radius: 5px; padding: 5px 10px; 
+}
+#es_txt_button_pg{width: auto; padding: 12px 15px 11px; font-size: 15px;
+border-top-left-radius:0; border-bottom-left-radius:0; 
+}
+.es_lablebox{color: #FF7F00; font-weight: 600; font-style: italic;
+font-size: 15px; text-transform: uppercase;
+}
+.es_textbox input[type="text"]{margin-bottom: 0; border-color: #FF7C00;font-style: italic;}
+.es_textbox input[type="text"]:focus{outline: none;}
+.es_shortcode_form .es_button{padding-top: 0px; display: inline-block; vertical-align: top;}
+
+.es_shortcode_form .es_textbox{display: inline-block;}
+/*Changes on 07-02-17*/
+a.menu-image-title-before:hover {
+    color: #409330;
+}
+button.dropbtn:hover {
+	color: #409330;
+}
+a.menu-image-title-after:hover {
+    color: #409330;
+}
+
+li.menu-dropdown-icon:hover{background: url(../images/down-arrow-green.png) no-repeat right 0px top 9px;
+background-size: 12px;
+}
+.dropbtn:hover{background: rgba(0, 0, 0, 0) url("../images/down-arrow-green.png") no-repeat scroll right 0 top 7px}
+
+#latest-owl .owl-item{ margin: 0; padding: 5px; text-align: center; height: 370px; position: relative;}
+#latest-owl .owl-item h3{font-size: 15px; height: 46px;}
+#latest-owl .owl-item a:hover{text-decoration: none; color: #000;}
+#latest-owl .price{padding-bottom: 10px; display: block;}
+#latest-owl .add_to_cart_button.button.product_type_simple{display: block; width: 115px; margin: 0 auto;}
 

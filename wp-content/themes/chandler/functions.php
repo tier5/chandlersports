@@ -1336,21 +1336,3 @@ function new_footer_widgets_init() {
 
 }
 add_action( 'widgets_init', 'new_footer_widgets_init' );
-
-
-//custom query
-function advanced_search_query($query) {
-
-    if($query->is_search()) {
-        // category terms search.
-        if (isset($_GET['category']) && !empty($_GET['category'])) {
-            $query->set('tax_query', array(array(
-                'taxonomy' => 'product_cat',
-                'field' => 'slug',
-                'terms' => array($_GET['category']) )
-            ));
-        }    
-    }
-    return $query;
-}
-add_action('pre_get_posts', 'advanced_search_query', 1000);

@@ -1620,8 +1620,8 @@ line-height: 435px !important;
 #sale-owl .price{padding-bottom: 10px; display: block;}
 #sale-owl .add_to_cart_button.button.product_type_simple{display: block; width: 115px; margin: 0 auto;}
 /*#sale-owl .item li {height: 350px; background: red;}*/
-#sale-owl .item li img{border: 1px solid #ccc; width: 200px; height: 180px; margin: 0 auto 15px auto}
-#sale-owl .onsale{position: absolute; top: 16px; right: 21px; background: #409330; color: #fff;}
+#sale-owl .item li img{/*border: 1px solid #ccc;*/ width: 200px; height: 180px; margin: 0 auto 15px auto}
+#sale-owl .onsale{position: absolute; top: 16px; right: 21px; /*background: #409330;*/ background:red; color: #fff;}
 #sale-owl .button, input[type="submit"], #place_order:hover{color: #fff; text-decoration: none;}
 
 
@@ -1629,8 +1629,91 @@ line-height: 435px !important;
 #sale-owl .owl-next{position: absolute; top: 25%; right: -10px;}
 #sale-owl .owl-prev{position: absolute; top: 25%; left: -10px;}
 #sale-owl .owl-pagination{display: none;}
+/*changes for 07-02-17*/
+#latest-owl .owl-item{ margin: 0; padding: 5px; text-align: center; height: 370px; position: relative;}
+#latest-owl .owl-item h3{font-size: 15px; height: 46px;}
+#latest-owl .owl-item a:hover{text-decoration: none; color: #000;}
+#latest-owl .price{padding-bottom: 10px; display: block;}
+#latest-owl .add_to_cart_button.button.product_type_simple{display: block; width: 115px; margin: 0 auto;}
+#latest-owl .owl-next{position: absolute; top: 25%; right: -10px;}
+#latest-owl .owl-prev{position: absolute; top: 25%; left: -10px;}
+#latest-owl .item li img{/*border: 1px solid #ccc;*/ width: 200px; height: 180px; margin: 0 auto 15px auto}
+#latest-owl .onsale{position: absolute; top: 16px; right: 21px; /*background: #409330;*/ background:red; color: #fff;}
+#latest-owl .button, input[type="submit"], #place_order:hover{color: #fff; text-decoration: none;}
+select.my-custom-select {font-size: 17px;}
 
+/*Changes for 08-02-17*/
+.dropbtn:hover:before {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0) url(images/bargrn.png) no-repeat scroll left 0 top 9px;
+    width: 20px;
+    height: 24px;
+    left: -25px;
+    top: -1px;
+}
+/*changes for 9.2.17*/
+.custom-height{
+   height: 145px;
+}
+.custom-height ul {
+      /*min-height: 100px;*/
+}
+/*changes for 10.2.17*/
+.middle_content {    
+   border: 1px solid #DCDEE3;
+   padding: 20px 30px;
+}
 
+.middle_content h2{
+  color: #000;
+font-size: 22px;
+    margin-bottom: 10px;
+}
 
+.middle_content h3{
+    color: #FF6A00;
+    font-size: 24px;
+    height: 66px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #E6E7EB;
+    line-height: 25px;
+}
 
+.middle_content ul{
+    margin: 20px 0;
+}
 
+.middle_content ul li {
+    word-break: break-all;
+    word-wrap: break-word;
+    font-size: 13px;
+    color: #666;
+    font-weight: 500;
+}
+
+.middle_content ul li span{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 24px;
+    color: #FF6A00;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.middle_content a{
+
+	
+}
+.btm_links{
+    color: #FFF !important;
+    background: #ff6a00;
+    padding: 10px;
+    text-decoration: none !important;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.clear{
+display:inline-block;
+}

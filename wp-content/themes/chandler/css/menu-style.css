@@ -81,9 +81,9 @@ Screen style's
   text-decoration: none;
   padding:5px 10px 0px;
   display: block;
-  font-size:13px;
+  font-size:14px;
   /*color:#fff;*/
-  font-family: 'open_sanslight';
+  /*font-family: 'open_sanslight';*/
   position:relative;
   color: #000;
 }
@@ -201,7 +201,7 @@ box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.75);
   width: auto;
   left: auto;
   padding: 10px 13px;
-  max-width: 200px;
+  max-width: 261px;
 }
 .menu > ul > li > ul.normal-sub > li {
   width: 100%;
