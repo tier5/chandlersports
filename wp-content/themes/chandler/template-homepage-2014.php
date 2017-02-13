@@ -171,11 +171,41 @@ get_header(); ?>
        'orderby'  => 'slug'
     );
   $subcats = get_categories($args);
-    echo '<ul class="">';
+    echo '<ul class="1st_block">';
     $i2=0;
       foreach ($subcats as $sc) if ($i2++ < 5){
+        $addClass3 = "body_child";
+        //$addClass4 = "has-child-arrow";
         $link = get_term_link( $sc->slug, $sc->taxonomy );
-          echo '<li><span style="width: 40px;">'.$sc->count.'</span><a href="'. $link .'">'.$sc->name.'</a></li>';
+        $count = $sc->count;
+        $sub_cat_name=$sc->term_id;
+        if($count > 0){$addClass4 = "has-child-arrow";}else{$addClass4="";}
+          echo '<li class="has-child-new '.$addClass4.'"><span style="width: 40px;">'.$sc->count.'</span><a class="'.$addClass4.'" href="'. $link .'">'.$sc->name.'</a>
+          <div class="'.$addClass3.'">
+          <div class="col-md-12">
+          <div class="row">
+          <div class="col-sm-3">
+          <div class="custom-height">
+          <h3>'.$sc->name.'</h3>
+          <ul>';
+          $subargs = array(
+           'show_option_none' => '',
+           'hierarchical' => 1,
+           'hide_empty' => 0,
+           'parent' => $sub_cat_name,
+           'taxonomy' => 'product_cat',
+           'orderby'  => 'slug'
+            );
+          $i3=0;
+          $subsubcats = get_categories($subargs);
+        foreach ($subsubcats as $new_sc) if ($i3++ < 5){
+          $sub_link = get_term_link( $new_sc->slug, $new_sc->taxonomy );
+          $sub_count = $new_sc->count;
+        
+  echo'<li><a class="" href="'. $sub_link .'">'.$new_sc->name.'</a></li>'; 
+}
+          echo'<li><a class="" href="'. $link .'">view more</a></li></ul></div></div></div></div></div></li>';
+
       }
     echo '</ul>';?>
       
@@ -204,14 +234,37 @@ get_header(); ?>
   <div class="middle_content">
     <h2>Strength & Training Equipment:</h2>
     <h3>There is setting to big</h3>
-    <ul>
+    <?php $newargs = array(
+       'show_option_none' => '',
+       'hierarchical' => 1,
+       'hide_empty' => 0,
+       'parent' => 160,
+       'taxonomy' => 'product_cat',
+       'orderby'  => 'slug'
+    );
+  $newsubcats = get_categories($newargs);
+    echo '<ul class="2nd_block">';
+    $i3=0;
+      foreach ($newsubcats as $newsc) if ($i3++ < 5){
+        $newlink = get_term_link( $newsc->slug, $newsc->taxonomy );
+        $count = $newsc->count;
+          echo '<li class=""><span style="width: 40px;">*</span><a class="" href="'. $newlink .'">'.$newsc->name.'</a></li>';
+        }
+        echo '</ul>';
+      ?>
+    <!--<ul>
     <li><span>*</span>Multi stations</li>
     <li><span>*</span>Single stack machines</li>
     <li><span>*</span>Power racks</li>
     <li><span>*</span>Weight benchs</li>
     <li><span>*</span>Dual compact machines</li>
-    </ul>
-     <p>Click Here to see<a class="btm_links" href="">Full category</a></p>
+    </ul>-->
+      <?php
+         
+          $category_link2 = get_category_link( '160' );
+      ?>
+    <p>Click Here to see<a class="btm_links" href="<?php echo $category_link2; ?>">Full category</a></p>
+
   </div>
  
  </div>
@@ -683,6 +736,17 @@ $('#latest-owl').owlCarousel({
 </script>
 
 
+
+<script type="text/javascript">
+  jQuery(document).ready(function($){
+    $('.has-child-new').hover(function(){
+      $(this).children('div.body_child').css('display','block');
+    }, 
+  function () {
+    $(this).children('div.body_child').css('display','none');
+  });
+  });
+</script>
 
 
 
