@@ -363,8 +363,9 @@ fjs.parentNode.insertBefore(js, fjs);
                          <li>
                             <a href="<?php echo get_term_link($sub_sub_category->slug, 'product_cat');?>"><?php echo $sub_sub_category->name;?></a>
                           </li>
-                          
+                         
                       <?php }?>
+                       <li><a href="<?php echo get_term_link($sub_category->slug, 'product_cat');?>" style="color: #9c9c9c;font-weight: 400;">view more</a></li>
                       </ul>
                       </div>
                       <?php }?>                      

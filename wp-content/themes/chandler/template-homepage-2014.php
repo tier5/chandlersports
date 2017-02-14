@@ -184,7 +184,7 @@ get_header(); ?>
           <div class="'.$addClass3.'">
           <div class="col-md-12">
           <div class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-6">
           <div class="custom-height">
           <h3>'.$sc->name.'</h3>
           <ul>';
@@ -204,7 +204,32 @@ get_header(); ?>
         
   echo'<li><a class="" href="'. $sub_link .'">'.$new_sc->name.'</a></li>'; 
 }
-          echo'<li><a class="" href="'. $link .'">view more</a></li></ul></div></div></div></div></div></li>';
+          echo'</br><a href="'. $link .'" style="color: #b6b3b3;">view more</a></ul></div></div><div class="col-sm-6"><h4 style="text-align: center;color: #ddddd !important;font-weight: 500;">You May Also Like</h4>';
+            $args = array(
+              'post_type' => 'product',
+              'posts_per_page' => 6,
+              'tax_query' => array(
+                array(
+                  'taxonomy' => 'product_cat',
+                  'field'    => 'slug',
+                  'terms'    => $sc->slug,
+                ),
+              ),
+            );
+            $query = new WP_Query( $args );
+            //echo'<pre>';
+            //print_r($query);
+            //foreach ($query as $new_query) {
+             while ( $query->have_posts() ) : $query->the_post();
+            global $product; 
+            $thumbnail = get_the_post_thumbnail_url();
+            echo '<div class="col-sm-6"><div class="row"><a href="'.get_permalink( $query->post->ID ).'" title="'.esc_attr($query->post->post_title ? $query->post->post_title : $query->post->ID).'"><div class="productbox"><div class="like_img">';
+             if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" width="100px" height="100px" />'; 
+            echo'</div></div><div class="like_title" style="text-align:center">'.get_the_title().'</div></a></div></div>';
+
+          endwhile;wp_reset_query(); 
+
+          echo '</div></div></div></div></li>';
 
       }
     echo '</ul>';?>
