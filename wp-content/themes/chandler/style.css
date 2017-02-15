@@ -1768,3 +1768,21 @@ ul.1st_block li:hover{box-shadow:-1px 0px 2px 0px #666; font-weight: bold;}
 min-height: 310px !important;
 
 }
+.child ul li a{line-height: 13px;font-weight: 300;}
+
+
+.onsale-wrapper{position: relative;}
+
+.owl-prev{position: absolute; left: 0; top: 50%;}
+.owl-next{position: absolute; right: 0; top: 50%;}
+
+.newowl-prev{position: absolute; left: 0; top: 40%;}
+.newowl-next{position: absolute; right: 0; top: 40%;}
+
+
+
+
+
+
+
+

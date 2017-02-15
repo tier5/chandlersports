@@ -45,6 +45,7 @@
   <link href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet' type='text/css'>
   <link href="<?php bloginfo('template_directory'); ?>/css/owl.carousel.css" rel="stylesheet" type="text/css">
   <link href="<?php bloginfo('template_directory'); ?>/css/owl.theme.css" rel="stylesheet" type="text/css">
+  <link href="<?php bloginfo('template_directory'); ?>/css/owl.transitions.css" rel="stylesheet" type="text/css">
   <link href="<?php bloginfo('template_directory'); ?>/css/bootstrap-responsive-tabs.css" rel="stylesheet" type="text/css">
   <link href="<?php bloginfo('template_directory'); ?>/css/responsive.css" rel="stylesheet" type="text/css">
 <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->

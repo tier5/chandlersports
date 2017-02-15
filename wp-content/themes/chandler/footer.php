@@ -1,4 +1,3 @@
-
 <!---- New section start---->
 
 <!--<div>
@@ -25,7 +24,9 @@
 			  <i class="fa fa-4x fa-thumbs-up"></i>
 			</div>
 			<h3>Hire before you buy</h3>
+
 			<p>on most fitness equipment</p>
+			<?php echo do_shortcode('[custom-facebook-feed id=chandlersports num=5]');?>
 		</div>
 		<div class="col-md-4 col-sm-12">
 			<div class="icon-wrapper">
@@ -33,7 +34,10 @@
 			</div>
 			<h3>1000's of products</h3>
 			<p>with more added every week</p>
+			<h4>Google plus feed</h4>
+			<?php echo do_shortcode('[gpf_google_plus id=104263035271660173542 height=350px type=page]');?>
 		</div>
+
 		<div class="col-md-4 col-sm-12">
 			<a href="<?= get_permalink(1645) ?>">
 				<div class="icon-wrapper">
@@ -174,7 +178,7 @@ $('.responsive-tabs').responsiveTabs({
       singleItem : true,
 
 	  autoPlay: 3000, //Set AutoPlay to 3 seconds
-
+	  transitionStyle : 'fade'
 
 
       // "singleItem:true" is a shortcut for:

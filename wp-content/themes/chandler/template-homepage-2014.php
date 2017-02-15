@@ -587,7 +587,6 @@ if($loop->have_posts()){
   ?>
 
 
-
    <div id="sale-owl" class="owl-carousel">
 
   <?php
@@ -621,7 +620,7 @@ if($loop->have_posts()){
   ?>
 
   </div>
-
+<div class="owl-buttons"><div class="owl-prev"><img src="<?php echo get_template_directory_uri();?>/images/prev.png"></div><div class="owl-next"><img src="<?php echo get_template_directory_uri();?>/images/next.png"></div></div>
   <?php
 
 }
@@ -707,6 +706,8 @@ if($newloop->have_posts()){
   ?>
 
   </div>
+  <div class="owl-buttons"><div class="newowl-prev"><img src="<?php echo get_template_directory_uri();?>/images/prev.png"></div><div class="newowl-next"><img src="<?php echo get_template_directory_uri();?>/images/next.png"></div></div>
+
 
   <?php
 
@@ -723,6 +724,8 @@ if($newloop->have_posts()){
 <script>
 
   jQuery(document).ready(function(){
+    var owl = null;
+    var carousal=$("#sale-owl");
 
 $('#sale-owl').owlCarousel({
 
@@ -732,14 +735,24 @@ $('#sale-owl').owlCarousel({
 
     items:5,
 
-    navigation:true,
+    navigation:false,
+    afterInit: function() {
+      owl = this;
+    }
 
-    navigationText: ["<img src='<?php echo get_template_directory_uri();?>/images/prev.png'>","<img src='<?php echo get_template_directory_uri();?>/images/next.png'>"]
-
-
-
+    //navigationText: ["<img src='<?php echo get_template_directory_uri();?>/images/prev.png'>","<img src='<?php echo get_template_directory_uri();?>/images/next.png'>"]
 });
+$('.owl-next').click(function(){
+  //alert('test');
+    carousal.trigger('owl.goTo', owl.currentItem + 5)
+  });
 
+  $('.owl-prev').click(function(){
+    //alert('test2');
+    carousal.trigger('owl.goTo', owl.currentItem - 5)
+  });
+var newowl = null;
+var newcarousal=$("#latest-owl");
 $('#latest-owl').owlCarousel({
 
     loop:true,
@@ -748,13 +761,27 @@ $('#latest-owl').owlCarousel({
 
     items:5,
 
-    navigation:true,
+    navigation:false,
 
-    navigationText: ["<img src='<?php echo get_template_directory_uri();?>/images/prev.png'>","<img src='<?php echo get_template_directory_uri();?>/images/next.png'>"]
+    //navigationText: ["<img src='<?php echo get_template_directory_uri();?>/images/prev.png'>","<img src='<?php echo get_template_directory_uri();?>/images/next.png'>"]
 
 
 
+afterInit: function() {
+      newowl = this;
+    }
+
+    //navigationText: ["<img src='<?php echo get_template_directory_uri();?>/images/prev.png'>","<img src='<?php echo get_template_directory_uri();?>/images/next.png'>"]
 });
+$('.newowl-next').click(function(){
+  //alert('test');
+    newcarousal.trigger('owl.goTo', newowl.currentItem + 5)
+  });
+
+  $('.newowl-prev').click(function(){
+    //alert('test2');
+    newcarousal.trigger('owl.goTo', newowl.currentItem - 5)
+  });
 
   });
 
