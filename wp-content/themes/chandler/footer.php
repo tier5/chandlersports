@@ -15,7 +15,7 @@
 <!---- End section start---->
 
 <div class="footer_up_line">
-	<div class="container">
+<!--	<div class="container">
 		<div class="col-sm-12">
 			<h2>More reasons to shop at Chandler Sports</h2>
 		</div>
@@ -46,8 +46,42 @@
 				<h3>Super saver</h3>
 				<p>Discover our free super saver areas</p>
 			</a>
+
+			<h4>Tumbler feed</h4>
+			<div style="max-height: 250px; min-height: 250px !important;overflow: scroll;">
+			<?php echo do_shortcode('[powr-tumblr-feed id=2d3dbd99_1487232959]');?>
+		</div>
+			
+		</div>
+	</div>-->
+	<div class="container">
+		<div class="col-sm-12">
+			<h2>More reasons to shop at Chandler Sports</h2>
+		</div>
+		<div class="col-md-3 col-sm-12">
+			<h4>Facebook</h4>
+			<?php echo do_shortcode('[custom-facebook-feed id=chandlersports num=5]');?>
+		</div>
+		<div class="col-md-3 col-sm-12">
+			<h4>Google plus</h4>
+			<?php echo do_shortcode('[gpf_google_plus id=104263035271660173542 height=390px type=page]');?>
+		</div>
+
+		<div class="col-md-3 col-sm-12">
+			<h4>Tumbler </h4>
+			<div style="max-height: 400px; min-height: 400px !important;overflow: scroll;margin-top:20px;">
+			<?php //echo do_shortcode('[powr-tumblr-feed id=2d3dbd99_1487232959]');
+				echo do_shortcode('[powr-tumblr-feed id=a3e78207_1487246928]');
+			?>
+		</div>
+		</div>
+		<div class="col-md-3 col-sm-12">
+			<h4>Instagram </h4>
+			<?php echo do_shortcode('[instagram-feed num=9 cols=3]');?>
+		</div>	
 		</div>
 	</div>
+
 </div>
 
 

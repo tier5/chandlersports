@@ -152,11 +152,11 @@ get_header(); ?>
 
   <div class="container">
 
-  <div class="sriv_tit">
+  <!--<div class="sriv_tit">
 
           <h1>Highlights</h1>
 
-    </div>
+    </div>-->
 <div class="row">
   <div class="col-sm-4">
     <div class="middle_content">
@@ -238,7 +238,8 @@ get_header(); ?>
          
           $category_link = get_category_link( '183' );
       ?>
-      <p>Click Here to see<a class="btm_links" href="<?php echo $category_link; ?>">Full category</a></p>
+      <p style="margin-top: 38px;
+    position: relative;">Click Here <a class="btm_links" href="<?php echo $category_link; ?>">Full category</a></p>
     </div>
     
   </div>
@@ -247,11 +248,11 @@ get_header(); ?>
      <h2>Maintanance & Servicing:</h2>
      <h3>We can look after your products</h3>
       <ul>
-        <li><span>*</span>Repairs- Fees and Charge</li>
-        <li><span>*</span>Servicing- What is included?</li>
-        <li><span>*</span>Spare Parts - Most parts sourced</li>
-        <li><span>*</span>Upholstery-To you or Collect</li>
-        <li><span>*</span>Cabeling Replacement - kevlar and cable</li>
+        <li><span>*</span><a href="#">Repairs- Fees and Charge</a></li>
+        <li><span>*</span><a href="#">Servicing- What is included?</a></li>
+        <li><span>*</span><a href="#">Spare Parts - Most parts sourced</a></li>
+        <li><span>*</span><a href="#">Upholstery-To you or Collect</a></li>
+        <li><span>*</span><a href="#">Cabeling Replacement - kevlar and cable</a></li>
       </ul>
     </div>
  </div>
@@ -288,7 +289,8 @@ get_header(); ?>
          
           $category_link2 = get_category_link( '160' );
       ?>
-    <p>Click Here to see<a class="btm_links" href="<?php echo $category_link2; ?>">Full category</a></p>
+    <p style="margin-top: 38px;
+    position: relative;">Click Here <a class="btm_links" href="<?php echo $category_link2; ?>">Full category</a></p>
 
   </div>
  
@@ -299,7 +301,7 @@ get_header(); ?>
  
   <div class="col-sm-4">
   <div class="middle_content">
-   <div class="sriv_tit_final was_box" style="margin-bottom:10px;">
+   <div class="sriv_tit_final was_box" style="margin-bottom:0px;">
 
           <h1> More Reasons <span>why Chandler Sports keep you going </span></h1>
 
@@ -346,14 +348,15 @@ get_header(); ?>
 
 <div class="col-sm-4">
   <div class="middle_content">
-   <h2>Commercial Fitness:</h2>
-   <h3>There is setting to big</h3>
+   <h2><span style="color:rgb(255,127,0);">COMMERCIAL</span> FITNESS:</h2>
+   <h3>Manager or Owner we have you covered</h3>
   <ul>
-    <li><span>*</span>Multi stations</li>
-    <li><span>*</span>Single stack machines</li>
-    <li><span>*</span>Power racks</li>
-    <li><span>*</span>Weight benchs</li>
-    <li><span>*</span>Dual compact machines</li>
+    <li><span>*</span>Gym Design and layout</li>
+    <li><span>*</span>Gymnastic equipment repair</li>
+    <li><span>*</span>Finance available</li>
+    <li><span>*</span>Traidings welcome</li>
+    <li><span>*</span>Impact rubber flooring</li>
+    <li><span>*</span>Gym mirrors</li>
   </ul>
   </div>
  </div>
@@ -500,7 +503,7 @@ get_header(); ?>
 
 
 
-     <a href="<?php echo do_shortcode('[url]'); ?>/home-fitness-equipment-repairs/" target="_blank"><img src="<?php echo do_shortcode('[url]'); ?>/wp-content/uploads/2016/05/need_an_equipment_images2.jpg" alt="" class="img-auto-width-set" /></a>
+     <a href="<?php echo do_shortcode('[url]'); ?>/home-fitness-equipment-repairs/" target="_blank"><img src="<?php echo do_shortcode('[url]'); ?>/wp-content/uploads/2016/05/need_an_equipment_images2.png" alt="" class="img-auto-width-set" /></a>
 
 
 
@@ -524,7 +527,7 @@ get_header(); ?>
 
   <div class="was_box">  
 
-  <h1>On <span>sale</span></h1>
+  <h1>On <span>Sale</span></h1>
 
   </div>
 
