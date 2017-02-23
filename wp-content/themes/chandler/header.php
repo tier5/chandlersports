@@ -176,7 +176,8 @@ fjs.parentNode.insertBefore(js, fjs);
         <div class="row">
           <div class="col-xs-12 col-sm-12 ">
           <span class="top-right-info">
-            General Inquires: <a href="tel:01968 672 0202">01968 672 0202</a> <br>  Commercial Support: <a href="tel:01968 670 610">01968 670 610</a>
+            Commercial Support: <a href="tel:01968 670 610">01968 670 610</a><br>
+            General Inquires: <a href="tel:01968 672 0202">01968 672 0202</a>   
           </span>
           <span class="top-right-info">
           Open Mon - Fri, 8:30am - 5pm
@@ -231,6 +232,7 @@ fjs.parentNode.insertBefore(js, fjs);
           <div class="col-xs-12">
           <div class="pull-left top-icon">  
             <i class="fa fa-user" aria-hidden="true"></i>
+            
           </div>
             <?php
             if (is_user_logged_in()) :
@@ -267,7 +269,7 @@ fjs.parentNode.insertBefore(js, fjs);
 <div class="header_nav_bar">
   <div class="container-fluid">
       <div class="row">
-      <div class="col-md-2">
+      <div class="col-md-3">
           
 <div class="dropdown">
   <button class="dropbtn">Fitness Products</button>
@@ -473,13 +475,14 @@ fjs.parentNode.insertBefore(js, fjs);
 
       });
       
-        
+      
       </script>
-      <div class="col-md-3 col-sm-3 header-icon-area">
+      <div class="col-md-2 col-sm-2 header-icon-area">
       <div class="row">
-          <div class="col-md-6 col-sm-6">
+          <div class="col-md-7 col-sm-7 header-icon-area-left">
           <div class="pull-left top-icon">  
-            <i class="fa fa-user" aria-hidden="true"></i>
+            <!--<i class="fa fa-user" aria-hidden="true"></i>-->
+            <img src="<?php bloginfo('template_directory'); ?>/images/user-128.png" width="30px" height="30px">
           </div>
             <?php
             if (is_user_logged_in()) :
@@ -491,9 +494,10 @@ fjs.parentNode.insertBefore(js, fjs);
               <p class="font-size11"><a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login / Register','woothemes'); ?>"><?php _e('Login / Register','woothemes'); ?></a></p>
             <?php endif; ?>
           </div>  
-          <div class="col-md-6 col-sm-6">
+          <div class="col-md-5 col-sm-5 header-icon-area-right">
             <div class="pull-left top-icon">  
-             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+             <!--<i class="fa fa-shopping-cart" aria-hidden="true"></i>-->
+             <img src="<?php bloginfo('template_directory'); ?>/images/retailer-icon1.png" width="30px" height="30px">
             </div>
             <h3><a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>"><?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?></a></h3>
             <p class="font-size11"><a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>"><?php echo $woocommerce->cart->get_cart_total(); ?></p></a>

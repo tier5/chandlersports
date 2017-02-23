@@ -12,13 +12,20 @@ p {
 label {
   display: inline;
   font-weight: normal; }
-
 .header-cta-bar {
+    background: #fff;
+    /*padding: 1rem 0;*/
+    font-size: 1.7rem;
+    text-align: center;
+    height: 96px;
+    color: #666;
+}
+/*.header-cta-bar {
   background: #409330;
   color: #FFF;
   padding: 1rem 0;
   font-size: 1.7rem;
-  text-align: center; }
+  text-align: center; }*/
   .header-cta-bar img {
     margin: 0 auto; }
   @media (min-width: 769px) {

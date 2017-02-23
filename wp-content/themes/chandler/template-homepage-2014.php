@@ -92,52 +92,50 @@ get_header(); ?>
 
   <div class="container">
 
-    <div class="col-sm-4 col-xs-12">
-
+    <div class="col-sm-4 col-xs-12 tab_box pound_tab active">
+      <div class="pound_tab_box ">
       <div class="col-xs-2 col-sm-12 col-md-2">
-
-        <img src="<?= get_template_directory_uri() ?>/images/pound_icon.jpg" alt="Best price guarantee" />
-
+        <img src="<?= get_template_directory_uri() ?>/images/pound_icon.png" alt="Best price guarantee" />
       </div>
 
       <div class="col-xs-10 col-sm-12 col-md-10">
 
-        <span>Best price guarantee</span>
+        <span style="padding: 10px;">Best price guarantee</span>
 
       </div>
-
+      </div>
     </div>
 
-    <div class="col-sm-4 col-xs-12">
-
+    <div class="col-sm-4 col-xs-12 tab_box van_tab">
+      <div class="van_tab_box">
       <div class="col-xs-2 col-sm-12 col-md-2">
 
-        <img src="<?= get_template_directory_uri() ?>/images/van_icon.jpg" alt="Free delivery over &pound;100" />
-
+        <img src="<?= get_template_directory_uri() ?>/images/van_icon.png" alt="Free delivery over &pound;100" />
+      
       </div>
 
       <div class="col-xs-10 col-sm-12 col-md-10">
 
-        <span>Free delivery over &pound;100</span>
+        <span style="padding: 10px;">Free delivery over &pound;100</span>
 
       </div>
-
+      </div>
     </div>
 
-    <div class="col-sm-4 col-xs-12">
-
+    <div class="col-sm-4 col-xs-12 tab_box uk_tab">
+    <div class="uk_tab_box">
       <div class="col-xs-2 col-sm-12 col-md-2">
 
-        <img src="<?= get_template_directory_uri() ?>/images/uk_icon.jpg" alt="Nationwide Installatio" />
+        <img src="<?= get_template_directory_uri() ?>/images/uk_icon.png" alt="Nationwide Installatio" />
 
       </div>
 
       <div class="col-xs-10 col-sm-12 col-md-10">
 
-        <span>Nationwide Installation</span>
+        <span style="padding: 10px;">Nationwide Installation</span>
 
       </div>
-
+    </div>
     </div>
 
   </div>
@@ -239,7 +237,7 @@ get_header(); ?>
           $category_link = get_category_link( '183' );
       ?>
       <p style="margin-top: 38px;
-    position: relative;">Click Here <a class="btm_links" href="<?php echo $category_link; ?>">Full category</a></p>
+    position: relative;"><a class="btm_links" href="<?php echo $category_link; ?>">Full category</a></p>
     </div>
     
   </div>
@@ -278,22 +276,13 @@ get_header(); ?>
         }
         echo '</ul>';
       ?>
-    <!--<ul>
-    <li><span>*</span>Multi stations</li>
-    <li><span>*</span>Single stack machines</li>
-    <li><span>*</span>Power racks</li>
-    <li><span>*</span>Weight benchs</li>
-    <li><span>*</span>Dual compact machines</li>
-    </ul>-->
       <?php
          
           $category_link2 = get_category_link( '160' );
       ?>
     <p style="margin-top: 38px;
-    position: relative;">Click Here <a class="btm_links" href="<?php echo $category_link2; ?>">Full category</a></p>
-
+    position: relative;"><a class="btm_links" href="<?php echo $category_link2; ?>">Full category</a></p>
   </div>
- 
  </div>
 </div>
 <div class="clear"></div>
@@ -348,7 +337,8 @@ get_header(); ?>
 
 <div class="col-sm-4">
   <div class="middle_content">
-   <h2><span style="color:rgb(255,127,0);">COMMERCIAL</span> FITNESS:</h2>
+   <h2><span style="color:rgb(255,127,0);font-size: 18px;
+    font-family: 'open_sansregular';font-weight: bold;">COMMERCIAL</span> FITNESS:</h2>
    <h3>Manager or Owner we have you covered</h3>
   <ul>
     <li><span>*</span>Gym Design and layout</li>
@@ -396,141 +386,30 @@ get_header(); ?>
 
 <div class="test_and_lin">
 
+<!--<div class="test_and_lin ">-->
+
   <div class="container">
-
-     <!-- <div class="col-sm-6">
-
-     <div class="sriv_tit_final was_box" style="margin-bottom:10px;">
-
-          <h1> More Reasons <span>why Chandler Sports keep you going </span></h1>
-
-        </div>
-
-     <div class="set-all-footer-topall"><ul>
-
-<div class="col-sm-6">
-
-      <li>Over 1000’s of fitness products</li>
-
-      <li>Expert advice and support</li>
-
-      <li>Sales and advice line – 01968672020</li>
-
-      <li>Commercial Sales & Advice - 01968 672 020</li>
-
-      <li>Option to buy, finance or hire</li>
-
-   <li>Gym planning and advice</li>
-
-</div>
-
-<div class="col-sm-6">
-
-      <li>Super Saver - free 2-man delivery and installation, removal of packaging and old equipment</li>
-
-      <li>Maintenance & Repairs - complete with 60-day warranty</li>
-      <li>14-day Return Options</li>
-
-</div>
-
-
-
-
-
-     </ul></div>
-
-     </div>
-
-       <div class="col-sm-1"></div>
-
-        <div class="col-sm-5 ab">
-
-           <div class="sriv_tit_final was_box">
-
-          <h1> About <span>Chandlersports </span></h1>
-
-              </div>
-
-
-
-    <p>Chandler Sports aims to provide owners and managers of health and fitness facilities with technical assistance and expertise in order to help maintain their fitness equipment.</br></br><a href="<?php echo do_shortcode('[url]'); ?>/about-chandler-sports/" class="all-about-readmore">Read More</a></p>
-
-
-
-
-
-        </div>
-
-    </div>-->
-
-</div>
-
-
-
-<div class="test_and_lin">
-
-
-
-<div class="container">
-
-     
-
+    <div class="col-sm-12 after-middle">
      <div class="col-sm-4">
-
-
-
      <a title="Supersaver Delivery Map" href="<?php echo do_shortcode('[url]'); ?>/delivery-map/" target="_blank"><img src="<?php echo do_shortcode('[url]'); ?>/wp-content/uploads/2016/05/super_saver_images1.jpg" alt="" class="img-auto-width-set" /></a>
-
-
-
      </div>
-
-
-
      <div class="col-sm-4">
-
-
-
      <?php echo do_shortcode('[email-subscribers namefield="NO" desc="" group="Public"]');?>
-
-
-
      </div>
-
-
-
      <div class="col-sm-4">
-
-
-
      <a href="<?php echo do_shortcode('[url]'); ?>/home-fitness-equipment-repairs/" target="_blank"><img src="<?php echo do_shortcode('[url]'); ?>/wp-content/uploads/2016/05/need_an_equipment_images2.png" alt="" class="img-auto-width-set" /></a>
-
-
-
      </div>
-
          <div class="col-sm-2"></div>
 
-</div>
-
-
-
-</div>
-
-
-
-<div class="onsale-wrapper">
-
-  <div class="container">
-
-  <div class="col-sm-12">
-
-  <div class="was_box">  
-
-  <h1>On <span>Sale</span></h1>
-
   </div>
-
+  </div>
+<!--</div>-->
+<div class="onsale-wrapper">
+  <div class="container">
+  <div class="col-sm-12 onsale-scroll">
+  <div class="was_box">  
+  <h1>On <span>Sale</span></h1>
+  </div>
   <?php 
 
   $args = array(
@@ -637,19 +516,12 @@ if($loop->have_posts()){
 </div>
 
 <div class="onsale-wrapper">
-
   <div class="container">
-
-  <div class="col-sm-12">
-
+  <div class="col-sm-12 onsale-scroll">
   <div class="was_box">  
-
   <h1>New to <span>Market</span></h1>
-
   </div>
-
   <?php 
-
   $newargs = array(
 
 'post_type' => 'product',
@@ -800,6 +672,9 @@ $('.newowl-next').click(function(){
   function () {
     $(this).children('div.body_child').css('display','none');
   });
+    $( ".tab_box" ).click(function(){
+    $(this).toggleClass('active');
+});
   });
 </script>
 
@@ -810,33 +685,16 @@ $('.newowl-next').click(function(){
 
 
 <div class="srive_box">
-
   <div class="container">
-
-  <div class="col-sm-6">
-
-    <div class="was_box">
-
-                          <h1>WHAT<span> PEOPLE SAY</span></h1>
-
-                            <div class="testimonials">
-
-                            <div id="owl-demo-4" class="owl-carousel">
-
-
-
-
-
-
-
-
-
+    <div class="col-sm-6 no-margin-left">
+      <div class="srive_left">
+      <div class="was_box">
+          <h1>WHAT<span> PEOPLE SAY</span></h1>
+            <div class="testimonials">
+            <div id="owl-demo-4" class="owl-carousel">
                  <?php
-
              $the_query = new WP_Query(array(
-
             'category_name' => 'Testimonials'
-
             ));
 
              while ( $the_query->have_posts() ) :
@@ -897,14 +755,11 @@ $('.newowl-next').click(function(){
 
                             </div>
 
-                        </div>
+     </div></div>
+    </div>
 
-
-
-  </div>
-
-  <div class="col-sm-6 ">
-
+  <div class="col-sm-6 no-margin-right">
+      <div class="srive_left">
       <div class="sriv_tit eq">
 
           <h1>Fitness <span>Equipment Services</span></h1>
@@ -917,7 +772,7 @@ $('.newowl-next').click(function(){
 
           <div class="sriv_box_1">
 
-              <a href="<?php echo home_url();?>/gym-equipment-spare-parts-edinburgh/"><img src="<?php bloginfo('template_directory'); ?>/images/I1.jpg" alt="" />
+              <a href="<?php echo home_url();?>/gym-equipment-spare-parts-edinburgh/"><img src="<?php bloginfo('template_directory'); ?>/images/icon.png" alt="" />
 
                 <h2>Spare Parts</h2></a>
 
@@ -929,7 +784,7 @@ $('.newowl-next').click(function(){
 
           <div class="sriv_box_1">
 
-              <a href="<?php echo home_url();?>/commercial-gym-edinburgh/"><img src="<?php bloginfo('template_directory'); ?>/images/I2.jpg" alt="" />
+              <a href="<?php echo home_url();?>/commercial-gym-edinburgh/"><img src="<?php bloginfo('template_directory'); ?>/images/icon2.png" alt="" />
 
                 <h2>Repairs</h2></a>
 
@@ -941,7 +796,7 @@ $('.newowl-next').click(function(){
 
           <div class="sriv_box_1">
 
-              <a href="<?php echo home_url();?>/commercial-gym-edinburgh/cabling-services/"><img src="<?php bloginfo('template_directory'); ?>/images/I3.jpg" alt="" />
+              <a href="<?php echo home_url();?>/commercial-gym-edinburgh/cabling-services/"><img src="<?php bloginfo('template_directory'); ?>/images/icon3.png" alt="" />
 
                 <h2>Cabling Service</h2></a>
 
@@ -959,7 +814,7 @@ $('.newowl-next').click(function(){
 
           <div class="sriv_box_1">
 
-              <a href="<?php echo home_url();?>/commercial-gym-edinburgh/upholstery-repairs/"><img src="<?php bloginfo('template_directory'); ?>/images/I4.jpg" alt="" />
+              <a href="<?php echo home_url();?>/commercial-gym-edinburgh/upholstery-repairs/"><img src="<?php bloginfo('template_directory'); ?>/images/icon4.png" alt="" />
 
                 <h2>Upholstery</h2></a>
 
@@ -973,7 +828,7 @@ $('.newowl-next').click(function(){
 
            <!-- <a href="<?php //echo home_url();?>/gym-equipment-service-maintenance-packages/">-->
 
-              <a href="<?php echo home_url();?>/service-maintenance-contracts/"><img src="<?php bloginfo('template_directory'); ?>/images/I5.jpg" alt="" />
+              <a href="<?php echo home_url();?>/service-maintenance-contracts/"><img src="<?php bloginfo('template_directory'); ?>/images/icon5.png" alt="" />
 
                 <h2>Service &
 
@@ -989,7 +844,7 @@ Maintenance
 
           <div class="sriv_box_1">
 
-              <a href="<?php echo home_url();?>/gym-equipment-servicing-maintenance-contracts-edinburgh/delivery-installations-relocation/"><img src="<?php bloginfo('template_directory'); ?>/images/I6.jpg" alt="" />
+              <a href="<?php echo home_url();?>/gym-equipment-servicing-maintenance-contracts-edinburgh/delivery-installations-relocation/"><img src="<?php bloginfo('template_directory'); ?>/images/icon6.png" alt="" />
 
                 <h2>Delivery,
 
@@ -999,15 +854,14 @@ Relocation
 
 </h2></a>
 
-            </div>
+  </div>
 
-        </div>
-
-</div>
+  </div>
 
 </div>
-
-    </div>
+</div>
+</div>
+</div>
 
 </div>
 
