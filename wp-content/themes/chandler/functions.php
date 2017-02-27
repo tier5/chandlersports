@@ -1337,3 +1337,34 @@ function new_footer_widgets_init() {
 
 }
 add_action( 'widgets_init', 'new_footer_widgets_init' );
+function popularPosts($num) {
+    global $wpdb;
+    
+    $posts = $wpdb->get_results("SELECT comment_count, ID, post_title FROM $wpdb->posts ORDER BY comment_count DESC LIMIT 0 , $num");
+    
+    foreach ($posts as $post) {
+        setup_postdata($post);
+        $id = $post->ID;
+        $title = $post->post_title;
+        $count = $post->comment_count;
+        
+        if ($count != 0) {
+            $popular .= '<li>';
+            $popular .= '<a href="' . get_permalink($id) . '" title="' . $title . '">' . $title . '</a> ';
+            $popular .= '</li>';
+        }
+    }
+    return $popular;
+}
+function setPostViews($postID) {
+    $countKey = 'post_views_count';
+    $count = get_post_meta($postID, $countKey, true);
+    if($count==''){
+        $count = 0;
+        delete_post_meta($postID, $countKey);
+        add_post_meta($postID, $countKey, '0');
+    }else{
+        $count++;
+        update_post_meta($postID, $countKey, $count);
+    }
+}
