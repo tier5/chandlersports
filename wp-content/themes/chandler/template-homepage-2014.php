@@ -158,7 +158,9 @@ get_header(); ?>
 <div class="row">
   <div class="col-sm-4">
     <div class="middle_content">
-      <h2>Fitness Products:</h2>
+
+      <h2><img src="<?php echo get_template_directory_uri();?>/images/bar.png" style="float: left;
+    margin-top: 4px;margin-right: 5px;">Fitness Products:</h2>
       <h3>Quality brands at best buys</h3>
       <?php $args = array(
        'show_option_none' => '',
@@ -178,7 +180,7 @@ get_header(); ?>
         $count = $sc->count;
         $sub_cat_name=$sc->term_id;
         if($count > 0){$addClass4 = "has-child-arrow";}else{$addClass4="";}
-          echo '<li class="has-child-new '.$addClass4.'"><span style="width: 40px;">'.$sc->count.'</span><a class="'.$addClass4.'" href="'. $link .'">'.$sc->name.'</a>
+          echo '<li class="has-child-new '.$addClass4.'" style="line-height:50px;"><span style="width: 40px;">'.$sc->count.'</span><a class="'.$addClass4.'" href="'. $link .'">'.$sc->name.'</a>
           <div class="'.$addClass3.'">
           <div class="col-md-12">
           <div class="row">
@@ -236,28 +238,33 @@ get_header(); ?>
          
           $category_link = get_category_link( '183' );
       ?>
-      <p style="margin-top: 38px;
-    position: relative;"><a class="btm_links" href="<?php echo $category_link; ?>">Full category</a></p>
+      <!--<p style="margin-top: 38px;
+    position: relative;"><a class="btm_links" href="<?php echo $category_link; ?>">Shop Now</a></p>-->
+     <div class="more_info" style="margin-top: 38px;">
+      <a href="<?php echo $category_link; ?>">Full Category ></a>
+      </div>
     </div>
     
   </div>
   <div class="col-sm-4">
-    <div class="middle_content">
-     <h2>Maintanance & Servicing:</h2>
-     <h3>We can look after your products</h3>
-      <ul>
-        <li><span>*</span><a href="#">Repairs- Fees and Charge</a></li>
-        <li><span>*</span><a href="#">Servicing- What is included?</a></li>
-        <li><span>*</span><a href="#">Spare Parts - Most parts sourced</a></li>
-        <li><span>*</span><a href="#">Upholstery-To you or Collect</a></li>
-        <li><span>*</span><a href="#">Cabeling Replacement - kevlar and cable</a></li>
-      </ul>
-    </div>
+  <div class="middle_content comm-fit-mid">
+   <h2>Commercial Fitness:</h2>
+   <h3>Manager or Owner we have you covered</h3>
+  <ul>
+    <li><span>*</span><a href="<?php echo do_shortcode('[url]'); ?>/commercial-fitness-equipment-edinburgh/gym-design-and-layout/">Gym Design and layout</a></li>
+    <li><span>*</span><a href="<?php echo do_shortcode('[url]'); ?>/commercial-fitness-equipment-edinburgh/gymnastic-equipment-repairs/">Gymnastic equipment repair</a></li>
+    <li><span>*</span><a href="<?php echo do_shortcode('[url]'); ?>/commercial-fitness-equipment-edinburgh/fitness-equipment-finance/">Finance available</a></li>
+    <li><span>*</span><a href="<?php echo do_shortcode('[url]'); ?>/commercial-fitness-equipment-edinburgh/trade-in/">Trade in's welcome</a></li>
+    <li><span>*</span><a href="<?php echo do_shortcode('[url]'); ?>/product/impact-rubber-flooring/">Impact rubber flooring</a></li>
+    <li><span>*</span><a href="<?php echo do_shortcode('[url]'); ?>/product/gym-mirrors/">Gym mirrors</a></li>
+  </ul><a class="btm_links" href="<?php echo do_shortcode('[url]'); ?>/commercial-fitness-equipment-edinburgh/">Shop Now</a>
+  </div>
  </div>
+  
  <div class="col-sm-4">
   <div class="middle_content">
     <h2>Strength & Training Equipment:</h2>
-    <h3>There is setting to big</h3>
+    <h3>There is nothing too big</h3>
     <?php $newargs = array(
        'show_option_none' => '',
        'hierarchical' => 1,
@@ -270,9 +277,13 @@ get_header(); ?>
     echo '<ul class="2nd_block">';
     $i3=0;
       foreach ($newsubcats as $newsc) if ($i3++ < 5){
+        $thumbnail_id = get_woocommerce_term_meta( $newsc->term_id, 'thumbnail_id', true ); 
+        // get the image URL
+      $image = wp_get_attachment_url( $thumbnail_id );
         $newlink = get_term_link( $newsc->slug, $newsc->taxonomy );
         $count = $newsc->count;
-          echo '<li class=""><span style="width: 40px;">*</span><a class="" href="'. $newlink .'">'.$newsc->name.'</a></li>';
+        //echo "<img src='{$image}' alt='' width='50' height='50' />";
+          echo '<li class=""><span style="width: 40px;"><img src="'.$image.'"alt="" width="50" height="50" /></span><a class="" href="'. $newlink .'">'.$newsc->name.'</a></li>';
         }
         echo '</ul>';
       ?>
@@ -280,8 +291,7 @@ get_header(); ?>
          
           $category_link2 = get_category_link( '160' );
       ?>
-    <p style="margin-top: 38px;
-    position: relative;"><a class="btm_links" href="<?php echo $category_link2; ?>">Full category</a></p>
+    <a class="btm_links" href="<?php echo $category_link2; ?>">Shop Now</a>
   </div>
  </div>
 </div>
@@ -331,25 +341,81 @@ get_header(); ?>
       <div class="sriv_tit_final was_box">
           <h1> About <span>Chandlersports </span></h1>
           </div>
-    <p>Chandler Sports aims to provide owners and managers of health and fitness facilities with technical assistance and expertise in order to help maintain their fitness equipment.</br>Your customers are using your equipment all day, every day and it is all important to minimise the risk of breakages and injuries. Preventative action is best for controlling your business environment and reducing the risk of costly breakdowns.</br></br><a href="<?php echo do_shortcode('[url]'); ?>/about-chandler-sports/" class="all-about-readmore">Read More</a></p>
+    <p>Chandler Sports aims to provide owners and managers of health and fitness facilities with technical assistance and expertise in order to help maintain their fitness equipment.</p><p>Your customers are using your equipment all day, every day and it is all important to minimise the risk of breakages and injuries. Preventative action is best for controlling your business environment and reducing the risk of costly breakdowns.</p><p>Users will be satisfied to know that your equipment is well maintained so they can exercise knowing a treadmill belt will not slip or a bike crank is not cracked.</p>
+      <div class="more_info">
+      <a href="<?php echo do_shortcode('[url]'); ?>/about-chandler-sports/">Read More ></a>
+      </div>
+      <!--<p><a href="<?php echo do_shortcode('[url]'); ?>/about-chandler-sports/" class="all-about-readmore">Read More</a></p>-->
   </div>
+ </div>
+<div class="col-sm-4">
+    <div class="middle_content">
+       <div class="sriv_tit_final was_box">
+     <h1> REQUEST <span> FOR QUOTATION</span></h1>
+   </div>
+     <!-- <h3>On Request, Quick Response</h3> -->
+      <div style="padding: 0 15%;width: 100%;height: 200px;" class="big_req_img">
+<?php $newargs1 = array(
+       'show_option_none' => '',
+       'hierarchical' => 1,
+       'hide_empty' => 0,
+       'parent' => 183,
+       'taxonomy' => 'product_cat',
+       'orderby'  => 'slug'
+    );
+  $newsubcats1 = get_categories($newargs1);
+    $i4=0;
+      foreach ($newsubcats1 as $newsc1) if ($i4++ < 1){
+        $thumbnail_id1= get_woocommerce_term_meta( $newsc1->term_id, 'thumbnail_id', true ); 
+        // get the image URL
+      $image1 = wp_get_attachment_url( $thumbnail_id1 );
+        $newlink1 = get_term_link( $newsc->slug, $newsc->taxonomy );
+        $count1 = $newsc->count;
+        echo "<img src='{$image}' alt='' width='100%' style='float:left' class='req_img'/>";
+          //echo '<li class=""><span style="width: 40px;"><img src="'.$image.'"alt="" width="50" height="50" /></span><a class="" href="'. $newlink .'">'.$newsc->name.'</a></li>';
+        }
+        
+      ?>
+    </div>
+     <div style="display: inline-block;width: 100%;text-align: center;">
+      <?php $newargs = array(
+       'show_option_none' => '',
+       'hierarchical' => 1,
+       'hide_empty' => 0,
+       'parent' => 183,
+       'taxonomy' => 'product_cat',
+       'orderby'  => 'slug'
+    );
+  $newsubcats = get_categories($newargs);
+    $i3=0;
+      foreach ($newsubcats as $newsc) if ($i3++ < 4){
+        $thumbnail_id = get_woocommerce_term_meta( $newsc->term_id, 'thumbnail_id', true ); 
+        // get the image URL
+      $image = wp_get_attachment_url( $thumbnail_id );
+        $newlink = get_term_link( $newsc->slug, $newsc->taxonomy );
+        $count = $newsc->count;
+        echo "<img src='{$image}' alt='' width='25%' style='float:left' class='req_img'/>";
+          //echo '<li class=""><span style="width: 40px;"><img src="'.$image.'"alt="" width="50" height="50" /></span><a class="" href="'. $newlink .'">'.$newsc->name.'</a></li>';
+        }
+      ?>
+    </div>
+      <!--<ul>
+        <li><span>*</span><a href="#">Repairs- Fees and Charge</a></li>
+        <li><span>*</span><a href="#">Servicing- What is included?</a></li>
+        <li><span>*</span><a href="#">Spare Parts - Most parts sourced</a></li>
+        <li><span>*</span><a href="#">Upholstery-To you or Collect</a></li>
+        <li><span>*</span><a href="#">Cabeling Replacement - kevlar and cable</a></li>
+      </ul>-->
+    </br></br>
+      <div class="more_info">
+      <a href="<?php $url = site_url(); echo $url ?>/contact">Request Now ></a>
+      </div>
+      <!--<p style="margin-top: 38px;
+    position: relative;"><a class="btm_links" href="<?php //$url = site_url();
+//echo $url ?>/contact">Request Now</a></p>-->
+    </div>
  </div>
 
-<div class="col-sm-4">
-  <div class="middle_content">
-   <h2><span style="color:rgb(255,127,0);font-size: 18px;
-    font-family: 'open_sansregular';font-weight: bold;">COMMERCIAL</span> FITNESS:</h2>
-   <h3>Manager or Owner we have you covered</h3>
-  <ul>
-    <li><span>*</span>Gym Design and layout</li>
-    <li><span>*</span>Gymnastic equipment repair</li>
-    <li><span>*</span>Finance available</li>
-    <li><span>*</span>Traidings welcome</li>
-    <li><span>*</span>Impact rubber flooring</li>
-    <li><span>*</span>Gym mirrors</li>
-  </ul>
-  </div>
- </div>
  </div>
 
       <div class="main_cat_p_box">
@@ -361,10 +427,6 @@ get_header(); ?>
 
 
         </div>
-
-
-
-
 
     <div>
 
@@ -381,6 +443,41 @@ get_header(); ?>
     </div>
 
 </div>
+
+
+<div class="footer_up_line">
+<div class="container">
+    <div class="col-sm-12">
+      <h2>Maintanance & Servicing:</h2>
+      </div>
+    <div class="first_upper_footer">
+    <div class="col-md-12 col-sm-12">
+      <div class="col-md-5 col-sm-12">
+     <!--<div style="color:#333; font-weight:bold;font-size: 22px;text-align:left;">We can look after your products</div>-->
+<h4>We can look after your products</h4>
+      <ul>
+        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/main-1.png"></span><a href="#">Repairs- Fees and Charge</a></li>
+        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/main-2.png"></span><a href="#">Servicing- What is included?</a></li>
+        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/spare_part.png"></span><a href="#">Spare Parts - Most parts sourced</a></li>
+        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/main-3.png"></span><a href="#">Upholstery-To you or Collect</a></li>
+        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/Replace-icon.png"></span><a href="#">Cabling Replacement - kevlar and cable</a></li>
+      </ul>
+      <!--<div class="more_info">
+      <a href="">More enquery ></a>
+      </div>-->
+      </div>
+      <div class="col-md-7 col-sm-12 video_sec">
+      <div class="row">
+       <iframe width="400" height="280" src="https://www.youtube.com/embed/IpOB2bwLXkc"></iframe>
+      </div>
+      </div> 
+      </div> 
+    </div>
+</div>
+</div>
+
+
+
 
 
 
@@ -523,39 +620,25 @@ if($loop->have_posts()){
   </div>
   <?php 
   $newargs = array(
-
 'post_type' => 'product',
-
 'stock' => 1,
-
 'posts_per_page' => -1,
-
 'orderby' =>'date',
-
 'order' => 'DESC' );
-
 $newloop = new WP_Query( $newargs );
-
-
-
 ?>
 
 <?php 
-
 if($newloop->have_posts()){
-
-  ?>
+?>
 
 
 
    <div id="latest-owl" class="owl-carousel">
 
   <?php
-
   while($newloop->have_posts()):$newloop->the_post();
-
   $newimage = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ));
-
   ?>
 
  
@@ -677,13 +760,6 @@ $('.newowl-next').click(function(){
 });
   });
 </script>
-
-
-
-
-
-
-
 <div class="srive_box">
   <div class="container">
     <div class="col-sm-6 no-margin-left">
@@ -733,20 +809,7 @@ $('.newowl-next').click(function(){
 
                 </div>
 
-       <?php
-
-        endwhile;
-
-         wp_reset_postdata();  ?>
-
-
-
-
-
-
-
-
-
+       <?php endwhile; wp_reset_postdata();  ?>
 
 
                                 </div>
@@ -760,7 +823,7 @@ $('.newowl-next').click(function(){
 
   <div class="col-sm-6 no-margin-right">
       <div class="srive_left">
-      <div class="sriv_tit eq">
+      <div class="sriv_tit eq was_box">
 
           <h1>Fitness <span>Equipment Services</span></h1>
 
@@ -846,13 +909,7 @@ Maintenance
 
               <a href="<?php echo home_url();?>/gym-equipment-servicing-maintenance-contracts-edinburgh/delivery-installations-relocation/"><img src="<?php bloginfo('template_directory'); ?>/images/icon6.png" alt="" />
 
-                <h2>Delivery,
-
-Installation &
-
-Relocation
-
-</h2></a>
+                <h2>Delivery,Installation & Relocation</h2></a>
 
   </div>
 
@@ -876,6 +933,23 @@ Relocation
     $('.es_lablebox').text('');
 
     $('.es_lablebox').text('Deals, Clearance and discounts');
+  $(".req_img").click(function(){
+  $img = $(this).clone();
+  $(".big_req_img").show().html($img.attr({
+        width: 200,
+        height: 200
+    }));
+}); 
+
+
+
+  $(".tab_box").hover(function(){
+    $('.pound_tab').removeClass('active');
+    $(this).addClass('active');
+  }, 
+  function () {
+         $(this).removeClass('active');         
+  });
 
   });
 

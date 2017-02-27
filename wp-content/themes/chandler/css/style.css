@@ -938,6 +938,7 @@ blockquote p:last-child {
 	padding:15px 0px;
 	}
 .sriv_tit{
+	margin-bottom:0;
 	}
 .sriv_tit h1{
 	font-size:24px;
@@ -960,12 +961,12 @@ blockquote p:last-child {
 .sriv_box_1 h2{
 	/*font-family: 'open_sanssemibold';*/
 	font-family: 'Roboto', sans-serif;
-	font-size:16px;
+	font-size:14px;
 	text-transform:capitalize;
-        padding-bottom:10px;
+        /*padding-bottom:10px;*/
 	}
 .footer_up_line{
-	background:#212121;
+	background:#F2F3F7;
 	}
 
 .ft_line_01{
@@ -1107,6 +1108,7 @@ footer{
 	font-size:14px;
 margin-bottom:15px;
 	color:#ccc;
+    font-weight: bold;
 	}
 
 .social_icon a{
@@ -1253,7 +1255,11 @@ margin-bottom:15px;
 	text-decoration:none;
 	}
 .mi_box{
+	margin-bottom: 10px;
 	}
+.foot_box_3 > p{
+	margin: 0;
+}
 
 .mi_box i{
 	color:#333;
@@ -2034,7 +2040,7 @@ margin-bottom:15px;
 
 .set-all-footer-topall ul li{
 
-    font-size: 14px;
+    font-size: 13.5px;
    list-style-image: url("../images/reasons-to-shop-tick.png");
    font-family: 'open_sansregular';
 }
@@ -2256,9 +2262,7 @@ select.my-custom-select {
 .dropbtn:before{content: ''; position: absolute; background: rgba(0, 0, 0, 0) url("../images/bar.png") no-repeat scroll left 0 top 9px;
 width: 20px; height: 24px; left: -25px; top: -1px;
 }
-.footer_up_line h2 {
-    color: rgb(255, 127, 0);
-}
+
 
 
 

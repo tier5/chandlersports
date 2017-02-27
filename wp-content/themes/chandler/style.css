@@ -1663,7 +1663,8 @@ select.my-custom-select {font-size: 17px;}
 .middle_content {    
    border: 1px solid #DCDEE3;
    padding: 20px 30px;
-   min-height: 415px;
+   min-height: 482px;
+   position: relative;
 }
 
 .middle_content h2{
@@ -1713,9 +1714,10 @@ margin-bottom: 5px;
     text-decoration: none !important;
     font-size: 16px;
     font-weight: 400;
-    width: 141px;
-    height: 40px;
-    /* height: 26px !important; */
+    /*width: 141px;
+    height: 40px;*/
+    position: absolute;
+    bottom: 30px;
 }
 
 .clear{
@@ -1786,11 +1788,6 @@ min-height: 310px !important;
 
 .newowl-prev{position: absolute; left: 0; top: 40%;}
 .newowl-next{position: absolute; right: 0; top: 40%;}
-.footer_up_line h3 {
-    color: #fff !important;
-    font-weight: bold;
-    margin-top: .2rem !important;
-}
 .gpf-jal-fb-header h1 {
     display: none;
 }
@@ -1848,16 +1845,20 @@ footer {
 }
 
 .header-cta-bar{
-	box-shadow: 1px 1px 1px 1px #ccc;
-    -webkit-box-shadow: 1px 1px 1px 1px #ccc;
-    -moz-box-shadow: 1px 1px 1px 1px #ccc;
+	display: inline-block;
+    width: 100%;
+    vertical-align: bottom;
+	box-shadow: 1px 1px 1px -1px #666;
+    -webkit-box-shadow: 1px 1px 1px -1px #666;
+    -moz-box-shadow: 1px 1px 1px -1px #666;
 }
 .active{border-bottom: 4px solid #FF6A00;}
 .catg_main {background: #F2F3F7 !important;}
 .middle_content{background: #fff !important;}
+.middle_content.comm-fit-mid ul li{  padding: 6px 0; }
 .test_and_lin {background: #F2F3F7 !important;padding: 1px 0px !important;}
-.col-sm-12.after-middle {background-color: #fff;padding: 20px 0;}
-.col-sm-12.onsale-scroll {background-color: #fff;}
+.col-sm-12.after-middle {background-color: #fff;padding: 20px 0;border: 1px solid #DCDEE3;}
+.col-sm-12.onsale-scroll {background-color: #fff;border: 1px solid #DCDEE3;}
 .srive_left {
 	background-color: #fff;
     display: inline-block;
@@ -1865,7 +1866,15 @@ footer {
     width: 100%;
     height: 325px;
     margin-top: 20px;
+    border: 1px solid #DCDEE3;
 }
+
+.was_box{
+	padding-top: 20px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
 .col-sm-6.no-margin-left {
     padding-left: 0;
 }
@@ -1876,3 +1885,80 @@ footer {
     padding: 5px 0px !important;
 }
 .boby_gap{padding:0px 9px;}
+.upper_footer{background-color: #fff;
+ display: inline-block;
+
+border: 1px solid #DCDEE3;
+color: #666;
+padding: 10px 0;}
+.first_upper_footer{background-color: #fff;display: inline-block;
+border: 1px solid #DCDEE3;
+width: 100%;
+color: #666;
+padding: 10px 0;}
+.footer_up_line h2{margin: 0px 0 18px !important;
+    font-size: 20px;
+    color: #333;}
+.footer_up_line { 
+  padding: 1rem 0;
+  text-align: center;
+  color: #FFF; }
+.footer_up_line a {color: #333 !important;
+    font-size: 16px;
+    font-weight: 400; }
+.footer_up_line a:hover p, .footer_up_line a:hover h3 {
+    text-decoration: none; }
+.footer_up_line p {
+    margin-top: 0.5rem;
+    font-size: 1.8rem; }
+.footer_up_line h3 {
+    color: #999;
+    margin-top: 1.5rem;
+    font-size:16px; 
+	}
+.footer_up_line ul li{
+    padding: 16px 0 0;
+    list-style-image: url(../images/reasons-to-shop-tick.png);
+    text-align: left;
+}
+.footer_up_line ul li a{
+    padding-left: 17px;
+    vertical-align: top;
+    font-size: 17px;
+}
+.footer_up_line span {
+    /*padding-top: 13px;*/
+    display: inline-block;
+    vertical-align: top;
+}
+.more_info{text-align: left;position: absolute;bottom: 30px;}
+.more_info a{
+    color: #2192D9 !important;
+    font-weight: 400;
+}
+.more_info a:hover {
+    color: #FF751A !important;
+}
+.col-md-5.col-sm-12.video_sec {
+    padding: 0;
+    margin: 0;
+}
+.footer_up_line h4 {
+	text-align: left;
+    color: #FF6A00;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.footer_up_line .social-feed-wrap h4 {
+	color: #FF6A00;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0 0;
+}
+
+.first_upper_footer .video_sec iframe{
+	float: right;
+    width: 78%;
+    border: 1px solid #FF6A00;
+}

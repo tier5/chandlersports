@@ -13,63 +13,53 @@
 </div>
 </div>-->
 <!---- End section start---->
-
 <div class="footer_up_line">
-<!--	<div class="container">
-		<div class="col-sm-12">
-			<h2>More reasons to shop at Chandler Sports</h2>
-		</div>
-		<div class="col-md-4 col-sm-12">
-			<div class="icon-wrapper">
-			  <i class="fa fa-4x fa-thumbs-up"></i>
-			</div>
-			<h3>Hire before you buy</h3>
-
-			<p>on most fitness equipment</p>
-			<?php echo do_shortcode('[custom-facebook-feed id=chandlersports num=5]');?>
-		</div>
-		<div class="col-md-4 col-sm-12">
-			<div class="icon-wrapper">
-			  <i class="fa fa-4x fa-sitemap"></i>
-			</div>
-			<h3>1000's of products</h3>
-			<p>with more added every week</p>
-			<h4>Google plus feed</h4>
-			<?php echo do_shortcode('[gpf_google_plus id=104263035271660173542 height=350px type=page]');?>
-		</div>
-
-		<div class="col-md-4 col-sm-12">
-			<a href="<?= get_permalink(1645) ?>">
-				<div class="icon-wrapper">
-				  <i class="fa fa-4x fa-percent"></i>
-				</div>
-				<h3>Super saver</h3>
-				<p>Discover our free super saver areas</p>
-			</a>
-
-			<h4>Tumbler feed</h4>
-			<div style="max-height: 250px; min-height: 250px !important;overflow: scroll;">
-			<?php echo do_shortcode('[powr-tumblr-feed id=2d3dbd99_1487232959]');?>
-		</div>
-			
-		</div>
-	</div>-->
+<div class="container">
+    <div class="col-sm-12">
+      <h2>Maintanance & Servicing:</h2>
+      <h4>We can look after your products</h4>
+    </div>
+    <div class="first_upper_footer">
+    <div class="col-md-12 col-sm-12">
+      <div class="col-md-7 col-sm-12">
+     <!--<div style="color:#333; font-weight:bold;font-size: 22px;text-align:left;">We can look after your products</div>-->
+      <ul style="text-align: center;padding-left: 20%;padding-top: 10%;">
+        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/reasons-to-shop-tick.png"></span><a href="#">Repairs- Fees and Charge</a></li>
+        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/reasons-to-shop-tick.png"></span><a href="#">Servicing- What is included?</a></li>
+        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/reasons-to-shop-tick.png"></span><a href="#">Spare Parts - Most parts sourced</a></li>
+        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/reasons-to-shop-tick.png"></span><a href="#">Upholstery-To you or Collect</a></li>
+        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/reasons-to-shop-tick.png"></span><a href="#">Cabeling Replacement - kevlar and cable</a></li>
+      </ul>
+      <!--<div class="more_info">
+      <a href="">More enquery ></a>
+  	  </div>-->
+      </div>
+      <div class="col-md-5 col-sm-12 video_sec">
+      <div class="row">
+       <iframe width="400" height="280" src="https://www.youtube.com/embed/IpOB2bwLXkc"></iframe>
+   	  </div>
+      </div> 
+      </div> 
+    </div>
+</div>
+</div>
+<div class="footer_up_line">
 	<div class="container">
 		<div class="col-sm-12">
 			<h2>More reasons to shop at Chandler Sports</h2>
 		</div>
+		<div class="upper_footer">
 		<div class="col-md-3 col-sm-12">
 			<h4>Facebook</h4>
 			<?php echo do_shortcode('[custom-facebook-feed id=chandlersports num=5]');?>
 		</div>
 		<div class="col-md-3 col-sm-12">
 			<h4>Google plus</h4>
-			<?php echo do_shortcode('[gpf_google_plus id=104263035271660173542 height=390px type=page]');?>
+			<?php echo do_shortcode('[gpf_google_plus id=104263035271660173542 height=200px type=page]');?>
 		</div>
-
 		<div class="col-md-3 col-sm-12">
 			<h4>Tumbler </h4>
-			<div style="max-height: 400px; min-height: 400px !important;overflow: scroll;margin-top:20px;">
+			<div style="max-height: 200px; min-height: 200px !important;overflow: scroll;margin-top:20px;">
 			<?php //echo do_shortcode('[powr-tumblr-feed id=2d3dbd99_1487232959]');
 				echo do_shortcode('[powr-tumblr-feed id=a3e78207_1487246928]');
 			?>
@@ -398,55 +388,25 @@ $('.responsive-tabs').responsiveTabs({
 
 
      <script>
-
 		$(document).ready(function() {
-
-
-
 		  var owl = $("#owl-demo-4");
-
-
-
 		  owl.owlCarousel({
-
-
-
-
-
 			itemsCustom : [
-
 			  [0, 1],
-
 			  [450, 1],
-
 			  [600, 1],
-
 			  [700, 1],
-
 			  [1000, 1],
-
 			  [1200, 1],
-
 			  [1400, 1],
-
 			  [1600, 1]
-
 			],
-
 			navigation : true,
-
 			autoPlay: 3000, //Set AutoPlay to 3 seconds
 
-
-
 		  });
-
-
-
 		});
-
-		</script>
-
+  </script>
    <script>
 
 $('a[href*=#]:not([href=#])').click(function() {
@@ -463,15 +423,8 @@ $('a[href*=#]:not([href=#])').click(function() {
         }
     }
 });
-
 </script>
-
-
-
 <?php wp_footer(); ?>
-
-
-
 </body>
 
 </html>
