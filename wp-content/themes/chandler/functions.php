@@ -1296,6 +1296,7 @@ add_theme_support('post-thumbnails');
 
 function add_custom_style() {
   wp_enqueue_style( 'bigspring-style', get_template_directory_uri() . '/css/custom.css' );
+  wp_enqueue_script( 'masonry' );
 }
 add_action( 'wp_enqueue_scripts', 'add_custom_style' );
 

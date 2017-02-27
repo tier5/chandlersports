@@ -32,7 +32,7 @@ display: inline-block; margin-bottom: 20px;
 .continue-reading a{color: #aaaaaa; text-decoration: none;}
 
 .continue-reading a:hover{color: #409330; text-decoration: none; border-color: #409330}
-.container{width: 900px; margin: 0 auto}
+/*.container{width: 900px; margin: 0 auto}*/
 .page-title h3{font-family: 'Montserrat', sans-serif; font-size: 32px; text-transform: uppercase;}
 
 ol.breadcrumb li{font-family: 'Montserrat', sans-serif; text-transform: uppercase;}

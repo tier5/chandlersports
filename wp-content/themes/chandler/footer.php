@@ -13,59 +13,30 @@
 </div>
 </div>-->
 <!---- End section start---->
-<div class="footer_up_line">
-<div class="container">
-    <div class="col-sm-12">
-      <h2>Maintanance & Servicing:</h2>
-      <h4>We can look after your products</h4>
-    </div>
-    <div class="first_upper_footer">
-    <div class="col-md-12 col-sm-12">
-      <div class="col-md-7 col-sm-12">
-     <!--<div style="color:#333; font-weight:bold;font-size: 22px;text-align:left;">We can look after your products</div>-->
-      <ul style="text-align: center;padding-left: 20%;padding-top: 10%;">
-        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/reasons-to-shop-tick.png"></span><a href="#">Repairs- Fees and Charge</a></li>
-        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/reasons-to-shop-tick.png"></span><a href="#">Servicing- What is included?</a></li>
-        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/reasons-to-shop-tick.png"></span><a href="#">Spare Parts - Most parts sourced</a></li>
-        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/reasons-to-shop-tick.png"></span><a href="#">Upholstery-To you or Collect</a></li>
-        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/reasons-to-shop-tick.png"></span><a href="#">Cabeling Replacement - kevlar and cable</a></li>
-      </ul>
-      <!--<div class="more_info">
-      <a href="">More enquery ></a>
-  	  </div>-->
-      </div>
-      <div class="col-md-5 col-sm-12 video_sec">
-      <div class="row">
-       <iframe width="400" height="280" src="https://www.youtube.com/embed/IpOB2bwLXkc"></iframe>
-   	  </div>
-      </div> 
-      </div> 
-    </div>
-</div>
-</div>
+
 <div class="footer_up_line">
 	<div class="container">
 		<div class="col-sm-12">
-			<h2>More reasons to shop at Chandler Sports</h2>
+			<h2>Interact with us:</h2>
 		</div>
 		<div class="upper_footer">
-		<div class="col-md-3 col-sm-12">
+		<div class="col-md-3 col-sm-12 social-feed-wrap">
 			<h4>Facebook</h4>
 			<?php echo do_shortcode('[custom-facebook-feed id=chandlersports num=5]');?>
 		</div>
-		<div class="col-md-3 col-sm-12">
+		<div class="col-md-3 col-sm-12 social-feed-wrap">
 			<h4>Google plus</h4>
 			<?php echo do_shortcode('[gpf_google_plus id=104263035271660173542 height=200px type=page]');?>
 		</div>
-		<div class="col-md-3 col-sm-12">
-			<h4>Tumbler </h4>
-			<div style="max-height: 200px; min-height: 200px !important;overflow: scroll;margin-top:20px;">
+		<div class="col-md-3 col-sm-12 social-feed-wrap">
+			<h4>Tumblr </h4>
+			<div style="max-height: 200px; min-height: 200px !important;overflow-y: auto;overflow-x: hidden;margin-top:20px;">
 			<?php //echo do_shortcode('[powr-tumblr-feed id=2d3dbd99_1487232959]');
 				echo do_shortcode('[powr-tumblr-feed id=a3e78207_1487246928]');
 			?>
 		</div>
 		</div>
-		<div class="col-md-3 col-sm-12">
+		<div class="col-md-3 col-sm-12 social-feed-wrap">
 			<h4>Instagram </h4>
 			<?php echo do_shortcode('[instagram-feed num=9 cols=3]');?>
 		</div>	

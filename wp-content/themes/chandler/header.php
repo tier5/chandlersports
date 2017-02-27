@@ -497,7 +497,7 @@ fjs.parentNode.insertBefore(js, fjs);
           <div class="col-md-5 col-sm-5 header-icon-area-right">
             <div class="pull-left top-icon">  
              <!--<i class="fa fa-shopping-cart" aria-hidden="true"></i>-->
-             <img src="<?php bloginfo('template_directory'); ?>/images/retailer-icon1.png" width="30px" height="30px">
+             <img src="<?php bloginfo('template_directory'); ?>/images/shopping_cart.png" width="30px" height="30px">
             </div>
             <h3><a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>"><?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?></a></h3>
             <p class="font-size11"><a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>"><?php echo $woocommerce->cart->get_cart_total(); ?></p></a>
