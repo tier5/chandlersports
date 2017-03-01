@@ -12,7 +12,9 @@ get_header(); ?>
 <div class="container">
 <div class="col-lg-12">
 <div class="ab_box">
-  <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+  <?php if ( have_posts() ) while ( have_posts() ) : the_post(); 
+  
+  ?>
   <h1>
     <?php the_title(); ?>
   </h1>
@@ -31,7 +33,9 @@ get_header(); ?>
             comments_template();
           endif;
   ?>
-  <?php endwhile; ?>
+  <?php
+
+   endwhile; ?>
 </div>
 </div>
 </div>

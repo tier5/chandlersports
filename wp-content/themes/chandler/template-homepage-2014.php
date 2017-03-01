@@ -91,53 +91,55 @@ get_header(); ?>
 <div class="header-cta-bar hidden-xs">
 
   <div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-xs-12 tab_box pound_tab">
+        <div class="pound_tab_box active">
+          <div class="col-xs-2 col-sm-12 col-md-2">
+            <div class="row">
+              <img src="<?= get_template_directory_uri() ?>/images/pound_icon.png" alt="Best price guarantee" class="img-responsive"/>
+            </div>
+          </div>
 
-    <div class="col-sm-4 col-xs-12 tab_box pound_tab active">
-      <div class="pound_tab_box ">
-      <div class="col-xs-2 col-sm-12 col-md-2">
-        <img src="<?= get_template_directory_uri() ?>/images/pound_icon.png" alt="Best price guarantee" />
-      </div>
-
-      <div class="col-xs-10 col-sm-12 col-md-10">
-
-        <span style="padding: 10px;">Best price guarantee</span>
-
-      </div>
-      </div>
+          <div class="col-xs-10 col-sm-12 col-md-10">
+            <div class="row">
+              <span style="padding: 10px;">Best price guarantee</span>
+            </div>
+          </div>
+        </div>
     </div>
 
     <div class="col-sm-4 col-xs-12 tab_box van_tab">
-      <div class="van_tab_box">
-      <div class="col-xs-2 col-sm-12 col-md-2">
+        <div class="van_tab_box">
+          <div class="col-xs-2 col-sm-12 col-md-2">
+            <div class="row">
+              <img src="<?= get_template_directory_uri() ?>/images/van_icon.png" alt="Free delivery over &pound;100"  class="img-responsive"/>
+            </div>
+          </div>
 
-        <img src="<?= get_template_directory_uri() ?>/images/van_icon.png" alt="Free delivery over &pound;100" />
-      
-      </div>
-
-      <div class="col-xs-10 col-sm-12 col-md-10">
-
-        <span style="padding: 10px;">Free delivery over &pound;100</span>
-
-      </div>
-      </div>
+          <div class="col-xs-10 col-sm-12 col-md-10">
+            <div class="row">
+              <span style="padding: 10px;">Free delivery over &pound;100</span>
+            </div>
+          </div>
+        </div>
     </div>
 
     <div class="col-sm-4 col-xs-12 tab_box uk_tab">
-    <div class="uk_tab_box">
-      <div class="col-xs-2 col-sm-12 col-md-2">
+        <div class="uk_tab_box">
+          <div class="col-xs-2 col-sm-12 col-md-2">
+            <div class="row">
+              <img src="<?= get_template_directory_uri() ?>/images/uk_icon.png" alt="Nationwide Installatio"  class="img-responsive"/>
+            </div>
+          </div>
 
-        <img src="<?= get_template_directory_uri() ?>/images/uk_icon.png" alt="Nationwide Installatio" />
-
-      </div>
-
-      <div class="col-xs-10 col-sm-12 col-md-10">
-
-        <span style="padding: 10px;">Nationwide Installation</span>
-
-      </div>
+          <div class="col-xs-10 col-sm-12 col-md-10">
+            <div class="row">
+              <span style="padding: 10px;">Nationwide Installation</span>
+            </div>
+          </div>
+        </div>
     </div>
     </div>
-
   </div>
 
 </div>
@@ -171,7 +173,7 @@ get_header(); ?>
        'orderby'  => 'slug'
     );
   $subcats = get_categories($args);
-    echo '<ul class="1st_block">';
+    echo '<ul class="first_block">';
     $i2=0;
       foreach ($subcats as $sc) if ($i2++ < 5){
         $addClass3 = "body_child";
@@ -240,31 +242,18 @@ get_header(); ?>
       ?>
       <!--<p style="margin-top: 38px;
     position: relative;"><a class="btm_links" href="<?php echo $category_link; ?>">Shop Now</a></p>-->
-     <div class="more_info" style="margin-top: 38px;">
+    <!--  <div class="more_info full-cat-link" style="margin-top: 38px;">
       <a href="<?php echo $category_link; ?>">Full Category ></a>
-      </div>
+      </div> -->
+      <a class="btm_links" href="<?php echo $category_link; ?>">Shop Now</a>
     </div>
     
   </div>
+
   <div class="col-sm-4">
-  <div class="middle_content comm-fit-mid">
-   <h2>Commercial Fitness:</h2>
-   <h3>Manager or Owner we have you covered</h3>
-  <ul>
-    <li><span>*</span><a href="<?php echo do_shortcode('[url]'); ?>/commercial-fitness-equipment-edinburgh/gym-design-and-layout/">Gym Design and layout</a></li>
-    <li><span>*</span><a href="<?php echo do_shortcode('[url]'); ?>/commercial-fitness-equipment-edinburgh/gymnastic-equipment-repairs/">Gymnastic equipment repair</a></li>
-    <li><span>*</span><a href="<?php echo do_shortcode('[url]'); ?>/commercial-fitness-equipment-edinburgh/fitness-equipment-finance/">Finance available</a></li>
-    <li><span>*</span><a href="<?php echo do_shortcode('[url]'); ?>/commercial-fitness-equipment-edinburgh/trade-in/">Trade in's welcome</a></li>
-    <li><span>*</span><a href="<?php echo do_shortcode('[url]'); ?>/product/impact-rubber-flooring/">Impact rubber flooring</a></li>
-    <li><span>*</span><a href="<?php echo do_shortcode('[url]'); ?>/product/gym-mirrors/">Gym mirrors</a></li>
-  </ul><a class="btm_links" href="<?php echo do_shortcode('[url]'); ?>/commercial-fitness-equipment-edinburgh/">Shop Now</a>
-  </div>
- </div>
-  
- <div class="col-sm-4">
   <div class="middle_content">
     <h2>Strength & Training Equipment:</h2>
-    <h3>There is nothing too big</h3>
+    <h3>There is nothing to big we can handle</h3>
     <?php $newargs = array(
        'show_option_none' => '',
        'hierarchical' => 1,
@@ -294,6 +283,23 @@ get_header(); ?>
     <a class="btm_links" href="<?php echo $category_link2; ?>">Shop Now</a>
   </div>
  </div>
+
+  <div class="col-sm-4">
+  <div class="middle_content comm-fit-mid">
+   <h2>Commercial Fitness Services:</h2>
+   <h3>Manager or Owner we have you covered</h3>
+  <ul>
+    <li><span>*</span><a href="<?php echo do_shortcode('[url]'); ?>/commercial-fitness-equipment-edinburgh/gym-design-and-layout/">Gym Design and layout</a></li>
+    <li><span>*</span><a href="<?php echo do_shortcode('[url]'); ?>/commercial-fitness-equipment-edinburgh/gymnastic-equipment-repairs/">Gymnastic equipment repair</a></li>
+    <li><span>*</span><a href="<?php echo do_shortcode('[url]'); ?>/commercial-fitness-equipment-edinburgh/fitness-equipment-finance/">Finance available</a></li>
+    <li><span>*</span><a href="<?php echo do_shortcode('[url]'); ?>/commercial-fitness-equipment-edinburgh/trade-in/">Trade in's welcome</a></li>
+    <li><span>*</span><a href="<?php echo do_shortcode('[url]'); ?>/product/impact-rubber-flooring/">Impact rubber flooring</a></li>
+    <li><span>*</span><a href="<?php echo do_shortcode('[url]'); ?>/product/gym-mirrors/">Gym mirrors</a></li>
+  </ul><a class="btm_links" href="<?php echo do_shortcode('[url]'); ?>/commercial-fitness-equipment-edinburgh/">Learn More</a>
+  </div>
+ </div>
+  
+ 
 </div>
 <div class="clear"></div>
 <div class="row">
@@ -353,8 +359,11 @@ get_header(); ?>
        <div class="sriv_tit_final was_box">
      <h1> REQUEST <span> FOR QUOTATION</span></h1>
    </div>
-     <!-- <h3>On Request, Quick Response</h3> -->
-      <div style="padding: 0 15%;width: 100%;height: 200px;" class="big_req_img">
+    <p>Tell us your big idea's from home gym start ups to commercial enterprises</p> 
+    <div class="contact-form-wrap">
+      <?php echo do_shortcode('[contact-form-7 id="15947" title="Contact form 1"]');?>
+    </div>
+      <!-- <div style="padding: 0 15%;width: 100%;height: 200px;" class="big_req_img">
 <?php $newargs1 = array(
        'show_option_none' => '',
        'hierarchical' => 1,
@@ -398,7 +407,7 @@ get_header(); ?>
           //echo '<li class=""><span style="width: 40px;"><img src="'.$image.'"alt="" width="50" height="50" /></span><a class="" href="'. $newlink .'">'.$newsc->name.'</a></li>';
         }
       ?>
-    </div>
+    </div> -->
       <!--<ul>
         <li><span>*</span><a href="#">Repairs- Fees and Charge</a></li>
         <li><span>*</span><a href="#">Servicing- What is included?</a></li>
@@ -406,10 +415,10 @@ get_header(); ?>
         <li><span>*</span><a href="#">Upholstery-To you or Collect</a></li>
         <li><span>*</span><a href="#">Cabeling Replacement - kevlar and cable</a></li>
       </ul>-->
-    </br></br>
+    <!-- </br></br>
       <div class="more_info">
       <a href="<?php $url = site_url(); echo $url ?>/contact">Request Now ></a>
-      </div>
+      </div> -->
       <!--<p style="margin-top: 38px;
     position: relative;"><a class="btm_links" href="<?php //$url = site_url();
 //echo $url ?>/contact">Request Now</a></p>-->
@@ -454,12 +463,12 @@ get_header(); ?>
     <div class="col-md-12 col-sm-12">
       <div class="col-md-5 col-sm-12">
      <!--<div style="color:#333; font-weight:bold;font-size: 22px;text-align:left;">We can look after your products</div>-->
-<h4>We can look after your products</h4>
+<h4>Commercial facilities and home use: Fitness equipment maintenance and repairs</h4>
       <ul>
-        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/main-1.png"></span><a href="#">Repairs- Fees and Charge</a></li>
-        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/main-2.png"></span><a href="#">Servicing- What is included?</a></li>
+        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/main-1.png"></span><a href="#">Repairs - Fees and Charge</a></li>
+        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/main-2.png"></span><a href="#">Servicing - What is included?</a></li>
         <li><span><img src="<?php bloginfo('template_directory'); ?>/images/spare_part.png"></span><a href="#">Spare Parts - Most parts sourced</a></li>
-        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/main-3.png"></span><a href="#">Upholstery-To you or Collect</a></li>
+        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/main-3.png"></span><a href="#">Upholstery - To you or Collect</a></li>
         <li><span><img src="<?php bloginfo('template_directory'); ?>/images/Replace-icon.png"></span><a href="#">Cabling Replacement - kevlar and cable</a></li>
       </ul>
       <!--<div class="more_info">
@@ -756,8 +765,8 @@ $('.newowl-next').click(function(){
     $(this).children('div.body_child').css('display','none');
   });
     $( ".tab_box" ).click(function(){
-    $(this).toggleClass('active');
-});
+      $(this).toggleClass('active');
+    });
   });
 </script>
 <div class="srive_box">
@@ -943,15 +952,13 @@ Maintenance
 
 
 
-  $(".tab_box").hover(function(){
-    $('.pound_tab').removeClass('active');
-    $(this).addClass('active');
-  }, 
-  function () {
-         $(this).removeClass('active');         
+$(".tab_box").hover(function(){
+	
+     $(this).siblings('div').children('div').removeClass("active");
+     
+    $(this).children('div').addClass('active');
   });
-
-  });
+});
 
 </script>
 

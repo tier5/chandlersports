@@ -165,7 +165,7 @@ $('.responsive-tabs').responsiveTabs({
 
 
       navigation : true,
-
+      
       slideSpeed : 300,
 
       paginationSpeed : 400,

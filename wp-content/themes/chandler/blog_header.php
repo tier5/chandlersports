@@ -87,13 +87,25 @@
                                             <li class="dropdown">
                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
                                                <ul class="dropdown-menu">
-                                                  <li><a href="#">Action</a></li>
-                                                  <li><a href="#">Another action</a></li>
-                                                  <li><a href="#">Something else here</a></li>
-                                                  <li role="separator" class="divider"></li>
-                                                  <li><a href="#">Separated link</a></li>
-                                                  <li role="separator" class="divider"></li>
-                                                  <li><a href="#">One more separated link</a></li>
+                                                  <?php $categories = get_terms( 'category', array(
+                                                      'orderby'    => 'count',
+                                                      'hide_empty' => 1,
+                                                      'exclude'    => array(402,351),
+                                                      
+                                                  ) );
+                                                  
+                                                   foreach ( $categories as $term ) {
+                                                    ?>
+                                                    
+                                                     <li>
+                                                        <a href="<?php echo get_term_link($term->term_id, 'category'); ?>">
+                                                              <?php echo $term->name; ?>
+                                                        </a>    
+                                                     </li>
+                                                  
+                                                   <?php }
+                                                   
+                                              ?> 
                                                </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>

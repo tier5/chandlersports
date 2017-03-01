@@ -1337,25 +1337,6 @@ function new_footer_widgets_init() {
 
 }
 add_action( 'widgets_init', 'new_footer_widgets_init' );
-function popularPosts($num) {
-    global $wpdb;
-    
-    $posts = $wpdb->get_results("SELECT comment_count, ID, post_title FROM $wpdb->posts ORDER BY comment_count DESC LIMIT 0 , $num");
-    
-    foreach ($posts as $post) {
-        setup_postdata($post);
-        $id = $post->ID;
-        $title = $post->post_title;
-        $count = $post->comment_count;
-        
-        if ($count != 0) {
-            $popular .= '<li>';
-            $popular .= '<a href="' . get_permalink($id) . '" title="' . $title . '">' . $title . '</a> ';
-            $popular .= '</li>';
-        }
-    }
-    return $popular;
-}
 function setPostViews($postID) {
     $countKey = 'post_views_count';
     $count = get_post_meta($postID, $countKey, true);
@@ -1367,4 +1348,80 @@ function setPostViews($postID) {
         $count++;
         update_post_meta($postID, $countKey, $count);
     }
+}
+function custom_pagination($numpages = '', $pagerange = '', $paged='') {
+
+  if (empty($pagerange)) {
+    $pagerange = 2;
+  }
+
+  /**
+   * This first part of our function is a fallback
+   * for custom pagination inside a regular loop that
+   * uses the global $paged and global $wp_query variables.
+   * 
+   * It's good because we can now override default pagination
+   * in our theme, and use this function in default quries
+   * and custom queries.
+   */
+  global $paged;
+  if (empty($paged)) {
+    $paged = 1;
+  }
+  if ($numpages == '') {
+    global $wp_query;
+    $numpages = $wp_query->max_num_pages;
+    if(!$numpages) {
+        $numpages = 1;
+    }
+  }
+
+  /** 
+   * We construct the pagination arguments to enter into our paginate_links
+   * function. 
+   */
+  $pagination_args = array(
+    'base'            => get_pagenum_link(1) . '%_%',
+    'format'          => 'page/%#%',
+    'total'           => $numpages,
+    'current'         => $paged,
+    'show_all'        => False,
+    'end_size'        => 1,
+    'mid_size'        => $pagerange,
+    'prev_next'       => True,
+    'prev_text'       => __('<i class="fa fa-chevron-left"></i> Newer Posts'),
+    'next_text'       => __('older post <i class="fa fa-chevron-right"></i>'),
+    'type'            => 'plain',
+    'add_args'        => false,
+    'add_fragment'    => ''
+  );
+
+  $paginate_links = paginate_links($pagination_args);
+
+  if ($paginate_links) {
+    echo "<nav class='custom-pagination'>";
+      //echo "<span class='page-numbers page-num'>Page " . $paged . " of " . $numpages . "</span> ";
+      echo $paginate_links;
+    echo "</nav>";
+  }
+
+}
+function get_categories_with_images($post_id,$separator ){
+     
+    //first get all categories of that post
+    $post_categories = wp_get_post_categories( $post_id );
+    $cats = array();
+     
+    foreach($post_categories as $c){
+        $cat = get_category( $c );
+        $cat_data = get_option("category_$c");
+         
+        //and then i just display my category image if it exists
+        $cat_image = '';
+        if (isset($cat_data['img'])){
+            $cat_image = '<img src="'.$cat_data['img'].'">';
+        }
+        $cats[] =  $cat_image . '<a href="'.get_category_link( $c ) . '">' .$cat->name .'</a>';
+    }
+    return implode($separator , $cats);
 }

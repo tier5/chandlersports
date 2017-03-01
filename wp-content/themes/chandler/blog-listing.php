@@ -40,36 +40,7 @@ $blog_query = new WP_Query($blog_args);
                           </div>
                        </div>
                         <?php endforeach; 
-                        wp_reset_postdata();?>
-
-                       <!--<div class="item active">
-                          <img src="<?php bloginfo('template_directory'); ?>/images/ban2.jpg" alt="Chania">
-                          <div class="carousel-caption">
-                             <h5>Tips and advice</h5>
-                             <h3>Rowing Machine Hiring for just £15 per week!</h3>
-                             <p>February 9, 2017</p>
-                             <a href="#" class="read-more">View Post</a>
-                          </div>
-                       </div>
-                       <div class="item">
-                          <img src="<?php bloginfo('template_directory'); ?>/images/ban3.jpg" alt="Chania">
-                          <div class="carousel-caption">
-                             <h5>Tips and advice</h5>
-                             <h3>York Fitness Chest Strap transmitter – Why is it important to monitor your heart rate during exercise?</h3>
-                             <p>February 7, 2017</p>
-                             <a href="#" class="read-more">View Post</a>
-                          </div>
-                       </div>
-                       <div class="item">
-                          <img src="<?php bloginfo('template_directory'); ?>/images/ban4.jpg" alt="Flower">
-                          <div class="carousel-caption">
-                             <h5>Tips and advice</h5>
-                             <h3>G260 Khronos Semi Commercial Cross-trainer by BH Fitness </h3>
-                             <p>December, 30 2016 by Elaine </p>
-                             <a href="#" class="read-more">View Post</a>
-                          </div>
-                       </div>-->
-                       
+                        wp_reset_postdata();?>   
                     </div>
                     <!-- Left and right controls -->
                     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -89,291 +60,137 @@ $blog_query = new WP_Query($blog_args);
               <div class="bodypart">
                  <div class="container-fluid">
                    <div class="row"> 
-                      <div class="col-md-4 col-sm-4">
+                    <?php $categories = get_terms( 'category', array(
+                          'orderby'    => 'count',
+                          'hide_empty' => 1,
+                          'number'=> 3
+                      ) );
+                      
+                       foreach ( $categories as $term ) {
+                        ?>
+                        <div class="col-md-4 col-sm-4">
                           <div class="top-box">
-                            <a href="single-categories.html">
-                              <img src="<?php bloginfo('template_directory'); ?>/images/cross2.png" alt="img">
+                            <a href="<?php echo get_term_link($term->term_id, 'category'); ?>">
+                              <img src="<?php if (function_exists('z_taxonomy_image_url')) echo z_taxonomy_image_url($term->term_id); ?>" alt="img">
                               <div class="top-box-caption">
-                                  <h2>Categories Name</h2>
+                                  <h2><?php echo $term->name; ?></h2>
                               </div>
                             </a>    
                           </div>
                       </div>
-                      <div class="col-md-4 col-sm-4">
-                          <div class="top-box">
-                            <a href="single-categories.html">
-                              <img src="<?php bloginfo('template_directory'); ?>/images/massage.jpg" alt="img">
-                              <div class="top-box-caption">
-                                  <h2>Categories Name</h2>
-                              </div>
-                            </a>  
-                          </div>
-                      </div>
-                      <div class="col-md-4 col-sm-4">
-                         <div class="top-box">
-                            <a href="single-categories.html">
-                              <img src="<?php bloginfo('template_directory'); ?>/images/treadmillworkout6.gif" alt="img">
-                              <div class="top-box-caption">
-                                  <h2>Categories Name</h2>
-                              </div>
-                            </a>  
-                          </div>
-                      </div>
+                       <?php }
+                       
+                  ?>
                    </div>
                    <div class="row popular-post"> 
                       <div class="col-md-12 col-sm-12">
                           <h2>Popular Posts</h2>
                           <div class="row">
-                          <div class="col-sm-3">
-                              <div class="popular-post-main big-block">
-                              <a href="#">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/slide13-zone-diet.jpg" alt="img">
-                                <div class="popular-post-main-txt">
-                                  <h4>Lorem ipsum</h4>
-                                </div> 
-                              </a>  
-                              </div>
-                            </div>
-                            <div class="col-sm-3">
-                              <div class="popular-post-main big-block">
-                                <a href="#">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/jump-rope-tips4.jpg" alt="img">
-                                <div class="popular-post-main-txt">
-                                  <h4>Lorem ipsum</h4>
-                                </div>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="col-sm-3">
-                              <div class="popular-post-main big-block">
-                                <a href="#">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/slide14-zone-diet.jpg" alt="img">
-                                <div class="popular-post-main-txt">
-                                  <h4>Lorem ipsum</h4>
-                                </div>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="col-sm-3">
-                              <div class="popular-post-main big-block">
-                                <a href="#">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/nutrition.jpg" alt="img">
-                                <div class="popular-post-main-txt">
-                                  <h4>Lorem ipsum</h4>
-                                </div>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="col-sm-3">
-                              <div class="popular-post-main big-block">
-                                <a href="#">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/slide16-zone-diet.jpg" alt="img">
-                                <div class="popular-post-main-txt">
-                                  <h4>Lorem ipsum</h4>
-                                </div>
-                                </a>
-                              </div>
-                            </div>
-                          </div> 
-                          <div class="row three-block">
-                              <div class="col-md-4 col-sm-4">
-                                <div class="popular-post-main big-block">
-                                  <a href="#">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/pic.jpg" alt="img">
-                                  </a>  
-                                    <span class="date-tag">February 14, 2017</span>
-                                </div>
-                                  <div class="pipdig_geo_tag">
-                                    <span>Success Stories</span>
-                                  </div>
-                                  <a href="#">
-                                  <h2>Heading goes here</h2>
-                                  </a>
-                                  <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                                  </p>
-                                    <div class="listing-comments"><a href="#"> <i class="fa fa-comments"></i> 0 Comments</a>
-                                    </div>
-                                  </div>
-                              <div class="col-md-4 col-sm-4">
-                                <div class="popular-post-main big-block">
-                                    <a href="#">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/scottish-veterans.png" alt="img">
-                                    </a>
-                                    <span class="date-tag">February 14, 2017</span>
-                                </div>
-                                <div class="pipdig_geo_tag">
-                                    <span>Tips and Advice</span>
-                                </div>
-                                  <a href="#">
-                                  <h2>Heading goes here</h2> 
-                                  </a> 
-                                  <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                                  </p>
-                                  <div class="listing-comments"><a href="#"> <i class="fa fa-comments"></i> 0 Comments</a>
-                                  </div>
-                              </div>
-                              <div class="col-md-4 col-sm-4">
-                                <div class="popular-post-main big-block">
-                                    <a href="#">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/Kettlebell-Information.jpg" alt="img">
-                                    </a>
-                                    <span class="date-tag">February 14, 2017</span>
-                                </div>
-                                <div class="pipdig_geo_tag">
-                                    <span>Guest Blogs</span>
-                                </div>
-                                <a href="#">
-                                  <h2>Heading goes here</h2> 
-                                </a>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                                  </p>
-                                  <div class="listing-comments"><a href="#"> <i class="fa fa-comments"></i> 0 Comments</a>
-                                  </div>  
-                              </div>
-                          
-                          </div> 
-                          <div class="row three-block">   
-                           <div class="col-md-4 col-sm-4">
-                                <div class="popular-post-main big-block">
-                                  <a href="#">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/pic.jpg" alt="img">
-                                  </a>  
-                                    <span class="date-tag">February 14, 2017</span>
-                                </div>
-                                <div class="pipdig_geo_tag">
-                                    <span>Success Stories</span>
-                                </div>
-                                <a href="#">
-                                  <h2>Heading goes here</h2>
-                                </a>
-                                  <p>
-                                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                                  </p>
-                                    <div class="listing-comments"><a href="#"> <i class="fa fa-comments"></i> 0 Comments</a>
-                                    </div>
-                          </div> 
-
+                            <?php
+                        query_posts('meta_key=post_views_count&orderby=meta_value_num&order=DESC&posts_per_page=5&cat=-402');
+                        if (have_posts()) : while (have_posts()) : the_post();
+                        $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'full' );
+                        
+                         ?>
                             
+                            <div class="col-sm-3">
+                                                      <div class="popular-post-main big-block">
+                                                      <a href="<?php the_permalink(); ?>">
+                                                        <img src="<?php echo $image[0];?>" alt="img">
+                                                        <div class="popular-post-main-txt">
+                                                          <h4><?php the_title(); ?></h4>
+                                                        </div> 
+                                                      </a>  
+                                                      </div>
+                                                    </div>
+                        <?php
+                        endwhile; endif;
+                        wp_reset_query();
+                        ?>
+                          
+                          </div>
+                          <?php 
 
-                              <div class="col-md-4 col-sm-4">
-                                <div class="popular-post-main big-block">
-                                    <a href="#">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/scottish-veterans.png" alt="img">
-                                    </a>
-                                    <span class="date-tag">February 14, 2017</span>
-                                </div>
-                                <div class="pipdig_geo_tag">
-                                    <span>Tips and Advice</span>
-                                </div>
-                                  <a href="#">
-                                  <h2>Heading goes here</h2> 
-                                  </a> 
-                                  <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                                  </p>
-                                  <div class="listing-comments"><a href="#"> <i class="fa fa-comments"></i> 0 Comments</a>
-                                  </div>
-                              </div>
-                              <div class="col-md-4 col-sm-4">
-                                <div class="popular-post-main big-block">
-                                    <a href="#">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/Kettlebell-Information.jpg" alt="img">
-                                    </a>
-                                    <span class="date-tag">February 14, 2017</span>
-                                </div>
-                                <div class="pipdig_geo_tag">
-                                    <span>Guest Blogs</span>
-                                </div>
-                                <a href="#">
-                                  <h2>Heading goes here</h2> 
-                                </a>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                                  </p>
-                                  <div class="listing-comments"><a href="#"> <i class="fa fa-comments"></i> 0 Comments</a>
-                                  </div>  
-                              </div> 
-                            </div>
-                            <div class="row three-block">  
-                              <div class="col-md-4 col-sm-4">
-                                <div class="popular-post-main big-block">
-                                  <a href="#">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/pic.jpg" alt="img">
-                                  </a>  
-                                    <span class="date-tag">February 14, 2017</span>
-                                </div>
-                                <div class="pipdig_geo_tag">
-                                    <span>Success Stories</span>
-                                </div>
-                                  <a href="#">
-                                  <h2>Heading goes here</h2>
-                                  </a>
-                                  <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                                  </p>
-                                    <div class="listing-comments"><a href="#"> <i class="fa fa-comments"></i> 0 Comments</a>
-                                    </div>
-                                  </div>
-                              <div class="col-md-4 col-sm-4">
-                                <div class="popular-post-main big-block">
-                                    <a href="#">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/scottish-veterans.png" alt="img">
-                                    </a>
-                                    <span class="date-tag">February 14, 2017</span>
-                                </div>
-                                <div class="pipdig_geo_tag">
-                                    <span>Tips and Advice</span>
-                                </div>
-                                  <a href="#">
-                                  <h2>Heading goes here</h2> 
-                                  </a> 
-                                  <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                                  </p>
-                                  <div class="listing-comments"><a href="#"> <i class="fa fa-comments"></i> 0 Comments</a>
-                                  </div>
-                              </div>
-                              <div class="col-md-4 col-sm-4">
-                                <div class="popular-post-main big-block">
-                                    <a href="#">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/Kettlebell-Information.jpg" alt="img">
-                                    </a>
-                                    <span class="date-tag">February 14, 2017</span>
-                                </div>
-                                <div class="pipdig_geo_tag">
-                                    <span>Guest Blogs</span>
-                                </div>
-                                <a href="#">
-                                  <h2>Heading goes here</h2> 
-                                </a>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                                  </p>
-                                  <div class="listing-comments"><a href="#"> <i class="fa fa-comments"></i> 0 Comments</a>
-                                  </div>  
-                              </div>  
-                            </div>
-                      </div>  
-                   </div>
-                   <div class="row">
+  $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+
+  $custom_args = array(
+      'post_type' => 'post',
+      'posts_per_page' => 9,
+      'category__not_in'=> array(402,351), 
+      'paged' => $paged
+    );
+
+  $custom_query = new WP_Query( $custom_args ); ?>
+
+  <?php if ( $custom_query->have_posts() ) : 
+      $i=1;
+  ?>
+    <div class="row three-block">
+    <!-- the loop -->
+    <?php while ( $custom_query->have_posts() ) : $custom_query->the_post(); 
+      $post_image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'medium' );
+
+    ?>
+    
+    <div class="col-md-4 col-sm-4">
+        <div class="popular-post-main big-block">
+          <a href="<?php the_permalink(); ?>">
+            <img src="<?php the_post_thumbnail_url( 'full' );?>" alt="img">
+          </a>  
+            <span class="date-tag"><?php the_date(); ?></span>
+        </div>
+        <div class="pipdig_geo_tag">
+              <span><?php $category_detail=get_the_category(get_the_ID());//$post->ID
+          foreach($category_detail as $cd){
+          echo $cd->cat_name;
+          }?></span>
+        </div>
+              <a href="<?php the_permalink(); ?>">
+            <h2><?php the_title(); ?></h2>
+              </a>
+              <p><?php the_excerpt(); ?></p>
+          <div class="listing-comments"><a href="#"> <i class="fa fa-comments"></i> <a href="<?php comments_link(); ?>"><?php comments_number('0', '1', '% comments already!'); ?></a> Comments</a></div>
+    </div>
+<?php if( $i % 3==0 ) : ?> 
+      </div>
+      <!-- row -->
+      <div class="row three-block">
+           
+      <?php endif; ?>        
+      <!--<article class="loop">
+        <h3><?php the_title(); ?></h3>
+        <div class="content">
+          <?php the_excerpt(); ?>
+        </div>
+      </article>-->
+    <?php 
+    $i++;
+    endwhile; ?>
+    <!-- end of the loop -->
+
+    <!-- pagination here -->
+    </div> </div> </div> 
+    <div class="row">
                      <div class="col-md-12 col-sm-12">
                        <div class="pagination">
-                          <ul>
-                             <li><a class="active-pagination" href="#">1</a></li> 
-                             <li><a href="#">2</a></li> 
-                             <li><a href="#">3</a></li> 
-                             <li><a href="#">4</a></li> 
-                             <li><a href="#">5</a></li> 
-                             <li><a href="#">6</a></li>
-                             <li><a href="#">...</a></li> 
-                             <li><a href="#">older post <i class="fa fa-chevron-right"></i></a></li> 
-                          </ul>  
+                        <?php
+      if (function_exists(custom_pagination)) {
+        custom_pagination($custom_query->max_num_pages,"",$paged);
+      }
+    ?>
+                          
                        </div> 
                      </div>  
                    </div>
+    
+
+  <?php wp_reset_postdata(); ?>
+
+  <?php else:  ?>
+    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+  <?php endif; ?> 
+                         
+                   
                    <div class="row">
                       <div class="col-md-12 col-sm-12">
                           <div class="subscription-section">
@@ -391,21 +208,37 @@ $blog_query = new WP_Query($blog_args);
                       <div class="bottom-three-section">
                           <div class="col-md-4 col-sm-4 bottom-three-single">
                               <h3>SELECT A CATEGORY</h3>
-                              <select class="form-control">
-                                  <option>Select Category</option>
+                                <?php wp_dropdown_categories( 'show_option_none=Select category' ); ?>
+                            <script type="text/javascript">
+                                <!--
+                                var dropdown = document.getElementById("cat");
+                                function onCatChange() {
+                                    if ( dropdown.options[dropdown.selectedIndex].value > 0 ) {
+                                        location.href = "<?php echo esc_url( home_url( '/' ) ); ?>?cat="+dropdown.options[dropdown.selectedIndex].value;
+                                    }
+                                }
+                                dropdown.onchange = onCatChange;
+                                -->
+                            </script>
+                              <!--<select  name="cat" id="cat" class="form-control">
+                                <option value="-1">Select Category</option>
                                   <option>1</option>
                                   <option>2</option>
                                   <option>3</option>
-                              </select>
+                              </select>-->
                           </div>
+                        
                           <div class="col-md-4 col-sm-4 bottom-three-single">
                               <h3>SEARCH THE ARCHIVES</h3>
-                              <select class="form-control">
+                              <select name=\"archive-dropdown\" onChange='document.location.href=this.options[this.selectedIndex].value;' class="form-control">
+<option value=\"\"><?php echo attribute_escape(__('Select Month')); ?></option>
+<?php wp_get_archives('type=monthly&format=option&show_post_count=1'); ?> </select>
+                              <!--<select class="form-control">
                                   <option>Select Category</option>
                                   <option>1</option>
                                   <option>2</option>
                                   <option>3</option>
-                              </select>
+                              </select>-->
                           </div>
                           <div class="col-md-4 col-sm-4 bottom-three-single">
                               <h3>FOLLOW US</h3>

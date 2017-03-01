@@ -7,13 +7,15 @@
  * @since Twenty Ten 1.0
  */
 
-get_header(); ?>
+include 'blog_header.php'; ?>
 
 <div class="container">
 <div class="col-lg-12">
 <div class="ab_box">
-  <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-  <h1>
+  <?php if ( have_posts() ) while ( have_posts() ) : the_post(); 
+  setPostViews(get_the_ID());
+  ?>
+  <h1> test
     <?php the_title(); ?>
   </h1>
   <div class="postedmeta">Posted on <span>
@@ -47,7 +49,7 @@ get_header(); ?>
               <?php get_sidebar(); ?>		
           </div>
 <?php */?>
-<div class="test_and_lin">
+<!--<div class="test_and_lin">
   <div class="container">
     <div class="col-sm-6">
       <div class="left_box_ti cf">
@@ -104,6 +106,6 @@ get_header(); ?>
       </div>
     </div>
   </div>
-</div>
+</div>-->
 <br style="clear: both;" />
-<?php get_footer(); ?>
+<?php include 'blog_footer.php'; ?>

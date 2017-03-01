@@ -6,10 +6,34 @@
                                   <a rel="nofollow" target="_blank" href="#"><i class="fa fa-twitter"></i> Twitter<span class="social-footer-counters"> | 4928</span></a>
                               </div>
                               <div class="col-md-3 col-sm-3">
-                                  <a rel="nofollow" target="_blank" href="#"><i class="fa fa-facebook"></i> Facebook<span class="social-footer-counters"> | 7589</span></a>
+                                  <a rel="nofollow" target="_blank" href="#"><i class="fa fa-facebook"></i> Facebook<span class="social-footer-counters"> |
+                                  	 <?php
+										function dez_get_the_fb_like( $fb_pagename = '' ) {
+										$fburl = 'https://www.facebook.com/'. $fb_pagename;
+										$params = 'select like_count from link_stat where url = "'.$fburl.'"';
+										$component = urlencode( $params );
+										$urls = 'http://graph.facebook.com/fql?q='.$component;
+										$string = file_get_contents( $urls );
+										if( $string ) {
+										 $fbLIkeAndSahre = json_decode( $string );
+										 $getFbStatus = $fbLIkeAndSahre->data['0'];
+										 $likecount = $getFbStatus->like_count;
+										 return $likecount;
+										} else {
+										 return 'Data did not exist';
+										}
+										}
+										?>
+										<?php
+echo dez_get_the_fb_like( $fb_pagename = 'https://www.facebook.com/chandlersports/' );
+?>
+								 7589</span></a>
                               </div>
                               <div class="col-md-3 col-sm-3">
-                                  <a rel="nofollow" target="_blank" href="#"><i class="fa fa-instagram"></i> Instagram<span class="social-footer-counters"> | 266</span></a>
+                                  <a rel="nofollow" target="_blank" href="https://www.instagram.com/chandler_sports/"><i class="fa fa-instagram"></i> Instagram<span class="social-footer-counters"> |<?php $url = 'https://api.instagram.com/v1/users/3516394587?access_token=3516394587.1677ed0.1bdfb14613ac44928d0873a766f2c144';
+$api_response = file_get_contents($url);
+$record = json_decode($api_response);
+echo $followed_by = $record->data->counts->followed_by;?></span></a>
                               </div>
                               <div class="col-md-3 col-sm-3">
                                   <a rel="nofollow" target="_blank" href="#"><i class="fa fa-youtube-play"></i> YouTube<span class="social-footer-counters"> | 991</span></a>
@@ -130,12 +154,27 @@
                   </form>
                 </div>
                 <h5>Post Categories:</h5> 
+                
                     <ul>
-                        <li><a href="#">What is Lorem Ipsum?</a></li>
-                        <li><a href="#">Where does it come from?</a></li>
-                        <li><a href="#">Why do we use it?</a></li>
-                        <li><a href="#">Where can I get some?</a></li>
+                    	<?php $categories = get_terms( 'category', array(
+                          'orderby'    => 'count',
+                          'hide_empty' => 1,
+                          'exclude'    => array(402,351),
+                          
+                      ) );
+                      
+                       foreach ( $categories as $term ) {
+                        ?>
                         
+                         <li>
+                            <a href="<?php echo get_term_link($term->term_id, 'category'); ?>">
+                                  <?php echo $term->name; ?>
+                            </a>    
+                         </li>
+                      
+                       <?php }
+                       
+                  ?>
                     </ul>  
               </div>
           </div>
