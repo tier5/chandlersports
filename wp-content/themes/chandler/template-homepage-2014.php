@@ -206,7 +206,7 @@ get_header(); ?>
         
   echo'<li><a class="" href="'. $sub_link .'">'.$new_sc->name.'</a></li>'; 
 }
-          echo'</br><a href="'. $link .'" style="color: #b6b3b3;">view more</a></ul></div></div><div class="col-sm-6"><h4 style="text-align: center;color: #ddddd !important;font-weight: 500;">You May Also Like</h4>';
+          echo'<a href="'. $link .'" class="view-more">view more</a></ul></div></div><div class="col-sm-6"><h4 style="text-align: center;color: #ddddd !important;font-weight: 500;">You May Also Like</h4>';
             $args = array(
               'post_type' => 'product',
               'posts_per_page' => 6,
@@ -225,9 +225,14 @@ get_header(); ?>
              while ( $query->have_posts() ) : $query->the_post();
             global $product; 
             $thumbnail = get_the_post_thumbnail_url();
+            if(strlen(get_the_title()) > 20 ){
+              $title = substr(get_the_title(),0,20).'...';
+            }else{
+              $title = get_the_title(); 
+            }
             echo '<div class="col-sm-6"><div class="row"><a href="'.get_permalink( $query->post->ID ).'" title="'.esc_attr($query->post->post_title ? $query->post->post_title : $query->post->ID).'"><div class="productbox"><div class="like_img">';
              if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" width="100px" height="100px" />'; 
-            echo'</div></div><div class="like_title" style="text-align:center">'.get_the_title().'</div></a></div></div>';
+            echo'</div></div><div class="like_title">'.$title.'</div></a></div></div>';
 
           endwhile;wp_reset_query(); 
 
@@ -759,13 +764,28 @@ $('.newowl-next').click(function(){
 
 <script type="text/javascript">
   jQuery(document).ready(function($){
-    $('.has-child-new').click(function(){alert('hi');
+    $('.has-child-new').click(function(e){
+  e.stopPropagation();
+      $(this).siblings('li').children('div.body_child').css('display','none');
       $(this).children('div.body_child').css('display','block');
+      e.preventDefault();
     });
     $( ".tab_box" ).click(function(){
       $(this).toggleClass('active');
     });
+
+$("body").click(function() {
+    $(".body_child").hide();
+});
+
+$('.has-child-new').dblclick(function(e){
+  e.stopPropagation();
+  window.location = $(this).children('a').attr('href');
+        return false;
+});
+
   });
+
 </script>
 <div class="srive_box">
   <div class="container">

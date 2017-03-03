@@ -1699,6 +1699,29 @@ margin-bottom: 5px;
 	font-size: 14px;
 }
 
+.middle_content ul.first_block li .body_child ul li{
+	font-size: 12px;
+	line-height: 24px;
+}
+
+.middle_content ul.first_block li .body_child a.view-more{
+    color: #999;
+    text-transform: capitalize;
+    font-size: 12px;
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: top;
+    margin-top: 5px;
+}
+
+.like_title{
+	line-height: 20px;
+    font-size: 12px;
+    text-align: left;
+    color: #FF6A00;
+    font-weight: normal;
+}
+
 .middle_content ul li span{
     display: inline-block;
     margin-right: 10px;
