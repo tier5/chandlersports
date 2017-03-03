@@ -348,9 +348,9 @@ get_header(); ?>
           <h1> About <span>Chandlersports </span></h1>
           </div>
     <p>Chandler Sports aims to provide owners and managers of health and fitness facilities with technical assistance and expertise in order to help maintain their fitness equipment.</p><p>Your customers are using your equipment all day, every day and it is all important to minimise the risk of breakages and injuries. Preventative action is best for controlling your business environment and reducing the risk of costly breakdowns.</p><p>Users will be satisfied to know that your equipment is well maintained so they can exercise knowing a treadmill belt will not slip or a bike crank is not cracked.</p>
-      <div class="more_info">
-      <a href="<?php echo do_shortcode('[url]'); ?>/about-chandler-sports/">Read More ></a>
-      </div>
+      <!-- <div class="more_info"> -->
+      <a class="btm_links" href="<?php echo do_shortcode('[url]'); ?>/about-chandler-sports/">Read More</a>
+      <!-- </div> -->
       <!--<p><a href="<?php echo do_shortcode('[url]'); ?>/about-chandler-sports/" class="all-about-readmore">Read More</a></p>-->
   </div>
  </div>
@@ -463,7 +463,8 @@ get_header(); ?>
     <div class="col-md-12 col-sm-12">
       <div class="col-md-5 col-sm-12">
      <!--<div style="color:#333; font-weight:bold;font-size: 22px;text-align:left;">We can look after your products</div>-->
-<h4>Commercial facilities and home use: Fitness equipment maintenance and repairs</h4>
+<h2>Commercial facilities and home use: </h2>
+<h3>Fitness equipment maintenance and repairs</h3>
       <ul>
         <li><span><img src="<?php bloginfo('template_directory'); ?>/images/main-1.png"></span><a href="#">Repairs - Fees and Charge</a></li>
         <li><span><img src="<?php bloginfo('template_directory'); ?>/images/main-2.png"></span><a href="#">Servicing - What is included?</a></li>
@@ -758,12 +759,9 @@ $('.newowl-next').click(function(){
 
 <script type="text/javascript">
   jQuery(document).ready(function($){
-    $('.has-child-new').hover(function(){
+    $('.has-child-new').click(function(){alert('hi');
       $(this).children('div.body_child').css('display','block');
-    }, 
-  function () {
-    $(this).children('div.body_child').css('display','none');
-  });
+    });
     $( ".tab_box" ).click(function(){
       $(this).toggleClass('active');
     });
@@ -953,7 +951,7 @@ Maintenance
 
 
 $(".tab_box").hover(function(){
-	
+  
      $(this).siblings('div').children('div').removeClass("active");
      
     $(this).children('div').addClass('active');

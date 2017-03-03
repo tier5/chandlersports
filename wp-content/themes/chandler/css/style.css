@@ -222,6 +222,8 @@ h1, h2, h3, h4, h5, h6{ margin:0px; padding:0px; font-weight:normal;}
 
 .main_banner .owl-carousel .item img{
 	display: inline-block;
+margin: auto;
+width: 100%;
 	}
 .owl-carousel .owl-wrapper, .owl-carousel .owl-item{text-align: center;}	
 
@@ -1097,7 +1099,7 @@ footer{
 	padding:24px 0px;
 	}
 .foot_box_1{
-
+	text-align: center;
 	}
 .foot_box_1 img{
 	padding-bottom:10px;
@@ -1112,9 +1114,14 @@ margin-bottom:15px;
 	}
 
 .social_icon a{
-	float:left;
-	margin-right:20px;
+	/* float: left; */
+margin-right: 10px;
+display: inline-block;
 	}
+
+	.social_icon a:last-child {
+margin:0;
+}
 .fb{
 	background:url(../images/footer_soi_icon.png) no-repeat;
 	width:26px;
@@ -1183,12 +1190,12 @@ margin-bottom:15px;
 	}
 
 .foot_box_2 ul li a{
-	color:#cccccc;
+	color:#ccc;
 	font-family: 'open_sansregular';
-	font-size:15px;
+	font-size:14px;
 	}
 .foot_box_2 ul li a i{
-	padding-right:7px;
+	padding-right:3px;
 	}
 
 .foot_box_2 ul li a:hover{

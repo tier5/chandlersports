@@ -21,15 +21,15 @@
 		</div>
 		<div class="upper_footer">
 		<div class="col-md-3 col-sm-12 social-feed-wrap">
-			<h4>Facebook</h4>
+			<a href="https://www.facebook.com/pages/Chandler-Sports/465752946790356?ref=ts&fref=ts" target="_blank"><h4>Facebook</h4></a>
 			<?php echo do_shortcode('[custom-facebook-feed id=chandlersports num=5]');?>
 		</div>
 		<div class="col-md-3 col-sm-12 social-feed-wrap">
-			<h4>Google plus</h4>
+			<a href="https://plus.google.com/104263035271660173542/posts" target="_blank"><h4>Google plus</h4></a>
 			<?php echo do_shortcode('[gpf_google_plus id=104263035271660173542 height=200px type=page]');?>
 		</div>
 		<div class="col-md-3 col-sm-12 social-feed-wrap">
-			<h4>Tumblr </h4>
+			<a href="http://www.youtube.com/user/chandlersports" target="_blank"><h4>Tumblr </h4></a>
 			<div style="max-height: 200px; min-height: 200px !important;overflow-y: auto;overflow-x: hidden;margin-top:20px;">
 			<?php //echo do_shortcode('[powr-tumblr-feed id=2d3dbd99_1487232959]');
 				echo do_shortcode('[powr-tumblr-feed id=a3e78207_1487246928]');
@@ -37,7 +37,7 @@
 		</div>
 		</div>
 		<div class="col-md-3 col-sm-12 social-feed-wrap">
-			<h4>Instagram </h4>
+			<a href="https://instagram.com/chandler_sports/" target="_blank"><h4>Instagram </h4></a>
 			<?php echo do_shortcode('[instagram-feed num=9 cols=3]');?>
 		</div>	
 		</div>
@@ -378,23 +378,7 @@ $('.responsive-tabs').responsiveTabs({
 		  });
 		});
   </script>
-   <script>
 
-$('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-        || location.hostname == this.hostname) {
-
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-           if (target.length) {
-             $('html,body').animate({
-                 scrollTop: target.offset().top
-            }, 1000);
-            return false;
-        }
-    }
-});
-</script>
 <?php wp_footer(); ?>
 </body>
 

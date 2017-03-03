@@ -1425,3 +1425,28 @@ function get_categories_with_images($post_id,$separator ){
     }
     return implode($separator , $cats);
 }
+function get_related_author_posts() {
+    global $authordata, $post;
+
+    $authors_posts = get_posts( array( 'author' => $authordata->ID, 'post__not_in' => array( $post->ID ), 'posts_per_page' => 5 ) );
+
+    $output = '<ul>';
+    foreach ( $authors_posts as $authors_post ) {
+        $output .= '<li><a href="' . get_permalink( $authors_post->ID ) . '">' . apply_filters( 'the_title', $authors_post->post_title, $authors_post->ID ) . '</a></li>';
+    }
+    $output .= '</ul>';
+
+    return $output;
+}
+function wpse_modify_category_query( $query ) {
+    if ( ! is_admin() && $query->is_main_query() ) {
+        if ( $query->is_category() ) {
+            $query->set( 'posts_per_page', 9 );
+        } 
+        if ( $query->is_archive() ) {
+            $query->set( 'posts_per_page', 9 );
+        }
+        
+    } 
+}
+add_action( 'pre_get_posts', 'wpse_modify_category_query' );

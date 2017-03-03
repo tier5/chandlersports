@@ -82,15 +82,15 @@
                                       <!-- Collect the nav links, forms, and other content for toggling -->
                                       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                          <ul class="nav navbar-nav">
-                                            <li class="active"><a href="index.htnl">Home <span class="sr-only">(current)</span></a></li>
-                                            <li><a href="about.html">About</a></li>
+                                            <li class="active"><a href="<?php echo site_url()?>/blog-listing">Home <span class="sr-only">(current)</span></a></li>
+                                            <li><a href="<?php echo site_url()?>/blog-listing/about">About</a></li>
                                             <li class="dropdown">
                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
                                                <ul class="dropdown-menu">
                                                   <?php $categories = get_terms( 'category', array(
                                                       'orderby'    => 'count',
                                                       'hide_empty' => 1,
-                                                      'exclude'    => array(402,351),
+                                                      'exclude'    => array(428,351),
                                                       
                                                   ) );
                                                   
@@ -108,7 +108,7 @@
                                               ?> 
                                                </ul>
                                             </li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="<?php echo site_url()?>/blog-listing/contact">Contact</a></li>
                                             <!-- <li><a href="#">View all product</a></li> -->
                                          </ul>
                                       </div>
@@ -120,23 +120,18 @@
                              </div>
                              <div class="col-md-3 col-sm-3 social-menu">
                                 <ul>
+                                   
                                    <li>
-                                      <a href="#"><i class="fa fa-twitter"></i></a>
+                                      <a href="https://www.instagram.com/chandler_sports/"><i class="fa fa-instagram"></i></a>
                                    </li>
                                    <li>
-                                      <a href="#"><i class="fa fa-instagram"></i></a>
+                                      <a href="https://www.facebook.com/chandlersports/?ref=ts"><i class="fa fa-facebook"></i></a>
                                    </li>
                                    <li>
-                                      <a href="#"><i class="fa fa-facebook"></i></a>
+                                      <a href="https://www.youtube.com/user/chandlersports"><i class="fa fa-youtube-play"></i></a>
                                    </li>
                                    <li>
-                                      <a href="#"><i class="fa fa-youtube-play"></i></a>
-                                   </li>
-                                   <li>
-                                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                                   </li>
-                                   <li>
-                                      <a href="#"><i class="fa fa-envelope"></i></a>
+                                      <a href="https://plus.google.com/+ChandlersportsCoUk"><i class="fa fa-google-plus"></i></a>
                                    </li>
                                    <li>
                                       <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-search"></i></a>

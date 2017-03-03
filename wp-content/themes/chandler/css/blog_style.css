@@ -405,7 +405,7 @@ border-color: #333333;
 .reply textarea{width: 100%; border-radius: 0; border: 1px solid #ccc; height: 250px;
 padding: 15px;}
 
-.submit-btn{background: #333; padding: 6px 20px; color: #fff; border: none; color: #fff;
+.submit-btn{background: #333 !important; padding: 6px 20px; color: #fff; border: none; color: #fff;
 border-radius: 0; margin-top: 10px; font-family: 'Josefin Sans', sans-serif; text-transform: uppercase;
 }
 .submit-btn:hover{color: #fff;}
@@ -526,5 +526,35 @@ span.page-numbers.current {
     color: #999;
     text-decoration: none;
 }
+.full-menu ul.nav li .dropdown-menu li{
 
+  display:block;
+}
+.share_ico{
+  margin-top: 20px;
+}
+.page_nav_links{margin-top: 20px;}
+
+.nav_link{display: block;
+    margin-bottom: 5px;
+    color: #222;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 1.2;}
+
+    .prev_post a{
+    display: inline-block;
+    color: #999;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    background: transparent;
+  }
 

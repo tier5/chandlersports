@@ -159,7 +159,7 @@ echo $followed_by = $record->data->counts->followed_by;?></span></a>
                     	<?php $categories = get_terms( 'category', array(
                           'orderby'    => 'count',
                           'hide_empty' => 1,
-                          'exclude'    => array(402,351),
+                          'exclude'    => array(428,351),
                           
                       ) );
                       
@@ -180,15 +180,13 @@ echo $followed_by = $record->data->counts->followed_by;?></span></a>
           </div>
       </div>
 
-      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-
-      <script src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
-      
-     
+      <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>-->
       <script src="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>
 
      <script>
     jQuery("#menu-toggle").click(function(e) {
+      //alert('heee');
         e.preventDefault();
         jQuery("#wrapper").toggleClass("toggled");
     });
