@@ -13,19 +13,20 @@ $blog_args = array(
   );
 $blog_query = new WP_Query($blog_args);
 ?>
- <div class="slider">
+ <!--<div class="slider">
                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
+                    
                     <ol class="carousel-indicators">
                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                        <li data-target="#myCarousel" data-slide-to="1"></li>
                        <li data-target="#myCarousel" data-slide-to="2"></li>
                        <li data-target="#myCarousel" data-slide-to="3"></li>
                     </ol>
-                    <!-- Wrapper for slides -->
+                    
                     <div class="carousel-inner" role="listbox">
+
                        <?php
-                        $args = array( 'posts_per_page' => 5, 'category' => 402 );
+                        $args = array( 'posts_per_page' => 5, 'category' => 428 );
                         $count = 0;
                         $myposts = get_posts( $args );
                         foreach ( $myposts as $post ) : setup_postdata( $post ); 
@@ -42,7 +43,7 @@ $blog_query = new WP_Query($blog_args);
                         <?php endforeach; 
                         wp_reset_postdata();?>   
                     </div>
-                    <!-- Left and right controls -->
+                  
                     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                     <span class="left-icon" aria-hidden="true">
                     <img src="<?php bloginfo('template_directory'); ?>/images/left-arrow.png" alt="left">
@@ -56,6 +57,186 @@ $blog_query = new WP_Query($blog_args);
                     <span class="sr-only">Next</span>
                     </a>
                  </div>
+              </div>-->
+              <div class="new-slider">
+                  <div class="container-fluid ">
+                    <div class="new_slick">
+                      <?php
+                        $args = array( 'posts_per_page' => 20, 'category' => 428);
+                        $count = 0;
+                        $myposts = get_posts( $args );
+                        foreach ( $myposts as $post ) : setup_postdata( $post ); 
+                        $count++;
+                        if ( has_post_thumbnail() ) {?>
+
+                      <div class="col-xs-3">
+                        <div class="single-slide">
+                          <img src="<?php the_post_thumbnail_url( 'full' );?>" alt="img">
+                          <div class="blog-slide-caption">
+                              <div class="slide_cat">
+                              <ul>
+                              <li><a href="#" tabindex="0">Fashion</a></li>
+                              <li><a href="#" tabindex="0">Lifestyle</a></li>
+                              </ul>
+                              </div>
+                              <h3>
+                                <a href="<?php echo get_permalink();?>"><?php the_title(); ?></a>
+                              </h3>
+                              <time class="slide_date"><?php the_date(); ?></time>
+                          </div>
+                        </div>  
+                      </div>
+                      <?php } endforeach;
+
+                        wp_reset_postdata();?> 
+                      <!--<div class="col-xs-3">
+                        <div class="single-slide">
+                          <img src="images/IMG_4093-390x500.jpg" alt="img">
+                          <div class="blog-slide-caption">
+                              <div class="slide_cat">
+                              <ul>
+                              <li><a href="#" tabindex="0">Fashion</a></li>
+                              <li><a href="#" tabindex="0">Lifestyle</a></li>
+                              </ul>
+                              </div>
+                              <h3>
+                                <a href="#">Decadent flowers</a>
+                              </h3>
+                              <time class="slide_date"> Aug 22, 2016 </time>
+                          </div>
+                        </div>  
+                      </div>
+                      <div class="col-xs-3">
+                        <div class="single-slide">
+                          <img src="images/IMG_4074-390x500.jpg" alt="img">
+                          <div class="blog-slide-caption">
+                              <div class="slide_cat">
+                              <ul>
+                              <li><a href="#" tabindex="0">Fashion</a></li>
+                              <li><a href="#" tabindex="0">Lifestyle</a></li>
+                              </ul>
+                              </div>
+                              <h3>
+                                <a href="#">Decadent flowers</a>
+                              </h3>
+                              <time class="slide_date"> Aug 22, 2016 </time>
+                          </div>
+                        </div>  
+                      </div>
+                      <div class="col-xs-3">
+                        <div class="single-slide">
+                          <img src="images/IMG_4093-390x500.jpg" alt="img">
+                          <div class="blog-slide-caption">
+                              <div class="slide_cat">
+                              <ul>
+                              <li><a href="#" tabindex="0">Fashion</a></li>
+                              <li><a href="#" tabindex="0">Lifestyle</a></li>
+                              </ul>
+                              </div>
+                              <h3>
+                                <a href="#">Decadent flowers</a>
+                              </h3>
+                              <time class="slide_date"> Aug 22, 2016 </time>
+                          </div>
+                        </div>  
+                      </div>
+                      <div class="col-xs-3">
+                        <div class="single-slide">
+                          <img src="images/IMG_4074-390x500.jpg" alt="img">
+                          <div class="blog-slide-caption">
+                              <div class="slide_cat">
+                              <ul>
+                              <li><a href="#" tabindex="0">Fashion</a></li>
+                              <li><a href="#" tabindex="0">Lifestyle</a></li>
+                              </ul>
+                              </div>
+                              <h3>
+                                <a href="#">Decadent flowers</a>
+                              </h3>
+                              <time class="slide_date"> Aug 22, 2016 </time>
+                          </div>
+                        </div>  
+                      </div>
+                      <div class="col-xs-3">
+                        <div class="single-slide">
+                          <img src="images/IMG_4093-390x500.jpg" alt="img">
+                          <div class="blog-slide-caption">
+                              <div class="slide_cat">
+                              <ul>
+                              <li><a href="#" tabindex="0">Fashion</a></li>
+                              <li><a href="#" tabindex="0">Lifestyle</a></li>
+                              </ul>
+                              </div>
+                              <h3>
+                                <a href="#">Decadent flowers</a>
+                              </h3>
+                              <time class="slide_date"> Aug 22, 2016 </time>
+                          </div>
+                        </div>  
+                      </div>
+                      <div class="col-xs-3">
+                        <div class="single-slide">
+                          <img src="images/IMG_4074-390x500.jpg" alt="img">
+                          <div class="blog-slide-caption">
+                              <div class="slide_cat">
+                              <ul>
+                              <li><a href="#" tabindex="0">Fashion</a></li>
+                              <li><a href="#" tabindex="0">Lifestyle</a></li>
+                              </ul>
+                              </div>
+                              <h3>
+                                <a href="#">Decadent flowers</a>
+                              </h3>
+                              <time class="slide_date"> Aug 22, 2016 </time>
+                          </div>
+                        </div>  
+                      </div>
+                      <div class="col-xs-3">
+                        <div class="single-slide">
+                          <img src="images/IMG_4093-390x500.jpg" alt="img">
+                          <div class="blog-slide-caption">
+                              <div class="slide_cat">
+                              <ul>
+                              <li><a href="#" tabindex="0">Fashion</a></li>
+                              <li><a href="#" tabindex="0">Lifestyle</a></li>
+                              </ul>
+                              </div>
+                              <h3>
+                                <a href="#">Decadent flowers</a>
+                              </h3>
+                              <time class="slide_date"> Aug 22, 2016 </time>
+                          </div>
+                        </div>  
+                      </div>-->
+                     </div>
+                  </div> 
+                  <script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".new_slick").slick({
+        dots: true,
+        arrows: true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 2
+      });
+      $(".center").slick({
+        dots: true,
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+      $(".variable").slick({
+        dots: true,
+        infinite: true,
+        variableWidth: true
+      });
+      $(".lazy").slick({
+        lazyLoad: 'ondemand', // ondemand progressive anticipated
+        infinite: true
+      });
+    });
+  </script> 
               </div>
               <div class="bodypart">
                  <div class="container-fluid">
@@ -87,7 +268,7 @@ $blog_query = new WP_Query($blog_args);
                           <h2>Popular Posts</h2>
                           <div class="row">
                             <?php
-                        query_posts('meta_key=post_views_count&orderby=meta_value_num&order=DESC&posts_per_page=5&cat=-402');
+                        query_posts('meta_key=post_views_count&orderby=meta_value_num&order=DESC&posts_per_page=5&cat=-428');
                         if (have_posts()) : while (have_posts()) : the_post();
                         $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'full' );
                         
@@ -116,7 +297,7 @@ $blog_query = new WP_Query($blog_args);
   $custom_args = array(
       'post_type' => 'post',
       'posts_per_page' => 9,
-      'category__not_in'=> array(402,351), 
+      'category__not_in'=> array(428,351), 
       'paged' => $paged
     );
 

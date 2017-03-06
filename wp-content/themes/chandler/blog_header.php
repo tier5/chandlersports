@@ -11,6 +11,11 @@
       <link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" rel="stylesheet">
       <link href="<?php bloginfo('template_directory'); ?>/css/font-awesome.css" rel="stylesheet">
       <link href="<?php bloginfo('template_directory'); ?>/css/blog_style.css" rel="stylesheet">
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>
@@ -109,6 +114,7 @@
                                                </ul>
                                             </li>
                                             <li><a href="<?php echo site_url()?>/blog-listing/contact">Contact</a></li>
+                                            <li><a href="<?php echo site_url()?>">Visit Chandlersports Store</a></li>
                                             <!-- <li><a href="#">View all product</a></li> -->
                                          </ul>
                                       </div>
@@ -119,8 +125,8 @@
                                 <!-- menu ends here -->
                              </div>
                              <div class="col-md-3 col-sm-3 social-menu">
+                               <div class="row">
                                 <ul>
-                                   
                                    <li>
                                       <a href="https://www.instagram.com/chandler_sports/"><i class="fa fa-instagram"></i></a>
                                    </li>
@@ -137,6 +143,7 @@
                                       <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-search"></i></a>
                                    </li>
                                 </ul>
+                                </div>
                              </div>
                           </div>
                        </div>
