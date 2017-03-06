@@ -471,11 +471,11 @@ get_header(); ?>
 <h2>Commercial facilities and home use: </h2>
 <h3>Fitness equipment maintenance and repairs</h3>
       <ul>
-        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/main-1.png"></span><a href="#">Repairs - Fees and Charge</a></li>
-        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/main-2.png"></span><a href="#">Servicing - What is included?</a></li>
-        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/spare_part.png"></span><a href="#">Spare Parts - Most parts sourced</a></li>
-        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/main-3.png"></span><a href="#">Upholstery - To you or Collect</a></li>
-        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/Replace-icon.png"></span><a href="#">Cabling Replacement - kevlar and cable</a></li>
+        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/main-1.png"></span><a class="without-click" href="javascript:void(0);">Repairs - Fees and Charge</a></li>
+        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/main-2.png"></span><a class="without-click" href="javascript:void(0);">Servicing - What is included?</a></li>
+        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/spare_part.png"></span><a class="without-click" href="javascript:void(0);">Spare Parts - Most parts sourced</a></li>
+        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/main-3.png"></span><a class="without-click" href="javascript:void(0);">Upholstery - To you or Collect</a></li>
+        <li><span><img src="<?php bloginfo('template_directory'); ?>/images/Replace-icon.png"></span><a class="without-click" href="javascript:void(0);">Cabling Replacement - kevlar and cable</a></li>
       </ul>
       <!--<div class="more_info">
       <a href="">More enquery ></a>
