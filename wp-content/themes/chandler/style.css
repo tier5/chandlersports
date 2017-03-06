@@ -1696,7 +1696,7 @@ margin-bottom: 5px;
 }
 
 .middle_content ul.first_block li{
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .middle_content ul.first_block li .body_child ul li{
@@ -1784,7 +1784,7 @@ ul.1st_block li.has-child-new:hover .body_child{display: block !important; box-s
 ul.1st_block li:hover{box-shadow:-1px 0px 2px 0px #666; font-weight: bold;}
 
 .has-child-new{z-index: 99999;}
-.has-child-new:hover{box-shadow:-1px 0px 2px 0px #666; font-weight: bold;}
+.has-child-new:hover{/*box-shadow:-1px 0px 2px 0px #666;*/ font-weight: bold;}
 
 .productbox{
 	border: 1px solid #ccc;

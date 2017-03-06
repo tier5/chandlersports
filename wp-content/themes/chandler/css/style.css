@@ -2050,6 +2050,8 @@ margin:0;
     font-size: 13.5px;
    list-style-image: url("../images/reasons-to-shop-tick.png");
    font-family: 'open_sansregular';
+   word-break: break-word;
+   margin-bottom: 7px;
 }
 
 
