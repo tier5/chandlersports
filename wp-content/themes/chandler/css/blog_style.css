@@ -277,7 +277,7 @@ font-weight: 400; text-transform: uppercase; padding: 0 8px; letter-spacing: 1px
 
 .subscription-section{text-align: center; font-family: 'EB Garamond', serif; margin-top: 40px;}
 .subscription-section label{font-weight: 400; padding-bottom: 12px; font-size: 16px;}
-.subscription-section .form-control{border-radius: 0; text-align: center;}
+.subscription-section .form-control{border-radius: 0; text-align: center;width: 45%; margin-left: 27%;border: 1px solid #a39e9e;}
 .subscription-section input[type="submit"]{background: #000; font-family: 'Montserrat', sans-serif;
 padding: 7px 8px; color: #fff; text-transform: uppercase; border: none; font-size: 11px;
 margin-top: 13px;}
@@ -683,11 +683,29 @@ a.ig_recent_post_title {
 
 /*css on 06/03/17*/
 button.slick-prev.slick-arrow {
-    background: rgba(255,255,255,0.7) url(images/arrow-left.png) center center no-repeat !important;
+    background: rgba(238, 238, 238, 0.7) url(images/arrow-left.png) center center no-repeat !important;
     background-size: 15px 26px !important;
     outline: none !important;
+    left: 0;
+    z-index: 999;
+    padding: 19px;
 }
 button.slick-next slick-arrow{background: rgba(255,255,255,0.7) url(images/arrow-right.png) center center no-repeat !important;
     background-size: 15px 26px !important;
-    outline: none !important;}
+    outline: none !important;
+    right: 0;
+    z-index: 999;}
+.slick-next.slick-arrow {
+    background: rgba(238, 238, 238, 0.7) url(images/arrow-right.png) center center no-repeat !important;
+    background-size: 15px 26px !important;
+    outline: none !important;
+    right: 0;
+    z-index: 999;
+    padding: 19px;
+}
 .slick-prev:before, .slick-next:before{display:none;}
+#subscribe-email input {
+    width: 45% !important;
+    border:1px solid #a39e9e;
+}
+.jetpack_subscription_widget h2{display:none;}

@@ -1459,3 +1459,16 @@ function rudr_instagram_api_curl_connect( $api_url ){
 	curl_close( $connection_c ); // close connection
 	return json_decode( $json_return ); // decode and return
 }
+function blog_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Blog Bottom About Text',
+		'id'            => 'blog_bottom1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'blog_widgets_init' );

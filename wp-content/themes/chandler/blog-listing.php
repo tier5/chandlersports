@@ -75,8 +75,8 @@ $blog_query = new WP_Query($blog_args);
                           <div class="blog-slide-caption">
                               <div class="slide_cat">
                               <ul>
-                              <li><a href="#" tabindex="0">Fashion</a></li>
-                              <li><a href="#" tabindex="0">Lifestyle</a></li>
+                              <li><a href="#" tabindex="0"></a></li>
+                              <li><a href="#" tabindex="0"></a></li>
                               </ul>
                               </div>
                               <h3>
@@ -375,13 +375,14 @@ $blog_query = new WP_Query($blog_args);
                    <div class="row">
                       <div class="col-md-12 col-sm-12">
                           <div class="subscription-section">
-                              <form>
+                              
                                 <div class="form-group">
-                                    <label>Enter your email address to subscribe to our blog & receive notifications of new posts by email!</label>
+                                    <!--<label>Enter your email address to subscribe to our blog & receive notifications of new posts by email!</label>
                                     <input class="form-control" type="email" name="" placeholder="Email Address">
-                                    <input type="submit" value="subscribe">
+                                    <input type="submit" value="subscribe">-->
+        <?php echo do_shortcode('[jetpack_subscription_form subscribe_button="subscribe" show_subscribers_total="1"]');?>
                                 </div>
-                              </form>
+                              
                           </div>
                       </div>
                    </div>

@@ -15,7 +15,7 @@
                               <?php endif; ?>
                               </div>
                               <p class="align-center">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                               <?php dynamic_sidebar( 'blog_bottom1' ); ?>
                               </p>
                           </div>
                           <div class="col-md-4 col-sm-4">
@@ -43,11 +43,9 @@
                               </ul> 
                           </div>
                           <div class="col-md-4 col-sm-4">
-                              <div class="tit_widget"><span>BANNER SPOT</span>
+                              <div class="tit_widget"><span>Workout Video</span>
                               </div>
-                              <a href="#">
-                              <img src="images/Chin-up.jpg" alt="img">
-                              </a>    
+                              <iframe width="400" height="230" src="https://www.youtube.com/embed/IpOB2bwLXkc"></iframe>    
                           </div>
 
                       </div>  
