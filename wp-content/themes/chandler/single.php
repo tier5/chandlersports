@@ -12,9 +12,7 @@ get_header(); ?>
 <div class="container">
 <div class="col-lg-12">
 <div class="ab_box">
-  <?php if ( have_posts() ) while ( have_posts() ) : the_post(); 
-  
-  ?>
+  <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
   <h1>
     <?php the_title(); ?>
   </h1>
@@ -28,14 +26,7 @@ get_header(); ?>
     <?php twentyten_posted_in(); ?>
   </p>
   <div class="fb-comments" data-href="<?php the_permalink(); ?>" data-width="560" data-num-posts="100"></div>
-<?php
-  if ( comments_open() || get_comments_number() ) :
-            comments_template();
-          endif;
-  ?>
-  <?php
-
-   endwhile; ?>
+  <?php endwhile; ?>
 </div>
 </div>
 </div>

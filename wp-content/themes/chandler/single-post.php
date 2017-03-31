@@ -223,7 +223,7 @@ include 'blog_header.php'; ?>
                               <h3>Find our HQ</h3>
                               <div class="row">
                                 <div class="col-md-12 col-sm-12" style="-webkit-filter: grayscale(100%); filter: grayscale(100%);"">
-                                  <div style="width: 100%"><iframe width="600" height="450" src="http://www.mapi.ie/create-google-map/map.php?width=100%&amp;height=450&amp;hl=en&amp;q=Unit%208%20%2C%20Eastfield%20Farm%20Road%20Midlothian%20%2CPenicuik%20EH26%208EZ+(Chandlersports)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                  <div style="width: 100%"><iframe width="500" height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d666.1074765366265!2d-3.2184400845228516!3d55.83647154876212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc0669f7062c813df!2sChandler+Sports!5e0!3m2!1sen!2sin!4v1490797393979" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></iframe>
 
                                 </div>  
                               </div>
@@ -264,10 +264,8 @@ include 'blog_header.php'; ?>
                       <div class="col-md-12 col-sm-12">
                           <div class="subscription-section">
                               <form>
-                                <div class="form-group">
-                                    <label>Enter your email address to subscribe to our blog & receive notifications of new posts by email!</label>
-                                    <input class="form-control" type="email" name="" placeholder="Email Address">
-                                    <input type="submit" value="subscribe">
+                                <div class="form-group">                                    
+        <?php echo do_shortcode('[jetpack_subscription_form subscribe_button="subscribe" show_subscribers_total="1"]');?>
                                 </div>
                               </form>
                           </div>

@@ -145,7 +145,7 @@
                 <div class="col-sm-8">    
 					<div class="blog_right_d">
                     <div class="content">
-						<h1 class="entry-title category "><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+						<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 						<h3><?php the_date(); ?></h3>
 
 						<div class="blogcontent">
@@ -210,7 +210,7 @@
 			
 				<div class="col-sm-8">
                 <div class="blog_right_d">
-					<h1 class="entry-title test"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+					<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 					<h3><?php the_date(); ?></h3>
 					<div class="blogcontent">
 						<?php the_excerpt(); ?>

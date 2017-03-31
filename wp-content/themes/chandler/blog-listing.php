@@ -26,7 +26,7 @@ $blog_query = new WP_Query($blog_args);
                     <div class="carousel-inner" role="listbox">
 
                        <?php
-                        $args = array( 'posts_per_page' => 5, 'category' => 428 );
+                        $args = array( 'posts_per_page' => 5, 'category' => 421 );
                         $count = 0;
                         $myposts = get_posts( $args );
                         foreach ( $myposts as $post ) : setup_postdata( $post ); 
@@ -62,7 +62,7 @@ $blog_query = new WP_Query($blog_args);
                   <div class="container-fluid ">
                     <div class="new_slick">
                       <?php
-                        $args = array( 'posts_per_page' => 20, 'category' => 428);
+                        $args = array( 'posts_per_page' => 20, 'category' => 421);
                         $count = 0;
                         $myposts = get_posts( $args );
                         foreach ( $myposts as $post ) : setup_postdata( $post ); 
@@ -268,7 +268,7 @@ $blog_query = new WP_Query($blog_args);
                           <h2>Popular Posts</h2>
                           <div class="row">
                             <?php
-                        query_posts('meta_key=post_views_count&orderby=meta_value_num&order=DESC&posts_per_page=5&cat=-428');
+                        query_posts('meta_key=post_views_count&orderby=meta_value_num&order=DESC&posts_per_page=5&cat=-421');
                         if (have_posts()) : while (have_posts()) : the_post();
                         $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'full' );
                         
@@ -297,7 +297,7 @@ $blog_query = new WP_Query($blog_args);
   $custom_args = array(
       'post_type' => 'post',
       'posts_per_page' => 9,
-      'category__not_in'=> array(428,351), 
+      'category__not_in'=> array(421,351), 
       'paged' => $paged
     );
 

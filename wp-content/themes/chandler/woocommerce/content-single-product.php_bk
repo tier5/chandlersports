@@ -165,86 +165,23 @@
 								<li><a href="#tabs-2">Delivery &amp; Returns</a></li>
 								<?php endif; ?>
 								
-								
-								
-								<?php if(get_field('warranty')||
-										 get_field('frame_warranty')||
-										 get_field('computer_warranty')||
-										 get_field('brake_warranty')||
-										 get_field('plastic_warranty')||
-										 get_field('motor_warranty')||
-										 get_field('labour_warranty')): ?>
+								<?php if(get_field('warranty')): ?>
 								<li><a href="#tabs-3">Warranty</a></li>
 								<?php endif; ?>
 								
-								
-								
-								
-								<?php if(get_field('specifications')||
-										 get_field('features') ||
-										 get_field('features') ||
-										 get_field('lcd_backlight')||
-										 get_field('number_of_programmes')||
-										 get_field('batteries_required')||
-										 get_field('qty_batteries_required')||
-										 get_field('mains_power_required')||
-										 get_field('mains_voltage')||
-										 get_field('adapter_used')): ?>
-							
-							
+								<?php if(get_field('specifications')): ?>
 								<li><a href="#tabs-4"><?php if(get_field('features')): ?>Features/<?php endif; ?>Specifications</a></li>
 								<?php endif; ?>
 								
-								
-								
-								
-								
-								
-								
-								
-								
-								
-								<?php if(get_field('setup_length') || 
-										 get_field('setup_width') ||
-										 get_field('setup_height')||
-										 get_field('folded_width')||
-										 get_field('folded_height') ||
-										 get_field('transport_wheels')||
-										 get_field('folding_action')||
-										 get_field('user_weight_limit')||
-										 get_field('max_load')||
-										 get_field('certification_class')||
-										 get_field('assembly_required')
-										): ?>
-								
+								 <?php if( current_user_can('administrator')) : ?>
+									<?php if(get_field('setup_length')): ?>
 										<li><a href="#tabs-4b">Dimensions & Setup</a></li>
 									<?php endif; ?>
-									
-									
-									
-									
-									
-									<?php if(get_field('adjustment_type')||
-											 get_field('levels_of_resistance')||
-											 get_field('footplate_spec')||
-											 get_field('crank_arm_stride_length')||
-											 get_field('flywheel_weight')||
-											 get_field('hp_rating')||
-											 get_field('seat_height')||
-											 get_field('running_belt')||
-											 get_field('suspension')||
-											 get_field('speed_range_distance_measure')||
-											 get_field('speed_range_from')||
-											 get_field('speed_range_to')||
-											 get_field('incline_level')||
-											 get_field('speaker_spec')||
-											 get_field('computer_spec')||
-											 get_field('handle_spec')||
-											 get_field('weight_stack')): ?>
-									
+								
+									<?php if(get_field('adjustment_type')): ?>
 										<li><a href="#tabs-4c">Equipment</a></li>
 									<?php endif; ?>
-								
+								<?php endif; ?>
 							
 							
 								
@@ -266,14 +203,7 @@
 								</div>
 							<?php endif; ?>
 							
-							<?php if(get_field('warranty')||
-										 get_field('frame_warranty')||
-										 get_field('computer_warranty')||
-										 get_field('brake_warranty')||
-										 get_field('plastic_warranty')||
-										 get_field('motor_warranty')||
-										 get_field('labour_warranty')): ?>
-										 
+							<?php if(get_field('warranty')): ?>
 							<div id="tabs-3">
 								<h2>Warranty</h2>
 								
@@ -312,17 +242,7 @@
 							</div>
 							<?php endif; ?>
 							
-								<?php if(get_field('specifications')||
-										 get_field('features') ||
-										 get_field('features') ||
-										 get_field('lcd_backlight')||
-										 get_field('number_of_programmes')||
-										 get_field('batteries_required')||
-										 get_field('qty_batteries_required')||
-										 get_field('mains_power_required')||
-										 get_field('mains_voltage')||
-										 get_field('adapter_used')): ?>
-										 
+							<?php if(get_field('specifications')): ?>
 							<div id="tabs-4">
 								<?php the_field('specifications'); ?>
 								
@@ -379,20 +299,8 @@
 							</div>
 							<?php endif; ?>
 							
-							
-								<?php if(get_field('setup_length') || 
-										 get_field('setup_width') ||
-										 get_field('setup_height')||
-										 get_field('folded_width')||
-										 get_field('folded_height') ||
-										 get_field('transport_wheels')||
-										 get_field('folding_action')||
-										 get_field('user_weight_limit')||
-										 get_field('max_load')||
-										 get_field('certification_class')||
-										 get_field('assembly_required')
-										): ?>
-										
+							<?php if( current_user_can('administrator')): ?>
+								<?php if(get_field('setup_length')): ?>
 								<div id="tabs-4b">
 									<h2>Dimensions</h2>
 									<?php if(get_field('setup_length')): ?>
@@ -444,28 +352,14 @@
 									
 								</div>
 								<?php endif; ?>
+							<?php endif; ?>
 							
 							
 							
 							
-								<?php if(get_field('adjustment_type')||
-											 get_field('levels_of_resistance')||
-											 get_field('footplate_spec')||
-											 get_field('crank_arm_stride_length')||
-											 get_field('flywheel_weight')||
-											 get_field('hp_rating')||
-											 get_field('seat_height')||
-											 get_field('running_belt')||
-											 get_field('suspension')||
-											 get_field('speed_range_distance_measure')||
-											 get_field('speed_range_from')||
-											 get_field('speed_range_to')||
-											 get_field('incline_level')||
-											 get_field('speaker_spec')||
-											 get_field('computer_spec')||
-											 get_field('handle_spec')||
-											 get_field('weight_stack')): ?>
-											 
+							
+							<?php if( current_user_can('administrator')): ?>
+								<?php if(get_field('adjustment_type')): ?>
 								<div id="tabs-4c">
 								
 								
@@ -542,14 +436,14 @@
 									
 								</div>
 								<?php endif; ?>
+							<?php endif; ?>
 							
 							
 							
 							
 							
 							
-							
-							
+							<?php if( current_user_can('administrator')): ?>
 								<?php if(get_field('adjustment_type')): ?>
 								<div id="tabs-4d">
 								
@@ -562,7 +456,7 @@
 									
 								</div>
 								<?php endif; ?>
-							
+							<?php endif; ?>
 							
 							
 							

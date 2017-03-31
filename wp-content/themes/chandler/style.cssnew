@@ -1,8 +1,4 @@
-body {
-	font-family: "Open Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif" !important;
-}
-
-{
+.widget-title {
 	display: none !important;
 }
 .login .myaccount_user {
@@ -467,7 +463,14 @@ ul#case-studies li a {
 .all-main-display {
 	display: none;
 }
-
+.finally-change-btn a {
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	color: rgb(255, 255, 255);
+	border: medium none !important;
+	background: rgba(255, 127, 0, 0.83) none repeat scroll 0% 0% !important;
+}
 #rrpnot {
 	font-size: 20px;
 	color: #000;
@@ -1608,36 +1611,9 @@ line-height: 435px !important;
 	margin-top: 26px;
 }
 
-.ui-tabs-panel  h2 {
-	margin-bottom: 20px;
-}
-.ui-tabs-panel .comment-text {
-    border-bottom: solid 1px;
-    margin-bottom: 20px;
-}
 
-@media (max-width: 991px){
-	.cat-side {
-		clear: both;
-	}
-}
 
-.slick-slider {
-	z-index: 3000;
-	position: relative;
-}
 
-.gform_confirmation_wrapper .btn {
-	background: #F28631;
-	color: #fff;
-	font-weight: 600;
-	margin-top: 5px;
-}
-
-.csnew_qty img {
-	max-width: 100%;
-	height: auto;
-}
 #sale-owl .owl-item{ margin: 0; padding: 5px; text-align: center; height: 370px; position: relative;}
 #sale-owl .owl-item h3{font-size: 15px; height: 46px;}
 #sale-owl .owl-item a:hover{text-decoration: none; color: #000;}
@@ -1756,7 +1732,7 @@ margin-bottom: 5px;
 }
 
 .btm_links{
-    background-image: url(images/imageedit.png);
+    background-image: url(images/imageedit);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     color: #FFF !important;
@@ -1934,7 +1910,7 @@ footer {
 }
 
 .contact-form-wrap input[type='submit'] {
-    background: url(images/imageedit.png) no-repeat;
+    background: url(images/imageedit) no-repeat;
     background-size: 100% 100%;
     color: #FFF !important;
     padding: 12px 37px 12px 14px;

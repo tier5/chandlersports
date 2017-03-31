@@ -366,7 +366,7 @@ get_header(); ?>
    </div>
     <p>Tell us your big idea's from home gym start ups to commercial enterprises</p> 
     <div class="contact-form-wrap">
-      <?php echo do_shortcode('[contact-form-7 id="15947" title="Contact form 1"]');?>
+      <?php echo do_shortcode('[contact-form-7 id="16236" title="Contact form 1"]');?>
     </div>
       <!-- <div style="padding: 0 15%;width: 100%;height: 200px;" class="big_req_img">
 <?php $newargs1 = array(

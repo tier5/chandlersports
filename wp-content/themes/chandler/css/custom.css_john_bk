@@ -14,11 +14,11 @@ label {
   font-weight: normal; }
 
 .header-cta-bar {
-  background: #fff;
-    font-size: 1.7rem;
-    text-align: center;
-    height: 96px;
-    color: #666; }
+  background: #409330;
+  color: #FFF;
+  padding: 1rem 0;
+  font-size: 1.7rem;
+  text-align: center; }
   .header-cta-bar img {
     margin: 0 auto; }
   @media (min-width: 769px) {
@@ -36,21 +36,20 @@ label {
         font-size: 18px; } }
 
 .top_hed {
-    background: #fff;
-    /* color: #eee; */
-    text-align: left;
-    /* padding: 0.5rem 0 0; */
-    padding: 3px 0 27px;
-}
-
+  background: #000;
+  color: #eee;
+  text-align: left;
+  padding: 0.5rem 0; }
+  .top_hed span {
+    font-size: 13px;
+    display: block; }
+    .top_hed span a {
+      font-size: 13px;
+      color: #fff; }
 
 .top_logo_headr {
   padding: 1rem 0; }
-.top_hed span {
-    /* font-size: 13px; */
-    display: block;
-    padding: 0 4px;
-}
+
 .head_search {
   background: #FFF;
   border: solid 1px #CCC;
@@ -78,15 +77,14 @@ label {
       /* Firefox 18- */
       color: #CCC; }
   .head_search form button {
-    color: #fff; }
+    color: #1b1b1b; }
 
 .header-icon-area {
   color: #1b1b1b;
   text-align: left; }
   .header-icon-area h3 {
-    font-size: 13px;
-    font-weight: bold;
-    color: #409330; }
+    font-size: 1.5rem;
+    font-weight: bold; }
   .header-icon-area p {
     font-size: 13px; }
   @media (min-width: 768px) {
@@ -110,8 +108,8 @@ label {
   border-top: none; }
 
 .footer_up_line {
-  /*margin-top: 2rem;
-  padding: 2rem 0;*/
+  margin-top: 2rem;
+  padding: 2rem 0;
   text-align: center;
   color: #FFF; }
   .footer_up_line a {
@@ -251,7 +249,7 @@ table.cart td.product-subtotal {
 table.cart td.actions {
   border-top: 1em solid;
   background-color: transparent;
-  padding: 5px 0 0; }
+  padding: 0; }
 
 table.cart td.actions label {
   display: none; }
@@ -1909,20 +1907,12 @@ ul.products li div a img {
   overflow: hidden; }
   @media (max-width: 767px) {
     .breadcrumbs-wrapper {
-      margin-bottom: 15px; } 
-}
+      margin-bottom: 15px; } }
   .breadcrumbs-wrapper .woocommerce-breadcrumb {
     font-size: 0.85em;
-    color: #aaa; 
-}
+    color: #aaa; }
     .breadcrumbs-wrapper .woocommerce-breadcrumb a {
       color: #aaa; }
-
-@media (max-width: 767px) {
-	.breadcrumbs-wrapper .woocommerce-breadcrumb {
-		margin: 0 !important;
-	}
-}
 
 #tab-description,
 .term-description,

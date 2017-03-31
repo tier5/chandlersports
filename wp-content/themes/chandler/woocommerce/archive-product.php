@@ -163,26 +163,59 @@ if(the_field('bottom_description', 'product_cat_'.$cat->term_id.'')){
 <?php if ( have_posts() ) : ?>
 
 <?php do_action('woocommerce_before_shop_loop'); ?>
-<div class="upsells">
-	<div class="prod_box">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<div class="breadcrumbs-wrapper">
-						<?php woocommerce_breadcrumb() ?>
-					</div><!-- /.breadcrumbs-wrapper -->
-				</div><!-- /.col-xs-12 -->
-			</div><!-- /.row -->
-			<div class="row">
-				<div class="col-xs-12">
-					<h1 class="category-title">
-						<?php single_term_title(); ?>
-					</h1><!-- /.category-title -->
-				</div><!-- /.col-xs-12 -->
-			</div><!-- /.row -->
-			<div class="row">
+	
+				<?php 
+					$queried_object = get_queried_object(); 
+					$taxonomy = $queried_object->taxonomy;
+					$term_id = $queried_object->term_id;  
 
+				?>
 
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="breadcrumbs-wrapper" style="margin-bottom: 0 !important;">
+					<?php woocommerce_breadcrumb() ?>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row cat-des-header"><hr class="cat-des-header-top"/>
+			<div class="col-sm-6">
+				<h1><?php single_term_title(); ?></h1>
+				<?php echo category_description( $category_id ); ?> 
+			
+			
+				
+				 <button type="button" class="collapsed mobBtn btn " data-toggle="collapse" data-target="#more-text" id="prod_readmore_button"> 
+		               <?php echo get_field('description_read_more_link_text', $taxonomy . '_' . $term_id); ?>
+					 
+		            </button>
+		            
+		    
+		            
+		            
+		            
+		            
+			</div>
+			<div class="col-sm-6">
+			<img class="cat-img" src="<?php the_field('description_image', $taxonomy . '_' . $term_id); ?>" border="0">
+			
+			
+				
+			</div>
+			
+			<hr class="cat-des-header-bot"/>
+		</div>
+		
+		<div id="more-text" class="collapse mob-menu">
+				<?php the_field('bottom_description', $taxonomy . '_' . $term_id); ?>
+			</div>	
+		
+		<div class="row cat-row">
+			
+			<div class="col-md-9 pull-right">
 				<ul class="products">
 
 					<?php woocommerce_product_subcategories(); ?>
@@ -214,53 +247,86 @@ if(the_field('bottom_description', 'product_cat_'.$cat->term_id.'')){
 								</div>
 							</li>
 						<?php else: ?>
-							<li class="archive-product-li col-lg-3 col-xs-12 col-sm-4 col-md-3 product<?php echo $i; ?>">
+							<li class="archive-product-li col-lg-4 col-xs-12 col-sm-4 col-md-4 product<?php echo $i; ?>">
 								<div class="pr_box_01 match-height">
 
 									<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(), array(220,170)); ?>
 
 
-									<div class="im_br">
-										<?php if($image[0] != NULL): ?>
-											<a href="<?php the_permalink(); ?>"><img src="<?php echo $image[0]; ?>" border="0" /></a>
-										<?php endif; ?>
-										<div class="finally-change-btn"><?php if( get_field('hire_per_week_price' ) ): ?>
-												<a class="add-to-cart_1 btn" href="<?php the_permalink(); ?>"><i class="fa fa-clock-o"></i>Hire</a>
-											<?php endif; ?></div>
-										<div class="saleup">
-											<?php if($product->sale_price != NULL): ?>
-												<a class="add-to-cart_1 btn" href="#"><i class="fa fa-clock-o"></i>sale</a>
+									<div class="prod-top">
+										<div class="im_br">
+											<?php if($image[0] != NULL): ?>
+												<a href="<?php the_permalink(); ?>"><img src="<?php echo $image[0]; ?>" border="0" /></a>
 											<?php endif; ?>
+											
+											<div class="prod_flags">
+												
+												<div class="saleup">
+													<?php if($product->sale_price != NULL): ?>
+														<a class="add-to-cart_1 btn" href="#">
+															sale
+														</a>
+													<?php endif; ?>
+
+												</div>
+												
+												
+		<?php $hide = get_field('hide'); if( $hide && in_array('hide-free-ship', $hide) ): ?> <?php else: ?>
+						<div class="delivery">
+								<a class="add-to-cart_1 btn" href="<?php the_permalink(); ?>">
+									Free Delivery
+								</a>
+						</div>
+		<?php endif; ?>
+												
+												<div class="finance"><?php if( get_field('hire_per_week_price' ) ): ?>
+														<a class="add-to-cart_1 btn" href="<?php the_permalink(); ?>">
+															Finance
+														</a>
+													<?php endif; ?>
+												</div>
+												
+												<div class="finally-change-btn"><?php if( get_field('hire_per_week_price' ) ): ?>
+														<a class="add-to-cart_1 btn" href="<?php the_permalink(); ?>">
+															Hire
+														</a>
+													<?php endif; ?>
+												</div>
+												
+											</div>
 
 										</div>
-
 									</div>
 									<div class="pr_tit cf">
 
 										<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+										
+										<div class="str_box">
+											<?php my_print_stars(); ?>
+										</div>
+										
+										
 										<div class="pr_b_left">
 											<?php if($product->regular_price != NULL): ?>
-												<h2><?= $product->sale_price ? 'WAS ' : '' ?>&pound;<?php echo $product->regular_price; ?><?= $product->sale_price ? '</s>' : '' ?></h2>
+												<h2><?= $product->sale_price ? 'RRP ' : '' ?>&pound;<?php echo $product->regular_price; ?><?= $product->sale_price ? '</s>' : '' ?></h2>
 											<?php else: ?>
 												<span style="font-weight: bold;">Click for Prices</span><br />
 											<?php endif; ?>
 											<?php if($product->sale_price != NULL): ?>
-												<h3>NOW &pound;<?php echo $product->sale_price; ?></h3>
+												<h3>Our Price &pound;<?php echo $product->sale_price; ?></h3>
 											<?php endif; ?>
 										</div>
 										<div class="pr_b_right">
 											<h2><?php echo get_field('hire_per_week_price'); ?></h2><h3>per week</h3>
 										</div>
-										<div class="str_box">
-											<?php my_print_stars(); ?>
-										</div>
+										
 
 									</div>
 									<div class="but_n">
 
 										<?php /* ?><a class="add-to-cart btn" href="<?php the_permalink(); ?>"><i class="fa fa-shopping-cart"></i>Buy<span style="padding-left: 5px;padding-right: 5px;">/</span><i class="fa fa-clock-o"></i>hire</a><?php */ ?>
 
-										<a class="add-to-cart btn" href="<?php the_permalink(); ?>"><i class="fa fa-shopping-cart"></i>Buy</a>
+										<a class="add-to-cart btn" href="<?php the_permalink(); ?>">Add to basket</a>
 
 										<?php if(get_field('hire_per_week_price') != NULL): ?>
 
@@ -273,62 +339,61 @@ if(the_field('bottom_description', 'product_cat_'.$cat->term_id.'')){
 
 						<?php endif; ?>
 						<?php //if($i==4): echo '<span class="keyline"></span>'; endif; ?>
-						<?php  if($i==4): $i=1; else: $i++; endif; endwhile; // end of the loop. ?>
+						<?php  if($i==3): $i=1; else: $i++; endif; endwhile; // end of the loop. ?>
 
 				</ul>
-			</div><!-- /.row -->
-		</div>
-	</div>
-
-
-
-	<div class="catg_main mian-cate-all-final">
-		<div class="container">
-			<div class="tre_title">
-
-				<?php do_action( 'woocommerce_archive_description' ); ?>
-
-				<?php if ( is_tax() ) : ?>
-					<?php do_action( 'woocommerce_taxonomy_archive_description' ); ?>
-				<?php elseif ( ! empty( $shop_page ) && is_object( $shop_page ) ) : ?>
-					<?php do_action( 'woocommerce_product_archive_description', $shop_page ); ?>
-				<?php endif; ?>
-
-
 			</div>
-		</div>
-	</div>
-
-	<div class="catg_main mian-cate-all-final">
-		<div class="container">
-			<div class="ab_box">
-
-				<?php
-				if (is_product_category()){
-					global $wp_query;
-					// get the query object
-					$cat = $wp_query->get_queried_object();
-					// get the thumbnail id user the term_id
-				}
-				if(the_field('bottom_description', 'product_cat_'.$cat->term_id.'')){
-					?>
-					<div class="bottomd-class">
-
-						<?php  the_field('bottom_description', 'product_cat_'.$cat->term_id.''); ?>
-
+			
+			
+			<div class="col-md-3 cat-side">
+				<div class="prod-cat-side">
+				  
+				  <div class="row">
+				    <div class="col-lg-12 col-md-12 col-sm-6">
+					    <div class="clearance side-ad">
+							<h3><?php the_field('clearance_title' , options); ?></h3>
+							<p>
+								<img src="<?php the_field('clearance_image' , options); ?>" alt="<?php the_field('clearance_title'); ?>"/>
+								<a class="readmore" href="<?php the_field('clearance_link' , options); ?>" title="Shop online">
+								<?php the_field('clearance_link_title' , options); ?>
+								</a>
+							</p>
+						</div>
 					</div>
-					<?php
-				}
-				?>
+
+					  <div class="col-lg-12 col-md-12 col-sm-6">
+						  <div class="finance side-ad">
+								<h3><?php the_field('finance_title' , options); ?></h3>
+
+								<p>
+									<img src="<?php the_field('finance_image' , options); ?>" alt="<?php the_field('finance_title' , options); ?>"/>
+									<a class="readmore" href="<?php the_field('finance_link' , options); ?>" title="Shop online">
+									<?php the_field('finance_link_title' , options); ?></a>
+								</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="delivery side-ad">
+						<p><img src="/wp-content/themes/chandler/images/lorry.png" width="120" height="99" alt=""/></p>
+						<h4><?php the_field('shipping_title' , options); ?></h4>
+						<?php the_field('shipping_text' , options); ?>
+						
+					</div>
+					
+				</div>
+				
 			</div>
+			
+			
 		</div>
+		
 	</div>
 
+<div class="upsells">
 
 
-
-
-	<?php do_action('woocommerce_after_shop_loop'); ?>
+	<?php //do_action('woocommerce_after_shop_loop'); ?>
 
 	<?php else : ?>
 
