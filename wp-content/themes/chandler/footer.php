@@ -29,7 +29,7 @@
 			<?php echo do_shortcode('[gpf_google_plus id=104263035271660173542 height=200px type=page]');?>
 		</div>
 		<div class="col-md-3 col-sm-12 social-feed-wrap">
-			<a href="http://www.youtube.com/user/chandlersports" target="_blank"><h4>Tumblr </h4></a>
+			<a href="https://www.youtube.com/user/chandlersports" target="_blank"><h4>Tumblr </h4></a>
 			<div style="max-height: 200px; min-height: 200px !important;overflow-y: auto;overflow-x: hidden;margin-top:20px;">
 			<?php //echo do_shortcode('[powr-tumblr-feed id=2d3dbd99_1487232959]');
 				echo do_shortcode('[powr-tumblr-feed id=a3e78207_1487246928]');
@@ -125,7 +125,7 @@
 
 
 
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
 <script src="<?php bloginfo('template_directory'); ?>/js/index.js"></script>
 

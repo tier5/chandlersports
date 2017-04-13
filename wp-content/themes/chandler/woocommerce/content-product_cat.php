@@ -23,7 +23,7 @@ if ( empty( $woocommerce_loop['columns'] ) )
 $woocommerce_loop['loop']++;
 ?>
 
-<li style="margin-bottom: 20px;" class="thm-image-hover col-lg-3 col-md-3 col-sm-6 col-xs-12 <?php /*?>product<?php
+<li style="margin-bottom: 20px;" class="thm-image-hover col-lg-4 col-md-4 col-sm-6 col-xs-12 <?php /*?>product<?php
 
 	if ( $woocommerce_loop['loop'] % $woocommerce_loop['columns'] == 0 )
 		echo 'last';

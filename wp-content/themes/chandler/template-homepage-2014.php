@@ -206,7 +206,7 @@ get_header(); ?>
         
   echo'<li><a class="" href="'. $sub_link .'">'.$new_sc->name.'</a></li>'; 
 }
-          echo'<a href="'. $link .'" class="view-more">view more</a></ul></div></div><div class="col-sm-6"><h4 style="text-align: center;color: #ddddd !important;font-weight: 500;">You May Also Like</h4>';
+          echo'<a href="'. $link .'" class="view-more">view more</a></ul></div></div><!--<div class="col-sm-6"><h4 style="text-align: center;color: #ddddd !important;font-weight: 500;">You May Also Like</h4>';
             $args = array(
               'post_type' => 'product',
               'posts_per_page' => 6,
@@ -236,7 +236,7 @@ get_header(); ?>
 
           endwhile;wp_reset_query(); 
 
-          echo '</div></div></div></div></li>';
+          echo '</div>--></div></div></div></li>';
 
       }
     echo '</ul>';?>
@@ -483,7 +483,7 @@ get_header(); ?>
       </div>
       <div class="col-md-7 col-sm-12 video_sec">
       <div class="row">
-       <iframe width="400" height="280" src="https://www.youtube.com/embed/IpOB2bwLXkc"></iframe>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/IpOB2bwLXkc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
       </div>
       </div> 
       </div> 

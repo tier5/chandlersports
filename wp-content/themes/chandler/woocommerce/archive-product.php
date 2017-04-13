@@ -11,7 +11,19 @@
 
 get_header('shop');
 ?>
-
+<style>
+.nav-previous {
+    
+    margin-right: 25%;
+}
+.nav-next {
+    width: 30%;
+    float: right;
+    /* right: 0; */
+    /* position: relative; */
+    display: inline;
+}
+</style>
 <?php
 /**
  * woocommerce_before_main_content hook
@@ -185,9 +197,7 @@ if(the_field('bottom_description', 'product_cat_'.$cat->term_id.'')){
 			<div class="col-sm-6">
 				<h1><?php single_term_title(); ?></h1>
 				<?php echo category_description( $category_id ); ?> 
-			
-			
-				
+
 				 <button type="button" class="collapsed mobBtn btn " data-toggle="collapse" data-target="#more-text" id="prod_readmore_button"> 
 		               <?php echo get_field('description_read_more_link_text', $taxonomy . '_' . $term_id); ?>
 					 
@@ -406,7 +416,9 @@ if(the_field('bottom_description', 'product_cat_'.$cat->term_id.'')){
 	<?php endif; ?>
 
 	<div class="clear"></div>
-
+	<div class="row cat-row">						
+<div class="col-md-4 cat-side"></div>
+<div class="col-md-8 pull-right">
 	<?php
 	/**
 	 * woocommerce_pagination hook
@@ -414,9 +426,16 @@ if(the_field('bottom_description', 'product_cat_'.$cat->term_id.'')){
 	 * @hooked woocommerce_pagination - 10
 	 * @hooked woocommerce_catalog_ordering - 20
 	 */
-	do_action( 'woocommerce_pagination' );
+	
+				/**
+				 * woocommerce_after_shop_loop hook.
+				 *
+				 * @hooked woocommerce_pagination - 10
+				 */
+				do_action( 'woocommerce_after_shop_loop' );
+			
 	?>
-
+	</div></div>
 	<?php
 	/**
 	 * woocommerce_after_main_content hook

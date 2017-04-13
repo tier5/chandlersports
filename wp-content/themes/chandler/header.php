@@ -32,8 +32,8 @@
   echo ' | ' . sprintf( __( 'Page %s', 'twentyten' ), max( $paged, $page ) );
   ?>
 </title>
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="profile" href="http://gmpg.org/xfn/11" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="profile" href="https://gmpg.org/xfn/11" />
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=<?php echo time(); ?>" />
 <!--   <link rel="stylesheet" type="text/css" media="all" href="<?=get_stylesheet_directory_uri().'/wc_css.css'?>" /> -->
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -42,7 +42,7 @@
   <link href="<?php bloginfo('template_directory'); ?>/css/stylesheet.css" rel="stylesheet" type="text/css">
   <link href="<?php bloginfo('template_directory'); ?>/css/normalize.css" rel="stylesheet" type="text/css">
   <link href="<?php bloginfo('template_directory'); ?>/css/menu-style.css" rel="stylesheet" type="text/css">
-  <link href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet' type='text/css'>
+  <link href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet' type='text/css'>
   <link href="<?php bloginfo('template_directory'); ?>/css/owl.carousel.css" rel="stylesheet" type="text/css">
   <link href="<?php bloginfo('template_directory'); ?>/css/owl.theme.css" rel="stylesheet" type="text/css">
   <link href="<?php bloginfo('template_directory'); ?>/css/owl.transitions.css" rel="stylesheet" type="text/css">
