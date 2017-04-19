@@ -379,6 +379,29 @@ $('.responsive-tabs').responsiveTabs({
 		});
   </script>
 
+  <!-- mobile-menu -->
+  <script type="text/javascript">
+	$(document).ready(function() {
+	    if($(window).width() <= 991){
+	        $(".dropdown-content ul li .arrw_to_submenu").click(function(){
+	        	$(this).parent().find(".child").toggleClass("openBottom");
+	        	$(this).toggleClass("rotate");
+	        });
+
+	        $(".custom-height .open_super_submenu i.fa-plus").click(function(){
+	        	$(this).parent().parent().find(".new_sub").addClass("opensubMenu");
+	        	$(this).hide();
+	        	$(this).parent().find("i.fa-minus").show();
+	        });
+	        $(".custom-height .open_super_submenu i.fa-minus").click(function(){
+	        	$(this).parent().parent().find(".new_sub").removeClass("opensubMenu");
+	        	$(this).hide();
+	        	$(this).parent().find("i.fa-plus").show();
+	        });
+	    }
+	});
+  </script>
+
 <?php wp_footer(); ?>
 </body>
 

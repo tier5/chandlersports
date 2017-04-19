@@ -148,7 +148,7 @@ fjs.parentNode.insertBefore(js, fjs);
 
 
         <div class="logo cf">
-        <a class="" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="" src="<?php echo site_url();?>/wp-content/uploads/2017/01/logo-test-final-1-1.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+        <a class="" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="" src="<?php echo site_url();?>/wp-content/uploads/2017/04/logo-test-final-1-1-300x59.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
           <?php if ( get_theme_mod( 'Client_logo' ) ) : ?>
           <!--<a class="" href="<?php //echo esc_url( home_url( '/' ) ); ?>" title="<?php //echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="" src="<?php //echo get_theme_mod( 'Client_logo' ); ?>" alt="<?php //echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>-->
 
@@ -313,10 +313,12 @@ fjs.parentNode.insertBefore(js, fjs);
       }
         ?>  
       
-          <li ><a class="has-child <?php echo $addClass2;?>" href="<?php echo get_term_link($cat->slug, 'product_cat'); ?>"><?php echo $cat->name; ?></a>
+          <li>
+            <a class="has-child <?php echo $addClass2;?>" href="<?php echo get_term_link($cat->slug, 'product_cat'); ?>"><?php echo $cat->name; ?></a>
+            <img class="arrw_to_submenu" src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/themes/chandler/images/side-arrow.png">
               <div class="<?php echo $addClass1;?>">
-                  <div class="col-md-12">
-                    <div class="row">
+                <div class="col-md-12">
+                  <div class="row">
                   <?php
 
                     $args2 = array(
@@ -332,16 +334,15 @@ fjs.parentNode.insertBefore(js, fjs);
                     );
                     $sub_cats = get_categories( $args2 );
                     if($sub_cats) {
-                    ?>
-                   
-                    
-                     <?php
-                      foreach($sub_cats as $sub_category) {
-                        $sub_category_id = $sub_category->term_id;
-                      ?>
+                  ?>
+                  <?php
+                    foreach($sub_cats as $sub_category) {
+                      $sub_category_id = $sub_category->term_id;
+                  ?>
                       <div class="col-sm-3">
-                      <div class="custom-height"> 
-                      <a class="sub_cat_head" href="<?php echo get_term_link($sub_category->slug, 'product_cat');?>"><?php echo $sub_category->name;?></a>
+                        <div class="custom-height"> 
+                          <a class="sub_cat_head" href="<?php echo get_term_link($sub_category->slug, 'product_cat');?>"><?php echo $sub_category->name;?></a>
+                          <span class="open_super_submenu"><i class="fa fa-plus" aria-hidden="true"></i><i class="fa fa-minus" aria-hidden="true"></i></span>
 
                        <?php
 
