@@ -231,7 +231,7 @@ include 'blog_header.php'; ?>
                           </div>
                           <div class="latest-youtube">
                              <h3>Latest on YouTube</h3>
-                              <iframe width="560" height="315" src="https://www.youtube.com/embed/2y0IAhqtsjw" frameborder="0" allowfullscreen></iframe>
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/mXkdmDyDobE" frameborder="0" allowfullscreen></iframe>
                           </div>
                           <div class="select-category">
                             <h3>Select a Category</h3>
@@ -254,10 +254,10 @@ include 'blog_header.php'; ?>
 <option value=\"\"><?php echo attribute_escape(__('Select Month')); ?></option>
 <?php wp_get_archives('type=monthly&format=option&show_post_count=1'); ?> </select>
                           </div>
-                          <div class="select-category">
+                          <!--<div class="select-category">
                             <h3>Looking for Something?</h3>
                             <input class="form-control" type="text" name="">
-                          </div>  
+                          </div>-->  
                         </div>
 
                     </div>

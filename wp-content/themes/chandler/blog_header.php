@@ -76,8 +76,8 @@
                        </div>
                     </div>
                     <div class="container-fluid">
-                       <div class="logo">
-                          <a href="#">
+                       <div class="logo">  
+                          <a href="<?php echo site_url();?>">
                             <img src="<?php bloginfo('template_directory'); ?>/images/logo-test-final-1.png" alt="chandlersports">
                           </a>
                        </div>
