@@ -5,6 +5,11 @@ body {
 {
 	display: none !important;
 }
+
+.arrw_to_submenu{
+	display: none;
+}
+
 .login .myaccount_user {
 	display: none;
 }
@@ -2069,6 +2074,29 @@ text-decoration: none;
 cursor: default;
 }
 
+
+#sb_instagram .sb_instagram_header .sbi_header_text {
+    float: right !important;
+    width: 80% !important;
+    display: inline-block;
+}
+
+#sb_instagram .sb_instagram_header .sbi_header_img {
+    width: 20% !important;
+    margin: 0 !important;
+    border-radius: 50% !important;
+}
+
+#sb_instagram .sb_instagram_header .sbi_header_text .sbi_bio, #sb_instagram .sb_instagram_header .sbi_header_text h3 {
+    float: none !important;
+    margin: 0 10px 5px!important;
+    text-align: center;
+}
+
+.open_submenu .fa-plus,.open_submenu .fa-minus, .open_super_submenu .fa-plus,.open_super_submenu .fa-minus{
+	display: none;
+}
+
 @media screen and (min-width: 992px) and (max-width: 1199px){
 	.header-icon-area .header-icon-area-left h3,.header-icon-area .header-icon-area-right h3{
 	    font-size: 11px;
@@ -2076,6 +2104,14 @@ cursor: default;
 	.middle_content {
 	    min-height: 540px !important;
 	}
+
+	#sb_instagram .sbi_header_text .sbi_bio, #sb_instagram .sbi_header_text h3 {
+		margin: 0 0 0 50px!important;
+	}
+	#sb_instagram .sb_instagram_header .sbi_header_text .sbi_bio, #sb_instagram .sb_instagram_header .sbi_header_text h3 {
+		font-size: 14px !important;
+	}
+
 }
 @media screen and (min-width: 768px) and (max-width: 991px){
 	.foot_box_1 .social_icon a {
@@ -2184,6 +2220,73 @@ cursor: default;
 	.upper_footer {
 	    padding: 10px;
 	}
+
+
+	.dropdown-content li:hover .child{display: none !important;}
+
+	.child, .body_child{
+		position: relative !important;
+	    left: 0!important;
+	    border: none!important;
+	    min-width: 100%!important;
+	    max-width: 100%!important;
+	    top: 0!important;
+	    min-height: 100%!important;
+	}
+	.dropdown-content li .openBottom.child{
+		display: block !important;
+	}
+
+	.custom-height {
+	    height: auto!important;
+	}
+	.arrw_to_submenu{
+	    display: inline-block;
+	    width: 15px;
+	    height: auto;
+	    margin: 10px 5px;
+	    float: right;
+	    clear: both;
+	}
+	.arrw_to_submenu.rotate{
+		transform: rotate(90deg);
+	}
+	.has-child-arrow {
+	    background: none !important;
+	}
+	.dropdown-content a {
+	    padding: 8px 10px !important;
+	    font-size: 12px !important;
+	    display: inline-block !important;
+	    width: 75%;
+	}
+	.new_sub{
+		display: none;
+	}
+	.new_sub.opensubMenu {
+	    display: block;
+	}
+
+	.dropdown-content ul li{
+		display: inline-block;
+		width: 100%;
+	}
+
+	.open_submenu{
+		display: inline-block;
+	    vertical-align: top;
+	    padding: 10px;
+	    float: right;
+	    clear: both;
+	}
+
+	.open_submenu .fa-plus, .open_super_submenu .fa-plus{
+		display: inline-block;
+	}
+	.open_submenu .fa-minus, .open_super_submenu .fa-minus{
+		display: none;
+	}
+
 }
 @media only screen and (max-width: 767px){
 	.top_hed .align-right{
@@ -2243,4 +2346,9 @@ cursor: default;
 	.main_banner .owl-theme .owl-controls .owl-buttons .owl-prev, .main_banner .owl-theme .owl-controls .owl-buttons .owl-next {
 	    top: 25% !important;
 	}
+
+	select.my-custom-select{
+		font-size: 12px !important;
+	}
+
 }

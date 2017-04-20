@@ -85,7 +85,7 @@ label {
                               </div>
                           <div class="latest-youtube">
                              <h3>Latest on YouTube</h3>
-                              <iframe width="560" height="315" src="https://www.youtube.com/embed/2y0IAhqtsjw" frameborder="0" allowfullscreen></iframe>
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/mXkdmDyDobE" frameborder="0" allowfullscreen></iframe>
                           </div>
                           <div class="select-category">
                             <h3>Select a Category</h3>
@@ -108,16 +108,16 @@ label {
 <option value=\"\"><?php echo attribute_escape(__('Select Month')); ?></option>
 <?php wp_get_archives('type=monthly&format=option&show_post_count=1'); ?> </select>
                           </div>
-                          <div class="select-category">
+                          <!--<div class="select-category">
                             <h3>Looking for Something?</h3>
                             <input class="form-control" type="text" name="">
-                          </div>  
+                          </div>-->  
                         </div>
 
                     </div>
                     <div class="">
                       <div class="col-md-12 col-sm-12">
-                          <div class="subscription-section">
+                          <!--<div class="subscription-section">
                               <form>
                                 <div class="form-group">
                                     <label>Enter your email address to subscribe to our blog & receive notifications of new posts by email!</label>
@@ -125,7 +125,7 @@ label {
                                     <input type="submit" value="subscribe">
                                 </div>
                               </form>
-                          </div>
+                          </div>-->
                       </div>
                    </div>
 

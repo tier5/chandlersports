@@ -313,10 +313,15 @@ fjs.parentNode.insertBefore(js, fjs);
       }
         ?>  
       
-          <li ><a class="has-child <?php echo $addClass2;?>" href="<?php echo get_term_link($cat->slug, 'product_cat'); ?>"><?php echo $cat->name; ?></a>
+          <li>
+            <a class="has-child <?php echo $addClass2;?>" href="<?php echo get_term_link($cat->slug, 'product_cat'); ?>"><?php echo $cat->name; ?></a>
+            <!-- <img class="arrw_to_submenu" src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/themes/chandler/images/side-arrow.png"> -->
+            <?php if(count($termchildren)>0) {?>
+            <span class="open_submenu"><i class="fa fa-plus" aria-hidden="true"></i><i class="fa fa-minus" aria-hidden="true"></i></span>
+            <?php } ?>
               <div class="<?php echo $addClass1;?>">
-                  <div class="col-md-12">
-                    <div class="row">
+                <div class="col-md-12">
+                  <div class="row">
                   <?php
 
                     $args2 = array(
@@ -332,17 +337,21 @@ fjs.parentNode.insertBefore(js, fjs);
                     );
                     $sub_cats = get_categories( $args2 );
                     if($sub_cats) {
-                    ?>
-                   
-                    
-                     <?php
-                      foreach($sub_cats as $sub_category) {
-                        $sub_category_id = $sub_category->term_id;
-                      ?>
-                      <div class="col-sm-3">
-                      <div class="custom-height"> 
-                      <a class="sub_cat_head" href="<?php echo get_term_link($sub_category->slug, 'product_cat');?>"><?php echo $sub_category->name;?></a>
-
+                  ?>
+                  <?php
+                    foreach($sub_cats as $sub_category) {
+                      $sub_category_id = $sub_category->term_id;
+                      $children = get_terms( $sub_category->taxonomy, array(
+                        'parent'    => $sub_category->term_id,
+                        'hide_empty' => false
+                        ) )
+                  ?>
+                      <div class="col-md-3">
+                        <div class="custom-height"> 
+                          <a class="sub_cat_head" href="<?php echo get_term_link($sub_category->slug, 'product_cat');?>"><?php echo $sub_category->name;?></a>
+                          <?php if($children) {?>
+                          <span class="open_super_submenu"><i class="fa fa-plus" aria-hidden="true"></i><i class="fa fa-minus" aria-hidden="true"></i></span>
+                          <?php } ?>
                        <?php
 
                         $args3 = array(

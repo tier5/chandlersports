@@ -62,7 +62,7 @@ $blog_query = new WP_Query($blog_args);
                   <div class="container-fluid ">
                     <div class="new_slick">
                       <?php
-                        $args = array( 'posts_per_page' => 20, 'category' => 428);
+                        $args = array( 'posts_per_page' => 20, 'category' => 421);
                         $count = 0;
                         $myposts = get_posts( $args );
                         foreach ( $myposts as $post ) : setup_postdata( $post ); 
@@ -71,11 +71,7 @@ $blog_query = new WP_Query($blog_args);
 
                       <div class="col-xs-3">
                         <div class="single-slide">
-                          <?php if (has_post_thumbnail()){?>
                           <img src="<?php the_post_thumbnail_url( 'full' );?>" alt="img">
-                          <?php }else { ?>
-                          <img src="<?php bloginfo('template_directory'); ?>/images/No_image.png" alt="img">
-                          <?php } ?>
                           <div class="blog-slide-caption">
                               <div class="slide_cat">
                               <ul>
@@ -221,8 +217,34 @@ $blog_query = new WP_Query($blog_args);
         arrows: true,
         infinite: true,
         slidesToShow: 4,
+        slidesToScroll: 2,
+	responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
         slidesToScroll: 2
-     });
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    
+  ]
+      });
       $(".center").slick({
         dots: true,
         infinite: true,
@@ -238,9 +260,8 @@ $blog_query = new WP_Query($blog_args);
       $(".lazy").slick({
         lazyLoad: 'ondemand', // ondemand progressive anticipated
         infinite: true
-      }); 
+      });
     });
-    
   </script> 
               </div>
               <div class="bodypart">
@@ -282,11 +303,7 @@ $blog_query = new WP_Query($blog_args);
                             <div class="col-sm-3">
                                                       <div class="popular-post-main big-block">
                                                       <a href="<?php the_permalink(); ?>">
-                                                        <?php if ( $image[0]!=''){?>
                                                         <img src="<?php echo $image[0];?>" alt="img">
-                                                        <?php }else { ?>
-                                                        <img src="<?php bloginfo('template_directory'); ?>/images/No_image.png" alt="img">
-                                                        <?php } ?>
                                                         <div class="popular-post-main-txt">
                                                           <h4><?php the_title(); ?></h4>
                                                         </div> 
@@ -325,7 +342,7 @@ $blog_query = new WP_Query($blog_args);
     <div class="col-md-4 col-sm-4">
         <div class="popular-post-main big-block">
           <a href="<?php the_permalink(); ?>">
-            <?php if (has_post_thumbnail()){?>
+           <?php if (has_post_thumbnail()){?>
              <img src="<?php the_post_thumbnail_url( 'full' );?>" alt="img">
               <?php }else { ?>
               <img src="<?php bloginfo('template_directory'); ?>/images/No_image.png" alt="img">

@@ -58,7 +58,7 @@ header{padding: 7px 0 0;}
 
 
 
-.dropdown-menu{background: rgba(239, 239, 239, 0.7); border: none; box-shadow: none;}
+.dropdown-menu{ background: #f0f0f0; /*background: rgba(239, 239, 239, 0.7)*/; border: none; box-shadow: none;}
 .social-menu ul{margin: 0; padding: 14px 0 0;}
 .social-menu ul li{margin: 0; padding: 0 5px; list-style: none; display: inline-block;}
 .social-menu ul li a{color: #000;}
@@ -412,8 +412,11 @@ border-radius: 0; margin-top: 10px; font-family: 'Josefin Sans', sans-serif; tex
 
 .contact-page .form-control{border-radius: 0;}
 
-
-
+@media screen and (max-width: 1199px) {
+  .new-footer iframe{
+    width: 100%;
+  }
+}
 
 
 @media screen and (max-width: 991px) {
@@ -447,7 +450,7 @@ border-radius: 0; margin-top: 10px; font-family: 'Josefin Sans', sans-serif; tex
 
 @media screen and (max-width: 768px) {
    .menu-part .navbar-nav{text-align: left;}
-  .menu-part .navbar-nav > li{display: block; text-align: left;}
+  .menu-part .navbar-nav > li{display: block !important; text-align: left;}
   .menu-part .full-menu ul{text-align: left;}
 
 
